@@ -25,6 +25,7 @@ which promises an "ecological tagging vocabulary" built on the five levels.
 | [`research/vocabularies.md`](research/vocabularies.md) | Existing audience vocabularies we align with: schema.org, LRMI, MeSH Persons (M01), ERIC, Healthy People 2030, and our own issues. |
 | [`research/sleep-research-tagging/`](research/sleep-research-tagging/) | **Findings:** how 22 sleep studies, guidelines and web pages tag their audiences. |
 | [`research/example-orgs/`](research/example-orgs/) | 22 example organizations across the five levels. |
+| [`research/advocacy-frameworks/`](research/advocacy-frameworks/README.md) | **Proposal:** an advocacy-phase facet (and a richer multi-axis option) for policy-level resources, built on open frameworks, with a crosswalk to GHAI's *Advocacy Action Guide*. |
 | [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md) | What v0.1 doesn't settle, with the default applied, and numbers to verify. |
 
 ## The five levels
@@ -80,6 +81,12 @@ so a resource's level and its audience's level use one vocabulary.
   and nutrition, health systems, injury prevention, tobacco). By its own count:
   217 policies passed or strengthened, in 38 countries; it works in 40+
   countries (to verify; see [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md)).
+- **Advocacy steps can be a facet of their own.** GHAI's guide (4 phases, 12
+  steps) can be shared but not adapted, and no CC BY health-advocacy process
+  framework turned up. The public-domain CDC Policy Process plus the policy
+  cycle and Kingdon's streams are enough to write our own 7-phase facet, with
+  GHAI's steps as crosswalk labels. See
+  [the proposal](research/advocacy-frameworks/README.md).
 
 ## Build
 
