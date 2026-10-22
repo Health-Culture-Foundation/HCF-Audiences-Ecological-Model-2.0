@@ -1,0 +1,47 @@
+taxonomy,term_id,name,slug,parent,count,description,suggested_level,notes
+upper-lvl-audience,401,Help Yourself,help-yourself,,293,Find resources for your personal wellbeing journey,intrapersonal,"Individual acting on own sleep. Top-level choice in the ""Get personalized"" modal."
+upper-lvl-audience,400,Help Others,help-others,,54,Resources to support others in their wellbeing,unclear,Umbrella for everyone acting on someone else (interpersonal through policy). In the modal it opens a second page listing the audience taxonomy tree.
+audience,274,General Public,general-public,,42,,intrapersonal,"Catch-all parent; its children mix ages, genders, identity, life stage (College), role (Parents) and employer (Employees, Municipal employees). Facet shows 69 because it rolls up children; own count is 42."
+audience,319,Parents,parents,General Public,27,,interpersonal,"Role acting on a child. Largest Help Yourself-tagged audience term (19 of 27), which conflicts with an interpersonal reading."
+audience,278,College,college,General Public,14,,intrapersonal,College students as a population. Duplicates Universities > Students (all 14 College resources are tagged Help Others).
+audience,302,Employees,employees,General Public,4,,intrapersonal,Worker as an individual. Overlaps Workplace (setting) and Municipal employees.
+audience,408,by identity or Community,by-identity-or-community,General Public,0,,unclear,"Grouping node only (count 0); lowercase ""by"" unlike By Age/By Gender."
+audience,410,LGBTQIA+,lgbtqia,by identity or Community,0,,unclear,Population by identity (intrapersonal) or community level depending on content. Unused (count 0).
+audience,409,African American,african-american,by identity or Community,0,,unclear,Population by identity (intrapersonal) unless resources are culturally tailored community outreach (community). Unused (count 0).
+audience,405,By Gender,by-gender,General Public,0,,unclear,Grouping node only (count 0).
+audience,407,Women,women,By Gender,3,,intrapersonal,Population by gender.
+audience,406,Men,men,By Gender,1,,intrapersonal,Population by gender.
+audience,402,By Age,by-age,General Public,0,,unclear,Grouping node only (count 0); exists to group age terms in the facet.
+audience,279,Young Adults,young-adults,By Age,14,,intrapersonal,Population by age; no age range in name unlike Kids/Seniors. Overlaps College and Students.
+audience,277,Youth,youth,By Age,13,,intrapersonal,Population by age; no age range given; overlaps Kids (6-12) and Young Adults.
+audience,403,Kids (6-12),kids-6-12,By Age,5,,intrapersonal,"Population by age. Resources (e.g. kids sleep apps) are often used through a parent, so arguably interpersonal."
+audience,404,Seniors (60+),seniors-60,By Age,0,,intrapersonal,Population by age; unused (count 0).
+audience,303,Municipal employees,municipal-employees,General Public,0,,intrapersonal,Population defined by employer; unused (count 0). If content is about city HR policy it would be organizational.
+audience,273,Healthcare Professionals,healthcare,,24,,interpersonal,"Clinician acting on patients (clinician-patient level); could be organizational for health-system content. Slug ""healthcare"" does not match name."
+audience,255,Universities,universities,,13,,organizational,"Institution as audience. Parent of Professors and Students, so it mixes institution and population."
+audience,275,Students,students,Universities,15,,intrapersonal,University students as population; duplicates General Public > College.
+audience,276,Professors,professors,Universities,5,,interpersonal,Faculty acting on students; could be organizational for campus-policy content.
+audience,318,K-12 Eductors,k-12-eductors,,10,,organizational,"School staff acting within an institution; teacher-student content would be interpersonal. Name and slug misspelled (""Eductors"")."
+audience,411,Workplace,workplace,,3,,organizational,"Setting, not a person. Overlaps Employees."
+audience,313,Millitary & Law Enforcement,millitary-law-enforcement,,3,,organizational,"Institutional setting (duty schedules, shift policy). Mixes two sectors; name and slug misspelled (""Millitary""). Overlaps Veterans."
+audience,308,Pro2Pro,pro2pro,,3,,unclear,Undefined label (likely professional-to-professional). No description; 3 resources.
+audience,307,Science Journalism,science-journalism,,3,,community,"Media shaping public knowledge and norms. Named for a field, not a person (vs ""Science journalists"")."
+audience,310,Veterans,veterans,,1,,intrapersonal,Population; overlaps Military & Law Enforcement. 1 resource.
+audience,306,PR,pr,,1,,community,"Communications professionals shaping public messaging. Meaning of ""PR"" not explained on site; 1 resource."
+organization-audience,366,Help myself,help-myself,,424,Find resources for your personal wellbeing journey,intrapersonal,"Mirrors upper-lvl-audience ""Help Yourself"" but named ""Help myself"" (different wording, casing and slug). Default term set by the CredibleMind importer (term id 366)."
+organization-audience,367,Help Others,help-others,,57,Resources to support others in their wellbeing,unclear,"Umbrella; mirrors upper-lvl-audience ""Help Others"". All 57 orgs are tagged with the parent only."
+organization-audience,374,Transportation Workers,transportation-workers,Help Others,0,,organizational,Sector; fatigue rules could make it policy. Unused.
+organization-audience,382,Special Populations,special-populations,Help Others,0,,unclear,Undefined catch-all. Unused.
+organization-audience,381,Researchers in Sleep and Health,researchers-in-sleep-and-health,Help Others,0,,unclear,Knowledge producers; not a socio-ecological level on its own. Unused.
+organization-audience,380,Non-Profit Organizations,non-profit-organizations,Help Others,0,,community,Community-based organizations; could be organizational. Unused.
+organization-audience,379,Public Health & Policymakers,public-health-policymakers,Help Others,0,,policy,Mixes public health practitioners (community) with policymakers (policy). Unused.
+organization-audience,378,Religious and Community Leaders,religious-and-community-leaders,Help Others,0,,community,Community leaders. Unused.
+organization-audience,377,Media and Creative Professionals,media-and-creative-professionals,Help Others,0,,community,Media shaping public norms. Unused.
+organization-audience,376,Athletes and Coaches,athletes-and-coaches,Help Others,0,,unclear,"Mixes population (athletes, intrapersonal) with role (coaches, interpersonal). Unused."
+organization-audience,375,Military and Law Enforcement,military-and-law-enforcement,Help Others,0,,organizational,"Institutional setting; spelled correctly here, misspelled in audience taxonomy. Unused."
+organization-audience,373,Shift Workers & Hospitality,shift-workers-hospitality,Help Others,0,,organizational,Mixes a population (shift workers) with a sector (hospitality); employer scheduling is organizational. Unused.
+organization-audience,372,Parents and Caregivers,parents-and-caregivers,Help Others,0,,interpersonal,"Caregiver acting on dependent. Unused. Broader than audience ""Parents""."
+organization-audience,371,Corporate Sector,corporate-sector,Help Others,0,,organizational,Employer/sector. Unused.
+organization-audience,370,Wellness & Fitness Professionals,wellness-fitness-professionals,Help Others,0,,interpersonal,Practitioner acting on clients. Unused.
+organization-audience,369,Educational Community,educational-community,Help Others,0,,organizational,Schools/universities as institutions. Unused.
+organization-audience,368,Healthcare Professionals,healthcare-professionals,Help Others,0,,interpersonal,Clinician-patient; could be organizational. Unused. Same name as audience term 273 but different slug.
