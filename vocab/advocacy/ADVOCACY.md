@@ -7,7 +7,7 @@ Use it two ways at once:
 - **Simple:** tag a resource with one **phase** (axis A). That alone answers "where in the advocacy process does this help?"
 - **Full:** add any of the other axes. Each axis is separate, so one resource can carry tags on several. A guide to testifying at a city council hearing: *Win the decision* × *Testify and brief* × *Decision-makers* × *City or county* × *Legislature or council* × *Political will*.
 
-All labels and definitions are HCF's own wording. The phases are built on the public-domain CDC Policy Process, the policy cycle and Kingdon. Other axes borrow category ideas (not text) from copyrighted advocacy-evaluation work, credited per concept as "informed by". GHAI's *Advocacy Action Guide* steps appear only as crosswalk labels ([`crosswalks/ghai-steps-to-advocacy-phases.sssom.tsv`](../../crosswalks/ghai-steps-to-advocacy-phases.sssom.tsv)); its terms allow sharing but not adaptation.
+All labels and definitions are HCF's own wording. The phases are built on the public-domain CDC Policy Process, the policy cycle and Kingdon. Other axes borrow category ideas (not text) from copyrighted advocacy-evaluation work, credited per concept as "informed by". Full citations: [REFERENCES.md](../../REFERENCES.md) (CDC Policy Process, Lasswell 1956, Jann & Wegrich 2007, Kingdon 1984, Coffman 2009, Coffman & Beer 2015, Stachowiak 2013, GHAI 2024). GHAI's *Advocacy Action Guide* steps appear only as crosswalk labels ([`crosswalks/ghai-steps-to-advocacy-phases.sssom.tsv`](../../crosswalks/ghai-steps-to-advocacy-phases.sssom.tsv)); its terms allow sharing but not adaptation.
 
 | Axis | Name | Values | Optional |
 |---|---|---|---|

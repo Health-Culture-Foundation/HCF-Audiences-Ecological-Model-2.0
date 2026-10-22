@@ -1,0 +1,183 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "type": "skos:ConceptScheme",
+      "title": "Theory of change (HCF advocacy framework, axis H)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/open-a-window",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "prefLabel": "Wait for or create a window",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "altLabel": [
+        "policy window",
+        "focusing event"
+      ],
+      "definition": "Change comes when problem, solution and politics line up.",
+      "skos:note": "Informed by: Kingdon (concept); Pathways for Change (idea, all rights reserved)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/big-shift",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "prefLabel": "Big sudden shift",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "altLabel": [
+        "large leaps",
+        "punctuated equilibrium"
+      ],
+      "definition": "Change comes in rare big jumps after long stability.",
+      "skos:note": "Informed by: Baumgartner & Jones (concept)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/coalition-of-beliefs",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "prefLabel": "Coalition of shared beliefs",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "altLabel": [
+        "advocacy coalition"
+      ],
+      "definition": "Change comes when groups who share core beliefs work together.",
+      "skos:note": "Informed by: Sabatier advocacy coalition framework (concept)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/win-over-power",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "prefLabel": "Win over power holders",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "altLabel": [
+        "power politics",
+        "elite influence"
+      ],
+      "definition": "Change comes by persuading the few people with power.",
+      "skos:note": "Informed by: Pathways for Change (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/grassroots-power",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "prefLabel": "Grassroots power",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "altLabel": [
+        "community organizing"
+      ],
+      "definition": "Change comes when affected people build power together.",
+      "skos:note": "Informed by: Pathways for Change (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/reframe-the-message",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "prefLabel": "Reframe the message",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "altLabel": [
+        "messaging and frameworks"
+      ],
+      "definition": "Change comes when the issue is seen in a new way.",
+      "skos:note": "Informed by: Pathways for Change (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/theory-of-change/spread-from-early-adopters",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "prefLabel": "Spread from early adopters",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/theory-of-change/",
+      "altLabel": [
+        "diffusion",
+        "policy diffusion"
+      ],
+      "definition": "Change spreads from places that try it first.",
+      "example": "California's start-time law cited by other states.",
+      "skos:note": "Informed by: Rogers diffusion of innovations (concept)"
+    }
+  ]
+}

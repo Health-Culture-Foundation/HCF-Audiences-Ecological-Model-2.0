@@ -1,0 +1,144 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "type": "skos:ConceptScheme",
+      "title": "CDC social-ecological model (four levels)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": [
+        "https://www.cdc.gov/violence-prevention/about/index.html"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/cdc-sem-levels/individual",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "notation": "1",
+      "prefLabel": "Individual",
+      "definition": "Biological and personal history factors such as age, education, income, substance use and history of abuse; prevention at this level works on attitudes, beliefs and behaviors.",
+      "source": [
+        "https://www.cdc.gov/violence-prevention/about/index.html"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/cdc-sem-levels/relationship",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "notation": "2",
+      "prefLabel": "Relationship",
+      "definition": "A person's closest social circle (peers, partners and family members) and how it shapes their behavior and experience.",
+      "source": [
+        "https://www.cdc.gov/violence-prevention/about/index.html"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/cdc-sem-levels/community",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "notation": "3",
+      "prefLabel": "Community",
+      "definition": "The settings where social relationships happen, such as schools, workplaces and neighborhoods, and the features of those settings.",
+      "source": [
+        "https://www.cdc.gov/violence-prevention/about/index.html"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/cdc-sem-levels/societal",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/cdc-sem-levels/",
+      "notation": "4",
+      "prefLabel": "Societal",
+      "definition": "Broad societal factors: social and cultural norms, and the health, economic, educational and social policies that maintain or reduce inequalities between groups.",
+      "source": [
+        "https://www.cdc.gov/violence-prevention/about/index.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# curie_map:
+#   hcflvl: https://health-culture.org/vocab/ecological-levels/
+#   vivww: https://github.com/vivwebsolutions/Viv-Resource-Library/blob/what-works-sleep/what-works/taxonomy/behavior-theory.json#ecologicalLevel/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+# mapping_set_id: https://github.com/vivwebsolutions/HCF-Audiences-Ecological-Model-2.0/crosswalks/ecological-levels-to-viv-what-works.sssom.tsv
+# mapping_set_version: 2026-10-22
+# mapping_set_title: Ecological levels to the Viv Resource Library What Works ecologicalLevel facet
+# license: https://creativecommons.org/licenses/by/4.0/
+# creator_label:
+#   - Claude (Claude Code), for Health Culture Foundation; not yet reviewed by a person
+# comment: Same five levels, same source (McLeroy 1988 via Theory at a Glance). IDs were aligned on purpose so the What Works facet can point at this scheme instead of keeping its own copy (proposed on Viv-Resource-Library#35).
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	confidence	comment
+hcflvl:intrapersonal	Intrapersonal level	skos:exactMatch	vivww:intrapersonal	Individual	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	1.0	
+hcflvl:interpersonal	Interpersonal level	skos:exactMatch	vivww:interpersonal	Relationships	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	1.0	
+hcflvl:institutional	Institutional or organizational level	skos:exactMatch	vivww:institutional	Organizations	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	1.0	
+hcflvl:community	Community level	skos:exactMatch	vivww:community	Community	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	1.0	
+hcflvl:public-policy	Public policy level	skos:exactMatch	vivww:public-policy	Policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	1.0	

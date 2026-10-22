@@ -1,0 +1,5 @@
+id,notation,pref_label,alt_labels,broader,definition,example,mesh,audiences,informed_by,notes
+decision-makers,1,Decision-makers,,,People who can make the policy decision.,,,policymakers|regulators-and-agency-staff|courts-and-judges|school-and-campus-leaders,CEI ASF audience group (idea),
+influencers,2,Influencers,,,People and groups decision-makers listen to.,,,journalists-and-media|community-and-religious-leaders|clinicians|professional-societies|researchers|funders|policy-advocates|employers-and-workplaces,CEI ASF audience group (idea),
+the-public,3,The public,voters|residents|affected people,,"The public at large, or a specific affected group (tag the population too).",,,the-person,CEI ASF audience group (idea),
+opponents,4,Opponents (to anticipate),opposition|industry opposition,,"People and groups expected to oppose; resources about them, not for them.",,,,CDC Policy Process stakeholder engagement mentions opponents,Not an audience: use to tag resources that help anticipate opposition.
