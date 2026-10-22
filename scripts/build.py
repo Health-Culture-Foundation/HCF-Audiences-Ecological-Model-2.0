@@ -16,6 +16,7 @@ BASE = "https://health-culture.org/vocab/"
 LVL = BASE + "ecological-levels/"
 CDC = BASE + "cdc-sem-levels/"
 AUD = BASE + "audiences/"
+DIR = BASE + "communication-direction/"
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 MESH = "http://id.nlm.nih.gov/mesh/"
 LRMI = "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/"
@@ -238,10 +239,58 @@ def sssom(path, title, prefixes, comment, rows):
     write(path, "\n".join(lines) + "\n")
 
 
+def build_scheme(csv_path, base, title, description, sources=(), extra_seeds=None):
+    """Generic SKOS scheme from a CSV with id, pref_label, [notation, alt_labels, broader,
+    definition, example, mesh, sleepliteracy_seed, notes]. Writes .ttl and .jsonld next to the CSV."""
+    rows = read(csv_path)
+    ids = {r["id"] for r in rows}
+    for r in rows:
+        assert not r.get("broader") or r["broader"] in ids, f"{csv_path} {r['id']}: unknown broader {r['broader']}"
+    tops = [r for r in rows if not r.get("broader")]
+    src = " ;\n  dct:source " + ", ".join(f"<{u}>" for u in sources) if sources else ""
+    out = [PREFIXES, HEADER,
+           f"<{base}> a skos:ConceptScheme ;\n  dct:title {lit(title)} ;\n  dct:description {lit(description)}{src} ;\n"
+           f"  dct:license <{LICENSE}> ;\n  skos:hasTopConcept {', '.join(f'<{base}{r['id']}>' for r in tops)} .\n\n"]
+    graph = [{"id": base, "type": "skos:ConceptScheme", "title": title, "license": LICENSE, "source": list(sources)}]
+    for r in rows:
+        iri = base + r["id"]
+        b = r.get("broader")
+        mesh = [f"<{MESH}{m}>" for m in mesh_ids(r.get("mesh", ""))]
+        out.append(ttl_concept(iri, [
+            ("skos:inScheme", f"<{base}>"), ("skos:topConceptOf", None if b else f"<{base}>"),
+            ("skos:broader", f"<{base}{b}>" if b else None),
+            ("skos:notation", f'"{r["notation"]}"' if r.get("notation") else None),
+            ("skos:prefLabel", lit(r["pref_label"])),
+            ("skos:altLabel", [lit(a) for a in split(r.get("alt_labels", ""))]),
+            ("skos:definition", lit(r["definition"]) if r.get("definition") else None),
+            ("skos:example", lit(r["example"]) if r.get("example") else None),
+            ("skos:relatedMatch", mesh),
+            ("skos:editorialNote", lit(r["notes"]) if r.get("notes") else None)]))
+        node = {"id": iri, "type": "skos:Concept", "inScheme": base, "prefLabel": r["pref_label"]}
+        for k, v in (("broader", base + b if b else None), ("topConceptOf", None if b else base), ("notation", r.get("notation")),
+                     ("altLabel", split(r.get("alt_labels", "")) or None), ("definition", r.get("definition")), ("example", r.get("example")),
+                     ("relatedMatch", [MESH + m for m in mesh_ids(r.get("mesh", ""))] or None), ("editorialNote", r.get("notes"))):
+            if v:
+                node[k] = v
+        graph.append(node)
+        if extra_seeds is not None:
+            for tax, slug, pred in seeds_of(r):
+                extra_seeds.append((f"sl:{tax}/{slug}", slug, f"skos:{pred}Match", base + r["id"], r["pref_label"]))
+    stem = csv_path[:-4]
+    write(stem + ".ttl", "".join(out))
+    jsonld(stem + ".jsonld", graph)
+    return rows
+
+
+EXTRA_SEEDS = []
+
+
 def build_crosswalks(rows):
     J = "semapv:ManualMappingCuration"
     A, D = "Claude (unreviewed)", "2026-10-22"
     mesh, lrmi, sl = [], [], []
+    for s_id, s_label, pred, obj, o_label in EXTRA_SEEDS:
+        sl.append([s_id, s_label, pred, obj.replace(DIR, "hcfdir:"), o_label, J, A, D, ""])
     for r in rows:
         subj = "hcfaud:" + r["id"]
         for m in split(r["mesh"]):
@@ -258,8 +307,8 @@ def build_crosswalks(rows):
           "Populations use closeMatch; roles and organizations use relatedMatch because MeSH is a subject vocabulary. All UIDs checked against id.nlm.nih.gov/mesh/lookup on 2026-10-22 (MeSH 2026). MeSH is produced by the U.S. National Library of Medicine; no NLM endorsement is implied.", mesh)
     sssom("crosswalks/audiences-to-lrmi.sssom.tsv", "HCF audiences to LRMI Educational Audience Role", {**hcf, "audRole": LRMI},
           "LRMI has 8 roles. Health roles map broadMatch to audRole:professional.", lrmi)
-    sssom("crosswalks/sleepliteracy-to-audiences.sssom.tsv", "SleepLiteracy.org audience terms to HCF audiences", {"sl": SL + "taxonomy/", **hcf},
-          "Subjects are SleepLiteracy WordPress terms as taxonomy/slug (taxonomies audience, upper-lvl-audience, organization-audience; pulled from the REST API 2026-10-22). Grouping-only terms (by-age, by-gender, by-identity-or-community) and pro2pro, special-populations have no mapping yet; see OPEN-QUESTIONS.md.", sl)
+    sssom("crosswalks/sleepliteracy-to-audiences.sssom.tsv", "SleepLiteracy.org audience terms to HCF audiences and communication direction", {"sl": SL + "taxonomy/", **hcf, "hcfdir": DIR},
+          "Subjects are SleepLiteracy WordPress terms as taxonomy/slug (taxonomies audience, upper-lvl-audience, organization-audience; pulled from the REST API 2026-10-22). pro2pro (professional to professional) maps to the communication-direction scheme, not to an audience. Grouping-only terms (by-age, by-gender, by-identity-or-community) and special-populations have no mapping yet; see OPEN-QUESTIONS.md.", sl)
 
 
 def markdown(levels, rows):
@@ -304,4 +353,9 @@ def markdown(levels, rows):
 
 
 if __name__ == "__main__":
-    build_audiences(build_levels())
+    levels = build_levels()
+    build_scheme("vocab/communication-direction.csv", DIR, "Communication direction",
+                 "Who is talking to whom: professional to public, professional to professional (with what the professional does with it), "
+                 "professional to decision-maker, peer to peer, public to professional. Not a level of influence: pair it with audience roles. Draft 0.1.",
+                 extra_seeds=EXTRA_SEEDS)
+    build_audiences(levels)

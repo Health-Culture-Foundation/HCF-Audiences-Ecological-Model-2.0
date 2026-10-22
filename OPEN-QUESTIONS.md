@@ -40,9 +40,9 @@ The same list is mirrored as checkboxes on the tracking issue (#1).
   pediatric bands differ from SleepLiteracy's Kids (6-12). **Default:** store
   ages as numbers (schema.org `suggestedMinAge`/`suggestedMaxAge`) and keep the
   concepts loose.
-- [ ] **SleepLiteracy terms with no home yet:** `pro2pro` (meaning unknown),
-  `special-populations` (undefined), and grouping-only nodes `by-age`,
-  `by-gender`, `by-identity-or-community`. What does Pro2Pro mean?
+- [ ] **SleepLiteracy terms with no home yet:** `special-populations` (undefined), and grouping-only nodes `by-age`,
+  `by-gender`, `by-identity-or-community`. (Pro2Pro = professional to
+  professional, per Kalman 22 Oct: now mapped to `vocab/communication-direction`.)
 - [ ] **Identity groups** (LGBTQIA+, Black and African American) are populations
   here. Culturally tailored outreach is also a community-level action. Enough?
 - [ ] **Missing audiences** to consider: insurers and payers, urban planners and
@@ -52,6 +52,13 @@ The same list is mirrored as checkboxes on the tracking issue (#1).
 - [ ] **Patient vs caregiver handling** is still open in Viv-Resource-Library#4.
   **Default:** both are roles here (patients at level 1, caregivers at level 2),
   with MeSH Patients/Caregivers as matches.
+
+- [ ] **Pro2Pro is a large category.** v0.1 splits it by what the professional
+  does with it: guidance for practice, materials to pass on, training,
+  research, running programs. **Default:** a separate *communication
+  direction* scheme, not an audience or a level. The audience roles say which
+  professional. Are five sub-types right? Is "materials to pass on" (made for
+  professionals, read by the public) worth its own direction?
 
 ## Advocacy
 
