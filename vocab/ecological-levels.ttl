@@ -9,7 +9,7 @@
   dct:description "The five levels of influence on health behavior from McLeroy, Bibeau, Steckler and Glanz (1988), as presented in NCI Theory at a Glance (2005), Table 1. Plain-language labels and definitions by Health Culture Foundation."@en ;
   dct:source <https://doi.org/10.1177/109019818801500401>, <https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf> ;
   dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-  skos:hasTopConcept <https://health-culture.org/vocab/ecological-levels/intrapersonal>, <https://health-culture.org/vocab/ecological-levels/interpersonal>, <https://health-culture.org/vocab/ecological-levels/organizational>, <https://health-culture.org/vocab/ecological-levels/community>, <https://health-culture.org/vocab/ecological-levels/policy> .
+  skos:hasTopConcept <https://health-culture.org/vocab/ecological-levels/intrapersonal>, <https://health-culture.org/vocab/ecological-levels/interpersonal>, <https://health-culture.org/vocab/ecological-levels/institutional>, <https://health-culture.org/vocab/ecological-levels/community>, <https://health-culture.org/vocab/ecological-levels/public-policy> .
 
 <https://health-culture.org/vocab/ecological-levels/intrapersonal> a skos:Concept ;
   skos:inScheme <https://health-culture.org/vocab/ecological-levels/> ;
@@ -41,7 +41,7 @@
   skos:example "A parent sets a family rule that all screens go in the kitchen at 9 pm."@en ;
   dct:source <https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf> ;
   dct:source <https://doi.org/10.1177/109019818801500401> .
-<https://health-culture.org/vocab/ecological-levels/organizational> a skos:Concept ;
+<https://health-culture.org/vocab/ecological-levels/institutional> a skos:Concept ;
   skos:inScheme <https://health-culture.org/vocab/ecological-levels/> ;
   skos:topConceptOf <https://health-culture.org/vocab/ecological-levels/> ;
   skos:notation "3" ;
@@ -72,7 +72,7 @@
   skos:example "A city coalition runs a campaign so that 'teens need more sleep' becomes common sense among parents and coaches."@en ;
   dct:source <https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf> ;
   dct:source <https://doi.org/10.1177/109019818801500401> .
-<https://health-culture.org/vocab/ecological-levels/policy> a skos:Concept ;
+<https://health-culture.org/vocab/ecological-levels/public-policy> a skos:Concept ;
   skos:inScheme <https://health-culture.org/vocab/ecological-levels/> ;
   skos:topConceptOf <https://health-culture.org/vocab/ecological-levels/> ;
   skos:notation "5" ;

@@ -138,7 +138,7 @@
       ]
     },
     {
-      "id": "https://health-culture.org/vocab/ecological-levels/organizational",
+      "id": "https://health-culture.org/vocab/ecological-levels/institutional",
       "type": "skos:Concept",
       "inScheme": "https://health-culture.org/vocab/ecological-levels/",
       "topConceptOf": "https://health-culture.org/vocab/ecological-levels/",
@@ -183,7 +183,7 @@
       ]
     },
     {
-      "id": "https://health-culture.org/vocab/ecological-levels/policy",
+      "id": "https://health-culture.org/vocab/ecological-levels/public-policy",
       "type": "skos:Concept",
       "inScheme": "https://health-culture.org/vocab/ecological-levels/",
       "topConceptOf": "https://health-culture.org/vocab/ecological-levels/",

@@ -16,14 +16,14 @@ hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D007398	Interper
 hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D012944	Social Support	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.6	
 hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D005190	Family	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.6	
 hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D010379	Peer Group	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.6	
-hcflvl:organizational	Institutional or organizational level	skos:relatedMatch	MESH:D009938	Organizations	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
-hcflvl:organizational	Institutional or organizational level	skos:relatedMatch	MESH:D012574	Schools	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Example setting.
-hcflvl:organizational	Institutional or organizational level	skos:relatedMatch	MESH:D017132	Workplace	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Example setting.
+hcflvl:institutional	Institutional or organizational level	skos:relatedMatch	MESH:D009938	Organizations	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:institutional	Institutional or organizational level	skos:relatedMatch	MESH:D012574	Schools	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Example setting.
+hcflvl:institutional	Institutional or organizational level	skos:relatedMatch	MESH:D017132	Workplace	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Example setting.
 hcflvl:community	Community level	skos:relatedMatch	MESH:D019058	Community Networks	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
 hcflvl:community	Community level	skos:relatedMatch	MESH:D066262	Social Norms	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
 hcflvl:community	Community level	skos:relatedMatch	MESH:D012111	Residence Characteristics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Neighborhood-level factors.
 hcflvl:community	Community level	skos:relatedMatch	MESH:D003153	Community Health Services	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	
-hcflvl:policy	Public policy level	skos:relatedMatch	MESH:D011640	Public Policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.8	
-hcflvl:policy	Public policy level	skos:relatedMatch	MESH:D006291	Health Policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.8	
-hcflvl:policy	Public policy level	skos:relatedMatch	MESH:D011050	Policy Making	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
-hcflvl:policy	Public policy level	skos:relatedMatch	MESH:D007878	Legislation as Topic	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D011640	Public Policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.8	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D006291	Health Policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.8	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D011050	Policy Making	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D007878	Legislation as Topic	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
