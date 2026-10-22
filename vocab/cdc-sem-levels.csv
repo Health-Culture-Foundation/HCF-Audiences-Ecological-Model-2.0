@@ -1,0 +1,5 @@
+id,notation,pref_label,definition,source_url
+individual,1,Individual,"Biological and personal history factors such as age, education, income, substance use and history of abuse; prevention at this level works on attitudes, beliefs and behaviors.",https://www.cdc.gov/violence-prevention/about/index.html
+relationship,2,Relationship,"A person's closest social circle (peers, partners and family members) and how it shapes their behavior and experience.",https://www.cdc.gov/violence-prevention/about/index.html
+community,3,Community,"The settings where social relationships happen, such as schools, workplaces and neighborhoods, and the features of those settings.",https://www.cdc.gov/violence-prevention/about/index.html
+societal,4,Societal,"Broad societal factors: social and cultural norms, and the health, economic, educational and social policies that maintain or reduce inequalities between groups.",https://www.cdc.gov/violence-prevention/about/index.html

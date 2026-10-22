@@ -1,0 +1,209 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/ecological-levels/",
+      "type": "skos:ConceptScheme",
+      "title": "Ecological levels of influence",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": [
+        "https://doi.org/10.1177/109019818801500401",
+        "https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/ecological-levels/intrapersonal",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/ecological-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/ecological-levels/",
+      "notation": "1",
+      "prefLabel": "Intrapersonal level",
+      "altLabel": [
+        "The person",
+        "individual level",
+        "individual factors",
+        "intrapersonal factors"
+      ],
+      "definition": "What one person knows, believes, feels and is able to do, and the traits they bring to a choice.",
+      "skos:note": "NCI Theory at a Glance (2005), Table 1: \"Individual characteristics that influence behavior, such as knowledge, attitudes, beliefs, and personality traits\"",
+      "scopeNote": "Use for content meant for the person whose health is at stake, and for factors that sit inside that person (knowledge, motivation, skills, symptoms). Biology and personal history also belong here in the CDC model.",
+      "example": "A teen reads why phones keep them awake and decides to charge theirs outside the bedroom.",
+      "source": [
+        "https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf",
+        "https://doi.org/10.1177/109019818801500401"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/ecological-levels/interpersonal",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/ecological-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/ecological-levels/",
+      "notation": "2",
+      "prefLabel": "Interpersonal level",
+      "altLabel": [
+        "Close relationships",
+        "relationship level",
+        "interpersonal factors",
+        "primary groups"
+      ],
+      "definition": "The people closest to someone (family, partners, friends, peers, caregivers) and how they support, pressure or model a behavior.",
+      "skos:note": "NCI Theory at a Glance (2005), Table 1: \"Interpersonal processes and primary groups, including family, friends, and peers that provide social identity, support, and role definition\"",
+      "scopeNote": "Use for content meant for someone acting on behalf of, or alongside, a person they know: a parent, partner, roommate, coach, or a clinician in a one-to-one visit. NCI's own example puts the doctor who forgets to recommend a test at this level.",
+      "example": "A parent sets a family rule that all screens go in the kitchen at 9 pm.",
+      "source": [
+        "https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf",
+        "https://doi.org/10.1177/109019818801500401"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/ecological-levels/organizational",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/ecological-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/ecological-levels/",
+      "notation": "3",
+      "prefLabel": "Institutional or organizational level",
+      "altLabel": [
+        "Organizations",
+        "institutional level",
+        "institutional factors",
+        "organizational factors",
+        "settings"
+      ],
+      "definition": "The rules, schedules and habits of the organizations where people spend their time: schools, workplaces, clinics, colleges, the military, care homes.",
+      "skos:note": "NCI Theory at a Glance (2005), Table 1: \"Rules, regulations, policies, and informal structures, which may constrain or promote recommended behaviors\"",
+      "scopeNote": "Use for content meant for people who set or change how an organization works: principals, HR leads, nurse managers, residence-life staff. Formal rules and informal culture both count.",
+      "example": "A school district moves the high-school start time to 8:30 am.",
+      "source": [
+        "https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf",
+        "https://doi.org/10.1177/109019818801500401"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/ecological-levels/community",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/ecological-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/ecological-levels/",
+      "notation": "4",
+      "prefLabel": "Community level",
+      "altLabel": [
+        "Community",
+        "community factors",
+        "community networks",
+        "social networks and norms"
+      ],
+      "definition": "The networks and shared norms that connect people, groups and organizations in a place or a shared identity: neighborhoods, faith groups, coalitions, local media, online communities.",
+      "skos:note": "NCI Theory at a Glance (2005), Table 1: \"Social networks and norms, or standards, which exist as formal or informal among individuals, groups, and organizations\"",
+      "scopeNote": "Use for content meant for people who work across organizations or with a whole community: health departments, coalitions, community health workers, local journalists. Covers norms (what people think is normal) as well as networks.",
+      "example": "A city coalition runs a campaign so that 'teens need more sleep' becomes common sense among parents and coaches.",
+      "source": [
+        "https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf",
+        "https://doi.org/10.1177/109019818801500401"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/ecological-levels/policy",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/ecological-levels/",
+      "topConceptOf": "https://health-culture.org/vocab/ecological-levels/",
+      "notation": "5",
+      "prefLabel": "Public policy level",
+      "altLabel": [
+        "Policy",
+        "public policy level",
+        "public policy factors",
+        "societal level",
+        "laws and policies"
+      ],
+      "definition": "Laws, regulations, funding and public policies at every level of government, from a town council to national governments and international bodies.",
+      "skos:note": "NCI Theory at a Glance (2005), Table 1: \"Local, state, and federal policies and laws that regulate or support healthy actions and practices for disease prevention, early detection, control, and management\"",
+      "scopeNote": "Use for content meant for people who make, change or campaign for public policy: legislators, regulators, agency staff, advocates. NCI's wording names U.S. levels (local, state, federal); HCF uses it for any jurisdiction, including international treaties and WHO guidance.",
+      "example": "A state passes a law setting the earliest start time for public high schools.",
+      "source": [
+        "https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf",
+        "https://doi.org/10.1177/109019818801500401"
+      ]
+    }
+  ]
+}
