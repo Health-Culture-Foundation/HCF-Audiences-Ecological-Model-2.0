@@ -1,0 +1,147 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "type": "skos:ConceptScheme",
+      "title": "Policy goal type (HCF advocacy framework, axis G)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/goal-type/new-policy",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "prefLabel": "Win a new policy",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "skos:note": "Informed by: HFRP CLM: adoption (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/goal-type/block-a-policy",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "prefLabel": "Block a harmful policy",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "altLabel": [
+        "defensive campaign",
+        "preemption fight"
+      ],
+      "skos:note": "Informed by: HFRP CLM: blocking (idea)",
+      "editorialNote": "Neither CDC nor GHAI has this; HFRP does."
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/goal-type/protect-a-policy",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "prefLabel": "Protect an existing policy",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "altLabel": [
+        "maintenance",
+        "defend"
+      ],
+      "skos:note": "Informed by: HFRP CLM: maintenance (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/goal-type/win-funding",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "prefLabel": "Win or protect funding",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "skos:note": "Informed by: HCF addition"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/goal-type/get-it-enforced",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "prefLabel": "Get it enforced",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/goal-type/",
+      "altLabel": [
+        "implementation",
+        "compliance"
+      ],
+      "skos:note": "Informed by: HFRP CLM: implementation (idea)"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/",
+      "type": "skos:ConceptScheme",
+      "title": "Decision venue (HCF advocacy framework, axis E)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/legislature",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/venue/",
+      "prefLabel": "Legislature or council",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/venue/",
+      "altLabel": [
+        "parliament",
+        "congress",
+        "state legislature",
+        "city council"
+      ],
+      "definition": "Elected bodies that pass laws and ordinances.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D007878"
+      ],
+      "related": [
+        "https://health-culture.org/vocab/audiences/policymakers"
+      ],
+      "skos:note": "Informed by: CEI ASF footnote: legislative (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/executive-or-agency",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/venue/",
+      "prefLabel": "Executive or agency",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/venue/",
+      "altLabel": [
+        "regulation",
+        "rulemaking",
+        "executive order",
+        "ministry"
+      ],
+      "definition": "Governments and agencies that write rules and orders.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D006077"
+      ],
+      "related": [
+        "https://health-culture.org/vocab/audiences/regulators-and-agency-staff"
+      ],
+      "skos:note": "Informed by: CEI ASF footnote: executive, administrative (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/budget-process",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/venue/",
+      "prefLabel": "Budget process",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/venue/",
+      "altLabel": [
+        "appropriations",
+        "budget"
+      ],
+      "definition": "Where public money is decided.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/policymakers"
+      ],
+      "skos:note": "Informed by: HCF addition"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/courts",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/venue/",
+      "prefLabel": "Courts",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/venue/",
+      "altLabel": [
+        "judiciary",
+        "litigation"
+      ],
+      "definition": "Where laws are interpreted and challenged.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/courts-and-judges"
+      ],
+      "skos:note": "Informed by: CEI ASF footnote: judicial (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/ballot-measure",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/venue/",
+      "prefLabel": "Ballot measure",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/venue/",
+      "altLabel": [
+        "referendum",
+        "initiative"
+      ],
+      "definition": "Where voters decide directly.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/the-person"
+      ],
+      "skos:note": "Informed by: HFRP CLM policy-goal examples (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/institutional-board",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/venue/",
+      "prefLabel": "Institutional board",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/venue/",
+      "altLabel": [
+        "school board",
+        "hospital board",
+        "corporate policy",
+        "campus policy"
+      ],
+      "definition": "Boards and leaders that set an organization's own rules.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D016134"
+      ],
+      "related": [
+        "https://health-culture.org/vocab/audiences/school-and-campus-leaders",
+        "https://health-culture.org/vocab/audiences/health-care-leaders",
+        "https://health-culture.org/vocab/audiences/hr-and-workplace-health"
+      ],
+      "skos:note": "Informed by: HCF addition",
+      "editorialNote": "Links advocacy to the institutional ecological level."
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/venue/international-body",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/venue/",
+      "prefLabel": "International body",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/venue/",
+      "altLabel": [
+        "World Health Assembly",
+        "UN General Assembly",
+        "treaty bodies"
+      ],
+      "related": [
+        "https://health-culture.org/vocab/audiences/governments"
+      ],
+      "skos:note": "Informed by: WHO/PMNCH (idea)"
+    }
+  ]
+}

@@ -10,7 +10,7 @@
   dct:description "Who a health resource is for, or who acts on it, placed at one of the five ecological levels of influence. Version 0.1, draft, unreviewed."@en ;
   dct:license <https://creativecommons.org/licenses/by/4.0/> ;
   schema:version "0.1" ;
-  skos:hasTopConcept <https://health-culture.org/vocab/audiences/the-person>, <https://health-culture.org/vocab/audiences/populations>, <https://health-culture.org/vocab/audiences/parents-and-caregivers>, <https://health-culture.org/vocab/audiences/partners-and-family>, <https://health-culture.org/vocab/audiences/friends-and-peers>, <https://health-culture.org/vocab/audiences/clinicians>, <https://health-culture.org/vocab/audiences/teachers-and-coaches>, <https://health-culture.org/vocab/audiences/wellness-and-fitness-professionals>, <https://health-culture.org/vocab/audiences/organizations>, <https://health-culture.org/vocab/audiences/school-and-campus-leaders>, <https://health-culture.org/vocab/audiences/hr-and-workplace-health>, <https://health-culture.org/vocab/audiences/health-care-leaders>, <https://health-culture.org/vocab/audiences/community-organizations>, <https://health-culture.org/vocab/audiences/public-health-practitioners>, <https://health-culture.org/vocab/audiences/community-and-religious-leaders>, <https://health-culture.org/vocab/audiences/health-communicators>, <https://health-culture.org/vocab/audiences/journalists-and-media>, <https://health-culture.org/vocab/audiences/researchers>, <https://health-culture.org/vocab/audiences/funders>, <https://health-culture.org/vocab/audiences/platforms-and-tech>, <https://health-culture.org/vocab/audiences/policymakers>, <https://health-culture.org/vocab/audiences/regulators-and-agency-staff>, <https://health-culture.org/vocab/audiences/policy-advocates>, <https://health-culture.org/vocab/audiences/advocacy-organizations>, <https://health-culture.org/vocab/audiences/governments> .
+  skos:hasTopConcept <https://health-culture.org/vocab/audiences/the-person>, <https://health-culture.org/vocab/audiences/populations>, <https://health-culture.org/vocab/audiences/parents-and-caregivers>, <https://health-culture.org/vocab/audiences/partners-and-family>, <https://health-culture.org/vocab/audiences/friends-and-peers>, <https://health-culture.org/vocab/audiences/clinicians>, <https://health-culture.org/vocab/audiences/teachers-and-coaches>, <https://health-culture.org/vocab/audiences/wellness-and-fitness-professionals>, <https://health-culture.org/vocab/audiences/organizations>, <https://health-culture.org/vocab/audiences/school-and-campus-leaders>, <https://health-culture.org/vocab/audiences/hr-and-workplace-health>, <https://health-culture.org/vocab/audiences/health-care-leaders>, <https://health-culture.org/vocab/audiences/community-organizations>, <https://health-culture.org/vocab/audiences/public-health-practitioners>, <https://health-culture.org/vocab/audiences/community-and-religious-leaders>, <https://health-culture.org/vocab/audiences/health-communicators>, <https://health-culture.org/vocab/audiences/journalists-and-media>, <https://health-culture.org/vocab/audiences/researchers>, <https://health-culture.org/vocab/audiences/funders>, <https://health-culture.org/vocab/audiences/platforms-and-tech>, <https://health-culture.org/vocab/audiences/policymakers>, <https://health-culture.org/vocab/audiences/regulators-and-agency-staff>, <https://health-culture.org/vocab/audiences/courts-and-judges>, <https://health-culture.org/vocab/audiences/policy-advocates>, <https://health-culture.org/vocab/audiences/advocacy-organizations>, <https://health-culture.org/vocab/audiences/governments> .
 
 <https://health-culture.org/vocab/audiences/the-person> a skos:Concept ;
   skos:inScheme <https://health-culture.org/vocab/audiences/> ;
@@ -683,6 +683,15 @@
   skos:related hcflvl:public-policy ;
   skos:closeMatch <http://id.nlm.nih.gov/mesh/D000071296> ;
   skos:closeMatch <http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional> .
+<https://health-culture.org/vocab/audiences/courts-and-judges> a skos:Concept ;
+  skos:inScheme <https://health-culture.org/vocab/audiences/> ;
+  skos:topConceptOf <https://health-culture.org/vocab/audiences/> ;
+  skos:prefLabel "Courts and judges"@en ;
+  skos:altLabel "judiciary"@en ;
+  skos:altLabel "judges"@en ;
+  skos:definition "Judges and courts that interpret, uphold or strike down laws and rules."@en ;
+  skos:related hcflvl:public-policy ;
+  skos:editorialNote "Added for the advocacy framework's target and venue axes (22 Oct). MeSH has no descriptor for judges."@en .
 <https://health-culture.org/vocab/audiences/policy-advocates> a skos:Concept ;
   skos:inScheme <https://health-culture.org/vocab/audiences/> ;
   skos:topConceptOf <https://health-culture.org/vocab/audiences/> ;

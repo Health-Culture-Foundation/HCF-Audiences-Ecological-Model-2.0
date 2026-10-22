@@ -1370,6 +1370,23 @@
       ]
     },
     {
+      "id": "https://health-culture.org/vocab/audiences/courts-and-judges",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Courts and judges",
+      "definition": "Judges and courts that interpret, uphold or strike down laws and rules.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "judiciary",
+        "judges"
+      ],
+      "editorialNote": "Added for the advocacy framework's target and venue axes (22 Oct). MeSH has no descriptor for judges."
+    },
+    {
       "id": "https://health-culture.org/vocab/audiences/policy-advocates",
       "type": "skos:Concept",
       "inScheme": "https://health-culture.org/vocab/audiences/",

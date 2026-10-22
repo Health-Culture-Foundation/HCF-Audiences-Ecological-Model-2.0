@@ -62,31 +62,34 @@ The same list is mirrored as checkboxes on the tracking issue (#1).
 
 ## Advocacy
 
-Research: [`research/advocacy-frameworks/`](research/advocacy-frameworks/README.md)
-(12 frameworks, licences checked). Not yet built into the taxonomy; these
-decide its shape.
+Built in v0.1 ([`vocab/advocacy/ADVOCACY.md`](vocab/advocacy/ADVOCACY.md)):
+the 7 phases work alone **and** as axis A of the multi-axis framework
+(Kalman, 22 Oct: "I want BOTH"). Research and licence notes:
+[`research/advocacy-frameworks/`](research/advocacy-frameworks/README.md).
 
 - [ ] **GHAI's guide is shareable, not adaptable.** Its PDF says it may be
   shared and used with full attribution but not changed or adapted without
   GHAI's consent (works like CC BY-ND; the website's copyright page is
-  stricter). **Default:** link to it, and use its 4 phase / 12 step names only
-  as crosswalk labels, never as our own vocabulary.
-- [ ] **Advocacy phase facet: 7 phases or 8?** Proposed, in HCF's own words and
-  built on the public-domain CDC Policy Process, the policy cycle and Kingdon:
-  Size up the problem · Pick the policy fix · Plan the campaign · Get it on the
-  agenda · Win the decision · Put it into practice · Protect and improve it.
-  "Build support" and "Check what's working" are tags that apply at any phase.
-  Make "Build support" its own phase (GHAI's "Collaborate") instead?
-- [ ] **Go multi-axis?** Proposed axes: phase, tactic, target audience (reusing
-  this repo's audience roles), jurisdiction, decision venue (legislature,
-  agency, budget, courts, ballot), outcome sought (know / care / act).
-  Optional: policy goal type (new, block, protect, fund, enforce) and theory of
-  change. Which axes, and for v0.2 or later?
+  stricter). **Default:** link to it; its 4 phase / 12 step names appear only
+  as crosswalk labels (`crosswalks/ghai-steps-to-advocacy-phases.sssom.tsv`).
+- [ ] **7 phases or 8?** **Default:** 7, with "Build support" and "Check
+  what's working" as tags that apply at any phase. Make "Build support" its own
+  phase (GHAI's "Collaborate") instead?
+- [ ] **Optional axes G (goal type) and H (theory of change)** are built but
+  marked optional. Keep both? H is probably only for funders and evaluators.
+- [ ] **Tactic and outcome axes borrow category ideas** from copyrighted
+  advocacy-evaluation work (HFRP Composite Logic Model, CEI Advocacy Strategy
+  Framework, ORS Impact Pathways for Change). Labels and definitions are HCF's
+  own and each concept says what informed it. Comfortable with that, or ask
+  CEI/HFRP?
 - [ ] **Ask GHAI to open the framework** under CC BY 4.0. A ~140-word draft is
   in the research note (§5), addressed to info@advocacyincubator.org. Kalman to
   decide and send; Claude did not send anything.
 - [ ] **Community Tool Box licence conflict** (footer CC BY-NC-SA 4.0 vs a
   no-alteration use policy). Ask KU (communityhealth@ku.edu) before excerpting?
+- [ ] **Test on real resources:** tag 10 advocacy resources (GHAI, Start School
+  Later, AASM standard-time materials) on all axes to see which axes earn
+  their keep.
 
 ## Identifiers and publishing
 

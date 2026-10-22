@@ -1,0 +1,299 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/",
+      "type": "skos:ConceptScheme",
+      "title": "Advocacy phase (HCF advocacy framework, axis A)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": [
+        "https://www.cdc.gov/polaris/php/cdc-policy-process/index.html"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/size-up-the-problem",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Size up the problem",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "1",
+      "altLabel": [
+        "problem identification",
+        "landscape analysis",
+        "needs assessment"
+      ],
+      "definition": "Find out who is harmed, how badly, why, and which laws and policies exist now.",
+      "example": "Mapping how many U.S. high schools start before 8:30 am, and which states set rules.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/researchers",
+        "https://health-culture.org/vocab/audiences/public-health-practitioners",
+        "https://health-culture.org/vocab/audiences/policy-advocates"
+      ],
+      "skos:note": "Informed by: CDC Policy Process: problem identification; Kingdon: problem stream; GHAI step 1 (label)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/pick-the-policy-fix",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Pick the policy fix",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "2",
+      "altLabel": [
+        "policy analysis",
+        "policy objective",
+        "policy options"
+      ],
+      "definition": "Compare options and choose one specific, winnable policy to ask for.",
+      "example": "Choosing an 8:30 am earliest-start rule over a later-bus-schedule pilot.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D011050"
+      ],
+      "related": [
+        "https://health-culture.org/vocab/audiences/policy-advocates",
+        "https://health-culture.org/vocab/audiences/researchers"
+      ],
+      "skos:note": "Informed by: CDC Policy Process: policy analysis; policy cycle: formulation; Kingdon: policy stream; HFRP: policy development; GHAI step 2 (label)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/plan-the-campaign",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Plan the campaign",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "3",
+      "altLabel": [
+        "strategy",
+        "campaign plan",
+        "power mapping",
+        "decision-making pathway"
+      ],
+      "definition": "Map who decides and how, set goals, and write the campaign and message plan.",
+      "example": "Listing every vote needed on the state education committee.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/policy-advocates",
+        "https://health-culture.org/vocab/audiences/community-organizations"
+      ],
+      "skos:note": "Informed by: CDC Policy Process: strategy and policy development; GHAI steps 3, 5, 6 (labels); UNICEF planning questions"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/get-it-on-the-agenda",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Get it on the agenda",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "4",
+      "altLabel": [
+        "agenda setting",
+        "policy window",
+        "raise the issue"
+      ],
+      "definition": "Make decision-makers and the public see the problem as urgent now, and use openings when they come.",
+      "example": "Using the daylight-saving clock change to get coverage of permanent standard time.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/journalists-and-media",
+        "https://health-culture.org/vocab/audiences/community-and-religious-leaders",
+        "https://health-culture.org/vocab/audiences/policymakers",
+        "https://health-culture.org/vocab/audiences/the-person"
+      ],
+      "skos:note": "Informed by: Policy cycle: agenda setting; Kingdon: politics stream and policy window; HFRP: placement on the agenda"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/win-the-decision",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Win the decision",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "5",
+      "altLabel": [
+        "policy enactment",
+        "adoption",
+        "passage",
+        "block a harmful policy"
+      ],
+      "definition": "Get the bill, rule, budget line or order passed or signed, or stop a harmful one.",
+      "example": "Testifying at the hearing for a school start-time bill.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D007878"
+      ],
+      "related": [
+        "https://health-culture.org/vocab/audiences/policymakers",
+        "https://health-culture.org/vocab/audiences/regulators-and-agency-staff"
+      ],
+      "skos:note": "Informed by: CDC Policy Process: enactment; policy cycle: decision; HFRP: adoption and blocking; GHAI steps 7, 9 (labels)",
+      "editorialNote": "Use goal type 'Block a harmful policy' for defensive campaigns."
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/put-it-into-practice",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Put it into practice",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "6",
+      "altLabel": [
+        "policy implementation",
+        "enforcement",
+        "rollout"
+      ],
+      "definition": "Make sure agencies fund, staff, enforce and explain the policy, and that it reaches the people it was meant for.",
+      "example": "Checking that districts actually changed bell times after the law took effect.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/regulators-and-agency-staff",
+        "https://health-culture.org/vocab/audiences/school-and-campus-leaders",
+        "https://health-culture.org/vocab/audiences/employers-and-workplaces"
+      ],
+      "skos:note": "Informed by: CDC Policy Process: implementation; policy cycle: implementation; HFRP: implementation; GHAI step 10 (label)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/protect-and-improve-it",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Protect and improve it",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "7",
+      "altLabel": [
+        "sustain",
+        "defend",
+        "maintenance",
+        "evaluation",
+        "refine"
+      ],
+      "definition": "Track results, defend against rollbacks and loopholes, fix gaps, and plan the next round.",
+      "example": "Fighting a bill that would let districts opt out of the start-time law.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/policymakers",
+        "https://health-culture.org/vocab/audiences/courts-and-judges",
+        "https://health-culture.org/vocab/audiences/journalists-and-media"
+      ],
+      "skos:note": "Informed by: Policy cycle: evaluation; HFRP: maintenance, monitoring and evaluation; GHAI steps 11, 12 (labels)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/build-support",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Build support (any phase)",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "x1",
+      "altLabel": [
+        "partnerships",
+        "coalitions",
+        "champions",
+        "stakeholder engagement"
+      ],
+      "definition": "Bring in partners, champions and public backing. Applies at every phase.",
+      "example": "Recruiting pediatricians and coaches as start-time champions.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D000073597"
+      ],
+      "related": [
+        "https://health-culture.org/vocab/audiences/policy-advocates",
+        "https://health-culture.org/vocab/audiences/community-organizations",
+        "https://health-culture.org/vocab/audiences/clinicians"
+      ],
+      "skos:note": "Informed by: CDC Policy Process: stakeholder engagement and education (overarching); GHAI phase 'Collaborate' and steps 4, 8 (labels)",
+      "editorialNote": "Cross-cutting tag, not a phase in sequence. Open question: make it phase 3.5 (8 phases)?"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/phases/check-whats-working",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/phases/",
+      "prefLabel": "Check what's working (any phase)",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/phases/",
+      "notation": "x2",
+      "altLabel": [
+        "evaluation",
+        "learning",
+        "monitoring"
+      ],
+      "definition": "Measure progress and learn, at any phase.",
+      "example": "A mid-campaign poll of parent support.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/researchers",
+        "https://health-culture.org/vocab/audiences/funders"
+      ],
+      "skos:note": "Informed by: CDC Policy Process: evaluation (overarching)",
+      "editorialNote": "Cross-cutting tag, not a phase in sequence."
+    }
+  ]
+}

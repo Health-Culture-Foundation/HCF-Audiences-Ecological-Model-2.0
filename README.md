@@ -19,13 +19,15 @@ which promises an "ecological tagging vocabulary" built on the five levels.
 |---|---|
 | [`vocab/ecological-levels.*`](vocab/) | The five levels of influence (McLeroy, Bibeau, Steckler & Glanz 1988, [doi:10.1177/109019818801500401](https://doi.org/10.1177/109019818801500401)), as presented in NCI's public-domain [*Theory at a Glance*](https://cancercontrol.cancer.gov/sites/default/files/2020-06/theory.pdf) (2005), Table 1. Plain-language labels and definitions, NCI's wording kept as a note. SKOS as Turtle and JSON-LD, built from CSV. |
 | [`vocab/cdc-sem-levels.*`](vocab/) | CDC's four-level model (individual, relationship, community, societal), which HCF already uses ([hcf-guides#3](https://github.com/vivwebsolutions/hcf-guides/issues/3)). CDC publishes no URIs, so they're minted here. |
-| [`taxonomy/audiences.csv`](taxonomy/audiences.csv) | **Audience taxonomy v0.1**: 61 concepts, each placed at one level. Source of truth. Also as [Turtle](taxonomy/audiences.ttl) and [JSON-LD](taxonomy/audiences.jsonld). |
+| [`vocab/communication-direction.*`](vocab/communication-direction.csv) | Who is talking to whom: professional to public, **professional to professional** (SleepLiteracy's Pro2Pro, split into guidance, materials to pass on, training, research, running programs), professional to decision-maker, peer to peer, public to professional. |
+| [`vocab/advocacy/`](vocab/advocacy/ADVOCACY.md) | **HCF advocacy framework v0.1**: a 7-phase advocacy tag (axis A) that also works as one axis of a fuller framework, with tactic, target, jurisdiction, venue, outcome, and optional goal type and theory of change. Each axis is its own SKOS scheme. Crosswalks to GHAI's steps (labels only), CDC's Policy Process, the policy cycle, Kingdon and HFRP. |
+| [`taxonomy/audiences.csv`](taxonomy/audiences.csv) | **Audience taxonomy v0.1**: 62 concepts, each placed at one level. Source of truth. Also as [Turtle](taxonomy/audiences.ttl) and [JSON-LD](taxonomy/audiences.jsonld). |
 | [`crosswalks/`](crosswalks/) | SSSOM mapping files: five levels → CDC four; levels → MeSH; levels → Viv Resource Library *What Works* facet; audiences → MeSH, → LRMI roles; SleepLiteracy's tags → audiences. |
 | [`research/sleepliteracy-tags/`](research/sleepliteracy-tags/) | Inventory of SleepLiteracy.org's three audience taxonomies (46 terms), the seed for v0.1. |
 | [`research/vocabularies.md`](research/vocabularies.md) | Existing audience vocabularies we align with: schema.org, LRMI, MeSH Persons (M01), ERIC, Healthy People 2030, and our own issues. |
 | [`research/sleep-research-tagging/`](research/sleep-research-tagging/) | **Findings:** how 22 sleep studies, guidelines and web pages tag their audiences. |
 | [`research/example-orgs/`](research/example-orgs/) | 22 example organizations across the five levels. |
-| [`research/advocacy-frameworks/`](research/advocacy-frameworks/README.md) | **Proposal:** an advocacy-phase facet (and a richer multi-axis option) for policy-level resources, built on open frameworks, with a crosswalk to GHAI's *Advocacy Action Guide*. |
+| [`research/advocacy-frameworks/`](research/advocacy-frameworks/README.md) | Research behind the advocacy framework: 12 frameworks with licences checked, and a draft note asking GHAI to open its guide. |
 | [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md) | What v0.1 doesn't settle, with the default applied, and numbers to verify. |
 
 ## The five levels
@@ -36,7 +38,7 @@ which promises an "ecological tagging vocabulary" built on the five levels.
 | 2 | Interpersonal | Close relationships | parents and caregivers, partners, friends and roommates, clinicians one-to-one, teachers and coaches | Relationship |
 | 3 | Institutional or organizational | Organizations | school and campus leaders, HR and workplace health staff, health care leaders; schools, employers, clinics | Community |
 | 4 | Community | Community | public health practitioners, community health workers, community and faith leaders, communicators, journalists, coalitions, health departments | Community (and Societal, for norms) |
-| 5 | Public policy | Policy | policymakers, regulators and agency staff, policy advocates; advocacy organizations, governments | Societal |
+| 5 | Public policy | Policy | policymakers, regulators and agency staff, courts and judges, policy advocates; advocacy organizations, governments | Societal |
 
 The level IDs (`intrapersonal`, `interpersonal`, `institutional`, `community`,
 `public-policy`) match the `ecologicalLevel` facet in the Viv Resource
@@ -84,9 +86,9 @@ so a resource's level and its audience's level use one vocabulary.
 - **Advocacy steps can be a facet of their own.** GHAI's guide (4 phases, 12
   steps) can be shared but not adapted, and no CC BY health-advocacy process
   framework turned up. The public-domain CDC Policy Process plus the policy
-  cycle and Kingdon's streams are enough to write our own 7-phase facet, with
-  GHAI's steps as crosswalk labels. See
-  [the proposal](research/advocacy-frameworks/README.md).
+  cycle and Kingdon's streams are enough to write our own 7-phase tag, with
+  GHAI's steps as crosswalk labels. It's built: the phases can be used alone,
+  or with the other axes of the [advocacy framework](vocab/advocacy/ADVOCACY.md).
 
 ## Build
 

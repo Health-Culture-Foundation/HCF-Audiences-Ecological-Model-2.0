@@ -1,0 +1,8 @@
+id,notation,pref_label,alt_labels,broader,definition,example,mesh,audiences,informed_by,notes
+institution,1,Institution,school|hospital|employer|campus,,Rules inside one organization.,,,,,Overlaps the institutional ecological level; use for 'institutional policy' campaigns.
+city-or-county,2,City or county,local|municipal|district,,,,,,,
+tribal-nation,3,Tribal nation,Indigenous government|First Nation,,,,,,,
+state-or-province,4,State or province,state|province|region within a country,,,,,,,
+national,5,National,federal|country,,,,,,,
+regional-bloc,6,Regional (several countries),EU|African Union|ASEAN,,,,,,,
+global,7,Global,WHO|UN|treaties|international,,,,,,WHO/PMNCH: use global commitments (idea),

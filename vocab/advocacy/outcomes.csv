@@ -1,0 +1,13 @@
+id,notation,pref_label,alt_labels,broader,definition,example,mesh,audiences,informed_by,notes
+know,1,Know about it,awareness,,The audience learns the problem exists and what could fix it.,,,,Informed by CEI ASF (awareness) and HFRP CLM interim outcomes; HCF wording,
+care,2,Care about it,will|salience|attitudes,,The audience sees it as important and wants to act.,,,,Informed by CEI ASF (will); HCF wording,
+public-will,2.1,Public will,,care,More of the public wants the change.,,,,HFRP CLM (idea),
+political-will,2.2,Political will,,care,More decision-makers are willing to act.,,,,HFRP CLM (idea),
+reframing,2.3,Issue reframed,framing|narrative change,care,People start to see the issue in a new way.,"Sleep framed as a school-schedule problem, not teen laziness.",,,HFRP CLM: issue reframing (idea),
+act,3,Act on it,action|behavior,,"The audience does something: votes, signs, joins, decides.",,,,Informed by CEI ASF (action); HCF wording,
+new-champions,3.1,New champions,,act,Respected people start speaking for the policy.,,,,HFRP CLM (idea),
+decisions-made,3.2,Decisions made,votes|policies adopted,act,"The policy is adopted, blocked, funded or enforced.",,,,HFRP CLM (idea),
+stronger-movement,4,Stronger movement,capacity|advocacy capacity,,"Advocates themselves get stronger: skills, partners, money, visibility.",,,policy-advocates,Informed by HFRP CLM capacity outcomes; HCF wording,
+partnerships,4.1,More and stronger partnerships,,stronger-movement,,,,,HFRP CLM (idea),
+funding,4.2,More or steadier funding,,stronger-movement,,,,,HFRP CLM (idea),
+media-coverage,4.3,More media coverage,visibility,stronger-movement,,,,,HFRP CLM (idea),
