@@ -16,6 +16,8 @@ pharmacists,Pharmacists,health-care-workers,for,,29-1051,2262,183500000X,D010595
 dentists,Dentists,health-care-workers,for,,29-1021,2261,122300000X,D003815,,
 physician-assistants,Physician assistants,health-care-workers,for,,29-1071,2240,363A00000X,,,
 care-workers,Care home and home care staff,health-care-workers,for,,31-1122|31-1131,5321|5322,,,,"Nursing assistants, personal care and aged-care workers."
+allied-health,Allied health professionals,health-care-workers,for,,29-1120|29-2000,32,,,,"Therapists, technologists and technicians: physical, occupational, respiratory and speech therapy, imaging, dietitians, medical assistants. Added for TRAIN (2026-10-29)."
+lab-workers,Laboratory staff,health-care-workers,for,,29-2010,3212,,,,Clinical and public health laboratory scientists and technicians. Added for TRAIN (2026-10-29).
 behavioral-health-workers,"Counselors, social workers and psychologists",health-care-workers,for,counselors-and-therapists,21-1018|21-1023|19-3033,2634|2635,101Y00000X|104100000X|103T00000X,,,
 addiction-counselors,Addiction counselors,behavioral-health-workers,for,,21-1018,,101YA0400X,,,SOC 2018 21-1018; O*NET splits it into 21-1011.00 (substance abuse and behavioral disorder) and 21-1014.00 (mental health).
 peer-workers,Peer recovery and harm-reduction workers,health-care-workers,for,,,,175T00000X,,,"People with lived experience paid to support others, and harm-reduction outreach staff."
@@ -25,6 +27,8 @@ public-health-workers,Public health workers,,for,public-health-practitioners,,,,
 health-educators,Health educators and prevention staff,public-health-workers,for,public-health-practitioners,21-1091,,,,,
 community-health-workers,Community health workers,public-health-workers,for,community-health-workers,21-1094,3253,172V00000X,D003150,,"Promotores, lay health workers, CHWs."
 epidemiologists,Epidemiologists and data staff,public-health-workers,for,,19-1041,,,,,
+environmental-health,Environmental health staff,public-health-workers,for,,19-2041,3257,,,,"Sanitarians, food, water, housing and lead inspectors. Added for TRAIN (2026-10-29)."
+emergency-managers,Emergency management and preparedness staff,public-health-workers,for,,11-9161,,,,,"Emergency managers and preparedness coordinators in health departments, hospitals and government. Added for TRAIN (2026-10-29)."
 health-departments,Health departments and program managers,public-health-workers,for,health-departments,11-9111,,,,,"The health department as an organization, and the managers who run its programs."
 schools-and-youth-work,Schools and youth work,,for,,,,,,,
 teachers,Teachers and professors,schools-and-youth-work,for,teachers-and-coaches,25-2021|25-2031|25-1000,23,,D000070777|D005178,,

@@ -18,11 +18,14 @@ hcfaud:dentists	Dentists	skos:closeMatch	isco:2261		semapv:ManualMappingCuration
 hcfaud:physician-assistants	Physician assistants	skos:closeMatch	isco:2240		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:care-workers	Care home and home care staff	skos:closeMatch	isco:5321		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:care-workers	Care home and home care staff	skos:closeMatch	isco:5322		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:allied-health	Allied health professionals	skos:closeMatch	isco:32		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lab-workers	Laboratory staff	skos:closeMatch	isco:3212		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	isco:2634		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	isco:2635		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:ems	EMTs and paramedics	skos:closeMatch	isco:3258		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:health-care-leaders	Hospital and clinic leaders	skos:closeMatch	isco:1342		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:community-health-workers	Community health workers	skos:closeMatch	isco:3253		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:environmental-health	Environmental health staff	skos:closeMatch	isco:3257		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:teachers	Teachers and professors	skos:closeMatch	isco:23		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:coaches	Coaches and sports staff	skos:closeMatch	isco:3422		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:school-and-campus-leaders	School and campus leaders	skos:closeMatch	isco:1345		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

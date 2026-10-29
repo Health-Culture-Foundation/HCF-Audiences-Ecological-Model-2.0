@@ -257,6 +257,33 @@
    "definition": "Nursing assistants, personal care and aged-care workers."
   },
   {
+   "id": "allied-health",
+   "label": "Allied health professionals",
+   "parent": "health-care-workers",
+   "axis": "for",
+   "soc": [
+    "29-1120",
+    "29-2000"
+   ],
+   "isco": [
+    "32"
+   ],
+   "definition": "Therapists, technologists and technicians: physical, occupational, respiratory and speech therapy, imaging, dietitians, medical assistants. Added for TRAIN (2026-10-29)."
+  },
+  {
+   "id": "lab-workers",
+   "label": "Laboratory staff",
+   "parent": "health-care-workers",
+   "axis": "for",
+   "soc": [
+    "29-2010"
+   ],
+   "isco": [
+    "3212"
+   ],
+   "definition": "Clinical and public health laboratory scientists and technicians. Added for TRAIN (2026-10-29)."
+  },
+  {
    "id": "behavioral-health-workers",
    "label": "Counselors, social workers and psychologists",
    "parent": "health-care-workers",
@@ -380,6 +407,29 @@
    "soc": [
     "19-1041"
    ]
+  },
+  {
+   "id": "environmental-health",
+   "label": "Environmental health staff",
+   "parent": "public-health-workers",
+   "axis": "for",
+   "soc": [
+    "19-2041"
+   ],
+   "isco": [
+    "3257"
+   ],
+   "definition": "Sanitarians, food, water, housing and lead inspectors. Added for TRAIN (2026-10-29)."
+  },
+  {
+   "id": "emergency-managers",
+   "label": "Emergency management and preparedness staff",
+   "parent": "public-health-workers",
+   "axis": "for",
+   "soc": [
+    "11-9161"
+   ],
+   "definition": "Emergency managers and preparedness coordinators in health departments, hospitals and government. Added for TRAIN (2026-10-29)."
   },
   {
    "id": "health-departments",
