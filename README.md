@@ -4,12 +4,36 @@ A shared way to tag **who a health resource is for, and who acts on it**,
 organized by the five levels of influence of the socio-ecological model. Any
 library, glossary or website can use it. Sleep is the first worked example.
 
-**Status: draft 0.1.** Private for now. Researched and drafted by Claude
+**Status: draft 0.2** (v0.1 below is unchanged). Private for now. Researched and drafted by Claude
 (Claude Code) for the Health Culture Foundation; nothing here has been
 reviewed by a person yet. Tracking issue: #1.
 
 Part of the [Open Health Communication Declaration](https://github.com/vivwebsolutions/hcf-guides/issues/6),
 which promises an "ecological tagging vocabulary" built on the five levels.
+
+## v0.2 (2026-10-28): four axes, job codes, partner crosswalks
+
+v0.2 keeps v0.1's rules (who it's for is not who it's about; audiences sit where they act) and makes the
+vocabulary deep enough to run a real filter. It is live on the hcfhub.org campaign library preview (health-culture.org#137).
+
+- **Four axes, each a tree** ([taxonomy/v0.2/AUDIENCES-v0.2.md](taxonomy/v0.2/AUDIENCES-v0.2.md), 117 concepts):
+  *Who it's for* (roles, 65), *Who it's about* (populations, 45: age, sex and gender, sexual orientation,
+  race/ethnicity and Indigenous peoples, life situation), *Where they are with it* (stage, 7). The role tree
+  also names *who carries the message*.
+- **Job codes on roles:** US SOC 2018, ILO ISCO-08, NUCC provider taxonomy. Checked against O*NET's occupation
+  list and NUCC's code set. **Populations carry MeSH** (every ID checked against NLM's lookup) and the
+  **OMB SPD 15 (2024)** race/ethnicity groups.
+- **Crosswalks** ([crosswalks/v0.2/](crosswalks/v0.2/)), SSSOM: to the codes above, back to v0.1, and to partners'
+  own audience terms: SleepLiteracy, SAMHSA's EBP Resource Center (partial), LRMI, schema.org, and hcfhub.org's
+  old campaign ids. A partner crosswalk lets us show their content in our filter with no re-tagging, and hand
+  our records back in their terms. Add one by writing `taxonomy/v0.2/partners/<partner>.csv` and rebuilding.
+- **Source of truth:** [taxonomy/v0.2/audiences-v0.2.csv](taxonomy/v0.2/audiences-v0.2.csv). Build with
+  `python3 -I scripts/build_v02.py` (writes JSON for websites, SKOS JSON-LD, the Markdown view and the crosswalks).
+- **First use:** all 827 campaigns on hcfhub.org coded on the four axes (coder agents, unreviewed; each record says
+  what it was coded from and how confident). 536 name a population; every one says who it's for.
+
+Not yet in v0.2: the five-level placement of each role (v0.1's `level` column still applies to the roles it shares),
+Turtle output, peer crowds, and the review website pages.
 
 ## What's in it
 

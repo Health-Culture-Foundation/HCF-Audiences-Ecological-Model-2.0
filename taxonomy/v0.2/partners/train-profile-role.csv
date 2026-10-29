@@ -1,0 +1,45 @@
+source_id,source_label,predicate,target_id,comment
+Allied Health Professional,Allied Health Professional,skos:exactMatch,allied-health,Has a sub-select in TRAIN.
+Administrator / Director / Manager,Administrator / Director / Manager,skos:broadMatch,health-departments,Could also be health-care-leaders or managers-and-hr depending on employer.
+Administrative Support Staff,Administrative Support Staff,,,Gap: no administrative role.
+Animal Control Specialist / Veterinarian,Animal Control Specialist / Veterinarian,,,Gap: no animal health role.
+Biostatistician,Biostatistician,skos:broadMatch,epidemiologists,
+Childcare Provider,Childcare Provider,skos:exactMatch,child-care-staff,
+Communicable Disease / Infection Control Staff,Communicable Disease / Infection Control Staff,skos:broadMatch,public-health-workers,
+Community Health Worker (CHW),Community Health Worker (CHW),skos:exactMatch,community-health-workers,
+Community Health Worker Instructor,Community Health Worker Instructor,skos:broadMatch,community-health-workers,
+Computer / Information Systems Specialist,Computer / Information Systems Specialist,,,Gap: no IT role.
+Dental Professional,Dental Professional,skos:closeMatch,dentists,Has a sub-select in TRAIN.
+Emergency Responder,Emergency Responder,skos:broadMatch,ems,"Has a sub-select in TRAIN (EMS, fire, police)."
+Environmental Health Professional,Environmental Health Professional,skos:exactMatch,environmental-health,Has a sub-select in TRAIN.
+Epidemiologist / Surveillance Staff,Epidemiologist / Surveillance Staff,skos:exactMatch,epidemiologists,
+Family Visiting Staff,Family Visiting Staff,skos:broadMatch,community-health-workers,
+Finance and Budget Staff,Finance and Budget Staff,,,Gap: no finance role.
+Food Services / Facilities Management Staff / Housekeeper,Food Services / Facilities Management Staff / Housekeeper,skos:broadMatch,workers,About-axis id; no role id.
+Government Official,Government Official,skos:closeMatch,regulators-and-agencies,Has a sub-select in TRAIN; elected officials map to lawmakers.
+Health Educator,Health Educator,skos:exactMatch,health-educators,
+Human Services Personnel,Human Services Personnel,skos:broadMatch,behavioral-health-workers,Gap: no human-services id.
+Laboratory Professional / Technician,Laboratory Professional / Technician,skos:exactMatch,lab-workers,
+Law Enforcement,Law Enforcement,skos:exactMatch,police,
+Legal Professional,Legal Professional,skos:broadMatch,courts,
+Librarian / Information Specialist,Librarian / Information Specialist,,,Gap: no librarian role.
+Licensure / Inspection / Regulatory Specialist,Licensure / Inspection / Regulatory Specialist,skos:exactMatch,regulators-and-agencies,
+Medicaid Personnel,Medicaid Personnel,skos:broadMatch,regulators-and-agencies,
+Medical Examiner / Coroner,Medical Examiner / Coroner,,,Gap: no death-investigation role.
+Mental and Behavioral Health Professional,Mental and Behavioral Health Professional,skos:exactMatch,behavioral-health-workers,Has a sub-select in TRAIN.
+Nurse,Nurse,skos:exactMatch,nurses,Has a sub-select in TRAIN.
+Occupational Health and Safety Personnel,Occupational Health and Safety Personnel,skos:exactMatch,occupational-health,
+Outreach / Field Worker,Outreach / Field Worker,skos:closeMatch,community-health-workers,Harm-reduction outreach maps to peer-workers.
+Peer Recovery Specialist,Peer Recovery Specialist,skos:closeMatch,peer-workers,
+Pharmacy Professional,Pharmacy Professional,skos:closeMatch,pharmacists,Has a sub-select in TRAIN.
+Physician,Physician,skos:exactMatch,doctors,Has a sub-select in TRAIN.
+Non-Physician Clinician,Non-Physician Clinician,skos:broadMatch,health-care-workers,Has a sub-select in TRAIN; includes physician-assistants.
+Policy / Planner,Policy / Planner,skos:closeMatch,policy-and-funding,
+Public Health Official,Public Health Official,skos:closeMatch,health-departments,
+Program Specialist,Program Specialist,skos:broadMatch,health-departments,
+Public Relations / Media Specialist,Public Relations / Media Specialist,skos:closeMatch,pr-and-campaign-staff,
+Researcher / Analyst,Researcher / Analyst,skos:exactMatch,researchers,
+Student,Student,skos:closeMatch,students,About-axis id.
+Teacher / Faculty,Teacher / Faculty,skos:exactMatch,teachers,
+Volunteer,Volunteer,skos:broadMatch,community-organizations,
+Other (specify),Other (specify),,,

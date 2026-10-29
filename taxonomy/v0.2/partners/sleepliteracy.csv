@@ -1,0 +1,26 @@
+source_id,source_label,predicate,target_id,comment
+General Public,General Public,skos:closeMatch,public,
+Kids (6-12),Kids (6-12),skos:exactMatch,children,
+Youth,Youth,skos:closeMatch,teens,
+Young Adults,Young Adults,skos:exactMatch,young-adults,
+Seniors (60+),Seniors (60+),skos:closeMatch,older-adults,SleepLiteracy starts at 60; ours at 65
+Men,Men,skos:closeMatch,men-and-boys,
+Women,Women,skos:closeMatch,women-and-girls,
+LGBTQIA+,LGBTQIA+,skos:narrowMatch,lgb,Also trans-and-nonbinary
+LGBTQIA+,LGBTQIA+,skos:narrowMatch,trans-and-nonbinary,Also lgb
+African American,African American,skos:closeMatch,black,
+Parents,Parents,skos:exactMatch,parents-and-caregivers,
+College,College,skos:closeMatch,students,Plus young-adults
+Employees,Employees,skos:closeMatch,workers,
+Municipal employees,Municipal employees,skos:closeMatch,public-sector-workers,
+Healthcare Professionals,Healthcare Professionals,skos:exactMatch,health-care-workers,
+Universities,Universities,skos:closeMatch,school-and-campus-leaders,SleepLiteracy means the campus as an organization
+Students,Students,skos:exactMatch,students,
+Professors,Professors,skos:closeMatch,teachers,
+K-12 Eductors,K-12 Educators,skos:closeMatch,teachers,SleepLiteracy spelling kept as the source id
+Workplace,Workplace,skos:exactMatch,employers-and-workplaces,
+Millitary & Law Enforcement,Military & Law Enforcement,skos:closeMatch,police-courts-corrections,As a role; the military half is About:military-veterans
+Veterans,Veterans,skos:closeMatch,military-veterans,
+Science Journalism,Science Journalism,skos:closeMatch,journalists,
+PR,PR,skos:closeMatch,pr-and-campaign-staff,
+Pro2Pro,Pro2Pro,,,"Not an audience: a communication direction (vocab/communication-direction, pro-to-pro)"

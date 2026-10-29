@@ -1,0 +1,31 @@
+# title: HCF Audiences v0.2 to NUCC Health Care Provider Taxonomy
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   nucc: https://taxonomy.nucc.org/?searchTerm=
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:primary-care-doctors	Primary care doctors and pediatricians	skos:closeMatch	nucc:207Q00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:primary-care-doctors	Primary care doctors and pediatricians	skos:closeMatch	nucc:207R00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:primary-care-doctors	Primary care doctors and pediatricians	skos:closeMatch	nucc:208000000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:emergency-doctors	Emergency doctors	skos:closeMatch	nucc:207P00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:psychiatrists	Psychiatrists	skos:closeMatch	nucc:2084P0800X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:addiction-medicine	Addiction medicine and addiction psychiatry	skos:closeMatch	nucc:2084A0401X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:addiction-medicine	Addiction medicine and addiction psychiatry	skos:closeMatch	nucc:2084P0802X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nurses	Nurses and nurse practitioners	skos:closeMatch	nucc:163W00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nurses	Nurses and nurse practitioners	skos:closeMatch	nucc:363L00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:midwives	Midwives	skos:closeMatch	nucc:176B00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:midwives	Midwives	skos:closeMatch	nucc:367A00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pharmacists	Pharmacists	skos:closeMatch	nucc:183500000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:dentists	Dentists	skos:closeMatch	nucc:122300000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:physician-assistants	Physician assistants	skos:closeMatch	nucc:363A00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	nucc:101Y00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	nucc:104100000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	nucc:103T00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:addiction-counselors	Addiction counselors	skos:closeMatch	nucc:101YA0400X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:peer-workers	Peer recovery and harm-reduction workers	skos:closeMatch	nucc:175T00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:ems	EMTs and paramedics	skos:closeMatch	nucc:146N00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:ems	EMTs and paramedics	skos:closeMatch	nucc:146L00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:community-health-workers	Community health workers	skos:closeMatch	nucc:172V00000X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:school-counselors-and-nurses	School counselors and nurses	skos:closeMatch	nucc:163WS0200X		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

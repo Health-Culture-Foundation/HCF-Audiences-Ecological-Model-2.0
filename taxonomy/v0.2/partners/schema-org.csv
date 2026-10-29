@@ -1,0 +1,6 @@
+source_id,source_label,predicate,target_id,comment
+Clinician,MedicalAudienceType: Clinician,skos:closeMatch,health-care-workers,
+MedicalResearcher,MedicalAudienceType: MedicalResearcher,skos:closeMatch,researchers,
+Patient,MedicalAudienceType: Patient,skos:closeMatch,public,
+suggestedGender=female,PeopleAudience suggestedGender female,skos:closeMatch,women-and-girls,
+suggestedGender=male,PeopleAudience suggestedGender male,skos:closeMatch,men-and-boys,

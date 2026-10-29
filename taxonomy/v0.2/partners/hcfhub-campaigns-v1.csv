@@ -1,0 +1,11 @@
+source_id,source_label,predicate,target_id,comment
+general-public,General public,skos:closeMatch,public,
+adults,Adults,skos:broadMatch,public,"Used as 'everyone grown-up'; becomes About:adults only when an age range is named"
+parents,Parents,skos:exactMatch,parents-and-caregivers,
+youth,Youth,skos:closeMatch,teens,
+young-adults,Young adults,skos:exactMatch,young-adults,
+older-adults,Older adults,skos:exactMatch,older-adults,
+clinicians,Clinicians,skos:closeMatch,health-care-workers,
+men,Men,skos:closeMatch,men-and-boys,
+journalists,Journalists,skos:exactMatch,journalists,
+military-veterans,Military veterans,skos:exactMatch,military-veterans,

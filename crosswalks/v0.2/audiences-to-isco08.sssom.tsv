@@ -1,0 +1,50 @@
+# title: HCF Audiences v0.2 to ILO ISCO-08
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   isco: http://data.europa.eu/esco/isco/C
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:health-care-workers	Health and care workers	skos:closeMatch	isco:22		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:doctors	Doctors	skos:closeMatch	isco:221		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:primary-care-doctors	Primary care doctors and pediatricians	skos:closeMatch	isco:2211		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:emergency-doctors	Emergency doctors	skos:closeMatch	isco:2212		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:psychiatrists	Psychiatrists	skos:closeMatch	isco:2212		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nurses	Nurses and nurse practitioners	skos:closeMatch	isco:222		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:midwives	Midwives	skos:closeMatch	isco:2222		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pharmacists	Pharmacists	skos:closeMatch	isco:2262		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:dentists	Dentists	skos:closeMatch	isco:2261		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:physician-assistants	Physician assistants	skos:closeMatch	isco:2240		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:care-workers	Care home and home care staff	skos:closeMatch	isco:5321		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:care-workers	Care home and home care staff	skos:closeMatch	isco:5322		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:allied-health	Allied health professionals	skos:closeMatch	isco:32		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lab-workers	Laboratory staff	skos:closeMatch	isco:3212		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	isco:2634		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	isco:2635		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:ems	EMTs and paramedics	skos:closeMatch	isco:3258		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-care-leaders	Hospital and clinic leaders	skos:closeMatch	isco:1342		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:community-health-workers	Community health workers	skos:closeMatch	isco:3253		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:environmental-health	Environmental health staff	skos:closeMatch	isco:3257		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teachers	Teachers and professors	skos:closeMatch	isco:23		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:coaches	Coaches and sports staff	skos:closeMatch	isco:3422		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:school-and-campus-leaders	School and campus leaders	skos:closeMatch	isco:1345		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:child-care-staff	Child care providers and staff	skos:closeMatch	isco:5311		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:managers-and-hr	Managers and HR	skos:closeMatch	isco:1212		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:occupational-health	Workplace health and safety staff	skos:closeMatch	isco:2263		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:military-leaders	Military commanders and leaders	skos:closeMatch	isco:0110		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:police	Police	skos:closeMatch	isco:5412		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:firefighters	Firefighters	skos:closeMatch	isco:5411		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:courts	Judges and courts	skos:closeMatch	isco:2612		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:journalists	Journalists and editors	skos:closeMatch	isco:2642		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pr-and-campaign-staff	Communications, PR and campaign staff	skos:closeMatch	isco:2432		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:faith-leaders	Faith leaders and congregations	skos:closeMatch	isco:2636		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:barbers-and-stylists	Barbers, stylists and salons	skos:closeMatch	isco:5141		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:retailers	Shops and retailers	skos:closeMatch	isco:52		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:bartenders-and-servers	Bars, restaurants and servers	skos:closeMatch	isco:5132		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lawmakers	Lawmakers and elected officials	skos:closeMatch	isco:1111		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:regulators-and-agencies	Regulators and agency staff	skos:closeMatch	isco:1112		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:urban-planners	Urban planners and housing authorities	skos:closeMatch	isco:2164		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:researchers	Researchers and evaluators	skos:closeMatch	isco:2131		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:drivers	Drivers	skos:closeMatch	isco:83		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:trades-workers	Trades and manual workers	skos:closeMatch	isco:7		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

@@ -1,0 +1,157 @@
+# title: TRAIN Learning Network credit types; the profession each credit is for to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   traincredit: urn:hcf:train:credit-type:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+traincredit:AAA:%20CEUs	AAA: CEUs	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:AAFP	AAFP	skos:relatedMatch	hcfaud:primary-care-doctors	Primary care doctors and pediatricians	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	American Academy of Family Physicians.
+traincredit:AAMA:%20Continuing%20Education%20Units%20(CEUs)	AAMA: Continuing Education Units (CEUs)	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:AAPA:%20Continuing%20Medical%20Education%20(CME)%20for%20PA	AAPA: Continuing Medical Education (CME) for PA	skos:relatedMatch	hcfaud:physician-assistants	Physician assistants	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:AARC:%20American%20Association%20of%20Respiratory%20Care	AARC: American Association of Respiratory Care	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:AAVSB:%20Registry%20of%20Approved%20Continuing%20Education%20(RACE)	AAVSB: Registry of Approved Continuing Education (RACE)	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Veterinarians. Gap: no animal health role.
+traincredit:ABIM:%20American%20Board%20of%20Internal%20Medicine	ABIM: American Board of Internal Medicine	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:ABMDI:%20American%20Board%20of%20Medicolegal%20Death%20Investigators	ABMDI: American Board of Medicolegal Death Investigators	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no death-investigation role.
+traincredit:Academic%20Credit	Academic Credit	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:ACCME:%20Continuing%20Medical%20Education%20(CME)	ACCME: Continuing Medical Education (CME)	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:ACCME:%20Non-Physician%20Continuing%20Medical%20Education%20(CME)	ACCME: Non-Physician Continuing Medical Education (CME)	skos:relatedMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Non-physicians at CME activities.
+traincredit:ACHE:%20Continuing%20Education%20Credit	ACHE: Continuing Education Credit	skos:relatedMatch	hcfaud:health-care-leaders	Hospital and clinic leaders	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:ACPE-%20Contact%20Hours	ACPE- Contact Hours	skos:relatedMatch	hcfaud:pharmacists	Pharmacists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	ACPE-Technician is pharmacy technicians.
+traincredit:ACPE:%20Continuing%20Pharmacy%20Education%20(CPE)	ACPE: Continuing Pharmacy Education (CPE)	skos:relatedMatch	hcfaud:pharmacists	Pharmacists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	ACPE-Technician is pharmacy technicians.
+traincredit:ACPE-Technician:%20Contact%20Hours/Continuing%20Pharmacy%20Education%20(CPE)%20Credits	ACPE-Technician: Contact Hours/Continuing Pharmacy Education (CPE) Credits	skos:relatedMatch	hcfaud:pharmacists	Pharmacists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	ACPE-Technician is pharmacy technicians.
+traincredit:ACVREP:%20Continuing%20Education%20Clock%20Hours	ACVREP: Continuing Education Clock Hours	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:ADA/CERP:%20Continuing%20Education%20Credit%20Hours	ADA/CERP: Continuing Education Credit Hours	skos:relatedMatch	hcfaud:dentists	Dentists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:ADA:%20American%20Dental%20Association	ADA: American Dental Association	skos:relatedMatch	hcfaud:dentists	Dentists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Adv.%20PDS	Adv. PDS	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:American%20Physical%20Therapists%20Association%20(APTA)	American Physical Therapists Association (APTA)	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:ANCC:%20Continuing%20Nursing%20Education%20(CNE)	ANCC: Continuing Nursing Education (CNE)	skos:relatedMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:AOTA:%20Contact%20Hours/CEUs	AOTA: Contact Hours/CEUs	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:APA:%20Continuing%20Education%20Credit	APA: Continuing Education Credit	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:APD%20In-Service	APD In-Service	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:ASCLS:%20PACE%20–%20Clinical%20Laboratorians%20CE%20Provider	ASCLS: PACE – Clinical Laboratorians CE Provider	skos:relatedMatch	hcfaud:lab-workers	Laboratory staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Clinical laboratory credit.
+traincredit:ASHA:%20CEUs	ASHA: CEUs	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:ASWB:%20Approved%20Continuing%20Education%20(ACE)%20for%20Social%20Workers	ASWB: Approved Continuing Education (ACE) for Social Workers	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Social workers.
+traincredit:ASWB:%20Continuing%20Education%20Clock%20Hours	ASWB: Continuing Education Clock Hours	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Social workers.
+traincredit:CA%20BRN:%20California%20Board%20of%20Registered%20Nursing	CA BRN: California Board of Registered Nursing	skos:relatedMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CAPCE:%20EMS%20Medical%20-%20Paramedic%20Level%20Only	CAPCE: EMS Medical - Paramedic Level Only	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CDR:%20Continuing%20Professional%20Education%20Units	CDR: Continuing Professional Education Units	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CEC%20-%20Dental	CEC - Dental	skos:relatedMatch	hcfaud:dentists	Dentists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CEH	CEH	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:CEM	CEM	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Certificate%20of%20Attendance	Certificate of Attendance	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Certification	Certification	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Certified%20Floodplain%20Manager	Certified Floodplain Manager	skos:relatedMatch	hcfaud:urban-planners	Urban planners and housing authorities	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Certified%20Food%20Manager	Certified Food Manager	skos:relatedMatch	hcfaud:environmental-health	Environmental health staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CHES/MCHES	CHES/MCHES	skos:relatedMatch	hcfaud:health-educators	Health educators and prevention staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Childcare%20Providers	Childcare Providers	skos:relatedMatch	hcfaud:child-care-staff	Child care providers and staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CHW	CHW	skos:relatedMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CLE	CLE	skos:relatedMatch	hcfaud:courts	Judges and courts	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Continuing legal education.
+traincredit:Clock%20Hours	Clock Hours	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:CME	CME	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:CNE%20Contact%20Hours	CNE Contact Hours	skos:relatedMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Contact%20Hours	Contact Hours	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Continuing%20Law%20Enforcement%20Education%20(CLEE)	Continuing Law Enforcement Education (CLEE)	skos:relatedMatch	hcfaud:police	Police	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:COPE:%20Continuing%20Optometric%20Education%20(COE)	COPE: Continuing Optometric Education (COE)	skos:relatedMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Optometry and chiropractic have no narrower id.
+traincredit:COPS-KT:%20Continuing%20Education%20Units%20(CEUs)	COPS-KT: Continuing Education Units (CEUs)	skos:relatedMatch	hcfaud:police	Police	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	DOJ Community Oriented Policing Services.
+traincredit:CPRS	CPRS	skos:relatedMatch	hcfaud:peer-workers	Peer recovery and harm-reduction workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Certified peer recovery specialist.
+traincredit:CRCC:%20Clock%20Hours	CRCC: Clock Hours	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Developmental%20Disabilities	Developmental Disabilities	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Dietitians%20CPE	Dietitians CPE	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:E-CERP	E-CERP	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Emergency%20Medical%20Responder	Emergency Medical Responder	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Emergency%20Medical%20Technician	Emergency Medical Technician	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS	EMS	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Airway	EMS - Airway	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Medical	EMS - Medical	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Operations	EMS - Operations	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Operations:%20Documentation	EMS - Operations: Documentation	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Operations:%20Emergency%20Preparedness	EMS - Operations: Emergency Preparedness	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Patient%20Assessment	EMS - Patient Assessment	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Preparatory	EMS - Preparatory	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Special%20Considerations:%20Pediatric:%20Airway	EMS - Special Considerations: Pediatric: Airway	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Special%20Considerations:%20Pediatric:%20Medical	EMS - Special Considerations: Pediatric: Medical	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Special%20Considerations:%20Pediatric:%20Trauma	EMS - Special Considerations: Pediatric: Trauma	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Special%20Considerations:%20Peds:%20Assessment	EMS - Special Considerations: Peds: Assessment	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20-%20Trauma	EMS - Trauma	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS%20Physician	EMS Physician	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS-IC-EA	EMS-IC-EA	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS-IC-IT	EMS-IC-IT	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMS-IC-M&E	EMS-IC-M&E	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMT%20Enhanced	EMT Enhanced	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:EMT%20Instructor	EMT Instructor	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Environmental%20Health%20-%20CPE	Environmental Health - CPE	skos:relatedMatch	hcfaud:environmental-health	Environmental health staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:FCLB:%20PACE%20–%20Chiropractic%20Recognized%20CE%20Provider	FCLB: PACE – Chiropractic Recognized CE Provider	skos:relatedMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Optometry and chiropractic have no narrower id.
+traincredit:Federal%20Highway%20Administration%20Professional%20Development%20Hours%20(PDH)	Federal Highway Administration Professional Development Hours (PDH)	skos:relatedMatch	hcfaud:urban-planners	Urban planners and housing authorities	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:First%20Responder	First Responder	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Florida%20Clinical%20Laboratory%20Personnel%20Credits	Florida Clinical Laboratory Personnel Credits	skos:relatedMatch	hcfaud:lab-workers	Laboratory staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Clinical laboratory credit.
+traincredit:FSBPT:%20CCU	FSBPT: CCU	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Ghana%20-%20CME	Ghana - CME	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:GHI	GHI	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:HRC%20Healthcare%20Equality%20Index:%20HEI%20on-going%20training%20credit	HRC Healthcare Equality Index: HEI on-going training credit	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:IACET:%20Continuing%20Education%20Units%20(CEU)	IACET: Continuing Education Units (CEU)	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Instructor%20Candidate	Instructor Candidate	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Intermediate	Intermediate	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Joint%20Accreditation%20for%20Interprofessional%20Continuing%20Education%20(JA%20IPCE)	Joint Accreditation for Interprofessional Continuing Education (JA IPCE)	skos:relatedMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Interprofessional: doctors, nurses, pharmacists and others together.
+traincredit:KBSRB:%20Kansas%20Behavioral%20Health%20Providers%20License	KBSRB: Kansas Behavioral Health Providers License	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Kenya%20-%20CME	Kenya - CME	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KMI%20Test%20Course%20Credit	KMI Test Course Credit	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:KY%20-%20Nurse%20Practitioner%20Continuing%20Education%20Credits	KY - Nurse Practitioner Continuing Education Credits	skos:relatedMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY%20CE%20-%20DMD	KY CE - DMD	skos:relatedMatch	hcfaud:dentists	Dentists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY%20DPH:%20Community%20Health%20Worker%20(CHW)	KY DPH: Community Health Worker (CHW)	skos:relatedMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY%20KBLPC:%20Contact%20Hours%20(ADC)	KY KBLPC: Contact Hours (ADC)	skos:relatedMatch	hcfaud:addiction-counselors	Addiction counselors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY%20KBLPC:%20Contact%20Hours%20(LPC)	KY KBLPC: Contact Hours (LPC)	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY%20KBLPC:%20Contact%20Hours%20(MFT)	KY KBLPC: Contact Hours (MFT)	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY%20KBLPC:%20Contact%20Hours%20(OT)	KY KBLPC: Contact Hours (OT)	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY%20KBRC:%20CEH	KY KBRC: CEH	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:KY%20KCE%20Credit	KY KCE Credit	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:KY%20KDE:%20EILA	KY KDE: EILA	skos:relatedMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Teacher professional education.
+traincredit:KY%20KPTA:%20Category%201%20Contact%20Hour(s)	KY KPTA: Category 1 Contact Hour(s)	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY:%20NP	KY: NP	skos:relatedMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:KY:%20RDMS	KY: RDMS	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:L-CERP	L-CERP	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Lead%20Inspector	Lead Inspector	skos:relatedMatch	hcfaud:environmental-health	Environmental health staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Lead%20Inspector%20Risk%20Assessor	Lead Inspector Risk Assessor	skos:relatedMatch	hcfaud:environmental-health	Environmental health staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Licensed%20Chemical%20Dependency%20Counselor	Licensed Chemical Dependency Counselor	skos:relatedMatch	hcfaud:addiction-counselors	Addiction counselors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Licensed%20Marriage%20and%20Family%20Therapist	Licensed Marriage and Family Therapist	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Licensed%20Professional%20Counselor	Licensed Professional Counselor	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Licensed%20Psychologist	Licensed Psychologist	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Licensed%20Social%20Worker	Licensed Social Worker	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Social workers.
+traincredit:MA%20Certified%20Health%20Officer%20(CHO)%20Contact%20Hours	MA Certified Health Officer (CHO) Contact Hours	skos:relatedMatch	hcfaud:public-health-workers	Public health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:MA%20Nursing%20Contact%20Hours	MA Nursing Contact Hours	skos:relatedMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:MA%20Registered%20Sanitarian%20(RS)%20Contact%20Hours	MA Registered Sanitarian (RS) Contact Hours	skos:relatedMatch	hcfaud:environmental-health	Environmental health staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Malawi%20-%20CME	Malawi - CME	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Midwifery%20Continuing%20Education%20Contact%20Hours	Midwifery Continuing Education Contact Hours	skos:relatedMatch	hcfaud:midwives	Midwives	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NASW	NASW	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Social workers.
+traincredit:National%20Board%20of%20Health%20&%20Wellness%20Coaching%20(NBHWC)	National Board of Health & Wellness Coaching (NBHWC)	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NBCC:%20Clock%20Hours	NBCC: Clock Hours	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NBPHE:%20Certified%20Public%20Health%20(CPH)	NBPHE: Certified Public Health (CPH)	skos:relatedMatch	hcfaud:public-health-workers	Public health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NCBDE:%20CDE	NCBDE: CDE	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NCHEC:%20Certified%20Health%20Education%20Specialist%20(CHES)	NCHEC: Certified Health Education Specialist (CHES)	skos:relatedMatch	hcfaud:health-educators	Health educators and prevention staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NCHEC:%20Master%20Certified%20Health%20Education%20Specialist%20(MCHES)	NCHEC: Master Certified Health Education Specialist (MCHES)	skos:relatedMatch	hcfaud:health-educators	Health educators and prevention staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NREMT	NREMT	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Nursing%20Home%20Administrator	Nursing Home Administrator	skos:relatedMatch	hcfaud:health-care-leaders	Hospital and clinic leaders	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:NYSED%20SW:%20Continuing%20Education%20Clock%20Hours	NYSED SW: Continuing Education Clock Hours	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Social workers.
+traincredit:NYSEDP:%20Continuing%20Education%20Contact%20Hours%20(CECH)	NYSEDP: Continuing Education Contact Hours (CECH)	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Other	Other	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:PA%20Act%2048/58	PA Act 48/58	skos:relatedMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Teacher professional education.
+traincredit:PA%20Act%2048:%20School	PA Act 48: School	skos:relatedMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Teacher professional education.
+traincredit:PA%20Act%2058:%20RN	PA Act 58: RN	skos:relatedMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:PACE	PACE	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Paramedic	Paramedic	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:PDS	PDS	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:Pharmacist%20Contact%20Hours	Pharmacist Contact Hours	skos:relatedMatch	hcfaud:pharmacists	Pharmacists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	ACPE-Technician is pharmacy technicians.
+traincredit:R-CERP	R-CERP	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Registered%20Sanitarians	Registered Sanitarians	skos:relatedMatch	hcfaud:environmental-health	Environmental health staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:RI%20CEMS:%20EMT%20Individual%20Component	RI CEMS: EMT Individual Component	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:RI%20CEMS:%20EMT%20National%20Component	RI CEMS: EMT National Component	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:RI%20CEMS:%20EMT%20State%20and%20Local%20Component	RI CEMS: EMT State and Local Component	skos:relatedMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:RI%20DCYF	RI DCYF	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not a profession (format, generic or unclear).
+traincredit:RRT%20(Registered%20Respiratory%20Therapist)	RRT (Registered Respiratory Therapist)	skos:relatedMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Rwanda%20-%20CME	Rwanda - CME	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Social%20Workers	Social Workers	skos:relatedMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Social workers.
+traincredit:Tanzania%20-%20CME	Tanzania - CME	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:TDH%20Continuing%20Education%20Credit%20Hours%20-%20Dental	TDH Continuing Education Credit Hours - Dental	skos:relatedMatch	hcfaud:dentists	Dentists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:TX%20DSHS%20CHW/I	TX DSHS CHW/I	skos:relatedMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincredit:Zambia%20-%20CME	Zambia - CME	skos:relatedMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

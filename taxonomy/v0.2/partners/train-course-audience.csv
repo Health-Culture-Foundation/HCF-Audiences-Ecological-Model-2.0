@@ -1,0 +1,48 @@
+source_id,source_label,predicate,target_id,comment
+Allied Health Professionals,Allied Health Professionals,skos:exactMatch,allied-health,
+Animal Control / Veterinarians,Animal Control / Veterinarians,,,Gap: no animal health or One Health role.
+Biostatisticians,Biostatisticians,skos:broadMatch,epidemiologists,
+Case Manager,Case Manager,skos:broadMatch,behavioral-health-workers,Case managers also work in human services and nursing.
+Certified Peer Recovery Specialist,Certified Peer Recovery Specialist,skos:closeMatch,peer-workers,
+Childcare Providers,Childcare Providers,skos:exactMatch,child-care-staff,
+Communicable Disease Staff,Communicable Disease Staff,skos:broadMatch,public-health-workers,
+Community Health Workers,Community Health Workers,skos:exactMatch,community-health-workers,
+Dental Professionals,Dental Professionals,skos:closeMatch,dentists,TRAIN includes hygienists and assistants.
+Dietitians,Dietitians,skos:broadMatch,allied-health,No dietitian id; dietitians sit under allied health.
+Educators / Trainers,Educators / Trainers,skos:broadMatch,teachers,
+Emergency Management,Emergency Management,skos:exactMatch,emergency-managers,
+Emergency Medical Services,Emergency Medical Services,skos:exactMatch,ems,
+Emergency Responders / Receivers,Emergency Responders / Receivers,skos:broadMatch,ems,Also firefighters and police; hospital receivers are health-care-workers.
+Environmental Health Professionals,Environmental Health Professionals,skos:exactMatch,environmental-health,
+Epidemiologists / Surveillance Staff,Epidemiologists / Surveillance Staff,skos:exactMatch,epidemiologists,
+Family Visitors,Family Visitors,skos:broadMatch,community-health-workers,Home visiting staff (maternal and child health).
+Fire Service,Fire Service,skos:exactMatch,firefighters,
+General Public Health Staff,General Public Health Staff,skos:exactMatch,public-health-workers,
+Hazardous Materials Personnel,Hazardous Materials Personnel,skos:broadMatch,firefighters,Gap: hazmat sits across fire and environmental health.
+Health Educators,Health Educators,skos:exactMatch,health-educators,
+Healthcare,Healthcare,skos:exactMatch,health-care-workers,
+Home Care,Home Care,skos:closeMatch,care-workers,
+Human Services,Human Services,skos:broadMatch,behavioral-health-workers,Gap: no human-services id.
+Information Systems Professionals,Information Systems Professionals,,,Gap: no IT role.
+Laboratory Professionals,Laboratory Professionals,skos:exactMatch,lab-workers,
+Lactation Consultant,Lactation Consultant,skos:broadMatch,health-care-workers,Gap: no lactation id; close to midwives and nurses.
+Law Enforcement,Law Enforcement,skos:exactMatch,police,
+Mail handlers,Mail handlers,skos:broadMatch,workers,About-axis id (workers); no role id.
+Medical Examiner / Coroner / Mortician,Medical Examiner / Coroner / Mortician,,,Gap: no death-investigation role.
+Mental Health Professionals,Mental Health Professionals,skos:exactMatch,behavioral-health-workers,
+Military Personnel,Military Personnel,skos:closeMatch,military-veterans,About-axis id; military-leaders is the role id for commanders.
+Nurses,Nurses,skos:exactMatch,nurses,
+Occupational Health and Safety Professionals,Occupational Health and Safety Professionals,skos:exactMatch,occupational-health,
+Other,Other,,,
+Pharmacy Professionals,Pharmacy Professionals,skos:closeMatch,pharmacists,TRAIN includes pharmacy technicians.
+Physicians and Other Clinicians,Physicians and Other Clinicians,skos:closeMatch,doctors,Also physician-assistants and nurses (NPs).
+Policy / Planner,Policy / Planner,skos:closeMatch,policy-and-funding,
+Public Health,Public Health,skos:exactMatch,public-health-workers,
+Public Information / Media Specialists,Public Information / Media Specialists,skos:closeMatch,pr-and-campaign-staff,
+Public Safety Communications,Public Safety Communications,skos:broadMatch,police-courts-corrections,Gap: 911 dispatchers have no id.
+Public Works,Public Works,skos:broadMatch,public-sector-workers,About-axis id; no role id.
+Researchers / Analysts,Researchers / Analysts,skos:exactMatch,researchers,
+Social Workers,Social Workers,skos:broadMatch,behavioral-health-workers,
+Student,Student,skos:closeMatch,students,About-axis id (students as a population).
+Substance Use Disorder Professionals,Substance Use Disorder Professionals,skos:closeMatch,addiction-counselors,
+Teacher / Faculty,Teacher / Faculty,skos:exactMatch,teachers,

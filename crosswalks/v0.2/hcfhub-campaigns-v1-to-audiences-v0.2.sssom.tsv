@@ -1,0 +1,18 @@
+# title: hcfhub.org campaign audience ids before v0.2 to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfcase: https://hcfhub.org/vocab/audience/
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfcase:general-public	General public	skos:closeMatch	hcfaud:public	The public, for themselves	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:adults	Adults	skos:broadMatch	hcfaud:public	The public, for themselves	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Used as 'everyone grown-up'; becomes About:adults only when an age range is named
+hcfcase:parents	Parents	skos:exactMatch	hcfaud:parents-and-caregivers	Parents and caregivers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:youth	Youth	skos:closeMatch	hcfaud:teens	Teens (13-17)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:young-adults	Young adults	skos:exactMatch	hcfaud:young-adults	Young adults (18-24)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:older-adults	Older adults	skos:exactMatch	hcfaud:older-adults	Older adults (65+)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:clinicians	Clinicians	skos:closeMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:men	Men	skos:closeMatch	hcfaud:men-and-boys	Men and boys	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:journalists	Journalists	skos:exactMatch	hcfaud:journalists	Journalists and editors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfcase:military-veterans	Military veterans	skos:exactMatch	hcfaud:military-veterans	Military and veterans	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

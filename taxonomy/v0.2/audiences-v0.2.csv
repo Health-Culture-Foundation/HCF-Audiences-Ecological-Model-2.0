@@ -1,0 +1,122 @@
+id,label,parent,axis,v01,soc,isco,nucc,mesh,omb,definition
+public,"The public, for themselves",,for,the-person,,,,,,People reading or acting about their own health. The default for a campaign aimed at everyone.
+family-and-friends,Family and friends,,for,,,,,,,People who act for someone close to them.
+parents-and-caregivers,Parents and caregivers,family-and-friends,for,parents-and-caregivers,,,,D010290|D017028,,"Parents, guardians, grandparents and carers acting for a child or an adult they look after."
+partners-and-family,Partners and family members,family-and-friends,for,partners-and-family,,,,,,"Spouses, partners, siblings and other relatives."
+friends-and-peers,Friends and peers,family-and-friends,for,friends-and-peers,,,,,,"Friends, roommates, classmates, teammates, bystanders."
+health-care-workers,Health and care workers,,for,clinicians,29-0000,22,,D006282,,People who treat or care for patients.
+doctors,Doctors,health-care-workers,for,clinicians,29-1210,221,,D010820,,Physicians of any specialty.
+primary-care-doctors,Primary care doctors and pediatricians,doctors,for,,29-1215|29-1216|29-1221,2211,207Q00000X|207R00000X|208000000X,,,"Family doctors, GPs, internists, pediatricians."
+emergency-doctors,Emergency doctors,doctors,for,,29-1214,2212,207P00000X,,,
+psychiatrists,Psychiatrists,doctors,for,,29-1223,2212,2084P0800X,,,
+addiction-medicine,Addiction medicine and addiction psychiatry,doctors,for,,,,2084A0401X|2084P0802X,,,
+nurses,Nurses and nurse practitioners,health-care-workers,for,nurses,29-1141|29-1171,222,163W00000X|363L00000X,D009726,,
+midwives,Midwives,nurses,for,,29-1161,2222,176B00000X|367A00000X,,,
+pharmacists,Pharmacists,health-care-workers,for,,29-1051,2262,183500000X,D010595,,
+dentists,Dentists,health-care-workers,for,,29-1021,2261,122300000X,D003815,,
+physician-assistants,Physician assistants,health-care-workers,for,,29-1071,2240,363A00000X,,,
+care-workers,Care home and home care staff,health-care-workers,for,,31-1122|31-1131,5321|5322,,,,"Nursing assistants, personal care and aged-care workers."
+allied-health,Allied health professionals,health-care-workers,for,,29-1120|29-2000,32,,,,"Therapists, technologists and technicians: physical, occupational, respiratory and speech therapy, imaging, dietitians, medical assistants. Added for TRAIN (2026-10-29)."
+lab-workers,Laboratory staff,health-care-workers,for,,29-2010,3212,,,,Clinical and public health laboratory scientists and technicians. Added for TRAIN (2026-10-29).
+behavioral-health-workers,"Counselors, social workers and psychologists",health-care-workers,for,counselors-and-therapists,21-1018|21-1023|19-3033,2634|2635,101Y00000X|104100000X|103T00000X,,,
+addiction-counselors,Addiction counselors,behavioral-health-workers,for,,21-1018,,101YA0400X,,,SOC 2018 21-1018; O*NET splits it into 21-1011.00 (substance abuse and behavioral disorder) and 21-1014.00 (mental health).
+peer-workers,Peer recovery and harm-reduction workers,health-care-workers,for,,,,175T00000X,,,"People with lived experience paid to support others, and harm-reduction outreach staff."
+ems,EMTs and paramedics,health-care-workers,for,,29-2042|29-2043,3258,146N00000X|146L00000X,D004634,,
+health-care-leaders,Hospital and clinic leaders,health-care-workers,for,health-care-leaders,11-9111,1342,,,,"Managers who set policy for a health system, hospital or clinic."
+public-health-workers,Public health workers,,for,public-health-practitioners,,,,,,Staff of health departments and prevention programs.
+health-educators,Health educators and prevention staff,public-health-workers,for,public-health-practitioners,21-1091,,,,,
+community-health-workers,Community health workers,public-health-workers,for,community-health-workers,21-1094,3253,172V00000X,D003150,,"Promotores, lay health workers, CHWs."
+epidemiologists,Epidemiologists and data staff,public-health-workers,for,,19-1041,,,,,
+environmental-health,Environmental health staff,public-health-workers,for,,19-2041,3257,,,,"Sanitarians, food, water, housing and lead inspectors. Added for TRAIN (2026-10-29)."
+emergency-managers,Emergency management and preparedness staff,public-health-workers,for,,11-9161,,,,,"Emergency managers and preparedness coordinators in health departments, hospitals and government. Added for TRAIN (2026-10-29)."
+health-departments,Health departments and program managers,public-health-workers,for,health-departments,11-9111,,,,,"The health department as an organization, and the managers who run its programs."
+schools-and-youth-work,Schools and youth work,,for,,,,,,,
+teachers,Teachers and professors,schools-and-youth-work,for,teachers-and-coaches,25-2021|25-2031|25-1000,23,,D000070777|D005178,,
+school-counselors-and-nurses,School counselors and nurses,schools-and-youth-work,for,,21-1012,,163WS0200X,,,
+coaches,Coaches and sports staff,schools-and-youth-work,for,teachers-and-coaches,27-2022,3422,,,,
+school-and-campus-leaders,School and campus leaders,schools-and-youth-work,for,school-and-campus-leaders,11-9032|11-9033,1345,,,,"Principals, superintendents, deans, residence life."
+youth-workers,Youth workers and mentors,schools-and-youth-work,for,peer-educators,,,,,,
+child-care-staff,Child care providers and staff,schools-and-youth-work,for,,39-9011,5311,,,,
+employers-and-workplaces,Employers and workplaces,,for,employers-and-workplaces,,,,,,
+managers-and-hr,Managers and HR,employers-and-workplaces,for,hr-and-workplace-health,13-1071|11-3121,1212,,,,
+occupational-health,Workplace health and safety staff,employers-and-workplaces,for,hr-and-workplace-health,19-5011,2263,,,,
+police-courts-corrections,"Military, police, courts and corrections",,for,military-and-public-safety-agencies,,,,,,
+military-leaders,Military commanders and leaders,police-courts-corrections,for,,55-1000,0110,,,,
+police,Police,police-courts-corrections,for,,33-3051,5412,,D016495,,
+firefighters,Firefighters,police-courts-corrections,for,,33-2011,5411,,D061388,,
+corrections-and-probation,Corrections and probation,police-courts-corrections,for,,33-3012|21-1092,,,,,
+courts,Judges and courts,police-courts-corrections,for,courts-and-judges,23-1023,2612,,,,
+media-and-communicators,Media and communicators,,for,,,,,,,
+journalists,Journalists and editors,media-and-communicators,for,journalists-and-media,27-3023,2642,,,,
+pr-and-campaign-staff,"Communications, PR and campaign staff",media-and-communicators,for,health-communicators,27-3031|11-2032,2432,,,,
+creators-and-influencers,Creators and influencers,media-and-communicators,for,journalists-and-media,,,,,,
+public-figures,"Celebrities, athletes and public figures",media-and-communicators,for,,,,,,,Mainly a messenger value: famous people who front a campaign.
+community-and-faith,Community and faith,,for,,,,,,,
+community-organizations,Community organizations and coalitions,community-and-faith,for,community-organizations,,,,,,
+faith-leaders,Faith leaders and congregations,community-and-faith,for,faith-communities,21-2011,2636,,D002977,,
+barbers-and-stylists,"Barbers, stylists and salons",community-and-faith,for,,39-5011|39-5012,5141,,,,
+trusted-messengers,Other trusted messengers,community-and-faith,for,community-and-religious-leaders,,,,,,"Elders, neighborhood leaders, people with lived experience speaking publicly."
+sellers-and-servers,Sellers and servers,,for,,,,,,,
+retailers,Shops and retailers,sellers-and-servers,for,,41-2031|41-2011,52,,,,
+bartenders-and-servers,"Bars, restaurants and servers",sellers-and-servers,for,,35-3011|35-3031,5132,,,,
+gun-sellers,Gun shops and ranges,sellers-and-servers,for,,,,,,,
+platforms-and-tech,Platforms and app makers,sellers-and-servers,for,platforms-and-tech,,,,,,
+policy-and-funding,Policy and funding,,for,,,,,,,
+lawmakers,Lawmakers and elected officials,policy-and-funding,for,policymakers,11-1031,1111,,,,
+regulators-and-agencies,Regulators and agency staff,policy-and-funding,for,regulators-and-agency-staff,,1112,,,,
+settlement-boards,Opioid settlement fund boards,policy-and-funding,for,,,,,,,
+funders,Funders,policy-and-funding,for,funders,,,,,,
+urban-planners,Urban planners and housing authorities,policy-and-funding,for,,19-3051,2164,,,,
+researchers,Researchers and evaluators,,for,researchers,19-1042,2131,,D012108,,
+age,Age,,about,populations,,,,,,
+babies,Babies and toddlers (0-2),age,about,infants,,,,D007223,,
+young-children,Young children (2-5),age,about,children,,,,D002675,,
+children,Children (6-12),age,about,children,,,,D002648,,
+teens,Teens (13-17),age,about,teens,,,,D000293,,MeSH Adolescent runs 13-18; campaigns for 18-year-olds go in Young adults.
+young-adults,Young adults (18-24),age,about,young-adults,,,,D055815,,
+adults,Adults (25-64),age,about,adults,,,,D000328,,"Only when the campaign names an adult age range, not as a stand-in for everyone."
+older-adults,Older adults (65+),age,about,older-adults,,,,D000368,,Campaigns saying 60+ or 55+ land here too.
+gender,Sex and gender,,about,,,,,,,
+women-and-girls,Women and girls,gender,about,women,,,,D005260,,
+men-and-boys,Men and boys,gender,about,men,,,,D008297,,
+trans-and-nonbinary,Transgender and nonbinary people,gender,about,lgbtqia,,,,D063106,,
+orientation,Sexual orientation,,about,lgbtqia,,,,,,
+lgb,"Lesbian, gay and bisexual people",orientation,about,lgbtqia,,,,D000072339,,
+msm,Men who have sex with men,orientation,about,,,,,D018451,,"A behavior, not an identity; used by HIV and STI campaigns."
+race-ethnicity,"Race, ethnicity and Indigenous peoples",,about,,,,,,,
+asian,Asian,race-ethnicity,about,,,,,D044466,asian,
+black,Black or African American,race-ethnicity,about,black-african-american,,,,D044383,black,
+hispanic-latino,Hispanic or Latino,race-ethnicity,about,,,,,D006630,hispanic,
+mena,Middle Eastern or North African,race-ethnicity,about,,,,,D000094863,mena,
+nhpi,Native Hawaiian or Pacific Islander,race-ethnicity,about,,,,,D000095188,nhpi,
+white,White,race-ethnicity,about,,,,,D044465,white,Rarely named; only when a campaign says so.
+indigenous-peoples,Indigenous peoples,race-ethnicity,about,,,,,D000081034,,Works across countries.
+american-indian-alaska-native,American Indian and Alaska Native,indigenous-peoples,about,,,,,D044467,aian,
+aboriginal-torres-strait,Aboriginal and Torres Strait Islander peoples,indigenous-peoples,about,,,,,D000095283,,
+first-nations-inuit-metis,"First Nations, Inuit and Métis",indigenous-peoples,about,,,,,D004930,,
+maori,Māori,indigenous-peoples,about,,,,,D000095284,,
+situation,Life situation,,about,,,,,,,
+pregnant-postpartum,Pregnant and postpartum people,situation,about,pregnant-people,,,,D037841,,
+students,Students,situation,about,college-students,,,,D013334,,
+military-veterans,Military and veterans,situation,about,military-and-veterans,,,,D014728|D008889,,
+workers,Workers,situation,about,workers,,,,,,Use a child when the job is named.
+drivers,Drivers,workers,about,,53-3000,83,,,,
+shift-workers,Shift and night workers,workers,about,shift-workers,,,,,,
+trades-workers,Trades and manual workers,workers,about,,47-0000,7,,,,
+public-sector-workers,Public-sector workers,workers,about,public-sector-workers,,,,,,
+rural,Rural residents,situation,about,,,,,D012424,,
+low-income,People on low incomes,situation,about,,,,,D011203,,
+unhoused,People experiencing homelessness,situation,about,,,,,D006703,,
+justice-involved,People in jail or prison or on probation,situation,about,,,,,D011329,,
+immigrants-refugees,Immigrants and refugees,situation,about,,,,,D054242|D012036,,
+people-with-disabilities,People with disabilities,situation,about,,,,,D006233,,
+people-who-use-drugs,People who use or inject drugs,situation,about,,,,,D055030,,The population harm-reduction campaigns serve. Pair with a Stage value.
+long-term-conditions,People with long-term health conditions,situation,about,,,,,D002908,,"Patients, people on a long-term medication, the clinically vulnerable. The condition itself goes in Topic."
+language-minorities,Speakers of other languages,situation,about,,,,,,,"Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries)."
+not-started,Not started,,stage,,,,,,,Prevention for people who don't do it yet.
+at-risk,At risk,,stage,,,,,,,"Experimenting, or in a group at high risk."
+doing-it-now,Doing it now,,stage,,,,,,,"People who use, drink, smoke, vape, gamble, or don't yet do the healthy behavior."
+ready-to-change,Ready to change,,stage,,,,,,,"Thinking about quitting, cutting down or starting."
+in-treatment,In treatment,,stage,,,,,,,
+in-recovery,In recovery,,stage,,,,,,,
+affected-others,Affected others,,stage,,,,,,,"Family, friends and people who have lost someone."

@@ -1,0 +1,55 @@
+# title: TRAIN Learning Network course audience filter (Massachusetts TRAIN, 2026-10-29) to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   traincourse: urn:hcf:train:course-audience:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+traincourse:Allied%20Health%20Professionals	Allied Health Professionals	skos:exactMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Animal%20Control%20/%20Veterinarians	Animal Control / Veterinarians	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no animal health or One Health role.
+traincourse:Biostatisticians	Biostatisticians	skos:broadMatch	hcfaud:epidemiologists	Epidemiologists and data staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Case%20Manager	Case Manager	skos:broadMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Case managers also work in human services and nursing.
+traincourse:Certified%20Peer%20Recovery%20Specialist	Certified Peer Recovery Specialist	skos:closeMatch	hcfaud:peer-workers	Peer recovery and harm-reduction workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Childcare%20Providers	Childcare Providers	skos:exactMatch	hcfaud:child-care-staff	Child care providers and staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Communicable%20Disease%20Staff	Communicable Disease Staff	skos:broadMatch	hcfaud:public-health-workers	Public health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Community%20Health%20Workers	Community Health Workers	skos:exactMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Dental%20Professionals	Dental Professionals	skos:closeMatch	hcfaud:dentists	Dentists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	TRAIN includes hygienists and assistants.
+traincourse:Dietitians	Dietitians	skos:broadMatch	hcfaud:allied-health	Allied health professionals	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	No dietitian id; dietitians sit under allied health.
+traincourse:Educators%20/%20Trainers	Educators / Trainers	skos:broadMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Emergency%20Management	Emergency Management	skos:exactMatch	hcfaud:emergency-managers	Emergency management and preparedness staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Emergency%20Medical%20Services	Emergency Medical Services	skos:exactMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Emergency%20Responders%20/%20Receivers	Emergency Responders / Receivers	skos:broadMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Also firefighters and police; hospital receivers are health-care-workers.
+traincourse:Environmental%20Health%20Professionals	Environmental Health Professionals	skos:exactMatch	hcfaud:environmental-health	Environmental health staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Epidemiologists%20/%20Surveillance%20Staff	Epidemiologists / Surveillance Staff	skos:exactMatch	hcfaud:epidemiologists	Epidemiologists and data staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Family%20Visitors	Family Visitors	skos:broadMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Home visiting staff (maternal and child health).
+traincourse:Fire%20Service	Fire Service	skos:exactMatch	hcfaud:firefighters	Firefighters	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:General%20Public%20Health%20Staff	General Public Health Staff	skos:exactMatch	hcfaud:public-health-workers	Public health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Hazardous%20Materials%20Personnel	Hazardous Materials Personnel	skos:broadMatch	hcfaud:firefighters	Firefighters	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: hazmat sits across fire and environmental health.
+traincourse:Health%20Educators	Health Educators	skos:exactMatch	hcfaud:health-educators	Health educators and prevention staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Healthcare	Healthcare	skos:exactMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Home%20Care	Home Care	skos:closeMatch	hcfaud:care-workers	Care home and home care staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Human%20Services	Human Services	skos:broadMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no human-services id.
+traincourse:Information%20Systems%20Professionals	Information Systems Professionals	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no IT role.
+traincourse:Laboratory%20Professionals	Laboratory Professionals	skos:exactMatch	hcfaud:lab-workers	Laboratory staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Lactation%20Consultant	Lactation Consultant	skos:broadMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no lactation id; close to midwives and nurses.
+traincourse:Law%20Enforcement	Law Enforcement	skos:exactMatch	hcfaud:police	Police	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Mail%20handlers	Mail handlers	skos:broadMatch	hcfaud:workers	Workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	About-axis id (workers); no role id.
+traincourse:Medical%20Examiner%20/%20Coroner%20/%20Mortician	Medical Examiner / Coroner / Mortician	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no death-investigation role.
+traincourse:Mental%20Health%20Professionals	Mental Health Professionals	skos:exactMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Military%20Personnel	Military Personnel	skos:closeMatch	hcfaud:military-veterans	Military and veterans	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	About-axis id; military-leaders is the role id for commanders.
+traincourse:Nurses	Nurses	skos:exactMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Occupational%20Health%20and%20Safety%20Professionals	Occupational Health and Safety Professionals	skos:exactMatch	hcfaud:occupational-health	Workplace health and safety staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Other	Other	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Pharmacy%20Professionals	Pharmacy Professionals	skos:closeMatch	hcfaud:pharmacists	Pharmacists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	TRAIN includes pharmacy technicians.
+traincourse:Physicians%20and%20Other%20Clinicians	Physicians and Other Clinicians	skos:closeMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Also physician-assistants and nurses (NPs).
+traincourse:Policy%20/%20Planner	Policy / Planner	skos:closeMatch	hcfaud:policy-and-funding	Policy and funding	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Public%20Health	Public Health	skos:exactMatch	hcfaud:public-health-workers	Public health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Public%20Information%20/%20Media%20Specialists	Public Information / Media Specialists	skos:closeMatch	hcfaud:pr-and-campaign-staff	Communications, PR and campaign staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Public%20Safety%20Communications	Public Safety Communications	skos:broadMatch	hcfaud:police-courts-corrections	Military, police, courts and corrections	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: 911 dispatchers have no id.
+traincourse:Public%20Works	Public Works	skos:broadMatch	hcfaud:public-sector-workers	Public-sector workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	About-axis id; no role id.
+traincourse:Researchers%20/%20Analysts	Researchers / Analysts	skos:exactMatch	hcfaud:researchers	Researchers and evaluators	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Social%20Workers	Social Workers	skos:broadMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Student	Student	skos:closeMatch	hcfaud:students	Students	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	About-axis id (students as a population).
+traincourse:Substance%20Use%20Disorder%20Professionals	Substance Use Disorder Professionals	skos:closeMatch	hcfaud:addiction-counselors	Addiction counselors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+traincourse:Teacher%20/%20Faculty	Teacher / Faculty	skos:exactMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

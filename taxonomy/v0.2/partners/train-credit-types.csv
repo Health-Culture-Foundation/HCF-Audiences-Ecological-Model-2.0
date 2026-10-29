@@ -1,0 +1,150 @@
+source_id,source_label,predicate,target_id,comment
+AAA: CEUs,AAA: CEUs,,,"Not a profession (format, generic or unclear)."
+AAFP,AAFP,skos:relatedMatch,primary-care-doctors,American Academy of Family Physicians.
+AAMA: Continuing Education Units (CEUs),AAMA: Continuing Education Units (CEUs),skos:relatedMatch,allied-health,
+AAPA: Continuing Medical Education (CME) for PA,AAPA: Continuing Medical Education (CME) for PA,skos:relatedMatch,physician-assistants,
+AARC: American Association of Respiratory Care,AARC: American Association of Respiratory Care,skos:relatedMatch,allied-health,
+AAVSB: Registry of Approved Continuing Education (RACE),AAVSB: Registry of Approved Continuing Education (RACE),,,Veterinarians. Gap: no animal health role.
+ABIM: American Board of Internal Medicine,ABIM: American Board of Internal Medicine,skos:relatedMatch,doctors,
+ABMDI: American Board of Medicolegal Death Investigators,ABMDI: American Board of Medicolegal Death Investigators,,,Gap: no death-investigation role.
+Academic Credit,Academic Credit,,,"Not a profession (format, generic or unclear)."
+ACCME: Continuing Medical Education (CME),ACCME: Continuing Medical Education (CME),skos:relatedMatch,doctors,
+ACCME: Non-Physician Continuing Medical Education (CME),ACCME: Non-Physician Continuing Medical Education (CME),skos:relatedMatch,health-care-workers,Non-physicians at CME activities.
+ACHE: Continuing Education Credit,ACHE: Continuing Education Credit,skos:relatedMatch,health-care-leaders,
+ACPE- Contact Hours,ACPE- Contact Hours,skos:relatedMatch,pharmacists,ACPE-Technician is pharmacy technicians.
+ACPE: Continuing Pharmacy Education (CPE),ACPE: Continuing Pharmacy Education (CPE),skos:relatedMatch,pharmacists,ACPE-Technician is pharmacy technicians.
+ACPE-Technician: Contact Hours/Continuing Pharmacy Education (CPE) Credits,ACPE-Technician: Contact Hours/Continuing Pharmacy Education (CPE) Credits,skos:relatedMatch,pharmacists,ACPE-Technician is pharmacy technicians.
+ACVREP: Continuing Education Clock Hours,ACVREP: Continuing Education Clock Hours,skos:relatedMatch,allied-health,
+ADA/CERP: Continuing Education Credit Hours,ADA/CERP: Continuing Education Credit Hours,skos:relatedMatch,dentists,
+ADA: American Dental Association,ADA: American Dental Association,skos:relatedMatch,dentists,
+Adv. PDS,Adv. PDS,,,"Not a profession (format, generic or unclear)."
+American Physical Therapists Association (APTA),American Physical Therapists Association (APTA),skos:relatedMatch,allied-health,
+ANCC: Continuing Nursing Education (CNE),ANCC: Continuing Nursing Education (CNE),skos:relatedMatch,nurses,
+AOTA: Contact Hours/CEUs,AOTA: Contact Hours/CEUs,skos:relatedMatch,allied-health,
+APA: Continuing Education Credit,APA: Continuing Education Credit,skos:relatedMatch,behavioral-health-workers,
+APD In-Service,APD In-Service,,,"Not a profession (format, generic or unclear)."
+ASCLS: PACE – Clinical Laboratorians CE Provider,ASCLS: PACE – Clinical Laboratorians CE Provider,skos:relatedMatch,lab-workers,Clinical laboratory credit.
+ASHA: CEUs,ASHA: CEUs,skos:relatedMatch,allied-health,
+ASWB: Approved Continuing Education (ACE) for Social Workers,ASWB: Approved Continuing Education (ACE) for Social Workers,skos:relatedMatch,behavioral-health-workers,Social workers.
+ASWB: Continuing Education Clock Hours,ASWB: Continuing Education Clock Hours,skos:relatedMatch,behavioral-health-workers,Social workers.
+CA BRN: California Board of Registered Nursing,CA BRN: California Board of Registered Nursing,skos:relatedMatch,nurses,
+CAPCE: EMS Medical - Paramedic Level Only,CAPCE: EMS Medical - Paramedic Level Only,skos:relatedMatch,ems,
+CDR: Continuing Professional Education Units,CDR: Continuing Professional Education Units,skos:relatedMatch,allied-health,
+CEC - Dental,CEC - Dental,skos:relatedMatch,dentists,
+CEH,CEH,,,"Not a profession (format, generic or unclear)."
+CEM,CEM,,,"Not a profession (format, generic or unclear)."
+Certificate of Attendance,Certificate of Attendance,,,"Not a profession (format, generic or unclear)."
+Certification,Certification,,,"Not a profession (format, generic or unclear)."
+Certified Floodplain Manager,Certified Floodplain Manager,skos:relatedMatch,urban-planners,
+Certified Food Manager,Certified Food Manager,skos:relatedMatch,environmental-health,
+CHES/MCHES,CHES/MCHES,skos:relatedMatch,health-educators,
+Childcare Providers,Childcare Providers,skos:relatedMatch,child-care-staff,
+CHW,CHW,skos:relatedMatch,community-health-workers,
+CLE,CLE,skos:relatedMatch,courts,Continuing legal education.
+Clock Hours,Clock Hours,,,"Not a profession (format, generic or unclear)."
+CME,CME,skos:relatedMatch,doctors,
+CNE Contact Hours,CNE Contact Hours,skos:relatedMatch,nurses,
+Contact Hours,Contact Hours,,,"Not a profession (format, generic or unclear)."
+Continuing Law Enforcement Education (CLEE),Continuing Law Enforcement Education (CLEE),skos:relatedMatch,police,
+COPE: Continuing Optometric Education (COE),COPE: Continuing Optometric Education (COE),skos:relatedMatch,health-care-workers,Optometry and chiropractic have no narrower id.
+COPS-KT: Continuing Education Units (CEUs),COPS-KT: Continuing Education Units (CEUs),skos:relatedMatch,police,DOJ Community Oriented Policing Services.
+CPRS,CPRS,skos:relatedMatch,peer-workers,Certified peer recovery specialist.
+CRCC: Clock Hours,CRCC: Clock Hours,skos:relatedMatch,behavioral-health-workers,
+Developmental Disabilities,Developmental Disabilities,,,"Not a profession (format, generic or unclear)."
+Dietitians CPE,Dietitians CPE,skos:relatedMatch,allied-health,
+E-CERP,E-CERP,skos:relatedMatch,allied-health,
+Emergency Medical Responder,Emergency Medical Responder,skos:relatedMatch,ems,
+Emergency Medical Technician,Emergency Medical Technician,skos:relatedMatch,ems,
+EMS,EMS,skos:relatedMatch,ems,
+EMS - Airway,EMS - Airway,skos:relatedMatch,ems,
+EMS - Medical,EMS - Medical,skos:relatedMatch,ems,
+EMS - Operations,EMS - Operations,skos:relatedMatch,ems,
+EMS - Operations: Documentation,EMS - Operations: Documentation,skos:relatedMatch,ems,
+EMS - Operations: Emergency Preparedness,EMS - Operations: Emergency Preparedness,skos:relatedMatch,ems,
+EMS - Patient Assessment,EMS - Patient Assessment,skos:relatedMatch,ems,
+EMS - Preparatory,EMS - Preparatory,skos:relatedMatch,ems,
+EMS - Special Considerations: Pediatric: Airway,EMS - Special Considerations: Pediatric: Airway,skos:relatedMatch,ems,
+EMS - Special Considerations: Pediatric: Medical,EMS - Special Considerations: Pediatric: Medical,skos:relatedMatch,ems,
+EMS - Special Considerations: Pediatric: Trauma,EMS - Special Considerations: Pediatric: Trauma,skos:relatedMatch,ems,
+EMS - Special Considerations: Peds: Assessment,EMS - Special Considerations: Peds: Assessment,skos:relatedMatch,ems,
+EMS - Trauma,EMS - Trauma,skos:relatedMatch,ems,
+EMS Physician,EMS Physician,skos:relatedMatch,doctors,
+EMS-IC-EA,EMS-IC-EA,skos:relatedMatch,ems,
+EMS-IC-IT,EMS-IC-IT,skos:relatedMatch,ems,
+EMS-IC-M&E,EMS-IC-M&E,skos:relatedMatch,ems,
+EMT Enhanced,EMT Enhanced,skos:relatedMatch,ems,
+EMT Instructor,EMT Instructor,skos:relatedMatch,ems,
+Environmental Health - CPE,Environmental Health - CPE,skos:relatedMatch,environmental-health,
+FCLB: PACE – Chiropractic Recognized CE Provider,FCLB: PACE – Chiropractic Recognized CE Provider,skos:relatedMatch,health-care-workers,Optometry and chiropractic have no narrower id.
+Federal Highway Administration Professional Development Hours (PDH),Federal Highway Administration Professional Development Hours (PDH),skos:relatedMatch,urban-planners,
+First Responder,First Responder,skos:relatedMatch,ems,
+Florida Clinical Laboratory Personnel Credits,Florida Clinical Laboratory Personnel Credits,skos:relatedMatch,lab-workers,Clinical laboratory credit.
+FSBPT: CCU,FSBPT: CCU,skos:relatedMatch,allied-health,
+Ghana - CME,Ghana - CME,skos:relatedMatch,doctors,
+GHI,GHI,,,"Not a profession (format, generic or unclear)."
+HRC Healthcare Equality Index: HEI on-going training credit,HRC Healthcare Equality Index: HEI on-going training credit,,,"Not a profession (format, generic or unclear)."
+IACET: Continuing Education Units (CEU),IACET: Continuing Education Units (CEU),,,"Not a profession (format, generic or unclear)."
+Instructor Candidate,Instructor Candidate,,,"Not a profession (format, generic or unclear)."
+Intermediate,Intermediate,,,"Not a profession (format, generic or unclear)."
+Joint Accreditation for Interprofessional Continuing Education (JA IPCE),Joint Accreditation for Interprofessional Continuing Education (JA IPCE),skos:relatedMatch,health-care-workers,"Interprofessional: doctors, nurses, pharmacists and others together."
+KBSRB: Kansas Behavioral Health Providers License,KBSRB: Kansas Behavioral Health Providers License,skos:relatedMatch,behavioral-health-workers,
+Kenya - CME,Kenya - CME,skos:relatedMatch,doctors,
+KMI Test Course Credit,KMI Test Course Credit,,,"Not a profession (format, generic or unclear)."
+KY - Nurse Practitioner Continuing Education Credits,KY - Nurse Practitioner Continuing Education Credits,skos:relatedMatch,nurses,
+KY CE - DMD,KY CE - DMD,skos:relatedMatch,dentists,
+KY DPH: Community Health Worker (CHW),KY DPH: Community Health Worker (CHW),skos:relatedMatch,community-health-workers,
+KY KBLPC: Contact Hours (ADC),KY KBLPC: Contact Hours (ADC),skos:relatedMatch,addiction-counselors,
+KY KBLPC: Contact Hours (LPC),KY KBLPC: Contact Hours (LPC),skos:relatedMatch,behavioral-health-workers,
+KY KBLPC: Contact Hours (MFT),KY KBLPC: Contact Hours (MFT),skos:relatedMatch,behavioral-health-workers,
+KY KBLPC: Contact Hours (OT),KY KBLPC: Contact Hours (OT),skos:relatedMatch,allied-health,
+KY KBRC: CEH,KY KBRC: CEH,,,"Not a profession (format, generic or unclear)."
+KY KCE Credit,KY KCE Credit,,,"Not a profession (format, generic or unclear)."
+KY KDE: EILA,KY KDE: EILA,skos:relatedMatch,teachers,Teacher professional education.
+KY KPTA: Category 1 Contact Hour(s),KY KPTA: Category 1 Contact Hour(s),skos:relatedMatch,allied-health,
+KY: NP,KY: NP,skos:relatedMatch,nurses,
+KY: RDMS,KY: RDMS,skos:relatedMatch,allied-health,
+L-CERP,L-CERP,skos:relatedMatch,allied-health,
+Lead Inspector,Lead Inspector,skos:relatedMatch,environmental-health,
+Lead Inspector Risk Assessor,Lead Inspector Risk Assessor,skos:relatedMatch,environmental-health,
+Licensed Chemical Dependency Counselor,Licensed Chemical Dependency Counselor,skos:relatedMatch,addiction-counselors,
+Licensed Marriage and Family Therapist,Licensed Marriage and Family Therapist,skos:relatedMatch,behavioral-health-workers,
+Licensed Professional Counselor,Licensed Professional Counselor,skos:relatedMatch,behavioral-health-workers,
+Licensed Psychologist,Licensed Psychologist,skos:relatedMatch,behavioral-health-workers,
+Licensed Social Worker,Licensed Social Worker,skos:relatedMatch,behavioral-health-workers,Social workers.
+MA Certified Health Officer (CHO) Contact Hours,MA Certified Health Officer (CHO) Contact Hours,skos:relatedMatch,public-health-workers,
+MA Nursing Contact Hours,MA Nursing Contact Hours,skos:relatedMatch,nurses,
+MA Registered Sanitarian (RS) Contact Hours,MA Registered Sanitarian (RS) Contact Hours,skos:relatedMatch,environmental-health,
+Malawi - CME,Malawi - CME,skos:relatedMatch,doctors,
+Midwifery Continuing Education Contact Hours,Midwifery Continuing Education Contact Hours,skos:relatedMatch,midwives,
+NASW,NASW,skos:relatedMatch,behavioral-health-workers,Social workers.
+National Board of Health & Wellness Coaching (NBHWC),National Board of Health & Wellness Coaching (NBHWC),skos:relatedMatch,allied-health,
+NBCC: Clock Hours,NBCC: Clock Hours,skos:relatedMatch,behavioral-health-workers,
+NBPHE: Certified Public Health (CPH),NBPHE: Certified Public Health (CPH),skos:relatedMatch,public-health-workers,
+NCBDE: CDE,NCBDE: CDE,skos:relatedMatch,allied-health,
+NCHEC: Certified Health Education Specialist (CHES),NCHEC: Certified Health Education Specialist (CHES),skos:relatedMatch,health-educators,
+NCHEC: Master Certified Health Education Specialist (MCHES),NCHEC: Master Certified Health Education Specialist (MCHES),skos:relatedMatch,health-educators,
+NREMT,NREMT,skos:relatedMatch,ems,
+Nursing Home Administrator,Nursing Home Administrator,skos:relatedMatch,health-care-leaders,
+NYSED SW: Continuing Education Clock Hours,NYSED SW: Continuing Education Clock Hours,skos:relatedMatch,behavioral-health-workers,Social workers.
+NYSEDP: Continuing Education Contact Hours (CECH),NYSEDP: Continuing Education Contact Hours (CECH),skos:relatedMatch,behavioral-health-workers,
+Other,Other,,,"Not a profession (format, generic or unclear)."
+PA Act 48/58,PA Act 48/58,skos:relatedMatch,teachers,Teacher professional education.
+PA Act 48: School,PA Act 48: School,skos:relatedMatch,teachers,Teacher professional education.
+PA Act 58: RN,PA Act 58: RN,skos:relatedMatch,nurses,
+PACE,PACE,,,"Not a profession (format, generic or unclear)."
+Paramedic,Paramedic,skos:relatedMatch,ems,
+PDS,PDS,,,"Not a profession (format, generic or unclear)."
+Pharmacist Contact Hours,Pharmacist Contact Hours,skos:relatedMatch,pharmacists,ACPE-Technician is pharmacy technicians.
+R-CERP,R-CERP,skos:relatedMatch,allied-health,
+Registered Sanitarians,Registered Sanitarians,skos:relatedMatch,environmental-health,
+RI CEMS: EMT Individual Component,RI CEMS: EMT Individual Component,skos:relatedMatch,ems,
+RI CEMS: EMT National Component,RI CEMS: EMT National Component,skos:relatedMatch,ems,
+RI CEMS: EMT State and Local Component,RI CEMS: EMT State and Local Component,skos:relatedMatch,ems,
+RI DCYF,RI DCYF,,,"Not a profession (format, generic or unclear)."
+RRT (Registered Respiratory Therapist),RRT (Registered Respiratory Therapist),skos:relatedMatch,allied-health,
+Rwanda - CME,Rwanda - CME,skos:relatedMatch,doctors,
+Social Workers,Social Workers,skos:relatedMatch,behavioral-health-workers,Social workers.
+Tanzania - CME,Tanzania - CME,skos:relatedMatch,doctors,
+TDH Continuing Education Credit Hours - Dental,TDH Continuing Education Credit Hours - Dental,skos:relatedMatch,dentists,
+TX DSHS CHW/I,TX DSHS CHW/I,skos:relatedMatch,community-health-workers,
+Zambia - CME,Zambia - CME,skos:relatedMatch,doctors,
