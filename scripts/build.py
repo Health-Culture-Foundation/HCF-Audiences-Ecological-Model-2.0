@@ -241,7 +241,7 @@ def seeds_of(r):
 def sssom(path, title, prefixes, comment, rows):
     head = ["# curie_map:"] + [f"#   {k}: {v}" for k, v in prefixes.items()] + [
         "#   skos: http://www.w3.org/2004/02/skos/core#", "#   semapv: https://w3id.org/semapv/vocab/",
-        f"# mapping_set_id: https://github.com/vivwebsolutions/HCF-Audiences-Ecological-Model-2.0/{path}",
+        f"# mapping_set_id: https://github.com/Health-Culture-Foundation/HCF-Audiences-Ecological-Model-2.0/{path}",
         "# mapping_set_version: 2026-10-22", f"# mapping_set_title: {title}",
         "# license: https://creativecommons.org/licenses/by/4.0/",
         "# creator_label:", "#   - Claude (Claude Code), for Health Culture Foundation; not yet reviewed by a person",

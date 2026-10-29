@@ -13,7 +13,7 @@ which promises an "ecological tagging vocabulary" built on the five levels.
 
 ## What's in it
 
-**See it as a website: <https://vivwebsolutions.github.io/HCF-Audiences-Ecological-Model-2.0/>** (draft, built from this branch)
+**See it as a website: <https://health-culture-foundation.github.io/HCF-Audiences-Ecological-Model-2.0/>** (draft, built from this branch)
 · Or browse on GitHub: [taxonomy/AUDIENCES.md](taxonomy/AUDIENCES.md) · [References](REFERENCES.md)
 
 | Path | What it is |

@@ -3,7 +3,7 @@
 #   vivww: https://github.com/vivwebsolutions/Viv-Resource-Library/blob/what-works-sleep/what-works/taxonomy/behavior-theory.json#ecologicalLevel/
 #   skos: http://www.w3.org/2004/02/skos/core#
 #   semapv: https://w3id.org/semapv/vocab/
-# mapping_set_id: https://github.com/vivwebsolutions/HCF-Audiences-Ecological-Model-2.0/crosswalks/ecological-levels-to-viv-what-works.sssom.tsv
+# mapping_set_id: https://github.com/Health-Culture-Foundation/HCF-Audiences-Ecological-Model-2.0/crosswalks/ecological-levels-to-viv-what-works.sssom.tsv
 # mapping_set_version: 2026-10-22
 # mapping_set_title: Ecological levels to the Viv Resource Library What Works ecologicalLevel facet
 # license: https://creativecommons.org/licenses/by/4.0/

@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs"
-REPO = "https://github.com/vivwebsolutions/HCF-Audiences-Ecological-Model-2.0"
+REPO = "https://github.com/Health-Culture-Foundation/HCF-Audiences-Ecological-Model-2.0"
 
 LEVEL_COLORS = {"intrapersonal": "l1", "interpersonal": "l2", "institutional": "l3", "community": "l4", "public-policy": "l5"}
 
