@@ -1,0 +1,66 @@
+# title: HCF Audiences v0.2 to US Standard Occupational Classification 2018
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   soc: https://www.bls.gov/soc/2018/#
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:health-care-workers	Health and care workers	skos:closeMatch	soc:29-0000		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:doctors	Doctors	skos:closeMatch	soc:29-1210		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:primary-care-doctors	Primary care doctors and pediatricians	skos:closeMatch	soc:29-1215		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:primary-care-doctors	Primary care doctors and pediatricians	skos:closeMatch	soc:29-1216		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:primary-care-doctors	Primary care doctors and pediatricians	skos:closeMatch	soc:29-1221		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:emergency-doctors	Emergency doctors	skos:closeMatch	soc:29-1214		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:psychiatrists	Psychiatrists	skos:closeMatch	soc:29-1223		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nurses	Nurses and nurse practitioners	skos:closeMatch	soc:29-1141		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nurses	Nurses and nurse practitioners	skos:closeMatch	soc:29-1171		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:midwives	Midwives	skos:closeMatch	soc:29-1161		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pharmacists	Pharmacists	skos:closeMatch	soc:29-1051		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:dentists	Dentists	skos:closeMatch	soc:29-1021		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:physician-assistants	Physician assistants	skos:closeMatch	soc:29-1071		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:care-workers	Care home and home care staff	skos:closeMatch	soc:31-1122		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:care-workers	Care home and home care staff	skos:closeMatch	soc:31-1131		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	soc:21-1018		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	soc:21-1023		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	soc:19-3033		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:addiction-counselors	Addiction counselors	skos:closeMatch	soc:21-1018		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:ems	EMTs and paramedics	skos:closeMatch	soc:29-2042		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:ems	EMTs and paramedics	skos:closeMatch	soc:29-2043		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-care-leaders	Hospital and clinic leaders	skos:closeMatch	soc:11-9111		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-educators	Health educators and prevention staff	skos:closeMatch	soc:21-1091		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:community-health-workers	Community health workers	skos:closeMatch	soc:21-1094		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:epidemiologists	Epidemiologists and data staff	skos:closeMatch	soc:19-1041		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-departments	Health departments and program managers	skos:closeMatch	soc:11-9111		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teachers	Teachers and professors	skos:closeMatch	soc:25-2021		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teachers	Teachers and professors	skos:closeMatch	soc:25-2031		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teachers	Teachers and professors	skos:closeMatch	soc:25-1000		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:school-counselors-and-nurses	School counselors and nurses	skos:closeMatch	soc:21-1012		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:coaches	Coaches and sports staff	skos:closeMatch	soc:27-2022		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:school-and-campus-leaders	School and campus leaders	skos:closeMatch	soc:11-9032		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:school-and-campus-leaders	School and campus leaders	skos:closeMatch	soc:11-9033		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:child-care-staff	Child care providers and staff	skos:closeMatch	soc:39-9011		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:managers-and-hr	Managers and HR	skos:closeMatch	soc:13-1071		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:managers-and-hr	Managers and HR	skos:closeMatch	soc:11-3121		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:occupational-health	Workplace health and safety staff	skos:closeMatch	soc:19-5011		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:military-leaders	Military commanders and leaders	skos:closeMatch	soc:55-1000		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:police	Police	skos:closeMatch	soc:33-3051		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:firefighters	Firefighters	skos:closeMatch	soc:33-2011		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:corrections-and-probation	Corrections and probation	skos:closeMatch	soc:33-3012		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:corrections-and-probation	Corrections and probation	skos:closeMatch	soc:21-1092		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:courts	Judges and courts	skos:closeMatch	soc:23-1023		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:journalists	Journalists and editors	skos:closeMatch	soc:27-3023		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pr-and-campaign-staff	Communications, PR and campaign staff	skos:closeMatch	soc:27-3031		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pr-and-campaign-staff	Communications, PR and campaign staff	skos:closeMatch	soc:11-2032		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:faith-leaders	Faith leaders and congregations	skos:closeMatch	soc:21-2011		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:barbers-and-stylists	Barbers, stylists and salons	skos:closeMatch	soc:39-5011		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:barbers-and-stylists	Barbers, stylists and salons	skos:closeMatch	soc:39-5012		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:retailers	Shops and retailers	skos:closeMatch	soc:41-2031		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:retailers	Shops and retailers	skos:closeMatch	soc:41-2011		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:bartenders-and-servers	Bars, restaurants and servers	skos:closeMatch	soc:35-3011		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:bartenders-and-servers	Bars, restaurants and servers	skos:closeMatch	soc:35-3031		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lawmakers	Lawmakers and elected officials	skos:closeMatch	soc:11-1031		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:urban-planners	Urban planners and housing authorities	skos:closeMatch	soc:19-3051		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:researchers	Researchers and evaluators	skos:closeMatch	soc:19-1042		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:drivers	Drivers	skos:closeMatch	soc:53-3000		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:trades-workers	Trades and manual workers	skos:closeMatch	soc:47-0000		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

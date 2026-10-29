@@ -1,0 +1,59 @@
+# title: HCF Audiences v0.2 to MeSH
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   mesh: http://id.nlm.nih.gov/mesh/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:parents-and-caregivers	Parents and caregivers	skos:closeMatch	mesh:D010290		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:parents-and-caregivers	Parents and caregivers	skos:closeMatch	mesh:D017028		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-care-workers	Health and care workers	skos:closeMatch	mesh:D006282		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:doctors	Doctors	skos:closeMatch	mesh:D010820		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nurses	Nurses and nurse practitioners	skos:closeMatch	mesh:D009726		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pharmacists	Pharmacists	skos:closeMatch	mesh:D010595		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:dentists	Dentists	skos:closeMatch	mesh:D003815		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:ems	EMTs and paramedics	skos:closeMatch	mesh:D004634		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:community-health-workers	Community health workers	skos:closeMatch	mesh:D003150		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teachers	Teachers and professors	skos:closeMatch	mesh:D000070777		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teachers	Teachers and professors	skos:closeMatch	mesh:D005178		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:police	Police	skos:closeMatch	mesh:D016495		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:firefighters	Firefighters	skos:closeMatch	mesh:D061388		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:faith-leaders	Faith leaders and congregations	skos:closeMatch	mesh:D002977		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:researchers	Researchers and evaluators	skos:closeMatch	mesh:D012108		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:babies	Babies and toddlers (0-2)	skos:closeMatch	mesh:D007223		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:young-children	Young children (2-5)	skos:closeMatch	mesh:D002675		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:children	Children (6-12)	skos:closeMatch	mesh:D002648		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teens	Teens (13-17)	skos:closeMatch	mesh:D000293		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:young-adults	Young adults (18-24)	skos:closeMatch	mesh:D055815		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:adults	Adults (25-64)	skos:closeMatch	mesh:D000328		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:older-adults	Older adults (65+)	skos:closeMatch	mesh:D000368		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:women-and-girls	Women and girls	skos:closeMatch	mesh:D005260		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:men-and-boys	Men and boys	skos:closeMatch	mesh:D008297		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:trans-and-nonbinary	Transgender and nonbinary people	skos:closeMatch	mesh:D063106		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lgb	Lesbian, gay and bisexual people	skos:closeMatch	mesh:D000072339		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:msm	Men who have sex with men	skos:closeMatch	mesh:D018451		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:asian	Asian	skos:closeMatch	mesh:D044466		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:black	Black or African American	skos:closeMatch	mesh:D044383		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:hispanic-latino	Hispanic or Latino	skos:closeMatch	mesh:D006630		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:mena	Middle Eastern or North African	skos:closeMatch	mesh:D000094863		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nhpi	Native Hawaiian or Pacific Islander	skos:closeMatch	mesh:D000095188		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:white	White	skos:closeMatch	mesh:D044465		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:indigenous-peoples	Indigenous peoples	skos:closeMatch	mesh:D000081034		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:american-indian-alaska-native	American Indian and Alaska Native	skos:closeMatch	mesh:D044467		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:aboriginal-torres-strait	Aboriginal and Torres Strait Islander peoples	skos:closeMatch	mesh:D000095283		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:first-nations-inuit-metis	First Nations, Inuit and Métis	skos:closeMatch	mesh:D004930		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:maori	Māori	skos:closeMatch	mesh:D000095284		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pregnant-postpartum	Pregnant and postpartum people	skos:closeMatch	mesh:D037841		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:students	Students	skos:closeMatch	mesh:D013334		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:military-veterans	Military and veterans	skos:closeMatch	mesh:D014728		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:military-veterans	Military and veterans	skos:closeMatch	mesh:D008889		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:rural	Rural residents	skos:closeMatch	mesh:D012424		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:low-income	People on low incomes	skos:closeMatch	mesh:D011203		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:unhoused	People experiencing homelessness	skos:closeMatch	mesh:D006703		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:justice-involved	People in jail or prison or on probation	skos:closeMatch	mesh:D011329		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:immigrants-refugees	Immigrants and refugees	skos:closeMatch	mesh:D054242		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:immigrants-refugees	Immigrants and refugees	skos:closeMatch	mesh:D012036		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:people-with-disabilities	People with disabilities	skos:closeMatch	mesh:D006233		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:people-who-use-drugs	People who use or inject drugs	skos:closeMatch	mesh:D055030		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:long-term-conditions	People with long-term health conditions	skos:closeMatch	mesh:D002908		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

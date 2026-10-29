@@ -1,0 +1,13 @@
+# title: schema.org audience types to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   schema: https://schema.org/
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+schema:Clinician	MedicalAudienceType: Clinician	skos:closeMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+schema:MedicalResearcher	MedicalAudienceType: MedicalResearcher	skos:closeMatch	hcfaud:researchers	Researchers and evaluators	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+schema:Patient	MedicalAudienceType: Patient	skos:closeMatch	hcfaud:public	The public, for themselves	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+schema:suggestedGender=female	PeopleAudience suggestedGender female	skos:closeMatch	hcfaud:women-and-girls	Women and girls	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+schema:suggestedGender=male	PeopleAudience suggestedGender male	skos:closeMatch	hcfaud:men-and-boys	Men and boys	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

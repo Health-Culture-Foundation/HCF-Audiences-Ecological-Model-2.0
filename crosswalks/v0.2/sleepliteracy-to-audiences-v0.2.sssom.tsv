@@ -1,0 +1,33 @@
+# title: SleepLiteracy.org audience terms to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   sl: https://sleepliteracy.org/taxonomy/audience/
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+sl:General%20Public	General Public	skos:closeMatch	hcfaud:public	The public, for themselves	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Kids%20(6-12)	Kids (6-12)	skos:exactMatch	hcfaud:children	Children (6-12)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Youth	Youth	skos:closeMatch	hcfaud:teens	Teens (13-17)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Young%20Adults	Young Adults	skos:exactMatch	hcfaud:young-adults	Young adults (18-24)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Seniors%20(60+)	Seniors (60+)	skos:closeMatch	hcfaud:older-adults	Older adults (65+)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	SleepLiteracy starts at 60; ours at 65
+sl:Men	Men	skos:closeMatch	hcfaud:men-and-boys	Men and boys	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Women	Women	skos:closeMatch	hcfaud:women-and-girls	Women and girls	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:LGBTQIA+	LGBTQIA+	skos:narrowMatch	hcfaud:lgb	Lesbian, gay and bisexual people	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Also trans-and-nonbinary
+sl:LGBTQIA+	LGBTQIA+	skos:narrowMatch	hcfaud:trans-and-nonbinary	Transgender and nonbinary people	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Also lgb
+sl:African%20American	African American	skos:closeMatch	hcfaud:black	Black or African American	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Parents	Parents	skos:exactMatch	hcfaud:parents-and-caregivers	Parents and caregivers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:College	College	skos:closeMatch	hcfaud:students	Students	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Plus young-adults
+sl:Employees	Employees	skos:closeMatch	hcfaud:workers	Workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Municipal%20employees	Municipal employees	skos:closeMatch	hcfaud:public-sector-workers	Public-sector workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Healthcare%20Professionals	Healthcare Professionals	skos:exactMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Universities	Universities	skos:closeMatch	hcfaud:school-and-campus-leaders	School and campus leaders	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	SleepLiteracy means the campus as an organization
+sl:Students	Students	skos:exactMatch	hcfaud:students	Students	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Professors	Professors	skos:closeMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:K-12%20Eductors	K-12 Educators	skos:closeMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	SleepLiteracy spelling kept as the source id
+sl:Workplace	Workplace	skos:exactMatch	hcfaud:employers-and-workplaces	Employers and workplaces	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Millitary%20&%20Law%20Enforcement	Military & Law Enforcement	skos:closeMatch	hcfaud:police-courts-corrections	Military, police, courts and corrections	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	As a role; the military half is About:military-veterans
+sl:Veterans	Veterans	skos:closeMatch	hcfaud:military-veterans	Military and veterans	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Science%20Journalism	Science Journalism	skos:closeMatch	hcfaud:journalists	Journalists and editors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:PR	PR	skos:closeMatch	hcfaud:pr-and-campaign-staff	Communications, PR and campaign staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sl:Pro2Pro	Pro2Pro	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Not an audience: a communication direction (vocab/communication-direction, pro-to-pro)

@@ -1,0 +1,8 @@
+source_id,source_label,predicate,target_id,comment
+generalPublic,General public,skos:closeMatch,public,
+student,Student,skos:closeMatch,students,
+parent,Parent,skos:closeMatch,parents-and-caregivers,
+teacher,Teacher,skos:exactMatch,teachers,
+administrator,Administrator,skos:closeMatch,school-and-campus-leaders,
+mentor,Mentor,skos:closeMatch,youth-workers,
+professional,Professional,skos:broadMatch,health-care-workers,"LRMI's only work role; our role tree is much finer"

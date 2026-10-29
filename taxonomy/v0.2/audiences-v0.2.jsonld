@@ -1,0 +1,1048 @@
+{
+ "@context": {
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "id": "@id",
+  "type": "@type",
+  "prefLabel": {
+   "@id": "skos:prefLabel",
+   "@language": "en"
+  },
+  "definition": {
+   "@id": "skos:definition",
+   "@language": "en"
+  },
+  "inScheme": {
+   "@id": "skos:inScheme",
+   "@type": "@id"
+  },
+  "broader": {
+   "@id": "skos:broader",
+   "@type": "@id"
+  },
+  "topConceptOf": {
+   "@id": "skos:topConceptOf",
+   "@type": "@id"
+  },
+  "closeMatch": {
+   "@id": "skos:closeMatch",
+   "@type": "@id"
+  }
+ },
+ "@graph": [
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "type": "skos:ConceptScheme",
+   "prefLabel": "Who it's for",
+   "definition": "Who the resource speaks to: the person meant to read, watch or act. The same tree names who carries the message (messenger)."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "type": "skos:ConceptScheme",
+   "prefLabel": "Who it's about",
+   "definition": "Whose health it is about. Only groups the resource names."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "type": "skos:ConceptScheme",
+   "prefLabel": "Where they are with it",
+   "definition": "Where the audience is with the behavior, from not started to in recovery."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/public",
+   "type": "skos:Concept",
+   "prefLabel": "The public, for themselves",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "definition": "People reading or acting about their own health. The default for a campaign aimed at everyone."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/family-and-friends",
+   "type": "skos:Concept",
+   "prefLabel": "Family and friends",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "definition": "People who act for someone close to them."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/parents-and-caregivers",
+   "type": "skos:Concept",
+   "prefLabel": "Parents and caregivers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/family-and-friends",
+   "definition": "Parents, guardians, grandparents and carers acting for a child or an adult they look after.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D010290",
+    "http://id.nlm.nih.gov/mesh/D017028"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/partners-and-family",
+   "type": "skos:Concept",
+   "prefLabel": "Partners and family members",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/family-and-friends",
+   "definition": "Spouses, partners, siblings and other relatives."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/friends-and-peers",
+   "type": "skos:Concept",
+   "prefLabel": "Friends and peers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/family-and-friends",
+   "definition": "Friends, roommates, classmates, teammates, bystanders."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Health and care workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "definition": "People who treat or care for patients.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D006282"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/doctors",
+   "type": "skos:Concept",
+   "prefLabel": "Doctors",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "definition": "Physicians of any specialty.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D010820"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/primary-care-doctors",
+   "type": "skos:Concept",
+   "prefLabel": "Primary care doctors and pediatricians",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/doctors",
+   "definition": "Family doctors, GPs, internists, pediatricians."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/emergency-doctors",
+   "type": "skos:Concept",
+   "prefLabel": "Emergency doctors",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/doctors"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/psychiatrists",
+   "type": "skos:Concept",
+   "prefLabel": "Psychiatrists",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/doctors"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/addiction-medicine",
+   "type": "skos:Concept",
+   "prefLabel": "Addiction medicine and addiction psychiatry",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/doctors"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/nurses",
+   "type": "skos:Concept",
+   "prefLabel": "Nurses and nurse practitioners",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D009726"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/midwives",
+   "type": "skos:Concept",
+   "prefLabel": "Midwives",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/nurses"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/pharmacists",
+   "type": "skos:Concept",
+   "prefLabel": "Pharmacists",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D010595"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/dentists",
+   "type": "skos:Concept",
+   "prefLabel": "Dentists",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D003815"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/physician-assistants",
+   "type": "skos:Concept",
+   "prefLabel": "Physician assistants",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/care-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Care home and home care staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "definition": "Nursing assistants, personal care and aged-care workers."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/behavioral-health-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Counselors, social workers and psychologists",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/addiction-counselors",
+   "type": "skos:Concept",
+   "prefLabel": "Addiction counselors",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/behavioral-health-workers",
+   "definition": "SOC 2018 21-1018; O*NET splits it into 21-1011.00 (substance abuse and behavioral disorder) and 21-1014.00 (mental health)."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/peer-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Peer recovery and harm-reduction workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "definition": "People with lived experience paid to support others, and harm-reduction outreach staff."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/ems",
+   "type": "skos:Concept",
+   "prefLabel": "EMTs and paramedics",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D004634"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/health-care-leaders",
+   "type": "skos:Concept",
+   "prefLabel": "Hospital and clinic leaders",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "definition": "Managers who set policy for a health system, hospital or clinic."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Public health workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "definition": "Staff of health departments and prevention programs."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/health-educators",
+   "type": "skos:Concept",
+   "prefLabel": "Health educators and prevention staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/community-health-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Community health workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers",
+   "definition": "Promotores, lay health workers, CHWs.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D003150"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/epidemiologists",
+   "type": "skos:Concept",
+   "prefLabel": "Epidemiologists and data staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/health-departments",
+   "type": "skos:Concept",
+   "prefLabel": "Health departments and program managers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers",
+   "definition": "The health department as an organization, and the managers who run its programs."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/schools-and-youth-work",
+   "type": "skos:Concept",
+   "prefLabel": "Schools and youth work",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/teachers",
+   "type": "skos:Concept",
+   "prefLabel": "Teachers and professors",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/schools-and-youth-work",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000070777",
+    "http://id.nlm.nih.gov/mesh/D005178"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/school-counselors-and-nurses",
+   "type": "skos:Concept",
+   "prefLabel": "School counselors and nurses",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/schools-and-youth-work"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/coaches",
+   "type": "skos:Concept",
+   "prefLabel": "Coaches and sports staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/schools-and-youth-work"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/school-and-campus-leaders",
+   "type": "skos:Concept",
+   "prefLabel": "School and campus leaders",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/schools-and-youth-work",
+   "definition": "Principals, superintendents, deans, residence life."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/youth-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Youth workers and mentors",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/schools-and-youth-work"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/child-care-staff",
+   "type": "skos:Concept",
+   "prefLabel": "Child care providers and staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/schools-and-youth-work"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/employers-and-workplaces",
+   "type": "skos:Concept",
+   "prefLabel": "Employers and workplaces",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/managers-and-hr",
+   "type": "skos:Concept",
+   "prefLabel": "Managers and HR",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/employers-and-workplaces"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/occupational-health",
+   "type": "skos:Concept",
+   "prefLabel": "Workplace health and safety staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/employers-and-workplaces"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/police-courts-corrections",
+   "type": "skos:Concept",
+   "prefLabel": "Military, police, courts and corrections",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/military-leaders",
+   "type": "skos:Concept",
+   "prefLabel": "Military commanders and leaders",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/police-courts-corrections"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/police",
+   "type": "skos:Concept",
+   "prefLabel": "Police",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/police-courts-corrections",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D016495"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/firefighters",
+   "type": "skos:Concept",
+   "prefLabel": "Firefighters",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/police-courts-corrections",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D061388"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/corrections-and-probation",
+   "type": "skos:Concept",
+   "prefLabel": "Corrections and probation",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/police-courts-corrections"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/courts",
+   "type": "skos:Concept",
+   "prefLabel": "Judges and courts",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/police-courts-corrections"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/media-and-communicators",
+   "type": "skos:Concept",
+   "prefLabel": "Media and communicators",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/journalists",
+   "type": "skos:Concept",
+   "prefLabel": "Journalists and editors",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/media-and-communicators"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/pr-and-campaign-staff",
+   "type": "skos:Concept",
+   "prefLabel": "Communications, PR and campaign staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/media-and-communicators"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/creators-and-influencers",
+   "type": "skos:Concept",
+   "prefLabel": "Creators and influencers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/media-and-communicators"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/public-figures",
+   "type": "skos:Concept",
+   "prefLabel": "Celebrities, athletes and public figures",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/media-and-communicators",
+   "definition": "Mainly a messenger value: famous people who front a campaign."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/community-and-faith",
+   "type": "skos:Concept",
+   "prefLabel": "Community and faith",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/community-organizations",
+   "type": "skos:Concept",
+   "prefLabel": "Community organizations and coalitions",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/community-and-faith"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/faith-leaders",
+   "type": "skos:Concept",
+   "prefLabel": "Faith leaders and congregations",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/community-and-faith",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D002977"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/barbers-and-stylists",
+   "type": "skos:Concept",
+   "prefLabel": "Barbers, stylists and salons",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/community-and-faith"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/trusted-messengers",
+   "type": "skos:Concept",
+   "prefLabel": "Other trusted messengers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/community-and-faith",
+   "definition": "Elders, neighborhood leaders, people with lived experience speaking publicly."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/sellers-and-servers",
+   "type": "skos:Concept",
+   "prefLabel": "Sellers and servers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/retailers",
+   "type": "skos:Concept",
+   "prefLabel": "Shops and retailers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/sellers-and-servers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/bartenders-and-servers",
+   "type": "skos:Concept",
+   "prefLabel": "Bars, restaurants and servers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/sellers-and-servers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/gun-sellers",
+   "type": "skos:Concept",
+   "prefLabel": "Gun shops and ranges",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/sellers-and-servers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/platforms-and-tech",
+   "type": "skos:Concept",
+   "prefLabel": "Platforms and app makers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/sellers-and-servers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/policy-and-funding",
+   "type": "skos:Concept",
+   "prefLabel": "Policy and funding",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/lawmakers",
+   "type": "skos:Concept",
+   "prefLabel": "Lawmakers and elected officials",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/policy-and-funding"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/regulators-and-agencies",
+   "type": "skos:Concept",
+   "prefLabel": "Regulators and agency staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/policy-and-funding"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/settlement-boards",
+   "type": "skos:Concept",
+   "prefLabel": "Opioid settlement fund boards",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/policy-and-funding"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/funders",
+   "type": "skos:Concept",
+   "prefLabel": "Funders",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/policy-and-funding"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/urban-planners",
+   "type": "skos:Concept",
+   "prefLabel": "Urban planners and housing authorities",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/policy-and-funding"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/researchers",
+   "type": "skos:Concept",
+   "prefLabel": "Researchers and evaluators",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D012108"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "type": "skos:Concept",
+   "prefLabel": "Age",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/about"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/babies",
+   "type": "skos:Concept",
+   "prefLabel": "Babies and toddlers (0-2)",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D007223"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/young-children",
+   "type": "skos:Concept",
+   "prefLabel": "Young children (2-5)",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D002675"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/children",
+   "type": "skos:Concept",
+   "prefLabel": "Children (6-12)",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D002648"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/teens",
+   "type": "skos:Concept",
+   "prefLabel": "Teens (13-17)",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "definition": "MeSH Adolescent runs 13-18; campaigns for 18-year-olds go in Young adults.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000293"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/young-adults",
+   "type": "skos:Concept",
+   "prefLabel": "Young adults (18-24)",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D055815"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/adults",
+   "type": "skos:Concept",
+   "prefLabel": "Adults (25-64)",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "definition": "Only when the campaign names an adult age range, not as a stand-in for everyone.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000328"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/older-adults",
+   "type": "skos:Concept",
+   "prefLabel": "Older adults (65+)",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/age",
+   "definition": "Campaigns saying 60+ or 55+ land here too.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000368"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/gender",
+   "type": "skos:Concept",
+   "prefLabel": "Sex and gender",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/about"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/women-and-girls",
+   "type": "skos:Concept",
+   "prefLabel": "Women and girls",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/gender",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D005260"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/men-and-boys",
+   "type": "skos:Concept",
+   "prefLabel": "Men and boys",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/gender",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D008297"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/trans-and-nonbinary",
+   "type": "skos:Concept",
+   "prefLabel": "Transgender and nonbinary people",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/gender",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D063106"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/orientation",
+   "type": "skos:Concept",
+   "prefLabel": "Sexual orientation",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/about"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/lgb",
+   "type": "skos:Concept",
+   "prefLabel": "Lesbian, gay and bisexual people",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/orientation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000072339"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/msm",
+   "type": "skos:Concept",
+   "prefLabel": "Men who have sex with men",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/orientation",
+   "definition": "A behavior, not an identity; used by HIV and STI campaigns.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D018451"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "type": "skos:Concept",
+   "prefLabel": "Race, ethnicity and Indigenous peoples",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/about"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/asian",
+   "type": "skos:Concept",
+   "prefLabel": "Asian",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D044466"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/black",
+   "type": "skos:Concept",
+   "prefLabel": "Black or African American",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D044383"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/hispanic-latino",
+   "type": "skos:Concept",
+   "prefLabel": "Hispanic or Latino",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D006630"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/mena",
+   "type": "skos:Concept",
+   "prefLabel": "Middle Eastern or North African",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000094863"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/nhpi",
+   "type": "skos:Concept",
+   "prefLabel": "Native Hawaiian or Pacific Islander",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000095188"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/white",
+   "type": "skos:Concept",
+   "prefLabel": "White",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "definition": "Rarely named; only when a campaign says so.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D044465"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/indigenous-peoples",
+   "type": "skos:Concept",
+   "prefLabel": "Indigenous peoples",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/race-ethnicity",
+   "definition": "Works across countries.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000081034"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/american-indian-alaska-native",
+   "type": "skos:Concept",
+   "prefLabel": "American Indian and Alaska Native",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/indigenous-peoples",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D044467"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/aboriginal-torres-strait",
+   "type": "skos:Concept",
+   "prefLabel": "Aboriginal and Torres Strait Islander peoples",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/indigenous-peoples",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000095283"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/first-nations-inuit-metis",
+   "type": "skos:Concept",
+   "prefLabel": "First Nations, Inuit and Métis",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/indigenous-peoples",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D004930"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/maori",
+   "type": "skos:Concept",
+   "prefLabel": "Māori",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/indigenous-peoples",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000095284"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "type": "skos:Concept",
+   "prefLabel": "Life situation",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/about"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/pregnant-postpartum",
+   "type": "skos:Concept",
+   "prefLabel": "Pregnant and postpartum people",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D037841"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/students",
+   "type": "skos:Concept",
+   "prefLabel": "Students",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D013334"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/military-veterans",
+   "type": "skos:Concept",
+   "prefLabel": "Military and veterans",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D014728",
+    "http://id.nlm.nih.gov/mesh/D008889"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/workers",
+   "type": "skos:Concept",
+   "prefLabel": "Workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Use a child when the job is named."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/drivers",
+   "type": "skos:Concept",
+   "prefLabel": "Drivers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/shift-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Shift and night workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/trades-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Trades and manual workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/public-sector-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Public-sector workers",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/rural",
+   "type": "skos:Concept",
+   "prefLabel": "Rural residents",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D012424"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/low-income",
+   "type": "skos:Concept",
+   "prefLabel": "People on low incomes",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D011203"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/unhoused",
+   "type": "skos:Concept",
+   "prefLabel": "People experiencing homelessness",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D006703"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/justice-involved",
+   "type": "skos:Concept",
+   "prefLabel": "People in jail or prison or on probation",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D011329"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/immigrants-refugees",
+   "type": "skos:Concept",
+   "prefLabel": "Immigrants and refugees",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D054242",
+    "http://id.nlm.nih.gov/mesh/D012036"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/people-with-disabilities",
+   "type": "skos:Concept",
+   "prefLabel": "People with disabilities",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D006233"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/people-who-use-drugs",
+   "type": "skos:Concept",
+   "prefLabel": "People who use or inject drugs",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "The population harm-reduction campaigns serve. Pair with a Stage value.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D055030"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/long-term-conditions",
+   "type": "skos:Concept",
+   "prefLabel": "People with long-term health conditions",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Patients, people on a long-term medication, the clinically vulnerable. The condition itself goes in Topic.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D002908"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/language-minorities",
+   "type": "skos:Concept",
+   "prefLabel": "Speakers of other languages",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries)."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/not-started",
+   "type": "skos:Concept",
+   "prefLabel": "Not started",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "definition": "Prevention for people who don't do it yet."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/at-risk",
+   "type": "skos:Concept",
+   "prefLabel": "At risk",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "definition": "Experimenting, or in a group at high risk."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/doing-it-now",
+   "type": "skos:Concept",
+   "prefLabel": "Doing it now",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "definition": "People who use, drink, smoke, vape, gamble, or don't yet do the healthy behavior."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/ready-to-change",
+   "type": "skos:Concept",
+   "prefLabel": "Ready to change",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "definition": "Thinking about quitting, cutting down or starting."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/in-treatment",
+   "type": "skos:Concept",
+   "prefLabel": "In treatment",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/stage"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/in-recovery",
+   "type": "skos:Concept",
+   "prefLabel": "In recovery",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/stage"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/affected-others",
+   "type": "skos:Concept",
+   "prefLabel": "Affected others",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "topConceptOf": "https://health-culture.org/vocab/audiences-v0.2/stage",
+   "definition": "Family, friends and people who have lost someone."
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+# title: HCF Audiences v0.2 to HCF audiences v0.1
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   hcfaud01: https://health-culture.org/vocab/audiences/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:public	The public, for themselves	skos:closeMatch	hcfaud01:the-person		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:parents-and-caregivers	Parents and caregivers	skos:closeMatch	hcfaud01:parents-and-caregivers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:partners-and-family	Partners and family members	skos:closeMatch	hcfaud01:partners-and-family		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:friends-and-peers	Friends and peers	skos:closeMatch	hcfaud01:friends-and-peers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-care-workers	Health and care workers	skos:closeMatch	hcfaud01:clinicians		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:doctors	Doctors	skos:closeMatch	hcfaud01:clinicians		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nurses	Nurses and nurse practitioners	skos:closeMatch	hcfaud01:nurses		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	hcfaud01:counselors-and-therapists		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-care-leaders	Hospital and clinic leaders	skos:closeMatch	hcfaud01:health-care-leaders		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:public-health-workers	Public health workers	skos:closeMatch	hcfaud01:public-health-practitioners		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-educators	Health educators and prevention staff	skos:closeMatch	hcfaud01:public-health-practitioners		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:community-health-workers	Community health workers	skos:closeMatch	hcfaud01:community-health-workers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:health-departments	Health departments and program managers	skos:closeMatch	hcfaud01:health-departments		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teachers	Teachers and professors	skos:closeMatch	hcfaud01:teachers-and-coaches		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:coaches	Coaches and sports staff	skos:closeMatch	hcfaud01:teachers-and-coaches		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:school-and-campus-leaders	School and campus leaders	skos:closeMatch	hcfaud01:school-and-campus-leaders		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:youth-workers	Youth workers and mentors	skos:closeMatch	hcfaud01:peer-educators		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:employers-and-workplaces	Employers and workplaces	skos:closeMatch	hcfaud01:employers-and-workplaces		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:managers-and-hr	Managers and HR	skos:closeMatch	hcfaud01:hr-and-workplace-health		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:occupational-health	Workplace health and safety staff	skos:closeMatch	hcfaud01:hr-and-workplace-health		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:police-courts-corrections	Military, police, courts and corrections	skos:closeMatch	hcfaud01:military-and-public-safety-agencies		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:courts	Judges and courts	skos:closeMatch	hcfaud01:courts-and-judges		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:journalists	Journalists and editors	skos:closeMatch	hcfaud01:journalists-and-media		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pr-and-campaign-staff	Communications, PR and campaign staff	skos:closeMatch	hcfaud01:health-communicators		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:creators-and-influencers	Creators and influencers	skos:closeMatch	hcfaud01:journalists-and-media		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:community-organizations	Community organizations and coalitions	skos:closeMatch	hcfaud01:community-organizations		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:faith-leaders	Faith leaders and congregations	skos:closeMatch	hcfaud01:faith-communities		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:trusted-messengers	Other trusted messengers	skos:closeMatch	hcfaud01:community-and-religious-leaders		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:platforms-and-tech	Platforms and app makers	skos:closeMatch	hcfaud01:platforms-and-tech		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lawmakers	Lawmakers and elected officials	skos:closeMatch	hcfaud01:policymakers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:regulators-and-agencies	Regulators and agency staff	skos:closeMatch	hcfaud01:regulators-and-agency-staff		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:funders	Funders	skos:closeMatch	hcfaud01:funders		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:researchers	Researchers and evaluators	skos:closeMatch	hcfaud01:researchers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:age	Age	skos:closeMatch	hcfaud01:populations		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:babies	Babies and toddlers (0-2)	skos:closeMatch	hcfaud01:infants		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:young-children	Young children (2-5)	skos:closeMatch	hcfaud01:children		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:children	Children (6-12)	skos:closeMatch	hcfaud01:children		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:teens	Teens (13-17)	skos:closeMatch	hcfaud01:teens		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:young-adults	Young adults (18-24)	skos:closeMatch	hcfaud01:young-adults		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:adults	Adults (25-64)	skos:closeMatch	hcfaud01:adults		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:older-adults	Older adults (65+)	skos:closeMatch	hcfaud01:older-adults		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:women-and-girls	Women and girls	skos:closeMatch	hcfaud01:women		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:men-and-boys	Men and boys	skos:closeMatch	hcfaud01:men		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:trans-and-nonbinary	Transgender and nonbinary people	skos:closeMatch	hcfaud01:lgbtqia		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:orientation	Sexual orientation	skos:closeMatch	hcfaud01:lgbtqia		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lgb	Lesbian, gay and bisexual people	skos:closeMatch	hcfaud01:lgbtqia		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:black	Black or African American	skos:closeMatch	hcfaud01:black-african-american		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:pregnant-postpartum	Pregnant and postpartum people	skos:closeMatch	hcfaud01:pregnant-people		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:students	Students	skos:closeMatch	hcfaud01:college-students		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:military-veterans	Military and veterans	skos:closeMatch	hcfaud01:military-and-veterans		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:workers	Workers	skos:closeMatch	hcfaud01:workers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:shift-workers	Shift and night workers	skos:closeMatch	hcfaud01:shift-workers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:public-sector-workers	Public-sector workers	skos:closeMatch	hcfaud01:public-sector-workers		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

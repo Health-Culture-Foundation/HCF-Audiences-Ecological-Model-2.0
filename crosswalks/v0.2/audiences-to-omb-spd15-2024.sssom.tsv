@@ -1,0 +1,15 @@
+# title: HCF Audiences v0.2 to OMB SPD 15 (2024) minimum categories
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   omb: https://spd15revision.gov/#
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:asian	Asian	skos:closeMatch	omb:asian		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:black	Black or African American	skos:closeMatch	omb:black		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:hispanic-latino	Hispanic or Latino	skos:closeMatch	omb:hispanic		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:mena	Middle Eastern or North African	skos:closeMatch	omb:mena		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:nhpi	Native Hawaiian or Pacific Islander	skos:closeMatch	omb:nhpi		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:white	White	skos:closeMatch	omb:white		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:american-indian-alaska-native	American Indian and Alaska Native	skos:closeMatch	omb:aian		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	

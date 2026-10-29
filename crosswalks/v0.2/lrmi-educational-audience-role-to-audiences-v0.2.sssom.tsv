@@ -1,0 +1,15 @@
+# title: LRMI educational audience role to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   lrmi: http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+lrmi:generalPublic	General public	skos:closeMatch	hcfaud:public	The public, for themselves	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+lrmi:student	Student	skos:closeMatch	hcfaud:students	Students	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+lrmi:parent	Parent	skos:closeMatch	hcfaud:parents-and-caregivers	Parents and caregivers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+lrmi:teacher	Teacher	skos:exactMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+lrmi:administrator	Administrator	skos:closeMatch	hcfaud:school-and-campus-leaders	School and campus leaders	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+lrmi:mentor	Mentor	skos:closeMatch	hcfaud:youth-workers	Youth workers and mentors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+lrmi:professional	Professional	skos:broadMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	LRMI's only work role; our role tree is much finer

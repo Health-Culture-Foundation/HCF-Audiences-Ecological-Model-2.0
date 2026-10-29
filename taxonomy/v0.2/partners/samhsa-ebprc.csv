@@ -1,0 +1,10 @@
+source_id,source_label,predicate,target_id,comment
+audience:clinicians,Clinicians,skos:closeMatch,health-care-workers,"Partial: SAMHSA's About page gives these values as examples, the full list wasn't readable"
+audience:prevention-professionals,Prevention Professionals,skos:closeMatch,health-educators,Partial
+audience:patients,Patients,skos:closeMatch,public,Partial
+audience:policymakers,Policymakers,skos:closeMatch,policy-and-funding,Partial
+population:youth,Youth,skos:closeMatch,teens,Partial
+population:adult,Adult,skos:closeMatch,adults,Partial
+population:women,Women,skos:closeMatch,women-and-girls,Partial
+population:pregnant-women,Pregnant women,skos:closeMatch,pregnant-postpartum,Partial
+population:aian,American Indians and/or Alaska Natives,skos:exactMatch,american-indian-alaska-native,Partial

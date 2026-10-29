@@ -1,0 +1,17 @@
+# title: SAMHSA Evidence-Based Practices Resource Center filters (partial) to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   samhsa: https://www.samhsa.gov/libraries/evidence-based-practices-resource-center#
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+samhsa:audience:clinicians	Clinicians	skos:closeMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial: SAMHSA's About page gives these values as examples, the full list wasn't readable
+samhsa:audience:prevention-professionals	Prevention Professionals	skos:closeMatch	hcfaud:health-educators	Health educators and prevention staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
+samhsa:audience:patients	Patients	skos:closeMatch	hcfaud:public	The public, for themselves	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
+samhsa:audience:policymakers	Policymakers	skos:closeMatch	hcfaud:policy-and-funding	Policy and funding	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
+samhsa:population:youth	Youth	skos:closeMatch	hcfaud:teens	Teens (13-17)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
+samhsa:population:adult	Adult	skos:closeMatch	hcfaud:adults	Adults (25-64)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
+samhsa:population:women	Women	skos:closeMatch	hcfaud:women-and-girls	Women and girls	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
+samhsa:population:pregnant-women	Pregnant women	skos:closeMatch	hcfaud:pregnant-postpartum	Pregnant and postpartum people	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
+samhsa:population:aian	American Indians and/or Alaska Natives	skos:exactMatch	hcfaud:american-indian-alaska-native	American Indian and Alaska Native	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Partial
