@@ -23,6 +23,8 @@ Who the resource speaks to: the person meant to read, watch or act. The same tre
   - **Dentists** `dentists` — SOC 29-1021 · ISCO 2261 · NUCC 122300000X · MESH D003815
   - **Physician assistants** `physician-assistants` — SOC 29-1071 · ISCO 2240 · NUCC 363A00000X
   - **Care home and home care staff** `care-workers` — SOC 31-1122, 31-1131 · ISCO 5321, 5322
+  - **Allied health professionals** `allied-health` — SOC 29-1120, 29-2000 · ISCO 32
+  - **Laboratory staff** `lab-workers` — SOC 29-2010 · ISCO 3212
   - **Counselors, social workers and psychologists** `behavioral-health-workers` — SOC 21-1018, 21-1023, 19-3033 · ISCO 2634, 2635 · NUCC 101Y00000X, 104100000X, 103T00000X
     - **Addiction counselors** `addiction-counselors` — SOC 21-1018 · NUCC 101YA0400X
   - **Peer recovery and harm-reduction workers** `peer-workers` — NUCC 175T00000X
@@ -32,6 +34,8 @@ Who the resource speaks to: the person meant to read, watch or act. The same tre
   - **Health educators and prevention staff** `health-educators` — SOC 21-1091
   - **Community health workers** `community-health-workers` — SOC 21-1094 · ISCO 3253 · NUCC 172V00000X · MESH D003150
   - **Epidemiologists and data staff** `epidemiologists` — SOC 19-1041
+  - **Environmental health staff** `environmental-health` — SOC 19-2041 · ISCO 3257
+  - **Emergency management and preparedness staff** `emergency-managers` — SOC 11-9161
   - **Health departments and program managers** `health-departments` — SOC 11-9111
 - **Schools and youth work** `schools-and-youth-work`
   - **Teachers and professors** `teachers` — SOC 25-2021, 25-2031, 25-1000 · ISCO 23 · MESH D000070777, D005178

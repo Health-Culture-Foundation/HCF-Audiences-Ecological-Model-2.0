@@ -195,6 +195,22 @@
    "definition": "Nursing assistants, personal care and aged-care workers."
   },
   {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/allied-health",
+   "type": "skos:Concept",
+   "prefLabel": "Allied health professionals",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "definition": "Therapists, technologists and technicians: physical, occupational, respiratory and speech therapy, imaging, dietitians, medical assistants. Added for TRAIN (2026-10-29)."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/lab-workers",
+   "type": "skos:Concept",
+   "prefLabel": "Laboratory staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/health-care-workers",
+   "definition": "Clinical and public health laboratory scientists and technicians. Added for TRAIN (2026-10-29)."
+  },
+  {
    "id": "https://health-culture.org/vocab/audiences-v0.2/behavioral-health-workers",
    "type": "skos:Concept",
    "prefLabel": "Counselors, social workers and psychologists",
@@ -267,6 +283,22 @@
    "prefLabel": "Epidemiologists and data staff",
    "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
    "broader": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers"
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/environmental-health",
+   "type": "skos:Concept",
+   "prefLabel": "Environmental health staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers",
+   "definition": "Sanitarians, food, water, housing and lead inspectors. Added for TRAIN (2026-10-29)."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/emergency-managers",
+   "type": "skos:Concept",
+   "prefLabel": "Emergency management and preparedness staff",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/for",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/public-health-workers",
+   "definition": "Emergency managers and preparedness coordinators in health departments, hospitals and government. Added for TRAIN (2026-10-29)."
   },
   {
    "id": "https://health-culture.org/vocab/audiences-v0.2/health-departments",

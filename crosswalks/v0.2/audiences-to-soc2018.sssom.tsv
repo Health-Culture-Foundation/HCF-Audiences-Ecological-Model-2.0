@@ -21,6 +21,9 @@ hcfaud:dentists	Dentists	skos:closeMatch	soc:29-1021		semapv:ManualMappingCurati
 hcfaud:physician-assistants	Physician assistants	skos:closeMatch	soc:29-1071		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:care-workers	Care home and home care staff	skos:closeMatch	soc:31-1122		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:care-workers	Care home and home care staff	skos:closeMatch	soc:31-1131		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:allied-health	Allied health professionals	skos:closeMatch	soc:29-1120		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:allied-health	Allied health professionals	skos:closeMatch	soc:29-2000		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:lab-workers	Laboratory staff	skos:closeMatch	soc:29-2010		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	soc:21-1018		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	soc:21-1023		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	skos:closeMatch	soc:19-3033		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
@@ -31,6 +34,8 @@ hcfaud:health-care-leaders	Hospital and clinic leaders	skos:closeMatch	soc:11-91
 hcfaud:health-educators	Health educators and prevention staff	skos:closeMatch	soc:21-1091		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:community-health-workers	Community health workers	skos:closeMatch	soc:21-1094		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:epidemiologists	Epidemiologists and data staff	skos:closeMatch	soc:19-1041		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:environmental-health	Environmental health staff	skos:closeMatch	soc:19-2041		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:emergency-managers	Emergency management and preparedness staff	skos:closeMatch	soc:11-9161		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:health-departments	Health departments and program managers	skos:closeMatch	soc:11-9111		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:teachers	Teachers and professors	skos:closeMatch	soc:25-2021		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:teachers	Teachers and professors	skos:closeMatch	soc:25-2031		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
