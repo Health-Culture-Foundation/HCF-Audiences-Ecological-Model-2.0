@@ -809,7 +809,13 @@
    "mesh": [
     "D007223"
    ],
-   "v01": "infants"
+   "v01": "infants",
+   "pubmed": {
+    "mesh": [
+     "D007223"
+    ],
+    "filter": "allinfant[filter]"
+   }
   },
   {
    "id": "young-children",
@@ -819,7 +825,13 @@
    "mesh": [
     "D002675"
    ],
-   "v01": "children"
+   "v01": "children",
+   "pubmed": {
+    "mesh": [
+     "D002675"
+    ],
+    "filter": "preschoolchild[filter]"
+   }
   },
   {
    "id": "children",
@@ -829,7 +841,13 @@
    "mesh": [
     "D002648"
    ],
-   "v01": "children"
+   "v01": "children",
+   "pubmed": {
+    "mesh": [
+     "D002648"
+    ],
+    "filter": "child[filter]"
+   }
   },
   {
    "id": "teens",
@@ -840,7 +858,13 @@
     "D000293"
    ],
    "v01": "teens",
-   "definition": "MeSH Adolescent runs 13-18; campaigns for 18-year-olds go in Young adults."
+   "definition": "MeSH Adolescent runs 13-18; campaigns for 18-year-olds go in Young adults.",
+   "pubmed": {
+    "mesh": [
+     "D000293"
+    ],
+    "filter": "adolescent[filter]"
+   }
   },
   {
    "id": "young-adults",
@@ -850,7 +874,13 @@
    "mesh": [
     "D055815"
    ],
-   "v01": "young-adults"
+   "v01": "young-adults",
+   "pubmed": {
+    "mesh": [
+     "D055815"
+    ],
+    "filter": "youngadult[filter]"
+   }
   },
   {
    "id": "adults",
@@ -861,7 +891,14 @@
     "D000328"
    ],
    "v01": "adults",
-   "definition": "Only when the campaign names an adult age range, not as a stand-in for everyone."
+   "definition": "Only when the campaign names an adult age range, not as a stand-in for everyone.",
+   "pubmed": {
+    "mesh": [
+     "D000328",
+     "D008875"
+    ],
+    "filter": "adult[filter] OR middleaged[filter]"
+   }
   },
   {
    "id": "older-adults",
@@ -872,7 +909,13 @@
     "D000368"
    ],
    "v01": "older-adults",
-   "definition": "Campaigns saying 60+ or 55+ land here too."
+   "definition": "Campaigns saying 60+ or 55+ land here too.",
+   "pubmed": {
+    "mesh": [
+     "D000368"
+    ],
+    "filter": "aged[filter]"
+   }
   },
   {
    "id": "gender",

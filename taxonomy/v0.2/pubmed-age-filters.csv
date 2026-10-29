@@ -1,0 +1,9 @@
+id,mesh,mesh_label,mesh_ages,predicate,pubmed_filter,comment
+babies,D007223,Infant,1-23 months,skos:closeMatch,allinfant,"Ours is 0-2. PubMed's allinfant filter is Infant plus Infant, Newborn (D007231): birth to 23 months."
+young-children,D002675,"Child, Preschool",2-5 years,skos:exactMatch,preschoolchild,
+children,D002648,Child,6-12 years,skos:exactMatch,child,
+teens,D000293,Adolescent,13-18 years,skos:closeMatch,adolescent,Ours stops at 17; Adolescent runs to 18.
+young-adults,D055815,Young Adult,19-24 years,skos:closeMatch,youngadult,Ours starts at 18; Young Adult at 19.
+adults,D000328,Adult,19-44 years,skos:closeMatch,adult,"Ours is 25-64, two PubMed bands: Adult (19-44) and Middle Aged (45-64). A search uses both."
+adults,D008875,Middle Aged,45-64 years,skos:narrowMatch,middleaged,The upper half of our Adults band.
+older-adults,D000368,Aged,65 years and over,skos:exactMatch,aged,"Aged, 80 and over (D000369, aged80) is narrower."
