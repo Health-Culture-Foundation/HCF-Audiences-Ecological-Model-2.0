@@ -1,0 +1,163 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/targets/",
+      "type": "skos:ConceptScheme",
+      "title": "Advocacy target (HCF advocacy framework, axis C)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/targets/decision-makers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/targets/",
+      "prefLabel": "Decision-makers",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/targets/",
+      "notation": "1",
+      "definition": "People who can make the policy decision.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/policymakers",
+        "https://health-culture.org/vocab/audiences/regulators-and-agency-staff",
+        "https://health-culture.org/vocab/audiences/courts-and-judges",
+        "https://health-culture.org/vocab/audiences/school-and-campus-leaders"
+      ],
+      "skos:note": "Informed by: CEI ASF audience group (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/targets/influencers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/targets/",
+      "prefLabel": "Influencers",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/targets/",
+      "notation": "2",
+      "definition": "People and groups decision-makers listen to.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/journalists-and-media",
+        "https://health-culture.org/vocab/audiences/community-and-religious-leaders",
+        "https://health-culture.org/vocab/audiences/clinicians",
+        "https://health-culture.org/vocab/audiences/professional-societies",
+        "https://health-culture.org/vocab/audiences/researchers",
+        "https://health-culture.org/vocab/audiences/funders",
+        "https://health-culture.org/vocab/audiences/policy-advocates",
+        "https://health-culture.org/vocab/audiences/employers-and-workplaces"
+      ],
+      "skos:note": "Informed by: CEI ASF audience group (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/targets/the-public",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/targets/",
+      "prefLabel": "The public",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/targets/",
+      "notation": "3",
+      "altLabel": [
+        "voters",
+        "residents",
+        "affected people"
+      ],
+      "definition": "The public at large, or a specific affected group (tag the population too).",
+      "related": [
+        "https://health-culture.org/vocab/audiences/the-person"
+      ],
+      "skos:note": "Informed by: CEI ASF audience group (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/targets/opponents",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/targets/",
+      "prefLabel": "Opponents (to anticipate)",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/targets/",
+      "notation": "4",
+      "altLabel": [
+        "opposition",
+        "industry opposition"
+      ],
+      "definition": "People and groups expected to oppose; resources about them, not for them.",
+      "skos:note": "Informed by: CDC Policy Process stakeholder engagement mentions opponents",
+      "editorialNote": "Not an audience: use to tag resources that help anticipate opposition."
+    }
+  ]
+}

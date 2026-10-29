@@ -1,0 +1,1469 @@
+{
+  "@context": [
+    {
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "dct": "http://purl.org/dc/terms/",
+      "schema": "https://schema.org/",
+      "id": "@id",
+      "type": "@type",
+      "prefLabel": {
+        "@id": "skos:prefLabel",
+        "@language": "en"
+      },
+      "altLabel": {
+        "@id": "skos:altLabel",
+        "@language": "en",
+        "@container": "@set"
+      },
+      "definition": {
+        "@id": "skos:definition",
+        "@language": "en"
+      },
+      "scopeNote": {
+        "@id": "skos:scopeNote",
+        "@language": "en"
+      },
+      "example": {
+        "@id": "skos:example",
+        "@language": "en"
+      },
+      "editorialNote": {
+        "@id": "skos:editorialNote",
+        "@language": "en"
+      },
+      "notation": "skos:notation",
+      "inScheme": {
+        "@id": "skos:inScheme",
+        "@type": "@id"
+      },
+      "topConceptOf": {
+        "@id": "skos:topConceptOf",
+        "@type": "@id"
+      },
+      "broader": {
+        "@id": "skos:broader",
+        "@type": "@id"
+      },
+      "related": {
+        "@id": "skos:related",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "closeMatch": {
+        "@id": "skos:closeMatch",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "broadMatch": {
+        "@id": "skos:broadMatch",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "relatedMatch": {
+        "@id": "skos:relatedMatch",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "exactMatch": {
+        "@id": "skos:exactMatch",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "source": {
+        "@id": "dct:source",
+        "@type": "@id",
+        "@container": "@set"
+      },
+      "title": {
+        "@id": "dct:title",
+        "@language": "en"
+      },
+      "license": {
+        "@id": "dct:license",
+        "@type": "@id"
+      }
+    },
+    {
+      "hcf": "https://health-culture.org/vocab/terms#"
+    }
+  ],
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/audiences/",
+      "type": "skos:ConceptScheme",
+      "title": "HCF audiences by ecological level",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "schema:version": "0.1"
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/the-person",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "The person themselves",
+      "definition": "Someone reading or using a resource for their own health.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "for me",
+        "help yourself",
+        "general reader",
+        "general public"
+      ],
+      "example": "A college student looks up how much sleep they need.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D009272",
+        "https://schema.org/PeopleAudience",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/generalPublic"
+      ],
+      "editorialNote": "SleepLiteracy's Help Yourself is used as 'general reader': 19 of 27 Parents resources are also tagged Help Yourself. See open questions."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/patients",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Patients",
+      "definition": "A person getting care for a health condition, using a resource about their own care.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/the-person",
+      "altLabel": [
+        "people receiving care",
+        "people living with a condition"
+      ],
+      "example": "Someone newly prescribed CPAP reads how to get used to the mask.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D010361",
+        "https://schema.org/Patient"
+      ],
+      "editorialNote": "Patient is a schema.org type (Person + MedicalAudience), not a MedicalAudienceType value."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/learners",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Learners and students",
+      "definition": "Someone using a resource to learn, in or out of school. Use the population tags (teens, college students) to say who they are.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/the-person",
+      "altLabel": [
+        "students",
+        "trainees"
+      ],
+      "example": "A high-school health class unit on sleep.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D013334",
+        "https://schema.org/EducationalAudience",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/student"
+      ],
+      "hcf:ericAudience": [
+        "Students"
+      ],
+      "editorialNote": "Role (learner) vs population (college students) split: SleepLiteracy's Students and College are both mapped to population terms too."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/populations",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Who it is about",
+      "definition": "Grouping concept for populations: the people whose health a resource is about. Combine with any role at any level (parents + teens; school leaders + teens).",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "population",
+        "life stage",
+        "people group"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D009272",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "Grouping node. Age ranges should also be stored as numbers (schema.org suggestedMinAge/suggestedMaxAge, LRMI typicalAgeRange), not only as concepts."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/infants",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Infants and toddlers",
+      "definition": "Babies and toddlers, birth to about 2 years.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "babies",
+        "0-2"
+      ],
+      "example": "Safe-sleep guidance for babies.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D007223",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "Almost always reached through a parent or caregiver: tag the role too."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/children",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Children",
+      "definition": "Children from about 3 to 12 years.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "kids",
+        "kids (6-12)",
+        "school-age children"
+      ],
+      "example": "A bedtime-routine chart for a 7-year-old.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D002648",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "SleepLiteracy's term says 6-12; AASM's pediatric bands split 3-5 and 6-12."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/teens",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Teens",
+      "definition": "Young people from about 13 to 18 years.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "adolescents",
+        "teenagers",
+        "youth"
+      ],
+      "example": "Why teens fall asleep later, and what helps.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000293",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "SleepLiteracy has no 'teens' term; 'Youth' has no age range and overlaps Kids and Young Adults."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/young-adults",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Young adults",
+      "definition": "Adults from about 18 to 25 years.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "emerging adults",
+        "18-25"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D055815",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "MeSH Young Adult is 19-24 years."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/college-students",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "College and university students",
+      "definition": "People enrolled in college or university, of any age.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "undergraduates",
+        "college"
+      ],
+      "example": "Sleep and exam performance.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D013334",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "Duplicate in SleepLiteracy: General Public > College and Universities > Students."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/adults",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Adults",
+      "definition": "Adults from about 18 to 64 years.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "grown-ups"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000328",
+        "https://schema.org/PeopleAudience"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/older-adults",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Older adults",
+      "definition": "Adults 65 and older (SleepLiteracy uses 60+).",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "seniors",
+        "seniors (60+)",
+        "aged"
+      ],
+      "example": "Sleep changes with age.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000368",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "Age cut-off differs: SleepLiteracy 60+, MeSH Aged 65+. Pick one and store the number."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/women",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Women",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "example": "Sleep across pregnancy and menopause.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D014930",
+        "https://schema.org/PeopleAudience"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/men",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Men",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D008571",
+        "https://schema.org/PeopleAudience"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/pregnant-people",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Pregnant and postpartum people",
+      "definition": "People who are pregnant or recently gave birth.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "pregnancy",
+        "new parents"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D037841",
+        "https://schema.org/PeopleAudience"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/workers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Workers",
+      "definition": "People in paid work, described as people (their own sleep), not as their employer.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "employees",
+        "employed people"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D009274",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "SleepLiteracy's Employees overlaps Workplace (a setting) and Municipal employees."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/shift-workers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Shift workers",
+      "definition": "People who work nights, early mornings or rotating shifts.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/workers",
+      "altLabel": [
+        "night workers",
+        "rotating shifts",
+        "hospitality workers"
+      ],
+      "example": "Sleeping after a night shift.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000073577",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "MeSH has no person descriptor; Shift Work Schedule is the topic. SleepLiteracy's term mixes a population (shift workers) with a sector (hospitality)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/public-sector-workers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Public-sector workers",
+      "definition": "People employed by a city, state or national government, as people.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/workers",
+      "altLabel": [
+        "municipal employees",
+        "government employees"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000071296",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "If the content is about the city's HR rules, also tag employers-and-workplaces."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/military-and-veterans",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Military personnel and veterans",
+      "definition": "People serving in the armed forces, and people who used to.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "service members",
+        "veterans"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D008889",
+        "http://id.nlm.nih.gov/mesh/D014728",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "SleepLiteracy's Military & Law Enforcement is mapped to the organization level instead (duty schedules)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/athletes",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Athletes",
+      "definition": "People who train or compete in sport.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "sports players"
+      ],
+      "example": "Sleep and recovery.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D056352",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "SleepLiteracy's term also covers coaches; coaches are mapped to teachers-and-coaches."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/people-with-sleep-disorders",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "People with sleep disorders",
+      "definition": "People living with a diagnosed or suspected sleep disorder.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "insomnia",
+        "sleep apnea",
+        "narcolepsy"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D012893",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "schema.org healthCondition is the field for this."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/lgbtqia",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "LGBTQIA+ people",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "altLabel": [
+        "sexual and gender minorities"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000072339",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "Unused on SleepLiteracy (0 resources)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/black-african-american",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Black and African American people",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/intrapersonal"
+      ],
+      "hcf:facet": "population",
+      "broader": "https://health-culture.org/vocab/audiences/populations",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D001741",
+        "https://schema.org/PeopleAudience"
+      ],
+      "editorialNote": "Unused on SleepLiteracy (0 resources). Culturally tailored outreach also gets community-level roles."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/parents-and-caregivers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Parents and caregivers",
+      "definition": "Someone looking after a child or another person and helping with their health.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "parents",
+        "guardians",
+        "carers",
+        "for someone I help"
+      ],
+      "example": "A parent moves the family's phones out of bedrooms at 9 pm.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D010290",
+        "http://id.nlm.nih.gov/mesh/D017028",
+        "https://schema.org/ParentAudience",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/parent"
+      ],
+      "hcf:ericAudience": [
+        "Parents"
+      ],
+      "editorialNote": "SleepLiteracy's two vocabularies name this differently (Parents vs Parents and Caregivers)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/grandparents",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Grandparents",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/parents-and-caregivers",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000066502",
+        "https://schema.org/ParentAudience",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/parent"
+      ],
+      "editorialNote": "Safe to Sleep names grandparents as an audience."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/family-caregivers-of-adults",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Family caregivers of adults",
+      "definition": "Someone caring for an adult relative or friend, e.g. a person with dementia.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/parents-and-caregivers",
+      "altLabel": [
+        "carers",
+        "caregivers of older adults"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D017028"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/partners-and-family",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Partners and family members",
+      "definition": "People who share a home or bed with someone and affect their sleep.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "spouses",
+        "bed partners",
+        "household"
+      ],
+      "example": "A bed partner notices loud snoring and pauses in breathing.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D018454",
+        "http://id.nlm.nih.gov/mesh/D005190"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/friends-and-peers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Friends, roommates and peers",
+      "definition": "People someone spends time with as equals.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "roommates",
+        "friends",
+        "peers"
+      ],
+      "example": "Roommates agree on quiet hours.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D033062",
+        "http://id.nlm.nih.gov/mesh/D010379"
+      ],
+      "editorialNote": "hcf-guides#3 lists roommates, partners, friends, family and peer leaders at this level."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/peer-educators",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Peer educators and mentors",
+      "definition": "Someone trained to help people like themselves.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/friends-and-peers",
+      "altLabel": [
+        "peer leaders",
+        "mentors",
+        "peer tutors"
+      ],
+      "example": "A residence-hall peer health educator.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D008611",
+        "https://schema.org/EducationalAudience",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/mentor",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/peerTutor"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/clinicians",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Clinicians",
+      "definition": "Health professionals caring for a person one-to-one.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "healthcare professionals",
+        "doctors",
+        "nurses",
+        "health care providers"
+      ],
+      "example": "A doctor asks a patient about snoring.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D006282",
+        "https://schema.org/MedicalAudience",
+        "https://schema.org/Clinician",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Practitioners"
+      ],
+      "editorialNote": "NCI's mammogram example puts the doctor at the interpersonal level. A clinician changing how a clinic works is acting at the institutional level: use health-care-leaders."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/nurses",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Nurses",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/clinicians",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D009726",
+        "https://schema.org/Clinician",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/teachers-and-coaches",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Teachers, professors and coaches",
+      "definition": "Educators and coaches working directly with students or athletes.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "educators",
+        "faculty",
+        "K-12 educators",
+        "coaches"
+      ],
+      "example": "A coach moves early practice so players can sleep.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000071195",
+        "http://id.nlm.nih.gov/mesh/D005178",
+        "https://schema.org/EducationalAudience",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/teacher"
+      ],
+      "hcf:ericAudience": [
+        "Teachers"
+      ],
+      "editorialNote": "A teacher acting on school policy is at the institutional level (school-leaders). SleepLiteracy's term is misspelled ('Eductors')."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/counselors-and-therapists",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Counselors and therapists",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/clinicians",
+      "altLabel": [
+        "psychologists",
+        "CBT-I providers"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000072117",
+        "http://id.nlm.nih.gov/mesh/D000082383",
+        "https://schema.org/Clinician",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Counselors"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/wellness-and-fitness-professionals",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Wellness and fitness professionals",
+      "definition": "People coaching clients on habits outside health care.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/interpersonal"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "personal trainers",
+        "health coaches"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000098562",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/organizations",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Organizations (as audience)",
+      "definition": "Grouping concept: kinds of organization whose rules, schedules and culture shape health.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "settings",
+        "for my work"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D009938",
+        "https://schema.org/BusinessAudience"
+      ],
+      "editorialNote": "Help Others covers levels 2 to 5; it maps to several concepts. See open questions."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/schools",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Schools (K-12)",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/organizations",
+      "altLabel": [
+        "school districts",
+        "primary and secondary schools"
+      ],
+      "example": "A district moves high-school start to 8:30 am.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D012574"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/colleges-and-universities",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Colleges and universities",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/organizations",
+      "altLabel": [
+        "campuses",
+        "higher education"
+      ],
+      "example": "Dorm quiet hours; no 8 am exams.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D014495"
+      ],
+      "editorialNote": "SleepLiteracy's Universities is the parent of Students and Professors, mixing institution and people."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/employers-and-workplaces",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Employers and workplaces",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/organizations",
+      "altLabel": [
+        "workplace",
+        "corporate sector",
+        "businesses"
+      ],
+      "example": "Shift schedules that leave time for recovery sleep.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D017132",
+        "https://schema.org/BusinessAudience"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/health-care-organizations",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Hospitals, clinics and health systems",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/organizations",
+      "altLabel": [
+        "health systems",
+        "clinics",
+        "hospitals"
+      ],
+      "example": "A clinic adds a sleep-apnea screening question to intake.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D006268"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/care-homes",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Care homes and long-term care",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/organizations",
+      "altLabel": [
+        "nursing homes",
+        "assisted living"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D009735"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/military-and-public-safety-agencies",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Military and public-safety agencies",
+      "definition": "Armed forces, police and other services that set duty schedules.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/organizations",
+      "altLabel": [
+        "military",
+        "law enforcement",
+        "police",
+        "fire services"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D008889",
+        "http://id.nlm.nih.gov/mesh/D016495"
+      ],
+      "editorialNote": "SleepLiteracy's audience term is misspelled ('Millitary')."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/transportation-employers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Transportation operators",
+      "definition": "Companies and agencies that schedule drivers, pilots and crews.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/organizations",
+      "altLabel": [
+        "transportation workers",
+        "trucking",
+        "airlines",
+        "transit"
+      ],
+      "example": "Fatigue rules for drivers.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D014186"
+      ],
+      "editorialNote": "Driver hours are also set by regulators (public-policy level)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/school-and-campus-leaders",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "School and campus leaders",
+      "definition": "People who set schedules, rules and services in a school or college.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "principals",
+        "superintendents",
+        "deans",
+        "residence life",
+        "campus wellbeing staff"
+      ],
+      "example": "A dean of students ends 8 am finals.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000288",
+        "https://schema.org/EducationalAudience",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/administrator"
+      ],
+      "hcf:ericAudience": [
+        "Administrators"
+      ],
+      "editorialNote": "hcf-guides#3 names campus wellbeing staff as an HCF reader."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/hr-and-workplace-health",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "HR and workplace health staff",
+      "definition": "People who set work schedules, benefits and workplace health programs.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "human resources",
+        "occupational health",
+        "wellness program leads",
+        "managers"
+      ],
+      "closeMatch": [
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/health-care-leaders",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Health care leaders and managers",
+      "definition": "People who change how a clinic, hospital or health system works.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/institutional"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "nurse managers",
+        "clinic directors",
+        "quality leads"
+      ],
+      "example": "A nurse manager redesigns rotas to cut back-to-back nights.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D006270",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Administrators"
+      ],
+      "editorialNote": "NIOSH's shift-work training targets nurse managers."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/community-organizations",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Community organizations and coalitions",
+      "definition": "Groups that work across organizations in a place or community.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "organization",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "nonprofits",
+        "coalitions",
+        "community-based organizations"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D009939"
+      ],
+      "hcf:ericAudience": [
+        "Community"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/health-departments",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Local public health departments",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/community-organizations",
+      "altLabel": [
+        "health department",
+        "county health"
+      ],
+      "example": "A county runs an infant safe-sleep program.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D011635"
+      ],
+      "editorialNote": "Also acts at the policy level when it writes local rules."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/faith-communities",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Faith communities",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/community-organizations",
+      "altLabel": [
+        "churches",
+        "mosques",
+        "temples",
+        "congregations"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/public-health-practitioners",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Public health practitioners",
+      "definition": "People who plan and run programs for a whole community.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "public health staff",
+        "health promotion staff"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D040441",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Practitioners"
+      ],
+      "editorialNote": "SleepLiteracy's 'Public Health & Policymakers' is split between this and policymakers."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/community-health-workers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Community health workers",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "role",
+      "broader": "https://health-culture.org/vocab/audiences/public-health-practitioners",
+      "altLabel": [
+        "promotores",
+        "CHWs",
+        "lay health workers"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D003150",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/community-and-religious-leaders",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Community and religious leaders",
+      "definition": "People others in a community look to.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "faith leaders",
+        "elders",
+        "neighborhood leaders"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D065834"
+      ],
+      "hcf:ericAudience": [
+        "Community"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/health-communicators",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Health communicators",
+      "definition": "People who write and spread health messages for an organization or the public.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "communications staff",
+        "PR",
+        "marketers",
+        "content teams"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D040441",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Media Staff"
+      ],
+      "editorialNote": "hcf-guides#3 names public health communicators as an HCF reader."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/journalists-and-media",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Journalists and media makers",
+      "definition": "People who report on health or make media that shapes what people think is normal.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "science journalists",
+        "reporters",
+        "creators",
+        "influencers"
+      ],
+      "example": "A reporter covers daylight saving time.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D020452",
+        "http://id.nlm.nih.gov/mesh/D008402",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Media Staff"
+      ],
+      "editorialNote": "MeSH has no 'Journalists'; these are topic descriptors."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/researchers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Researchers",
+      "definition": "People who study health and produce the evidence others use.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "scientists",
+        "sleep researchers"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D012108",
+        "https://schema.org/MedicalAudience",
+        "https://schema.org/MedicalResearcher",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Researchers"
+      ],
+      "editorialNote": "Level is a guess: researchers shape norms and policy but are not a level of influence themselves. See open questions."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/funders",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Funders",
+      "definition": "People and organizations that pay for health programs and research.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "foundations",
+        "grant makers",
+        "philanthropy"
+      ],
+      "closeMatch": [
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "editorialNote": "hcf-guides#3 names funders as an HCF reader. Could be institutional (sets grantee rules) or policy. See open questions."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/platforms-and-tech",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Platforms and technology companies",
+      "definition": "Companies whose products and feeds shape habits and norms at scale.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/community"
+      ],
+      "hcf:facet": "organization",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "social media companies",
+        "app makers",
+        "device makers"
+      ],
+      "example": "An app maker adds a default bedtime wind-down.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D061108"
+      ],
+      "editorialNote": "From the editors' statement summarized in hcf-guides#6. Could also sit at public-policy (as regulated parties)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/policymakers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Policymakers and legislators",
+      "definition": "People who write and vote on laws and public policies, at any level of government.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "lawmakers",
+        "elected officials",
+        "council members",
+        "legislators"
+      ],
+      "example": "A state legislator sponsors a school start-time bill.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000288",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Policymakers"
+      ],
+      "editorialNote": "MeSH has no 'Legislators'; 'Policy Makers' is an entry term under Administrative Personnel."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/regulators-and-agency-staff",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Regulators and agency staff",
+      "definition": "People who write and enforce rules in government agencies.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "government agencies",
+        "civil servants",
+        "regulators"
+      ],
+      "example": "Hours-of-service rules for truck drivers.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D000071296",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "hcf:ericAudience": [
+        "Policymakers"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/courts-and-judges",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Courts and judges",
+      "definition": "Judges and courts that interpret, uphold or strike down laws and rules.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "judiciary",
+        "judges"
+      ],
+      "editorialNote": "Added for the advocacy framework's target and venue axes (22 Oct). MeSH has no descriptor for judges."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/policy-advocates",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Policy advocates",
+      "definition": "People and groups who campaign to pass, strengthen or defend public policies.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "role",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "advocates",
+        "civil-society advocates",
+        "campaigners"
+      ],
+      "example": "Advocates push for permanent standard time.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D010344",
+        "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/professional"
+      ],
+      "editorialNote": "MeSH has only Patient Advocacy; no general advocacy descriptor. Example organization: Global Health Advocacy Incubator (research/example-orgs)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/advocacy-organizations",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Advocacy organizations",
+      "definition": "Organizations whose main work is changing public policy.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "organization",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "editorialNote": "Example: Global Health Advocacy Incubator; Start School Later (legislative work)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/professional-societies",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Professional societies (as policy voices)",
+      "definition": "Professional bodies when they issue position statements or lobby.",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "organization",
+      "broader": "https://health-culture.org/vocab/audiences/advocacy-organizations",
+      "altLabel": [
+        "medical societies",
+        "position statements"
+      ],
+      "example": "AASM's position on permanent standard time.",
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D012952"
+      ],
+      "editorialNote": "Also institutional when they set practice standards for members."
+    },
+    {
+      "id": "https://health-culture.org/vocab/audiences/governments",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/audiences/",
+      "prefLabel": "Governments and intergovernmental bodies",
+      "definition": "",
+      "related": [
+        "https://health-culture.org/vocab/ecological-levels/public-policy"
+      ],
+      "hcf:facet": "organization",
+      "topConceptOf": "https://health-culture.org/vocab/audiences/",
+      "altLabel": [
+        "WHO",
+        "ministries of health",
+        "state governments"
+      ],
+      "closeMatch": [
+        "http://id.nlm.nih.gov/mesh/D006076",
+        "http://id.nlm.nih.gov/mesh/D006077"
+      ],
+      "editorialNote": "NCI's wording names U.S. local, state and federal; HCF uses any jurisdiction."
+    }
+  ]
+}

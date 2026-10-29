@@ -1,0 +1,354 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/",
+      "type": "skos:ConceptScheme",
+      "title": "Advocacy tactic (HCF advocacy framework, axis B)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/research-and-analysis",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Research and analysis",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "issue analysis",
+        "data",
+        "reports"
+      ],
+      "definition": "Gather and analyze evidence to make the case.",
+      "skos:note": "Informed by: HFRP CLM tactics; CTB ch. 31 (ideas only)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/draft-the-policy",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Draft the policy",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "model legislation",
+        "bill text",
+        "policy proposal"
+      ],
+      "definition": "Write the actual policy, bill, rule or model law.",
+      "skos:note": "Informed by: HFRP CLM: policy proposal development (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/build-coalitions",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Build coalitions",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "partnerships",
+        "alliances"
+      ],
+      "definition": "Bring organizations together behind one ask.",
+      "skos:note": "Informed by: HFRP CLM; CEI ASF (ideas only)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/organize-communities",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Organize communities",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "grassroots organizing",
+        "base building"
+      ],
+      "definition": "Help affected people organize and act for themselves.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D003256"
+      ],
+      "skos:note": "Informed by: HFRP CLM: grassroots organizing (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/train-advocates",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Train advocates",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "capacity building",
+        "advocacy training"
+      ],
+      "definition": "Teach people and groups how to advocate.",
+      "skos:note": "Informed by: HCF addition; GHAI Capacity Strengthening program (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/educate-decision-makers",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Educate decision-makers",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "policymaker education",
+        "briefings",
+        "site visits"
+      ],
+      "definition": "Give decision-makers and their staff information, without a specific ask.",
+      "skos:note": "Informed by: HFRP CLM: policymaker education (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/ask-decision-makers-directly",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Ask decision-makers directly",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "lobbying",
+        "direct asks",
+        "meetings"
+      ],
+      "definition": "Ask a decision-maker to support or oppose a specific policy.",
+      "skos:note": "Informed by: HFRP CLM: lobbying (idea)",
+      "editorialNote": "Rules on lobbying differ by country and by funder; check before tagging grant-funded work."
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/testify-and-brief",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Testify and brief",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "testimony",
+        "hearings",
+        "public comment"
+      ],
+      "definition": "Speak or submit comments in a formal hearing or consultation.",
+      "skos:note": "Informed by: HCF addition"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/earned-media-and-stories",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Earned media and storytelling",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "press",
+        "op-eds",
+        "personal stories"
+      ],
+      "definition": "Get coverage and tell stories that make the issue real.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D008402"
+      ],
+      "skos:note": "Informed by: HFRP CLM: earned media (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/paid-campaigns",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Paid ads and campaigns",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "advertising",
+        "PSAs",
+        "paid media"
+      ],
+      "definition": "Pay for messages to reach the public or decision-makers.",
+      "skos:note": "Informed by: HFRP CLM: paid media, PSAs (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/digital-and-social",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Digital and social outreach",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "social media",
+        "email campaigns",
+        "petitions"
+      ],
+      "definition": "Reach and mobilize people online.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D061108"
+      ],
+      "skos:note": "Informed by: HFRP CLM: digital and social media (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/public-events",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Public events and rallies",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "rallies",
+        "marches",
+        "town halls"
+      ],
+      "definition": "Gather people in public to show support.",
+      "skos:note": "Informed by: HFRP CLM: rallies and marches (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/polling-and-opinion",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Polling and public opinion",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "surveys",
+        "polls"
+      ],
+      "definition": "Measure what the public and voters think.",
+      "skos:note": "Informed by: HFRP CLM: polling (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/pilots-and-demonstrations",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Pilots and demonstrations",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "demonstration projects",
+        "model programs"
+      ],
+      "definition": "Show the policy working on a small scale first.",
+      "skos:note": "Informed by: HFRP CLM: demonstration projects (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/legal-action",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Legal action",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "litigation",
+        "lawsuits",
+        "amicus briefs"
+      ],
+      "definition": "Use the courts to win, enforce or defend a policy.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/courts-and-judges"
+      ],
+      "skos:note": "Informed by: HFRP CLM: litigation (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/monitor-and-enforce",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Monitor and enforce",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "compliance monitoring",
+        "report violations",
+        "watchdog"
+      ],
+      "definition": "Check that a policy is followed and report when it isn't.",
+      "skos:note": "Informed by: HCF addition; GHAI step 10 and RTSL 'monitor and report violations' (ideas only)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/counter-the-opposition",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Counter the opposition",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "opposition research",
+        "rapid response",
+        "counter-messaging"
+      ],
+      "definition": "Anticipate and answer the arguments and tactics of opponents.",
+      "skos:note": "Informed by: GHAI step 9 (label); CTB ch. 35 (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/tactics/budget-advocacy",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/tactics/",
+      "prefLabel": "Budget advocacy",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/tactics/",
+      "altLabel": [
+        "funding campaigns",
+        "appropriations",
+        "budget tracking"
+      ],
+      "definition": "Win, protect or track public money for the policy.",
+      "skos:note": "Informed by: HCF addition"
+    }
+  ]
+}

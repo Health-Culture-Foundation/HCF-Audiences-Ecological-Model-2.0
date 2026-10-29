@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Levels · HCF Audiences</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1c1a;--muted:#5d5a54;--line:#e3dfd6;--card:#fff;--accent:#2f5d50;--banner:#fff4d6;--banner-fg:#5a4500;
+--l1:#2f6f9f;--l2:#6a5aa8;--l3:#a35a2a;--l4:#2f7d4f;--l5:#9a2f4a;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161615;--fg:#ecebe7;--muted:#a9a59c;--line:#33312d;--card:#1f1e1c;--accent:#7cc0aa;--banner:#3a3016;--banner-fg:#f3dc9a;
+--l1:#7fb6e0;--l2:#b2a6ec;--l3:#e6a074;--l4:#7fcf9d;--l5:#ec8aa3;}}
+:root[data-theme="dark"]{--bg:#161615;--fg:#ecebe7;--muted:#a9a59c;--line:#33312d;--card:#1f1e1c;--accent:#7cc0aa;--banner:#3a3016;--banner-fg:#f3dc9a;
+--l1:#7fb6e0;--l2:#b2a6ec;--l3:#e6a074;--l4:#7fcf9d;--l5:#ec8aa3;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent)}
+.banner{background:var(--banner);color:var(--banner-fg);padding:8px 16px;font-size:14px;text-align:center}
+header{border-bottom:1px solid var(--line);padding:16px}
+header .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline}
+header .brand{font-weight:700;text-decoration:none;color:var(--fg);margin-right:auto}
+nav a{text-decoration:none;font-size:15px;margin-right:14px}
+nav a[aria-current]{font-weight:700;text-decoration:underline}
+.wrap{max-width:1100px;margin:0 auto}
+main{padding:24px 16px 48px}
+h1{font-size:30px;line-height:1.2;margin:0 0 8px}
+h2{font-size:22px;margin:36px 0 8px}
+h3{font-size:18px;margin:24px 0 6px}
+.lede{font-size:18px;color:var(--muted);max-width:760px}
+.levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:20px 0}
+.level{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:8px;padding:14px}
+.level .n{font-size:13px;color:var(--c);font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.level h3{margin:2px 0 6px}
+.level p{margin:6px 0;font-size:15px}
+.level .q{font-size:13px;color:var(--muted);font-style:italic}
+.l1{--c:var(--l1)}.l2{--c:var(--l2)}.l3{--c:var(--l3)}.l4{--c:var(--l4)}.l5{--c:var(--l5)}
+.pill{display:inline-block;border:1px solid var(--c,var(--line));color:var(--c,var(--muted));border-radius:999px;padding:0 8px;font-size:12px;white-space:nowrap}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--card);margin:10px 0 20px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{font-size:13px;color:var(--muted);font-weight:600;background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td.sub{padding-left:28px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+input[type=search]{width:100%;max-width:420px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font-size:15px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+svg text{fill:var(--fg);font-family:inherit}
+footer{border-top:1px solid var(--line);padding:16px;font-size:13px;color:var(--muted)}
+code{font-size:13px}
+</style></head>
+<body>
+<div class="banner">Draft 0.1, not yet reviewed by a person. Researched and drafted by Claude (Claude Code) for the Health Culture Foundation.</div>
+<header><div class="wrap"><a class="brand" href="index.html">HCF Audiences · Ecological Model</a><nav><a href="index.html" aria-current=page>Levels</a><a href="audiences.html">Audiences</a><a href="communication.html">Communication direction</a><a href="advocacy.html">Advocacy</a><a href="crosswalks.html">Crosswalks</a><a href="references.html">References</a></nav></div></header>
+<main><div class="wrap"><h1>Audiences by ecological level</h1>
+<p class="lede">A shared way to tag <b>who a health resource is for, and who acts on it</b>, using the five levels of influence of the
+socio-ecological model. Any library, glossary or website can use it. Sleep is the first worked example.</p>
+<p class="small muted">Levels from McLeroy et al. (1988) <a href="references.html#mcleroy1988" title="McLeroy KR, Bibeau D, Steckler A, Glanz K. An ecological perspective on health promotion programs. Health Education Quarterly. 1988;15(4):351-377.">[McLeroy et al. 1988]</a>, as presented in NCI's <i>Theory at a Glance</i> (2005), Table 1 <a href="references.html#nci2005" title="National Cancer Institute. Theory at a Glance: A Guide for Health Promotion Practice. 2nd ed. NIH Publication No. 05-3896. U.S. Department of Health and Human Services; 2005. Table 1, p. 11.">[NCI 2005]</a>.
+Crosswalked to CDC's four-level model <a href="references.html#cdc-sem" title="Centers for Disease Control and Prevention. About Violence Prevention: The Social-Ecological Model. Page dated July 21, 2025.">[CDC SEM]</a>.</p>
+<h2>The five levels</h2><div class="levels"><div class="level l1"><div class="n">Level 1 · Intrapersonal level</div>
+<h3>The person</h3><p>What one person knows, believes, feels and is able to do, and the traits they bring to a choice.</p>
+<p class="small"><b>Sleep example:</b> A teen reads why phones keep them awake and decides to charge theirs outside the bedroom.</p>
+<p class="q">NCI (2005): “Individual characteristics that influence behavior, such as knowledge, attitudes, beliefs, and personality traits”</p>
+<p class="small"><a href="audiences.html#intrapersonal">22 audiences</a> · CDC: Individual</p></div><div class="level l2"><div class="n">Level 2 · Interpersonal level</div>
+<h3>Close relationships</h3><p>The people closest to someone (family, partners, friends, peers, caregivers) and how they support, pressure or model a behavior.</p>
+<p class="small"><b>Sleep example:</b> A parent sets a family rule that all screens go in the kitchen at 9 pm.</p>
+<p class="q">NCI (2005): “Interpersonal processes and primary groups, including family, friends, and peers that provide social identity, support, and role definition”</p>
+<p class="small"><a href="audiences.html#interpersonal">11 audiences</a> · CDC: Relationship</p></div><div class="level l3"><div class="n">Level 3 · Institutional or organizational level</div>
+<h3>Organizations</h3><p>The rules, schedules and habits of the organizations where people spend their time: schools, workplaces, clinics, colleges, the military, care homes.</p>
+<p class="small"><b>Sleep example:</b> A school district moves the high-school start time to 8:30 am.</p>
+<p class="q">NCI (2005): “Rules, regulations, policies, and informal structures, which may constrain or promote recommended behaviors”</p>
+<p class="small"><a href="audiences.html#institutional">11 audiences</a> · CDC: Community</p></div><div class="level l4"><div class="n">Level 4 · Community level</div>
+<h3>Community</h3><p>The networks and shared norms that connect people, groups and organizations in a place or a shared identity: neighborhoods, faith groups, coalitions, local media, online communities.</p>
+<p class="small"><b>Sleep example:</b> A city coalition runs a campaign so that &#x27;teens need more sleep&#x27; becomes common sense among parents and coaches.</p>
+<p class="q">NCI (2005): “Social networks and norms, or standards, which exist as formal or informal among individuals, groups, and organizations”</p>
+<p class="small"><a href="audiences.html#community">11 audiences</a> · CDC: Community</p></div><div class="level l5"><div class="n">Level 5 · Public policy level</div>
+<h3>Policy</h3><p>Laws, regulations, funding and public policies at every level of government, from a town council to national governments and international bodies.</p>
+<p class="small"><b>Sleep example:</b> A state passes a law setting the earliest start time for public high schools.</p>
+<p class="q">NCI (2005): “Local, state, and federal policies and laws that regulate or support healthy actions and practices for disease prevention, early detection, control, and management”</p>
+<p class="small"><a href="audiences.html#public-policy">7 audiences</a> · CDC: Societal</p></div></div>
+<h2>Three rules</h2>
+<div class="grid2">
+<div class="box"><b>1. An audience sits at the level where it acts.</b><br>A parent reading about a teen's sleep is level 2. A principal changing the bell schedule is level 3. A legislator writing a start-time bill is level 5.</div>
+<div class="box"><b>2. Who it's for ≠ who it's about.</b><br><i>Roles</i> (parent, school leader, policymaker) say who uses a resource. <i>Populations</i> (teens, shift workers) say whose health it's about. Tag both.</div>
+<div class="box"><b>3. Crosswalks, not merges.</b><br>Each library keeps its own tags and maps them here with SSSOM files <a href="references.html#sssom2022" title="Matentzoglu N, Balhoff JP, Bello SM, Bizon C, et al. A Simple Standard for Sharing Ontological Mappings (SSSOM). Database. 2022;2022:baac035.">[Matentzoglu et al. 2022]</a>, using SKOS <a href="references.html#skos" title="Miles A, Bechhofer S, eds. SKOS Simple Knowledge Organization System Reference. W3C Recommendation; 18 August 2009.">[SKOS]</a> and MeSH <a href="references.html#mesh" title="National Library of Medicine. Medical Subject Headings (MeSH), 2026. Courtesy of the U.S. National Library of Medicine.">[MeSH]</a> as the hub.</div>
+</div>
+<h2>Five levels → CDC's four</h2>
+<p class="small muted">Solid line: close or broader match. Dashed: related. Details on the <a href="crosswalks.html">crosswalks</a> page.</p>
+<svg viewBox="0 0 640 310" width="100%" style="max-width:640px" role="img" aria-label="Five levels mapped to CDC four levels">
+<text x="20" y="14" font-size="12" fill="var(--muted)">McLeroy et al. 1988 / NCI (five levels)</text><text x="450" y="14" font-size="12">CDC (four levels)</text>
+<line x1="250" y1="40" x2="450" y2="54" stroke="var(--muted)" stroke-width="1.5"/><line x1="250" y1="96" x2="450" y2="120" stroke="var(--muted)" stroke-width="1.5"/><line x1="250" y1="152" x2="450" y2="186" stroke="var(--muted)" stroke-width="1.5"/><line x1="250" y1="208" x2="450" y2="186" stroke="var(--muted)" stroke-width="1.5"/><line x1="250" y1="208" x2="450" y2="252" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="250" y1="264" x2="450" y2="252" stroke="var(--muted)" stroke-width="1.5"/><rect x="20" y="20" width="230" height="40" rx="6" fill="none" stroke="var(--l1)" stroke-width="2"/><text x="34" y="45" font-size="14">1. Intrapersonal</text><rect x="20" y="76" width="230" height="40" rx="6" fill="none" stroke="var(--l2)" stroke-width="2"/><text x="34" y="101" font-size="14">2. Interpersonal</text><rect x="20" y="132" width="230" height="40" rx="6" fill="none" stroke="var(--l3)" stroke-width="2"/><text x="34" y="157" font-size="14">3. Institutional or organizational</text><rect x="20" y="188" width="230" height="40" rx="6" fill="none" stroke="var(--l4)" stroke-width="2"/><text x="34" y="213" font-size="14">4. Community</text><rect x="20" y="244" width="230" height="40" rx="6" fill="none" stroke="var(--l5)" stroke-width="2"/><text x="34" y="269" font-size="14">5. Public policy</text><rect x="450" y="34" width="170" height="40" rx="6" fill="none" stroke="var(--line)" stroke-width="2"/><text x="464" y="59" font-size="14">Individual</text><rect x="450" y="100" width="170" height="40" rx="6" fill="none" stroke="var(--line)" stroke-width="2"/><text x="464" y="125" font-size="14">Relationship</text><rect x="450" y="166" width="170" height="40" rx="6" fill="none" stroke="var(--line)" stroke-width="2"/><text x="464" y="191" font-size="14">Community</text><rect x="450" y="232" width="170" height="40" rx="6" fill="none" stroke="var(--line)" stroke-width="2"/><text x="464" y="257" font-size="14">Societal</text></svg>
+<h2>What else is here</h2>
+<ul>
+<li><a href="audiences.html">Audiences</a>: 62 concepts placed at the five levels, mapped to MeSH, LRMI and SleepLiteracy's tags.</li>
+<li><a href="communication.html">Communication direction</a>: professional to public, professional to professional (SleepLiteracy's Pro2Pro), and more.</li>
+<li><a href="advocacy.html">Advocacy framework</a>: a 7-phase tag for policy-level resources that also works as one axis of a fuller framework.</li>
+<li><a href="references.html">References</a>: every source, with licence and what it was used for.</li>
+</ul></div></main>
+<footer><div class="wrap">Content <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, attribution "Health Culture Foundation".
+NCI's quoted definitions are U.S. public domain. MeSH courtesy of the U.S. National Library of Medicine (no endorsement implied).
+Built from <a href="https://github.com/Health-Culture-Foundation/HCF-Audiences-Ecological-Model-2.0">the repository</a> by <code>scripts/site.py</code>. Downloads: <a href="data/">data files</a>.</div></footer>
+</body></html>

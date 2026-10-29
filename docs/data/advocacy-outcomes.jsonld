@@ -1,0 +1,242 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "type": "skos:ConceptScheme",
+      "title": "Outcome sought (HCF advocacy framework, axis F)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/know",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Know about it",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "notation": "1",
+      "altLabel": [
+        "awareness"
+      ],
+      "definition": "The audience learns the problem exists and what could fix it.",
+      "skos:note": "Informed by: Informed by CEI ASF (awareness) and HFRP CLM interim outcomes; HCF wording"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/care",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Care about it",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "notation": "2",
+      "altLabel": [
+        "will",
+        "salience",
+        "attitudes"
+      ],
+      "definition": "The audience sees it as important and wants to act.",
+      "skos:note": "Informed by: Informed by CEI ASF (will); HCF wording"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/public-will",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Public will",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/care",
+      "notation": "2.1",
+      "definition": "More of the public wants the change.",
+      "skos:note": "Informed by: HFRP CLM (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/political-will",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Political will",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/care",
+      "notation": "2.2",
+      "definition": "More decision-makers are willing to act.",
+      "skos:note": "Informed by: HFRP CLM (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/reframing",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Issue reframed",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/care",
+      "notation": "2.3",
+      "altLabel": [
+        "framing",
+        "narrative change"
+      ],
+      "definition": "People start to see the issue in a new way.",
+      "example": "Sleep framed as a school-schedule problem, not teen laziness.",
+      "skos:note": "Informed by: HFRP CLM: issue reframing (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/act",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Act on it",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "notation": "3",
+      "altLabel": [
+        "action",
+        "behavior"
+      ],
+      "definition": "The audience does something: votes, signs, joins, decides.",
+      "skos:note": "Informed by: Informed by CEI ASF (action); HCF wording"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/new-champions",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "New champions",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/act",
+      "notation": "3.1",
+      "definition": "Respected people start speaking for the policy.",
+      "skos:note": "Informed by: HFRP CLM (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/decisions-made",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Decisions made",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/act",
+      "notation": "3.2",
+      "altLabel": [
+        "votes",
+        "policies adopted"
+      ],
+      "definition": "The policy is adopted, blocked, funded or enforced.",
+      "skos:note": "Informed by: HFRP CLM (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/stronger-movement",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "Stronger movement",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "notation": "4",
+      "altLabel": [
+        "capacity",
+        "advocacy capacity"
+      ],
+      "definition": "Advocates themselves get stronger: skills, partners, money, visibility.",
+      "related": [
+        "https://health-culture.org/vocab/audiences/policy-advocates"
+      ],
+      "skos:note": "Informed by: Informed by HFRP CLM capacity outcomes; HCF wording"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/partnerships",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "More and stronger partnerships",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/stronger-movement",
+      "notation": "4.1",
+      "skos:note": "Informed by: HFRP CLM (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/funding",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "More or steadier funding",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/stronger-movement",
+      "notation": "4.2",
+      "skos:note": "Informed by: HFRP CLM (idea)"
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/outcomes/media-coverage",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/outcomes/",
+      "prefLabel": "More media coverage",
+      "broader": "https://health-culture.org/vocab/advocacy/outcomes/stronger-movement",
+      "notation": "4.3",
+      "altLabel": [
+        "visibility"
+      ],
+      "skos:note": "Informed by: HFRP CLM (idea)"
+    }
+  ]
+}

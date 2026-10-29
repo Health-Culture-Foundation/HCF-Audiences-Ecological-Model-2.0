@@ -1,0 +1,46 @@
+# curie_map:
+#   cdcpp: https://www.cdc.gov/polaris/php/cdc-policy-process/index.html#
+#   cycle: https://health-culture.org/vocab/external/policy-cycle/
+#   kingdon: https://health-culture.org/vocab/external/multiple-streams/
+#   hfrp: https://health-culture.org/vocab/external/hfrp-composite-logic-model/
+#   hcfph: https://health-culture.org/vocab/advocacy/phases/
+#   hcfgoal: https://health-culture.org/vocab/advocacy/goal-type/
+#   hcftac: https://health-culture.org/vocab/advocacy/tactics/
+#   hcftoc: https://health-culture.org/vocab/advocacy/theory-of-change/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+# mapping_set_id: https://github.com/Health-Culture-Foundation/HCF-Audiences-Ecological-Model-2.0/crosswalks/policy-frameworks-to-advocacy-phases.sssom.tsv
+# mapping_set_version: 2026-10-22
+# mapping_set_title: Open and academic policy-process frameworks to HCF advocacy phases
+# license: https://creativecommons.org/licenses/by/4.0/
+# creator_label:
+#   - Claude (Claude Code), for Health Culture Foundation; not yet reviewed by a person
+# comment: CDC Policy Process is U.S. public domain (credit "Source - CDC"). Policy cycle (Lasswell 1956; Jann and Wegrich 2007) and Kingdon's multiple streams (1984) are cited concepts. HFRP Composite Logic Model (Coffman 2009, (c) Harvard) policy-goal names are used as labels only. None of these publishes URIs; IDs are minted by HCF.
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+cdcpp:problem-identification	Problem identification	skos:closeMatch	hcfph:size-up-the-problem	Size up the problem	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cdcpp:policy-analysis	Policy analysis	skos:closeMatch	hcfph:pick-the-policy-fix	Pick the policy fix	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cdcpp:strategy-and-policy-development	Strategy and policy development	skos:closeMatch	hcfph:plan-the-campaign	Plan the campaign	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cdcpp:policy-enactment	Policy enactment	skos:closeMatch	hcfph:win-the-decision	Win the decision	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cdcpp:policy-implementation	Policy implementation	skos:closeMatch	hcfph:put-it-into-practice	Put it into practice	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cdcpp:stakeholder-engagement-and-education	Stakeholder engagement and education	skos:closeMatch	hcfph:build-support	Build support (any phase)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	CDC: overarching domain.
+cdcpp:evaluation	Evaluation	skos:closeMatch	hcfph:check-whats-working	Check what's working (any phase)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	CDC: overarching domain.
+cdcpp:evaluation	Evaluation	skos:relatedMatch	hcfph:protect-and-improve-it	Protect and improve it	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cycle:agenda-setting	Agenda setting	skos:closeMatch	hcfph:get-it-on-the-agenda	Get it on the agenda	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cycle:formulation	Policy formulation	skos:relatedMatch	hcfph:pick-the-policy-fix	Pick the policy fix	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cycle:formulation	Policy formulation	skos:relatedMatch	hcfph:plan-the-campaign	Plan the campaign	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cycle:decision	Decision-making / adoption	skos:closeMatch	hcfph:win-the-decision	Win the decision	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cycle:implementation	Implementation	skos:closeMatch	hcfph:put-it-into-practice	Put it into practice	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+cycle:evaluation	Evaluation	skos:relatedMatch	hcfph:protect-and-improve-it	Protect and improve it	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+kingdon:problem-stream	Problem stream	skos:relatedMatch	hcfph:size-up-the-problem	Size up the problem	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+kingdon:policy-stream	Policy stream	skos:relatedMatch	hcfph:pick-the-policy-fix	Pick the policy fix	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+kingdon:politics-stream	Politics stream	skos:relatedMatch	hcfph:get-it-on-the-agenda	Get it on the agenda	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+kingdon:policy-window	Policy window	skos:closeMatch	hcftoc:open-a-window	Wait for or create a window	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	Theory-of-change axis.
+hfrp:policy-development	Policy development	skos:closeMatch	hcfph:pick-the-policy-fix	Pick the policy fix	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:placement-on-agenda	Placement on the policy agenda	skos:closeMatch	hcfph:get-it-on-the-agenda	Get it on the agenda	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:adoption	Policy adoption	skos:closeMatch	hcfph:win-the-decision	Win the decision	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:adoption	Policy adoption	skos:closeMatch	hcfgoal:new-policy	Win a new policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:blocking	Policy blocking	skos:closeMatch	hcfgoal:block-a-policy	Block a harmful policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:implementation	Policy implementation	skos:closeMatch	hcfph:put-it-into-practice	Put it into practice	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:monitoring-and-evaluation	Policy monitoring and evaluation	skos:closeMatch	hcfph:check-whats-working	Check what's working (any phase)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:maintenance	Policy maintenance	skos:closeMatch	hcfph:protect-and-improve-it	Protect and improve it	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+hfrp:maintenance	Policy maintenance	skos:closeMatch	hcfgoal:protect-a-policy	Protect an existing policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	

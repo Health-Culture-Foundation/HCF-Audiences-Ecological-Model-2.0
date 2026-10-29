@@ -1,0 +1,188 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "type": "skos:ConceptScheme",
+      "title": "Jurisdiction (HCF advocacy framework, axis D)",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/institution",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "prefLabel": "Institution",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "notation": "1",
+      "altLabel": [
+        "school",
+        "hospital",
+        "employer",
+        "campus"
+      ],
+      "definition": "Rules inside one organization.",
+      "editorialNote": "Overlaps the institutional ecological level; use for 'institutional policy' campaigns."
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/city-or-county",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "prefLabel": "City or county",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "notation": "2",
+      "altLabel": [
+        "local",
+        "municipal",
+        "district"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/tribal-nation",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "prefLabel": "Tribal nation",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "notation": "3",
+      "altLabel": [
+        "Indigenous government",
+        "First Nation"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/state-or-province",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "prefLabel": "State or province",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "notation": "4",
+      "altLabel": [
+        "state",
+        "province",
+        "region within a country"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/national",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "prefLabel": "National",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "notation": "5",
+      "altLabel": [
+        "federal",
+        "country"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/regional-bloc",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "prefLabel": "Regional (several countries)",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "notation": "6",
+      "altLabel": [
+        "EU",
+        "African Union",
+        "ASEAN"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/advocacy/jurisdiction/global",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "prefLabel": "Global",
+      "topConceptOf": "https://health-culture.org/vocab/advocacy/jurisdiction/",
+      "notation": "7",
+      "altLabel": [
+        "WHO",
+        "UN",
+        "treaties",
+        "international"
+      ],
+      "skos:note": "Informed by: WHO/PMNCH: use global commitments (idea)"
+    }
+  ]
+}

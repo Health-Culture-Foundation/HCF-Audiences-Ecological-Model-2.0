@@ -1,0 +1,8 @@
+id,notation,pref_label,alt_labels,broader,definition,example,mesh,audiences,informed_by,notes
+legislature,,Legislature or council,parliament|congress|state legislature|city council,,Elected bodies that pass laws and ordinances.,,D007878 Legislation as Topic,policymakers,CEI ASF footnote: legislative (idea),
+executive-or-agency,,Executive or agency,regulation|rulemaking|executive order|ministry,,Governments and agencies that write rules and orders.,,D006077 Government Agencies,regulators-and-agency-staff,"CEI ASF footnote: executive, administrative (idea)",
+budget-process,,Budget process,appropriations|budget,,Where public money is decided.,,,policymakers,HCF addition,
+courts,,Courts,judiciary|litigation,,Where laws are interpreted and challenged.,,,courts-and-judges,CEI ASF footnote: judicial (idea),
+ballot-measure,,Ballot measure,referendum|initiative,,Where voters decide directly.,,,the-person,HFRP CLM policy-goal examples (idea),
+institutional-board,,Institutional board,school board|hospital board|corporate policy|campus policy,,Boards and leaders that set an organization's own rules.,,D016134 Organizational Policy,school-and-campus-leaders|health-care-leaders|hr-and-workplace-health,HCF addition,Links advocacy to the institutional ecological level.
+international-body,,International body,World Health Assembly|UN General Assembly|treaty bodies,,,,,governments,WHO/PMNCH (idea),

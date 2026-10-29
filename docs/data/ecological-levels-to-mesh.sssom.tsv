@@ -1,0 +1,29 @@
+# curie_map:
+#   hcflvl: https://health-culture.org/vocab/ecological-levels/
+#   MESH: http://id.nlm.nih.gov/mesh/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+# mapping_set_id: https://github.com/Health-Culture-Foundation/HCF-Audiences-Ecological-Model-2.0/crosswalks/ecological-levels-to-mesh.sssom.tsv
+# mapping_set_version: 2026-10-22
+# mapping_set_title: Five levels of influence to MeSH (hub vocabulary)
+# license: https://creativecommons.org/licenses/by/4.0/
+# creator_label:
+#   - Claude (Claude Code), for Health Culture Foundation; not yet reviewed by a person
+# comment: MeSH has no descriptor for "levels of influence" or the socio-ecological model itself; these are related topic descriptors that help a library find content about each level. All UIDs checked against id.nlm.nih.gov/mesh/lookup on 2026-10-22 (MeSH 2026). MeSH is produced by the U.S. National Library of Medicine; no NLM endorsement is implied.
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	confidence	comment
+hcflvl:intrapersonal	Intrapersonal level	skos:relatedMatch	MESH:D015438	Health Behavior	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.6	The behavior the model is built around; not the level itself.
+hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D007398	Interpersonal Relations	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D012944	Social Support	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.6	
+hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D005190	Family	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.6	
+hcflvl:interpersonal	Interpersonal level	skos:relatedMatch	MESH:D010379	Peer Group	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.6	
+hcflvl:institutional	Institutional or organizational level	skos:relatedMatch	MESH:D009938	Organizations	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:institutional	Institutional or organizational level	skos:relatedMatch	MESH:D012574	Schools	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Example setting.
+hcflvl:institutional	Institutional or organizational level	skos:relatedMatch	MESH:D017132	Workplace	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Example setting.
+hcflvl:community	Community level	skos:relatedMatch	MESH:D019058	Community Networks	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:community	Community level	skos:relatedMatch	MESH:D066262	Social Norms	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:community	Community level	skos:relatedMatch	MESH:D012111	Residence Characteristics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	Neighborhood-level factors.
+hcflvl:community	Community level	skos:relatedMatch	MESH:D003153	Community Health Services	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.5	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D011640	Public Policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.8	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D006291	Health Policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.8	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D011050	Policy Making	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	
+hcflvl:public-policy	Public policy level	skos:relatedMatch	MESH:D007878	Legislation as Topic	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	0.7	

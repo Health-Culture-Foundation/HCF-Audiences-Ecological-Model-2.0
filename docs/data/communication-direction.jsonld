@@ -1,0 +1,289 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "schema": "https://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "en"
+    },
+    "altLabel": {
+      "@id": "skos:altLabel",
+      "@language": "en",
+      "@container": "@set"
+    },
+    "definition": {
+      "@id": "skos:definition",
+      "@language": "en"
+    },
+    "scopeNote": {
+      "@id": "skos:scopeNote",
+      "@language": "en"
+    },
+    "example": {
+      "@id": "skos:example",
+      "@language": "en"
+    },
+    "editorialNote": {
+      "@id": "skos:editorialNote",
+      "@language": "en"
+    },
+    "notation": "skos:notation",
+    "inScheme": {
+      "@id": "skos:inScheme",
+      "@type": "@id"
+    },
+    "topConceptOf": {
+      "@id": "skos:topConceptOf",
+      "@type": "@id"
+    },
+    "broader": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "broadMatch": {
+      "@id": "skos:broadMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "relatedMatch": {
+      "@id": "skos:relatedMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "source": {
+      "@id": "dct:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "title": {
+      "@id": "dct:title",
+      "@language": "en"
+    },
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/",
+      "type": "skos:ConceptScheme",
+      "title": "Communication direction",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "source": []
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/pro-to-public",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Professional to public",
+      "topConceptOf": "https://health-culture.org/vocab/communication-direction/",
+      "notation": "1",
+      "altLabel": [
+        "public-facing",
+        "for the public",
+        "for patients"
+      ],
+      "definition": "Made by professionals or organizations for people to use about their own or their family's health.",
+      "example": "A CDC page on how much sleep teens need.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D058015"
+      ],
+      "editorialNote": "Most health content. Pair with level-1 and level-2 audiences."
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/pro-to-pro",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Professional to professional",
+      "topConceptOf": "https://health-culture.org/vocab/communication-direction/",
+      "notation": "2",
+      "altLabel": [
+        "pro2pro",
+        "for professionals",
+        "for my work",
+        "B2B"
+      ],
+      "definition": "Made for people to use in their work: to practise, teach, run a program or pass information on. A very large category; the narrower concepts say what the professional does with it.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D007400"
+      ],
+      "editorialNote": "The audience roles (clinicians, health communicators, school and campus leaders...) say which professional and therefore which level. Kalman, 22 Oct: a lot of communications fall into this category."
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/practice-guidance",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Guidance for practice",
+      "broader": "https://health-culture.org/vocab/communication-direction/pro-to-pro",
+      "notation": "2.1",
+      "altLabel": [
+        "guidelines",
+        "clinical recommendations",
+        "standards",
+        "position statements"
+      ],
+      "definition": "Tells professionals what to do in their own practice.",
+      "example": "ACSM guidelines for prescribing exercise; AASM sleep duration recommendations.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D017410"
+      ],
+      "editorialNote": "SleepLiteracy example: ACSM 'Guidelines for prescribing exercise in medicine'."
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/materials-to-pass-on",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Materials to pass on",
+      "broader": "https://health-culture.org/vocab/communication-direction/pro-to-pro",
+      "notation": "2.2",
+      "altLabel": [
+        "handouts",
+        "toolkits",
+        "editable slides",
+        "campaign kits",
+        "patient fact sheets",
+        "pro-to-pro-to-public"
+      ],
+      "definition": "Made for professionals to hand on, present or adapt for the people they serve. Two audiences: the professional who uses it and the public who ends up reading it.",
+      "example": "World Sleep Day toolkit with editable slides; patient fact sheets for clinicians to give out.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D029282",
+        "http://id.nlm.nih.gov/mesh/D033181"
+      ],
+      "editorialNote": "Tag both directions' audiences, e.g. clinicians + the person themselves. MeSH Patient Education Handout is a publication type. SleepLiteracy examples: World Sleep Day resources; Sleep Health Foundation fact sheets."
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/training-and-cpd",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Training and continuing education",
+      "broader": "https://health-culture.org/vocab/communication-direction/pro-to-pro",
+      "notation": "2.3",
+      "altLabel": [
+        "CME",
+        "CPD",
+        "courses",
+        "continuing education"
+      ],
+      "definition": "Teaches professionals new skills or knowledge, often for credit.",
+      "example": "NIOSH's online shift-work and sleep training for nurses.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D004496",
+        "http://id.nlm.nih.gov/mesh/D004502"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/research-and-evidence",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Research and evidence",
+      "broader": "https://health-culture.org/vocab/communication-direction/pro-to-pro",
+      "notation": "2.4",
+      "altLabel": [
+        "studies",
+        "reviews",
+        "data",
+        "reports"
+      ],
+      "definition": "Reports what was studied and found, mainly for other researchers and evidence users.",
+      "example": "A systematic review of school start times and teen sleep.",
+      "editorialNote": "Most journal articles. The sleep-research note shows these tag populations, not actors."
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/running-programs",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Running programs and changing systems",
+      "broader": "https://health-culture.org/vocab/communication-direction/pro-to-pro",
+      "notation": "2.5",
+      "altLabel": [
+        "implementation guides",
+        "program manuals",
+        "policy templates",
+        "how-to for organizations"
+      ],
+      "definition": "Helps professionals set up a program or change how their organization works.",
+      "example": "A guide for campuses on moving early exams.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D000077626"
+      ],
+      "editorialNote": "Pairs with level-3 and level-4 audiences."
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/pro-to-policy",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Professional to decision-maker",
+      "topConceptOf": "https://health-culture.org/vocab/communication-direction/",
+      "notation": "3",
+      "altLabel": [
+        "policy briefs",
+        "testimony",
+        "advocacy materials"
+      ],
+      "definition": "Made to inform or persuade people who decide policy.",
+      "example": "A brief for state legislators on school start times.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D011050"
+      ],
+      "editorialNote": "Pairs with level-5 audiences and the proposed advocacy-phase facet (research/advocacy-frameworks)."
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/peer-to-peer",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Peer to peer",
+      "topConceptOf": "https://health-culture.org/vocab/communication-direction/",
+      "notation": "4",
+      "altLabel": [
+        "lived experience",
+        "community voices",
+        "support groups"
+      ],
+      "definition": "Made by members of the public for each other, from lived experience.",
+      "example": "A narcolepsy support community's tips for college.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D010379"
+      ]
+    },
+    {
+      "id": "https://health-culture.org/vocab/communication-direction/public-to-pro",
+      "type": "skos:Concept",
+      "inScheme": "https://health-culture.org/vocab/communication-direction/",
+      "prefLabel": "Public to professional",
+      "topConceptOf": "https://health-culture.org/vocab/communication-direction/",
+      "notation": "5",
+      "altLabel": [
+        "patient voice",
+        "community input",
+        "lived-experience input"
+      ],
+      "definition": "People and communities telling professionals and decision-makers what they need.",
+      "example": "A survey of shift workers' sleep needs shared with employers.",
+      "relatedMatch": [
+        "http://id.nlm.nih.gov/mesh/D010358",
+        "http://id.nlm.nih.gov/mesh/D003256"
+      ],
+      "editorialNote": "Rarely tagged anywhere; useful for participatory and policy work."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+# curie_map:
+#   ghai: https://assets.advocacyincubator.org/uploads/Advocacy_Action_Guide_2023.pdf#
+#   hcfph: https://health-culture.org/vocab/advocacy/phases/
+#   hcfgoal: https://health-culture.org/vocab/advocacy/goal-type/
+#   hcftac: https://health-culture.org/vocab/advocacy/tactics/
+#   hcftoc: https://health-culture.org/vocab/advocacy/theory-of-change/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+# mapping_set_id: https://github.com/Health-Culture-Foundation/HCF-Audiences-Ecological-Model-2.0/crosswalks/ghai-steps-to-advocacy-phases.sssom.tsv
+# mapping_set_version: 2026-10-22
+# mapping_set_title: GHAI Advocacy Action Guide (2024) phases and steps to HCF advocacy phases
+# license: https://creativecommons.org/licenses/by/4.0/
+# creator_label:
+#   - Claude (Claude Code), for Health Culture Foundation; not yet reviewed by a person
+# comment: Subjects are GHAI's phase and step names as short labels only, for lookup. GHAI's guide (c) 2024 Global Health Advocacy Incubator may be shared with full attribution but not changed or adapted without GHAI's consent; no text from it is reproduced here and HCF's phases are written independently. IDs with the ghai prefix are minted by HCF; GHAI publishes none.
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+ghai:phase-1	Analyze	skos:narrowMatch	hcfph:size-up-the-problem	Size up the problem	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:phase-1	Analyze	skos:narrowMatch	hcfph:pick-the-policy-fix	Pick the policy fix	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:phase-1	Analyze	skos:narrowMatch	hcfph:plan-the-campaign	Plan the campaign	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:phase-2	Collaborate	skos:narrowMatch	hcfph:plan-the-campaign	Plan the campaign	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:phase-2	Collaborate	skos:closeMatch	hcfph:build-support	Build support (any phase)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	GHAI makes this a phase; HCF makes it a cross-cutting tag.
+ghai:phase-3	Advocate	skos:narrowMatch	hcfph:get-it-on-the-agenda	Get it on the agenda	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:phase-3	Advocate	skos:narrowMatch	hcfph:win-the-decision	Win the decision	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:phase-4	Sustain	skos:narrowMatch	hcfph:put-it-into-practice	Put it into practice	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:phase-4	Sustain	skos:narrowMatch	hcfph:protect-and-improve-it	Protect and improve it	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-1	Conduct a landscape analysis	skos:closeMatch	hcfph:size-up-the-problem	Size up the problem	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-2	Set your policy objective	skos:closeMatch	hcfph:pick-the-policy-fix	Pick the policy fix	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-3	Assess the policy decision-making pathway	skos:broadMatch	hcfph:plan-the-campaign	Plan the campaign	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-4	Build partnerships and champions	skos:broadMatch	hcfph:build-support	Build support (any phase)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-5	Develop a strategic plan	skos:broadMatch	hcfph:plan-the-campaign	Plan the campaign	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-6	Plan communications	skos:broadMatch	hcfph:plan-the-campaign	Plan the campaign	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-7	Influence decision-makers	skos:broadMatch	hcfph:win-the-decision	Win the decision	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-7	Influence decision-makers	skos:relatedMatch	hcfph:get-it-on-the-agenda	Get it on the agenda	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-8	Build public support	skos:broadMatch	hcfph:build-support	Build support (any phase)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-8	Build public support	skos:relatedMatch	hcfph:get-it-on-the-agenda	Get it on the agenda	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-9	Counter opposition	skos:broadMatch	hcfph:win-the-decision	Win the decision	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-9	Counter opposition	skos:closeMatch	hcftac:counter-the-opposition	Counter the opposition	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	Tactic axis.
+ghai:step-10	Monitor implementation	skos:broadMatch	hcfph:put-it-into-practice	Put it into practice	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-10	Monitor implementation	skos:closeMatch	hcftac:monitor-and-enforce	Monitor and enforce	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	Tactic axis.
+ghai:step-11	Defend policy	skos:broadMatch	hcfph:protect-and-improve-it	Protect and improve it	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-11	Defend policy	skos:closeMatch	hcfgoal:protect-a-policy	Protect an existing policy	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	Goal-type axis.
+ghai:step-12	Refine campaign	skos:broadMatch	hcfph:protect-and-improve-it	Protect and improve it	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
+ghai:step-12	Refine campaign	skos:relatedMatch	hcfph:check-whats-working	Check what's working (any phase)	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-22	
