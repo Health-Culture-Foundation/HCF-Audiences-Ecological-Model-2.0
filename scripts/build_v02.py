@@ -37,6 +37,9 @@ PARTNERS = {  # file stem: (curie prefix, base IRI, title)
     "samhsa-ebprc": ("samhsa", "https://www.samhsa.gov/libraries/evidence-based-practices-resource-center#", "SAMHSA Evidence-Based Practices Resource Center filters (partial)"),
     "lrmi-educational-audience-role": ("lrmi", "http://purl.org/dcx/lrmi-vocabs/educationalAudienceRole/", "LRMI educational audience role"),
     "schema-org": ("schema", "https://schema.org/", "schema.org audience types"),
+    "train-course-audience": ("traincourse", "urn:hcf:train:course-audience:", "TRAIN Learning Network course audience filter (Massachusetts TRAIN, 2026-10-29)"),
+    "train-profile-role": ("trainrole", "urn:hcf:train:profile-role:", "TRAIN Learning Network learner profile roles (2026-10-29)"),
+    "train-credit-types": ("traincredit", "urn:hcf:train:credit-type:", "TRAIN Learning Network credit types; the profession each credit is for"),
 }
 HEAD = ["subject_id", "subject_label", "predicate_id", "object_id", "object_label", "mapping_justification", "author_label", "mapping_date", "comment"]
 

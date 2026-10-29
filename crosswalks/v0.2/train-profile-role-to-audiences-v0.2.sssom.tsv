@@ -1,0 +1,52 @@
+# title: TRAIN Learning Network learner profile roles (2026-10-29) to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   trainrole: urn:hcf:train:profile-role:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+trainrole:Allied%20Health%20Professional	Allied Health Professional	skos:broadMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN.
+trainrole:Administrator%20/%20Director%20/%20Manager	Administrator / Director / Manager	skos:broadMatch	hcfaud:health-departments	Health departments and program managers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Could also be health-care-leaders or managers-and-hr depending on employer.
+trainrole:Administrative%20Support%20Staff	Administrative Support Staff	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no administrative role.
+trainrole:Animal%20Control%20Specialist%20/%20Veterinarian	Animal Control Specialist / Veterinarian	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no animal health role.
+trainrole:Biostatistician	Biostatistician	skos:broadMatch	hcfaud:epidemiologists	Epidemiologists and data staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Childcare%20Provider	Childcare Provider	skos:exactMatch	hcfaud:child-care-staff	Child care providers and staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Communicable%20Disease%20/%20Infection%20Control%20Staff	Communicable Disease / Infection Control Staff	skos:broadMatch	hcfaud:public-health-workers	Public health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Community%20Health%20Worker%20(CHW)	Community Health Worker (CHW)	skos:exactMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Community%20Health%20Worker%20Instructor	Community Health Worker Instructor	skos:broadMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Computer%20/%20Information%20Systems%20Specialist	Computer / Information Systems Specialist	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no IT role.
+trainrole:Dental%20Professional	Dental Professional	skos:closeMatch	hcfaud:dentists	Dentists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN.
+trainrole:Emergency%20Responder	Emergency Responder	skos:broadMatch	hcfaud:ems	EMTs and paramedics	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN (EMS, fire, police).
+trainrole:Environmental%20Health%20Professional	Environmental Health Professional	skos:broadMatch	hcfaud:public-health-workers	Public health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN. Gap: no environmental-health id.
+trainrole:Epidemiologist%20/%20Surveillance%20Staff	Epidemiologist / Surveillance Staff	skos:exactMatch	hcfaud:epidemiologists	Epidemiologists and data staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Family%20Visiting%20Staff	Family Visiting Staff	skos:broadMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Finance%20and%20Budget%20Staff	Finance and Budget Staff	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no finance role.
+trainrole:Food%20Services%20/%20Facilities%20Management%20Staff%20/%20Housekeeper	Food Services / Facilities Management Staff / Housekeeper	skos:broadMatch	hcfaud:workers	Workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	About-axis id; no role id.
+trainrole:Government%20Official	Government Official	skos:closeMatch	hcfaud:regulators-and-agencies	Regulators and agency staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN; elected officials map to lawmakers.
+trainrole:Health%20Educator	Health Educator	skos:exactMatch	hcfaud:health-educators	Health educators and prevention staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Human%20Services%20Personnel	Human Services Personnel	skos:broadMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no human-services id.
+trainrole:Laboratory%20Professional%20/%20Technician	Laboratory Professional / Technician	skos:broadMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no laboratory id.
+trainrole:Law%20Enforcement	Law Enforcement	skos:exactMatch	hcfaud:police	Police	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Legal%20Professional	Legal Professional	skos:broadMatch	hcfaud:courts	Judges and courts	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Librarian%20/%20Information%20Specialist	Librarian / Information Specialist	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no librarian role.
+trainrole:Licensure%20/%20Inspection%20/%20Regulatory%20Specialist	Licensure / Inspection / Regulatory Specialist	skos:exactMatch	hcfaud:regulators-and-agencies	Regulators and agency staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Medicaid%20Personnel	Medicaid Personnel	skos:broadMatch	hcfaud:regulators-and-agencies	Regulators and agency staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Medical%20Examiner%20/%20Coroner	Medical Examiner / Coroner	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gap: no death-investigation role.
+trainrole:Mental%20and%20Behavioral%20Health%20Professional	Mental and Behavioral Health Professional	skos:exactMatch	hcfaud:behavioral-health-workers	Counselors, social workers and psychologists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN.
+trainrole:Nurse	Nurse	skos:exactMatch	hcfaud:nurses	Nurses and nurse practitioners	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN.
+trainrole:Occupational%20Health%20and%20Safety%20Personnel	Occupational Health and Safety Personnel	skos:exactMatch	hcfaud:occupational-health	Workplace health and safety staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Outreach%20/%20Field%20Worker	Outreach / Field Worker	skos:closeMatch	hcfaud:community-health-workers	Community health workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Harm-reduction outreach maps to peer-workers.
+trainrole:Peer%20Recovery%20Specialist	Peer Recovery Specialist	skos:closeMatch	hcfaud:peer-workers	Peer recovery and harm-reduction workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Pharmacy%20Professional	Pharmacy Professional	skos:closeMatch	hcfaud:pharmacists	Pharmacists	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN.
+trainrole:Physician	Physician	skos:exactMatch	hcfaud:doctors	Doctors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN.
+trainrole:Non-Physician%20Clinician	Non-Physician Clinician	skos:broadMatch	hcfaud:health-care-workers	Health and care workers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Has a sub-select in TRAIN; includes physician-assistants.
+trainrole:Policy%20/%20Planner	Policy / Planner	skos:closeMatch	hcfaud:policy-and-funding	Policy and funding	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Public%20Health%20Official	Public Health Official	skos:closeMatch	hcfaud:health-departments	Health departments and program managers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Program%20Specialist	Program Specialist	skos:broadMatch	hcfaud:health-departments	Health departments and program managers	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Public%20Relations%20/%20Media%20Specialist	Public Relations / Media Specialist	skos:closeMatch	hcfaud:pr-and-campaign-staff	Communications, PR and campaign staff	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Researcher%20/%20Analyst	Researcher / Analyst	skos:exactMatch	hcfaud:researchers	Researchers and evaluators	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Student	Student	skos:closeMatch	hcfaud:students	Students	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	About-axis id.
+trainrole:Teacher%20/%20Faculty	Teacher / Faculty	skos:exactMatch	hcfaud:teachers	Teachers and professors	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Volunteer	Volunteer	skos:broadMatch	hcfaud:community-organizations	Community organizations and coalitions	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+trainrole:Other%20(specify)	Other (specify)	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
