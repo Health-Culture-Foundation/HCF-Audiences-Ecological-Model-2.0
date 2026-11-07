@@ -1023,6 +1023,81 @@
    "definition": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries)."
   },
   {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/food-insecure",
+   "type": "skos:Concept",
+   "prefLabel": "People who can't always afford food",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Not enough food, or not sure where the next meal comes from. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000084884"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/housing-unstable",
+   "type": "skos:Concept",
+   "prefLabel": "People at risk of losing their housing",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Behind on rent, moving often, doubled up, or in unsafe housing. People with no home go in People experiencing homelessness. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000091003"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/transport-barriers",
+   "type": "skos:Concept",
+   "prefLabel": "People without reliable transportation",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Can't get to care, work or food because of transport. Added 2026-11-07 for the Gravity Project SDOH domains."
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/uninsured",
+   "type": "skos:Concept",
+   "prefLabel": "People without enough health insurance",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Uninsured or underinsured, or struggling with medical bills. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D017057"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/unemployed",
+   "type": "skos:Concept",
+   "prefLabel": "People out of work",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Looking for work or unable to work. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D014478"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/socially-isolated",
+   "type": "skos:Concept",
+   "prefLabel": "People who are lonely or isolated",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "Living alone, few social contacts, or feeling lonely. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D012934",
+    "http://id.nlm.nih.gov/mesh/D008132"
+   ]
+  },
+  {
+   "id": "https://health-culture.org/vocab/audiences-v0.2/violence-survivors",
+   "type": "skos:Concept",
+   "prefLabel": "Survivors of domestic and partner violence",
+   "inScheme": "https://health-culture.org/vocab/audiences-v0.2/about",
+   "broader": "https://health-culture.org/vocab/audiences-v0.2/situation",
+   "definition": "People harmed by a partner, family member or caregiver, including older adults facing abuse. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "closeMatch": [
+    "http://id.nlm.nih.gov/mesh/D000066511"
+   ]
+  },
+  {
    "id": "https://health-culture.org/vocab/audiences-v0.2/not-started",
    "type": "skos:Concept",
    "prefLabel": "Not started",

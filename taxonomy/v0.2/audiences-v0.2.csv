@@ -113,6 +113,13 @@ people-with-disabilities,People with disabilities,situation,about,,,,,D006233,,
 people-who-use-drugs,People who use or inject drugs,situation,about,,,,,D055030,,The population harm-reduction campaigns serve. Pair with a Stage value.
 long-term-conditions,People with long-term health conditions,situation,about,,,,,D002908,,"Patients, people on a long-term medication, the clinically vulnerable. The condition itself goes in Topic."
 language-minorities,Speakers of other languages,situation,about,,,,,,,"Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries)."
+food-insecure,People who can't always afford food,situation,about,,,,,D000084884,,"Not enough food, or not sure where the next meal comes from. Added 2026-11-07 for the Gravity Project SDOH domains."
+housing-unstable,People at risk of losing their housing,situation,about,,,,,D000091003,,"Behind on rent, moving often, doubled up, or in unsafe housing. People with no home go in People experiencing homelessness. Added 2026-11-07 for the Gravity Project SDOH domains."
+transport-barriers,People without reliable transportation,situation,about,,,,,,,"Can't get to care, work or food because of transport. Added 2026-11-07 for the Gravity Project SDOH domains."
+uninsured,People without enough health insurance,situation,about,,,,,D017057,,"Uninsured or underinsured, or struggling with medical bills. Added 2026-11-07 for the Gravity Project SDOH domains."
+unemployed,People out of work,situation,about,,,,,D014478,,Looking for work or unable to work. Added 2026-11-07 for the Gravity Project SDOH domains.
+socially-isolated,People who are lonely or isolated,situation,about,,,,,D012934|D008132,,"Living alone, few social contacts, or feeling lonely. Added 2026-11-07 for the Gravity Project SDOH domains."
+violence-survivors,Survivors of domestic and partner violence,situation,about,,,,,D000066511,,"People harmed by a partner, family member or caregiver, including older adults facing abuse. Added 2026-11-07 for the Gravity Project SDOH domains."
 not-started,Not started,,stage,,,,,,,Prevention for people who don't do it yet.
 at-risk,At risk,,stage,,,,,,,"Experimenting, or in a group at high risk."
 doing-it-now,Doing it now,,stage,,,,,,,"People who use, drink, smoke, vape, gamble, or don't yet do the healthy behavior."

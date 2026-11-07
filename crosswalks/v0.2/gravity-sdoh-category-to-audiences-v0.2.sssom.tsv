@@ -1,0 +1,32 @@
+# title: Gravity Project SDOH domains (SDOH Clinical Care IG 3.0.0, ValueSet SDOHCC-ValueSetSDOHCategory) to HCF Audiences v0.2
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   sdohcc: http://hl7.org/fhir/us/sdoh-clinicalcare/CodeSystem/SDOHCC-CodeSystemTemporaryCodes#
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+sdohcc:sdoh-category-unspecified	SDOH Category Unspecified	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	A placeholder category.
+sdohcc:food-insecurity	Food Insecurity	skos:exactMatch	hcfaud:food-insecure	People who can't always afford food	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:housing-instability	Housing Instability	skos:exactMatch	hcfaud:housing-unstable	People at risk of losing their housing	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:homelessness	Homelessness	skos:exactMatch	hcfaud:unhoused	People experiencing homelessness	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:inadequate-housing	Inadequate Housing	skos:relatedMatch	hcfaud:housing-unstable	People at risk of losing their housing	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gravity separates poor-quality housing (heat, utilities, safety) from the risk of losing it. One audience covers both: resources rarely split them.
+sdohcc:transportation-insecurity	Transportation Insecurity	skos:exactMatch	hcfaud:transport-barriers	People without reliable transportation	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:financial-insecurity	Financial Insecurity	skos:closeMatch	hcfaud:low-income	People on low incomes	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:material-hardship	Material Hardship	skos:broadMatch	hcfaud:low-income	People on low incomes	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Can't afford basics such as clothing, child care or phone: one kind of low income.
+sdohcc:educational-attainment	Educational Attainment	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	About the person's schooling. Resources name it as a reading level, not an audience; students are a separate situation.
+sdohcc:employment-status	Employment Status	skos:closeMatch	hcfaud:unemployed	People out of work	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gravity records the status; the social risk is being out of work.
+sdohcc:veteran-status	Veteran Status	skos:closeMatch	hcfaud:military-veterans	Military and veterans	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Ours also covers people still serving.
+sdohcc:stress	Stress	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	A health topic (mental health) rather than a group a resource names.
+sdohcc:social-connection	Social Connection	skos:closeMatch	hcfaud:socially-isolated	People who are lonely or isolated	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Gravity's domain is the connection; the risk is isolation.
+sdohcc:intimate-partner-violence	Intimate Partner Violence	skos:closeMatch	hcfaud:violence-survivors	Survivors of domestic and partner violence	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Ours also covers family and caregiver violence.
+sdohcc:elder-abuse	Elder Abuse	skos:relatedMatch	hcfaud:violence-survivors	Survivors of domestic and partner violence	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	Pair with Older adults (65+) on Who it's about.
+sdohcc:personal-health-literacy	Personal Health Literacy	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	A property of the resource (plain language, reading level), not of who it is about. The site topic health-literacy covers resources about it.
+sdohcc:health-insurance-coverage-status	Health Insurance Coverage Status	skos:closeMatch	hcfaud:uninsured	People without enough health insurance	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:medical-cost-burden	Medical Cost Burden	skos:relatedMatch	hcfaud:uninsured	People without enough health insurance	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	People with insurance can still struggle with medical bills.
+sdohcc:digital-literacy	Digital Literacy	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	A property of the resource's format (online only, needs an app), not an audience.
+sdohcc:digital-access	Digital Access	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	A property of the resource's format (online only, needs an app), not an audience.
+sdohcc:utility-insecurity	Utility Insecurity	skos:broadMatch	hcfaud:low-income	People on low incomes	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:incarceration-status	Incarceration Status	skos:closeMatch	hcfaud:justice-involved	People in jail or prison or on probation	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:language-access	Language Access	skos:closeMatch	hcfaud:language-minorities	Speakers of other languages	semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+sdohcc:protective-factor	Protective Factor	semapv:NoMapping			semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	A strength, such as having transport. Not a group to aim at.

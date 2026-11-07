@@ -865,7 +865,11 @@
      "D007223"
     ],
     "filter": "allinfant[filter]"
-   }
+   },
+   "ages": [
+    0,
+    2
+   ]
   },
   {
    "id": "young-children",
@@ -881,7 +885,11 @@
      "D002675"
     ],
     "filter": "preschoolchild[filter]"
-   }
+   },
+   "ages": [
+    2,
+    5
+   ]
   },
   {
    "id": "children",
@@ -897,7 +905,11 @@
      "D002648"
     ],
     "filter": "child[filter]"
-   }
+   },
+   "ages": [
+    6,
+    12
+   ]
   },
   {
    "id": "teens",
@@ -914,7 +926,11 @@
      "D000293"
     ],
     "filter": "adolescent[filter]"
-   }
+   },
+   "ages": [
+    13,
+    17
+   ]
   },
   {
    "id": "young-adults",
@@ -930,7 +946,11 @@
      "D055815"
     ],
     "filter": "youngadult[filter]"
-   }
+   },
+   "ages": [
+    18,
+    24
+   ]
   },
   {
    "id": "adults",
@@ -948,7 +968,11 @@
      "D008875"
     ],
     "filter": "adult[filter] OR middleaged[filter]"
-   }
+   },
+   "ages": [
+    25,
+    64
+   ]
   },
   {
    "id": "older-adults",
@@ -965,7 +989,11 @@
      "D000368"
     ],
     "filter": "aged[filter]"
-   }
+   },
+   "ages": [
+    65,
+    null
+   ]
   },
   {
    "id": "gender",
@@ -981,7 +1009,8 @@
    "mesh": [
     "D005260"
    ],
-   "v01": "women"
+   "v01": "women",
+   "gender": "female"
   },
   {
    "id": "men-and-boys",
@@ -991,7 +1020,8 @@
    "mesh": [
     "D008297"
    ],
-   "v01": "men"
+   "v01": "men",
+   "gender": "male"
   },
   {
    "id": "trans-and-nonbinary",
@@ -1173,7 +1203,33 @@
    "mesh": [
     "D037841"
    ],
-   "v01": "pregnant-people"
+   "v01": "pregnant-people",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "O",
+     "match": "prefix",
+     "display": "Pregnancy, childbirth and the puerperium (chapter 15, O00-O9A)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z33.1",
+     "match": "exact",
+     "display": "Pregnant state, incidental"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z34",
+     "match": "prefix",
+     "display": "Encounter for supervision of normal pregnancy"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z39",
+     "match": "prefix",
+     "display": "Postpartum care and examination (Z39.0, Z39.1, Z39.2)"
+    }
+   ]
   },
   {
    "id": "students",
@@ -1194,7 +1250,30 @@
     "D014728",
     "D008889"
    ],
-   "v01": "military-and-veterans"
+   "v01": "military-and-veterans",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z91.82",
+     "match": "exact",
+     "display": "Personal history of military deployment"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z91.85",
+     "match": "exact",
+     "display": "Personal history of military service"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z56.82",
+     "match": "exact",
+     "display": "Military deployment status"
+    }
+   ],
+   "gravity": [
+    "veteran-status"
+   ]
   },
   {
    "id": "workers",
@@ -1258,6 +1337,43 @@
    "axis": "about",
    "mesh": [
     "D011203"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.5",
+     "match": "exact",
+     "display": "Extreme poverty"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.6",
+     "match": "exact",
+     "display": "Low income"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.86",
+     "match": "prefix",
+     "display": "Financial insecurity (Z59.861 utilities, Z59.868 other, Z59.869 unspecified)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.87",
+     "match": "exact",
+     "display": "Material hardship due to limited financial resources, not elsewhere classified"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.72",
+     "match": "exact",
+     "display": "Insufficient welfare support"
+    }
+   ],
+   "gravity": [
+    "financial-insecurity",
+    "material-hardship",
+    "utility-insecurity"
    ]
   },
   {
@@ -1267,6 +1383,23 @@
    "axis": "about",
    "mesh": [
     "D006703"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.0",
+     "match": "prefix",
+     "display": "Homelessness (Z59.00 unspecified; Z59.01 sheltered; Z59.02 unsheltered)"
+    },
+    {
+     "system": "snomed",
+     "code": "32911000",
+     "match": "exact",
+     "display": "Homeless"
+    }
+   ],
+   "gravity": [
+    "homelessness"
    ]
   },
   {
@@ -1276,6 +1409,23 @@
    "axis": "about",
    "mesh": [
     "D011329"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z65.1",
+     "match": "exact",
+     "display": "Imprisonment and other incarceration"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z65.2",
+     "match": "exact",
+     "display": "Problems related to release from prison"
+    }
+   ],
+   "gravity": [
+    "incarceration-status"
    ]
   },
   {
@@ -1295,6 +1445,14 @@
    "axis": "about",
    "mesh": [
     "D006233"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z73.6",
+     "match": "exact",
+     "display": "Limitation of activities due to disability"
+    }
    ]
   },
   {
@@ -1305,7 +1463,45 @@
    "mesh": [
     "D055030"
    ],
-   "definition": "The population harm-reduction campaigns serve. Pair with a Stage value."
+   "definition": "The population harm-reduction campaigns serve. Pair with a Stage value.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "F11",
+     "match": "prefix",
+     "display": "Opioid related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F13",
+     "match": "prefix",
+     "display": "Sedative, hypnotic or anxiolytic related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F14",
+     "match": "prefix",
+     "display": "Cocaine related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F15",
+     "match": "prefix",
+     "display": "Other stimulant related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F16",
+     "match": "prefix",
+     "display": "Hallucinogen related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F19",
+     "match": "prefix",
+     "display": "Other psychoactive substance related disorders"
+    }
+   ]
   },
   {
    "id": "long-term-conditions",
@@ -1322,7 +1518,242 @@
    "label": "Speakers of other languages",
    "parent": "situation",
    "axis": "about",
-   "definition": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries)."
+   "definition": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries).",
+   "gravity": [
+    "language-access"
+   ]
+  },
+  {
+   "id": "food-insecure",
+   "label": "People who can't always afford food",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D000084884"
+   ],
+   "definition": "Not enough food, or not sure where the next meal comes from. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.4",
+     "match": "prefix",
+     "display": "Lack of adequate food (Z59.41 food insecurity, Z59.48 other)"
+    },
+    {
+     "system": "snomed",
+     "code": "733423003",
+     "match": "exact",
+     "display": "Food insecurity"
+    },
+    {
+     "system": "loinc",
+     "code": "88124-3=LA19952-3",
+     "match": "answer",
+     "display": "Hunger Vital Sign: food insecurity risk = At risk"
+    }
+   ],
+   "gravity": [
+    "food-insecurity"
+   ]
+  },
+  {
+   "id": "housing-unstable",
+   "label": "People at risk of losing their housing",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D000091003"
+   ],
+   "definition": "Behind on rent, moving often, doubled up, or in unsafe housing. People with no home go in People experiencing homelessness. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.81",
+     "match": "prefix",
+     "display": "Housing instability, housed (Z59.811, Z59.812, Z59.819)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.1",
+     "match": "prefix",
+     "display": "Inadequate housing (Z59.10, Z59.11, Z59.12, Z59.19)"
+    }
+   ],
+   "gravity": [
+    "housing-instability",
+    "inadequate-housing"
+   ]
+  },
+  {
+   "id": "transport-barriers",
+   "label": "People without reliable transportation",
+   "parent": "situation",
+   "axis": "about",
+   "definition": "Can't get to care, work or food because of transport. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.82",
+     "match": "exact",
+     "display": "Transportation insecurity"
+    },
+    {
+     "system": "snomed",
+     "code": "160695008",
+     "match": "exact",
+     "display": "Transport too expensive"
+    }
+   ],
+   "gravity": [
+    "transportation-insecurity"
+   ]
+  },
+  {
+   "id": "uninsured",
+   "label": "People without enough health insurance",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D017057"
+   ],
+   "definition": "Uninsured or underinsured, or struggling with medical bills. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.71",
+     "match": "exact",
+     "display": "Insufficient health insurance coverage"
+    }
+   ],
+   "gravity": [
+    "health-insurance-coverage-status",
+    "medical-cost-burden"
+   ]
+  },
+  {
+   "id": "unemployed",
+   "label": "People out of work",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D014478"
+   ],
+   "definition": "Looking for work or unable to work. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z56.0",
+     "match": "exact",
+     "display": "Unemployment, unspecified"
+    },
+    {
+     "system": "snomed",
+     "code": "73438004",
+     "match": "exact",
+     "display": "Unemployed"
+    },
+    {
+     "system": "loinc",
+     "code": "67875-5=LA17956-6",
+     "match": "answer",
+     "display": "Employment status - current = Unemployed"
+    }
+   ],
+   "gravity": [
+    "employment-status"
+   ]
+  },
+  {
+   "id": "socially-isolated",
+   "label": "People who are lonely or isolated",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D012934",
+    "D008132"
+   ],
+   "definition": "Living alone, few social contacts, or feeling lonely. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z60.2",
+     "match": "exact",
+     "display": "Problems related to living alone"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z60.4",
+     "match": "exact",
+     "display": "Social exclusion and rejection"
+    }
+   ],
+   "gravity": [
+    "social-connection"
+   ]
+  },
+  {
+   "id": "violence-survivors",
+   "label": "Survivors of domestic and partner violence",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D000066511"
+   ],
+   "definition": "People harmed by a partner, family member or caregiver, including older adults facing abuse. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z69.11",
+     "match": "exact",
+     "display": "Encounter for mental health services for victim of spousal or partner abuse"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z91.41",
+     "match": "prefix",
+     "display": "Personal history of adult abuse (Z91.410-Z91.419, incl. Z91.414 intimate partner abuse)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T74.11",
+     "match": "prefix",
+     "display": "Adult physical abuse, confirmed"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T74.21",
+     "match": "prefix",
+     "display": "Adult sexual abuse, confirmed"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T74.31",
+     "match": "prefix",
+     "display": "Adult psychological abuse, confirmed"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T76.11",
+     "match": "prefix",
+     "display": "Adult physical abuse, suspected"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T76.21",
+     "match": "prefix",
+     "display": "Adult sexual abuse, suspected"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T76.31",
+     "match": "prefix",
+     "display": "Adult psychological abuse, suspected"
+    }
+   ],
+   "gravity": [
+    "intimate-partner-violence",
+    "elder-abuse"
+   ]
   },
   {
    "id": "not-started",

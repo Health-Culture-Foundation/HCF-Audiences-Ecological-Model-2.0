@@ -125,6 +125,13 @@ Whose health it is about. Only groups the resource names.
   - **People who use or inject drugs** `people-who-use-drugs` — MESH D055030
   - **People with long-term health conditions** `long-term-conditions` — MESH D002908
   - **Speakers of other languages** `language-minorities`
+  - **People who can't always afford food** `food-insecure` — MESH D000084884
+  - **People at risk of losing their housing** `housing-unstable` — MESH D000091003
+  - **People without reliable transportation** `transport-barriers`
+  - **People without enough health insurance** `uninsured` — MESH D017057
+  - **People out of work** `unemployed` — MESH D014478
+  - **People who are lonely or isolated** `socially-isolated` — MESH D012934, D008132
+  - **Survivors of domestic and partner violence** `violence-survivors` — MESH D000066511
 
 ## Where they are with it
 

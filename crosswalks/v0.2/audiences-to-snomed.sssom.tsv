@@ -1,0 +1,12 @@
+# title: HCF Audiences v0.2 to SNOMED CT findings
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   sct: http://snomed.info/id/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:unhoused	People experiencing homelessness	skos:closeMatch	sct:32911000	Homeless	semapv:ManualMappingCuration	Claude (unreviewed)	2026-11-07	match: exact. Source: Gravity SDOHCC 3.0.0 example.
+hcfaud:food-insecure	People who can't always afford food	skos:closeMatch	sct:733423003	Food insecurity	semapv:ManualMappingCuration	Claude (unreviewed)	2026-11-07	match: exact. Source: Gravity SDOHCC 3.0.0 example.
+hcfaud:transport-barriers	People without reliable transportation	skos:closeMatch	sct:160695008	Transport too expensive	semapv:ManualMappingCuration	Claude (unreviewed)	2026-11-07	match: exact. Source: Gravity SDOHCC 3.0.0 example.
+hcfaud:unemployed	People out of work	skos:closeMatch	sct:73438004	Unemployed	semapv:ManualMappingCuration	Claude (unreviewed)	2026-11-07	match: exact. Source: Gravity SDOHCC 3.0.0 example.

@@ -1,0 +1,2238 @@
+{
+ "resourceType": "Bundle",
+ "id": "hcf-audiences-v0.2-groups-r5",
+ "type": "collection",
+ "entry": [
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-babies",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-babies",
+    "type": "person",
+    "name": "Babies and toddlers (0-2)",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "babies",
+       "display": "Babies and toddlers (0-2)"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "age"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueRange": {
+       "low": {
+        "value": 0,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       },
+       "high": {
+        "value": 2,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       }
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-young-children",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-young-children",
+    "type": "person",
+    "name": "Young children (2-5)",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "young-children",
+       "display": "Young children (2-5)"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "age"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueRange": {
+       "low": {
+        "value": 2,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       },
+       "high": {
+        "value": 5,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       }
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-children",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-children",
+    "type": "person",
+    "name": "Children (6-12)",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "children",
+       "display": "Children (6-12)"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "age"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueRange": {
+       "low": {
+        "value": 6,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       },
+       "high": {
+        "value": 12,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       }
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-teens",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-teens",
+    "type": "person",
+    "name": "Teens (13-17)",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "teens",
+       "display": "Teens (13-17)"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "age"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueRange": {
+       "low": {
+        "value": 13,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       },
+       "high": {
+        "value": 17,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       }
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "MeSH Adolescent runs 13-18; campaigns for 18-year-olds go in Young adults."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-young-adults",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-young-adults",
+    "type": "person",
+    "name": "Young adults (18-24)",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "young-adults",
+       "display": "Young adults (18-24)"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "age"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueRange": {
+       "low": {
+        "value": 18,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       },
+       "high": {
+        "value": 24,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       }
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-adults",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-adults",
+    "type": "person",
+    "name": "Adults (25-64)",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "adults",
+       "display": "Adults (25-64)"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "age"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueRange": {
+       "low": {
+        "value": 25,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       },
+       "high": {
+        "value": 64,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       }
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Only when the campaign names an adult age range, not as a stand-in for everyone."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-older-adults",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-older-adults",
+    "type": "person",
+    "name": "Older adults (65+)",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "older-adults",
+       "display": "Older adults (65+)"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "age"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueRange": {
+       "low": {
+        "value": 65,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+       }
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Campaigns saying 60+ or 55+ land here too."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-women-and-girls",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-women-and-girls",
+    "type": "person",
+    "name": "Women and girls",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "women-and-girls",
+       "display": "Women and girls"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "gender"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/administrative-gender",
+         "code": "female"
+        },
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "women-and-girls",
+         "display": "Women and girls"
+        }
+       ],
+       "text": "Women and girls"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-men-and-boys",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-men-and-boys",
+    "type": "person",
+    "name": "Men and boys",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "men-and-boys",
+       "display": "Men and boys"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "gender"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/administrative-gender",
+         "code": "male"
+        },
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "men-and-boys",
+         "display": "Men and boys"
+        }
+       ],
+       "text": "Men and boys"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-trans-and-nonbinary",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-trans-and-nonbinary",
+    "type": "person",
+    "name": "Transgender and nonbinary people",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "trans-and-nonbinary",
+       "display": "Transgender and nonbinary people"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "trans-and-nonbinary",
+         "display": "Transgender and nonbinary people"
+        }
+       ],
+       "text": "Transgender and nonbinary people"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-lgb",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-lgb",
+    "type": "person",
+    "name": "Lesbian, gay and bisexual people",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "lgb",
+       "display": "Lesbian, gay and bisexual people"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "lgb",
+         "display": "Lesbian, gay and bisexual people"
+        }
+       ],
+       "text": "Lesbian, gay and bisexual people"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-msm",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-msm",
+    "type": "person",
+    "name": "Men who have sex with men",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "msm",
+       "display": "Men who have sex with men"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "msm",
+         "display": "Men who have sex with men"
+        }
+       ],
+       "text": "Men who have sex with men"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "A behavior, not an identity; used by HIV and STI campaigns."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-asian",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-asian",
+    "type": "person",
+    "name": "Asian",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "asian",
+       "display": "Asian"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "asian",
+         "display": "Asian"
+        }
+       ],
+       "text": "Asian"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-black",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-black",
+    "type": "person",
+    "name": "Black or African American",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "black",
+       "display": "Black or African American"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "black",
+         "display": "Black or African American"
+        }
+       ],
+       "text": "Black or African American"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-hispanic-latino",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-hispanic-latino",
+    "type": "person",
+    "name": "Hispanic or Latino",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "hispanic-latino",
+       "display": "Hispanic or Latino"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "hispanic-latino",
+         "display": "Hispanic or Latino"
+        }
+       ],
+       "text": "Hispanic or Latino"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-mena",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-mena",
+    "type": "person",
+    "name": "Middle Eastern or North African",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "mena",
+       "display": "Middle Eastern or North African"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "mena",
+         "display": "Middle Eastern or North African"
+        }
+       ],
+       "text": "Middle Eastern or North African"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-nhpi",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-nhpi",
+    "type": "person",
+    "name": "Native Hawaiian or Pacific Islander",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "nhpi",
+       "display": "Native Hawaiian or Pacific Islander"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "nhpi",
+         "display": "Native Hawaiian or Pacific Islander"
+        }
+       ],
+       "text": "Native Hawaiian or Pacific Islander"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-white",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-white",
+    "type": "person",
+    "name": "White",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "white",
+       "display": "White"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "white",
+         "display": "White"
+        }
+       ],
+       "text": "White"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Rarely named; only when a campaign says so."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-indigenous-peoples",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-indigenous-peoples",
+    "type": "person",
+    "name": "Indigenous peoples",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "indigenous-peoples",
+       "display": "Indigenous peoples"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "indigenous-peoples",
+         "display": "Indigenous peoples"
+        }
+       ],
+       "text": "Indigenous peoples"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Works across countries."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-american-indian-alaska-native",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-american-indian-alaska-native",
+    "type": "person",
+    "name": "American Indian and Alaska Native",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "american-indian-alaska-native",
+       "display": "American Indian and Alaska Native"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "american-indian-alaska-native",
+         "display": "American Indian and Alaska Native"
+        }
+       ],
+       "text": "American Indian and Alaska Native"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-aboriginal-torres-strait",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-aboriginal-torres-strait",
+    "type": "person",
+    "name": "Aboriginal and Torres Strait Islander peoples",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "aboriginal-torres-strait",
+       "display": "Aboriginal and Torres Strait Islander peoples"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "aboriginal-torres-strait",
+         "display": "Aboriginal and Torres Strait Islander peoples"
+        }
+       ],
+       "text": "Aboriginal and Torres Strait Islander peoples"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-first-nations-inuit-metis",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-first-nations-inuit-metis",
+    "type": "person",
+    "name": "First Nations, Inuit and Métis",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "first-nations-inuit-metis",
+       "display": "First Nations, Inuit and Métis"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "first-nations-inuit-metis",
+         "display": "First Nations, Inuit and Métis"
+        }
+       ],
+       "text": "First Nations, Inuit and Métis"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-maori",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-maori",
+    "type": "person",
+    "name": "Māori",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "maori",
+       "display": "Māori"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "maori",
+         "display": "Māori"
+        }
+       ],
+       "text": "Māori"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-pregnant-postpartum",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-pregnant-postpartum",
+    "type": "person",
+    "name": "Pregnant and postpartum people",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "pregnant-postpartum",
+       "display": "Pregnant and postpartum people"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "pregnant-postpartum",
+         "display": "Pregnant and postpartum people"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "O",
+         "display": "Pregnancy, childbirth and the puerperium (chapter 15, O00-O9A)"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z33.1",
+         "display": "Pregnant state, incidental"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z34",
+         "display": "Encounter for supervision of normal pregnancy"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z39",
+         "display": "Postpartum care and examination (Z39.0, Z39.1, Z39.2)"
+        }
+       ],
+       "text": "Pregnant and postpartum people"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-students",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-students",
+    "type": "person",
+    "name": "Students",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "students",
+       "display": "Students"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "students",
+         "display": "Students"
+        }
+       ],
+       "text": "Students"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-military-veterans",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-military-veterans",
+    "type": "person",
+    "name": "Military and veterans",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "military-veterans",
+       "display": "Military and veterans"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "military-veterans",
+         "display": "Military and veterans"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z91.82",
+         "display": "Personal history of military deployment"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z91.85",
+         "display": "Personal history of military service"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z56.82",
+         "display": "Military deployment status"
+        }
+       ],
+       "text": "Military and veterans"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-workers",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-workers",
+    "type": "person",
+    "name": "Workers",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "workers",
+       "display": "Workers"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "workers",
+         "display": "Workers"
+        }
+       ],
+       "text": "Workers"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Use a child when the job is named."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-drivers",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-drivers",
+    "type": "person",
+    "name": "Drivers",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "drivers",
+       "display": "Drivers"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "drivers",
+         "display": "Drivers"
+        }
+       ],
+       "text": "Drivers"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-shift-workers",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-shift-workers",
+    "type": "person",
+    "name": "Shift and night workers",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "shift-workers",
+       "display": "Shift and night workers"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "shift-workers",
+         "display": "Shift and night workers"
+        }
+       ],
+       "text": "Shift and night workers"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-trades-workers",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-trades-workers",
+    "type": "person",
+    "name": "Trades and manual workers",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "trades-workers",
+       "display": "Trades and manual workers"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "trades-workers",
+         "display": "Trades and manual workers"
+        }
+       ],
+       "text": "Trades and manual workers"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-public-sector-workers",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-public-sector-workers",
+    "type": "person",
+    "name": "Public-sector workers",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "public-sector-workers",
+       "display": "Public-sector workers"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "public-sector-workers",
+         "display": "Public-sector workers"
+        }
+       ],
+       "text": "Public-sector workers"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-rural",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-rural",
+    "type": "person",
+    "name": "Rural residents",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "rural",
+       "display": "Rural residents"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "rural",
+         "display": "Rural residents"
+        }
+       ],
+       "text": "Rural residents"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-low-income",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-low-income",
+    "type": "person",
+    "name": "People on low incomes",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "low-income",
+       "display": "People on low incomes"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "low-income",
+         "display": "People on low incomes"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.5",
+         "display": "Extreme poverty"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.6",
+         "display": "Low income"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.86",
+         "display": "Financial insecurity (Z59.861 utilities, Z59.868 other, Z59.869 unspecified)"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.87",
+         "display": "Material hardship due to limited financial resources, not elsewhere classified"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.72",
+         "display": "Insufficient welfare support"
+        }
+       ],
+       "text": "People on low incomes"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-unhoused",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-unhoused",
+    "type": "person",
+    "name": "People experiencing homelessness",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "unhoused",
+       "display": "People experiencing homelessness"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "unhoused",
+         "display": "People experiencing homelessness"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.0",
+         "display": "Homelessness (Z59.00 unspecified; Z59.01 sheltered; Z59.02 unsheltered)"
+        },
+        {
+         "system": "http://snomed.info/sct",
+         "code": "32911000",
+         "display": "Homeless"
+        }
+       ],
+       "text": "People experiencing homelessness"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-justice-involved",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-justice-involved",
+    "type": "person",
+    "name": "People in jail or prison or on probation",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "justice-involved",
+       "display": "People in jail or prison or on probation"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "justice-involved",
+         "display": "People in jail or prison or on probation"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z65.1",
+         "display": "Imprisonment and other incarceration"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z65.2",
+         "display": "Problems related to release from prison"
+        }
+       ],
+       "text": "People in jail or prison or on probation"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-immigrants-refugees",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-immigrants-refugees",
+    "type": "person",
+    "name": "Immigrants and refugees",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "immigrants-refugees",
+       "display": "Immigrants and refugees"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "immigrants-refugees",
+         "display": "Immigrants and refugees"
+        }
+       ],
+       "text": "Immigrants and refugees"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-people-with-disabilities",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-people-with-disabilities",
+    "type": "person",
+    "name": "People with disabilities",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "people-with-disabilities",
+       "display": "People with disabilities"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "people-with-disabilities",
+         "display": "People with disabilities"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z73.6",
+         "display": "Limitation of activities due to disability"
+        }
+       ],
+       "text": "People with disabilities"
+      }
+     }
+    ],
+    "membership": "definitional"
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-people-who-use-drugs",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-people-who-use-drugs",
+    "type": "person",
+    "name": "People who use or inject drugs",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "people-who-use-drugs",
+       "display": "People who use or inject drugs"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "people-who-use-drugs",
+         "display": "People who use or inject drugs"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "F11",
+         "display": "Opioid related disorders"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "F13",
+         "display": "Sedative, hypnotic or anxiolytic related disorders"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "F14",
+         "display": "Cocaine related disorders"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "F15",
+         "display": "Other stimulant related disorders"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "F16",
+         "display": "Hallucinogen related disorders"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "F19",
+         "display": "Other psychoactive substance related disorders"
+        }
+       ],
+       "text": "People who use or inject drugs"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "The population harm-reduction campaigns serve. Pair with a Stage value."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-long-term-conditions",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-long-term-conditions",
+    "type": "person",
+    "name": "People with long-term health conditions",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "long-term-conditions",
+       "display": "People with long-term health conditions"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "long-term-conditions",
+         "display": "People with long-term health conditions"
+        }
+       ],
+       "text": "People with long-term health conditions"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Patients, people on a long-term medication, the clinically vulnerable. The condition itself goes in Topic."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-language-minorities",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-language-minorities",
+    "type": "person",
+    "name": "Speakers of other languages",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "language-minorities",
+       "display": "Speakers of other languages"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "language-minorities",
+         "display": "Speakers of other languages"
+        }
+       ],
+       "text": "Speakers of other languages"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries)."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-food-insecure",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-food-insecure",
+    "type": "person",
+    "name": "People who can't always afford food",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "food-insecure",
+       "display": "People who can't always afford food"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "food-insecure",
+         "display": "People who can't always afford food"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.4",
+         "display": "Lack of adequate food (Z59.41 food insecurity, Z59.48 other)"
+        },
+        {
+         "system": "http://snomed.info/sct",
+         "code": "733423003",
+         "display": "Food insecurity"
+        }
+       ],
+       "text": "People who can't always afford food"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Not enough food, or not sure where the next meal comes from. Added 2026-11-07 for the Gravity Project SDOH domains."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-housing-unstable",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-housing-unstable",
+    "type": "person",
+    "name": "People at risk of losing their housing",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "housing-unstable",
+       "display": "People at risk of losing their housing"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "housing-unstable",
+         "display": "People at risk of losing their housing"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.81",
+         "display": "Housing instability, housed (Z59.811, Z59.812, Z59.819)"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.1",
+         "display": "Inadequate housing (Z59.10, Z59.11, Z59.12, Z59.19)"
+        }
+       ],
+       "text": "People at risk of losing their housing"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Behind on rent, moving often, doubled up, or in unsafe housing. People with no home go in People experiencing homelessness. Added 2026-11-07 for the Gravity Project SDOH domains."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-transport-barriers",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-transport-barriers",
+    "type": "person",
+    "name": "People without reliable transportation",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "transport-barriers",
+       "display": "People without reliable transportation"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "transport-barriers",
+         "display": "People without reliable transportation"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.82",
+         "display": "Transportation insecurity"
+        },
+        {
+         "system": "http://snomed.info/sct",
+         "code": "160695008",
+         "display": "Transport too expensive"
+        }
+       ],
+       "text": "People without reliable transportation"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Can't get to care, work or food because of transport. Added 2026-11-07 for the Gravity Project SDOH domains."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-uninsured",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-uninsured",
+    "type": "person",
+    "name": "People without enough health insurance",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "uninsured",
+       "display": "People without enough health insurance"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "uninsured",
+         "display": "People without enough health insurance"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z59.71",
+         "display": "Insufficient health insurance coverage"
+        }
+       ],
+       "text": "People without enough health insurance"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Uninsured or underinsured, or struggling with medical bills. Added 2026-11-07 for the Gravity Project SDOH domains."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-unemployed",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-unemployed",
+    "type": "person",
+    "name": "People out of work",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "unemployed",
+       "display": "People out of work"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "unemployed",
+         "display": "People out of work"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z56.0",
+         "display": "Unemployment, unspecified"
+        },
+        {
+         "system": "http://snomed.info/sct",
+         "code": "73438004",
+         "display": "Unemployed"
+        }
+       ],
+       "text": "People out of work"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Looking for work or unable to work. Added 2026-11-07 for the Gravity Project SDOH domains."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-socially-isolated",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-socially-isolated",
+    "type": "person",
+    "name": "People who are lonely or isolated",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "socially-isolated",
+       "display": "People who are lonely or isolated"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "socially-isolated",
+         "display": "People who are lonely or isolated"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z60.2",
+         "display": "Problems related to living alone"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z60.4",
+         "display": "Social exclusion and rejection"
+        }
+       ],
+       "text": "People who are lonely or isolated"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "Living alone, few social contacts, or feeling lonely. Added 2026-11-07 for the Gravity Project SDOH domains."
+   }
+  },
+  {
+   "fullUrl": "https://health-culture.org/vocab/audiences-v0.2/Group/hcfaud-violence-survivors",
+   "resource": {
+    "resourceType": "Group",
+    "id": "hcfaud-violence-survivors",
+    "type": "person",
+    "name": "Survivors of domestic and partner violence",
+    "code": {
+     "coding": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2",
+       "code": "violence-survivors",
+       "display": "Survivors of domestic and partner violence"
+      }
+     ]
+    },
+    "characteristic": [
+     {
+      "code": {
+       "coding": [
+        {
+         "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+         "code": "focus"
+        }
+       ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+       "coding": [
+        {
+         "system": "https://health-culture.org/vocab/audiences-v0.2",
+         "code": "violence-survivors",
+         "display": "Survivors of domestic and partner violence"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z69.11",
+         "display": "Encounter for mental health services for victim of spousal or partner abuse"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "Z91.41",
+         "display": "Personal history of adult abuse (Z91.410-Z91.419, incl. Z91.414 intimate partner abuse)"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "T74.11",
+         "display": "Adult physical abuse, confirmed"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "T74.21",
+         "display": "Adult sexual abuse, confirmed"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "T74.31",
+         "display": "Adult psychological abuse, confirmed"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "T76.11",
+         "display": "Adult physical abuse, suspected"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "T76.21",
+         "display": "Adult sexual abuse, suspected"
+        },
+        {
+         "system": "http://hl7.org/fhir/sid/icd-10-cm",
+         "code": "T76.31",
+         "display": "Adult psychological abuse, suspected"
+        }
+       ],
+       "text": "Survivors of domestic and partner violence"
+      }
+     }
+    ],
+    "membership": "definitional",
+    "description": "People harmed by a partner, family member or caregiver, including older adults facing abuse. Added 2026-11-07 for the Gravity Project SDOH domains."
+   }
+  }
+ ]
+}

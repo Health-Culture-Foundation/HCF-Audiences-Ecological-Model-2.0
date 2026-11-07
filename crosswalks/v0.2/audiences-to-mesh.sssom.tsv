@@ -57,3 +57,10 @@ hcfaud:immigrants-refugees	Immigrants and refugees	skos:closeMatch	mesh:D012036	
 hcfaud:people-with-disabilities	People with disabilities	skos:closeMatch	mesh:D006233		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:people-who-use-drugs	People who use or inject drugs	skos:closeMatch	mesh:D055030		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
 hcfaud:long-term-conditions	People with long-term health conditions	skos:closeMatch	mesh:D002908		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:food-insecure	People who can't always afford food	skos:closeMatch	mesh:D000084884		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:housing-unstable	People at risk of losing their housing	skos:closeMatch	mesh:D000091003		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:uninsured	People without enough health insurance	skos:closeMatch	mesh:D017057		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:unemployed	People out of work	skos:closeMatch	mesh:D014478		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:socially-isolated	People who are lonely or isolated	skos:closeMatch	mesh:D012934		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:socially-isolated	People who are lonely or isolated	skos:closeMatch	mesh:D008132		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
+hcfaud:violence-survivors	Survivors of domestic and partner violence	skos:closeMatch	mesh:D000066511		semapv:ManualMappingCuration	Claude (unreviewed)	2026-10-28	
