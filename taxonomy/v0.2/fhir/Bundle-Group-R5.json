@@ -8,6 +8,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-babies",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Babies and toddlers (0-2): a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Babies and toddlers (0-2)",
     "code": {
@@ -54,6 +58,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-young-children",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Young children (2-5): a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Young children (2-5)",
     "code": {
@@ -100,6 +108,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-children",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Children (6-12): a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Children (6-12)",
     "code": {
@@ -146,6 +158,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-teens",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Teens (13-17): a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Teens (13-17)",
     "code": {
@@ -193,6 +209,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-young-adults",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Young adults (18-24): a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Young adults (18-24)",
     "code": {
@@ -239,6 +259,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-adults",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Adults (25-64): a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Adults (25-64)",
     "code": {
@@ -286,6 +310,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-older-adults",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Older adults (65+): a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Older adults (65+)",
     "code": {
@@ -327,6 +355,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-women-and-girls",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Women and girls: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Women and girls",
     "code": {
@@ -373,6 +405,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-men-and-boys",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Men and boys: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Men and boys",
     "code": {
@@ -419,6 +455,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-trans-and-nonbinary",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Transgender and nonbinary people: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Transgender and nonbinary people",
     "code": {
@@ -461,6 +501,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-lgb",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lesbian, gay and bisexual people: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Lesbian, gay and bisexual people",
     "code": {
@@ -503,6 +547,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-msm",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Men who have sex with men: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Men who have sex with men",
     "code": {
@@ -546,6 +594,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-asian",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Asian: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Asian",
     "code": {
@@ -588,6 +640,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-black",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Black or African American: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Black or African American",
     "code": {
@@ -630,6 +686,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-hispanic-latino",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hispanic or Latino: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Hispanic or Latino",
     "code": {
@@ -672,6 +732,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-mena",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Middle Eastern or North African: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Middle Eastern or North African",
     "code": {
@@ -714,6 +778,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-nhpi",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Native Hawaiian or Pacific Islander: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Native Hawaiian or Pacific Islander",
     "code": {
@@ -756,6 +824,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-white",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">White: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "White",
     "code": {
@@ -799,6 +871,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-indigenous-peoples",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Indigenous peoples: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Indigenous peoples",
     "code": {
@@ -842,6 +918,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-american-indian-alaska-native",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">American Indian and Alaska Native: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "American Indian and Alaska Native",
     "code": {
@@ -884,6 +964,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-aboriginal-torres-strait",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aboriginal and Torres Strait Islander peoples: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Aboriginal and Torres Strait Islander peoples",
     "code": {
@@ -926,6 +1010,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-first-nations-inuit-metis",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">First Nations, Inuit and Métis: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "First Nations, Inuit and Métis",
     "code": {
@@ -968,6 +1056,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-maori",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Māori: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Māori",
     "code": {
@@ -1010,6 +1102,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-pregnant-postpartum",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnant and postpartum people: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Pregnant and postpartum people",
     "code": {
@@ -1072,6 +1168,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-students",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Students: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Students",
     "code": {
@@ -1114,6 +1214,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-military-veterans",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Military and veterans: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Military and veterans",
     "code": {
@@ -1171,6 +1275,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-workers",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Workers: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Workers",
     "code": {
@@ -1214,6 +1322,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-drivers",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Drivers: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Drivers",
     "code": {
@@ -1256,6 +1368,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-shift-workers",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Shift and night workers: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Shift and night workers",
     "code": {
@@ -1298,6 +1414,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-trades-workers",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Trades and manual workers: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Trades and manual workers",
     "code": {
@@ -1340,6 +1460,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-public-sector-workers",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Public-sector workers: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Public-sector workers",
     "code": {
@@ -1382,6 +1506,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-rural",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Rural residents: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Rural residents",
     "code": {
@@ -1424,6 +1552,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-low-income",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People on low incomes: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People on low incomes",
     "code": {
@@ -1491,6 +1623,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-unhoused",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People experiencing homelessness: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People experiencing homelessness",
     "code": {
@@ -1543,6 +1679,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-justice-involved",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People in jail or prison or on probation: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People in jail or prison or on probation",
     "code": {
@@ -1595,6 +1735,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-immigrants-refugees",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immigrants and refugees: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Immigrants and refugees",
     "code": {
@@ -1637,6 +1781,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-people-with-disabilities",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People with disabilities: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People with disabilities",
     "code": {
@@ -1684,6 +1832,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-people-who-use-drugs",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People who use or inject drugs: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People who use or inject drugs",
     "code": {
@@ -1757,6 +1909,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-long-term-conditions",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People with long-term health conditions: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People with long-term health conditions",
     "code": {
@@ -1800,6 +1956,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-language-minorities",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Speakers of other languages: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Speakers of other languages",
     "code": {
@@ -1843,6 +2003,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-food-insecure",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People who can&#x27;t always afford food: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People who can't always afford food",
     "code": {
@@ -1896,6 +2060,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-housing-unstable",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People at risk of losing their housing: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People at risk of losing their housing",
     "code": {
@@ -1949,6 +2117,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-transport-barriers",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People without reliable transportation: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People without reliable transportation",
     "code": {
@@ -2002,6 +2174,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-uninsured",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People without enough health insurance: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People without enough health insurance",
     "code": {
@@ -2050,6 +2226,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-unemployed",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People out of work: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People out of work",
     "code": {
@@ -2103,6 +2283,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-socially-isolated",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">People who are lonely or isolated: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "People who are lonely or isolated",
     "code": {
@@ -2156,6 +2340,10 @@
    "resource": {
     "resourceType": "Group",
     "id": "hcfaud-violence-survivors",
+    "text": {
+     "status": "generated",
+     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Survivors of domestic and partner violence: a definitional group, no members.</div>"
+    },
     "type": "person",
     "name": "Survivors of domestic and partner violence",
     "code": {

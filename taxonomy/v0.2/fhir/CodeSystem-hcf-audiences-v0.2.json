@@ -5,6 +5,10 @@
  "version": "0.2",
  "name": "HCFAudiences",
  "title": "HCF Audiences v0.2",
+ "text": {
+  "status": "generated",
+  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HCF Audiences v0.2: 128 concepts on three axes (for, about, stage).</div>"
+ },
  "status": "draft",
  "experimental": true,
  "publisher": "Health Culture Foundation",
@@ -17,7 +21,7 @@
  "property": [
   {
    "code": "axis",
-   "type": "code",
+   "type": "string",
    "description": "for (who it's for; also messenger), about (who it's about) or stage"
   }
  ],
@@ -29,7 +33,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ]
   },
@@ -40,7 +44,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -51,7 +55,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -62,7 +66,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -73,7 +77,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -86,7 +90,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -97,7 +101,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ],
      "concept": [
@@ -108,7 +112,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "for"
+         "valueString": "for"
         }
        ]
       },
@@ -118,7 +122,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "for"
+         "valueString": "for"
         }
        ]
       },
@@ -128,7 +132,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "for"
+         "valueString": "for"
         }
        ]
       },
@@ -138,7 +142,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "for"
+         "valueString": "for"
         }
        ]
       }
@@ -150,7 +154,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ],
      "concept": [
@@ -160,7 +164,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "for"
+         "valueString": "for"
         }
        ]
       }
@@ -172,7 +176,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -182,7 +186,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -192,7 +196,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -203,7 +207,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -214,7 +218,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -225,7 +229,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -235,7 +239,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ],
      "concept": [
@@ -246,7 +250,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "for"
+         "valueString": "for"
         }
        ]
       }
@@ -259,7 +263,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -269,7 +273,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -280,7 +284,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -293,7 +297,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -303,7 +307,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -314,7 +318,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -324,7 +328,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -335,7 +339,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -346,7 +350,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -357,7 +361,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -369,7 +373,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -379,7 +383,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -389,7 +393,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -399,7 +403,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -410,7 +414,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -420,7 +424,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -430,7 +434,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -442,7 +446,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -452,7 +456,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -462,7 +466,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -474,7 +478,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -484,7 +488,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -494,7 +498,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -504,7 +508,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -514,7 +518,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -524,7 +528,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -536,7 +540,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -546,7 +550,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -556,7 +560,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -566,7 +570,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -577,7 +581,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -589,7 +593,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -599,7 +603,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -609,7 +613,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -619,7 +623,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -630,7 +634,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -642,7 +646,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -652,7 +656,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -662,7 +666,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -672,7 +676,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -682,7 +686,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -694,7 +698,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ],
    "concept": [
@@ -704,7 +708,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -714,7 +718,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -724,7 +728,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -734,7 +738,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     },
@@ -744,7 +748,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "for"
+       "valueString": "for"
       }
      ]
     }
@@ -756,7 +760,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "for"
+     "valueString": "for"
     }
    ]
   },
@@ -766,7 +770,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "about"
+     "valueString": "about"
     }
    ],
    "concept": [
@@ -776,7 +780,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -786,7 +790,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -796,7 +800,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -807,7 +811,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -817,7 +821,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -828,7 +832,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -839,7 +843,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     }
@@ -851,7 +855,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "about"
+     "valueString": "about"
     }
    ],
    "concept": [
@@ -861,7 +865,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -871,7 +875,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -881,7 +885,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     }
@@ -893,7 +897,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "about"
+     "valueString": "about"
     }
    ],
    "concept": [
@@ -903,7 +907,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -914,7 +918,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     }
@@ -926,7 +930,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "about"
+     "valueString": "about"
     }
    ],
    "concept": [
@@ -936,7 +940,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -946,7 +950,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -956,7 +960,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -966,7 +970,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -976,7 +980,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -987,7 +991,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -998,7 +1002,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ],
      "concept": [
@@ -1008,7 +1012,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       },
@@ -1018,7 +1022,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       },
@@ -1028,7 +1032,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       },
@@ -1038,7 +1042,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       }
@@ -1052,7 +1056,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "about"
+     "valueString": "about"
     }
    ],
    "concept": [
@@ -1062,7 +1066,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1072,7 +1076,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1082,7 +1086,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1093,7 +1097,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ],
      "concept": [
@@ -1103,7 +1107,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       },
@@ -1113,7 +1117,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       },
@@ -1123,7 +1127,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       },
@@ -1133,7 +1137,7 @@
        "property": [
         {
          "code": "axis",
-         "valueCode": "about"
+         "valueString": "about"
         }
        ]
       }
@@ -1145,7 +1149,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1155,7 +1159,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1165,7 +1169,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1175,7 +1179,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1185,7 +1189,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1195,7 +1199,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1206,7 +1210,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1217,7 +1221,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1228,7 +1232,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1239,7 +1243,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1250,7 +1254,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1261,7 +1265,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1272,7 +1276,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1283,7 +1287,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1294,7 +1298,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     },
@@ -1305,7 +1309,7 @@
      "property": [
       {
        "code": "axis",
-       "valueCode": "about"
+       "valueString": "about"
       }
      ]
     }
@@ -1318,7 +1322,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "stage"
+     "valueString": "stage"
     }
    ]
   },
@@ -1329,7 +1333,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "stage"
+     "valueString": "stage"
     }
    ]
   },
@@ -1340,7 +1344,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "stage"
+     "valueString": "stage"
     }
    ]
   },
@@ -1351,7 +1355,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "stage"
+     "valueString": "stage"
     }
    ]
   },
@@ -1361,7 +1365,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "stage"
+     "valueString": "stage"
     }
    ]
   },
@@ -1371,7 +1375,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "stage"
+     "valueString": "stage"
     }
    ]
   },
@@ -1382,7 +1386,7 @@
    "property": [
     {
      "code": "axis",
-     "valueCode": "stage"
+     "valueString": "stage"
     }
    ]
   }

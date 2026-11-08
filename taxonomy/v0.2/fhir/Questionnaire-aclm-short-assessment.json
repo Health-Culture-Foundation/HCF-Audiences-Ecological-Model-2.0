@@ -1,0 +1,1807 @@
+{
+ "resourceType": "Questionnaire",
+ "id": "aclm-short-assessment",
+ "text": {
+  "status": "generated",
+  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ACLM Lifestyle Medicine Short Assessment (paraphrased items)</div>"
+ },
+ "url": "https://health-culture.org/vocab/audiences-v0.2/Questionnaire/aclm-short-assessment",
+ "name": "AclmShortAssessment",
+ "title": "ACLM Lifestyle Medicine Short Assessment (paraphrased)",
+ "status": "draft",
+ "experimental": true,
+ "publisher": "Health Culture Foundation",
+ "description": "The patient-completed lifestyle assessment in ACLM's Epic Foundation build (Lifestyle Medicine Whole Person Health Index, Nova release note 923516, May 2026) and in eClinicalWorks 12.0.4 (Nov 2026). Items follow ACLM's Short Assessment Form (2024), which embeds the Physical Activity Vital Sign and the PHQ-2. Labels here are short paraphrases, not ACLM's wording.",
+ "copyright": "Instrument (c) 2024 American College of Lifestyle Medicine, adapted from the Loma Linda University/ACLM short form (2019). PHQ-2 (c) Pfizer, free to use. Item labels are paraphrased; use ACLM's form for the questions as asked. Cut-offs and mappings to HCF Audiences are Health Culture Foundation's (CC BY 4.0) and unreviewed.",
+ "item": [
+  {
+   "linkId": "readiness",
+   "text": "Readiness",
+   "type": "group",
+   "item": [
+    {
+     "linkId": "readiness-importance",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "readiness-importance",
+       "display": "How important lifestyle change is to them (0-10)"
+      }
+     ],
+     "text": "How important lifestyle change is to them (0-10)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-0",
+        "display": "0"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-1",
+        "display": "1"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-2",
+        "display": "2"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-3",
+        "display": "3"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-4",
+        "display": "4"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-5",
+        "display": "5"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-6",
+        "display": "6"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-7",
+        "display": "7"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-8",
+        "display": "8"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-9",
+        "display": "9"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-10",
+        "display": "10"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "readiness-confidence",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "readiness-confidence",
+       "display": "How confident they are they can change (0-10)"
+      }
+     ],
+     "text": "How confident they are they can change (0-10)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-0",
+        "display": "0"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-1",
+        "display": "1"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-2",
+        "display": "2"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-3",
+        "display": "3"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-4",
+        "display": "4"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-5",
+        "display": "5"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-6",
+        "display": "6"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-7",
+        "display": "7"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-8",
+        "display": "8"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-9",
+        "display": "9"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-10",
+        "display": "10"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "motivation",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "motivation",
+       "display": "Areas they most want to change (top 3)"
+      }
+     ],
+     "text": "Areas they most want to change (top 3)",
+     "type": "choice",
+     "repeats": true,
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "pillars-nutrition",
+        "display": "Nutrition"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "pillars-physical-activity",
+        "display": "Physical activity"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "pillars-sleep",
+        "display": "Sleep"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "pillars-stress",
+        "display": "Stress management"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "pillars-connectedness",
+        "display": "Social connectedness"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "pillars-risky-substances",
+        "display": "Avoiding risky substances"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "linkId": "nutrition",
+   "text": "Nutrition",
+   "type": "group",
+   "item": [
+    {
+     "linkId": "diet-fruit",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-fruit",
+       "display": "Fruit, how often (last 4 weeks)"
+      }
+     ],
+     "text": "Fruit, how often (last 4 weeks)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-vegetables",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-vegetables",
+       "display": "Vegetables, how often"
+      }
+     ],
+     "text": "Vegetables, how often",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-whole-grains",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-whole-grains",
+       "display": "Whole grains, how often"
+      }
+     ],
+     "text": "Whole grains, how often",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-refined-grains",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-refined-grains",
+       "display": "Refined grains, how often"
+      }
+     ],
+     "text": "Refined grains, how often",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-prepared",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-prepared",
+       "display": "Packaged, restaurant, takeout or fast-food meals, how often"
+      }
+     ],
+     "text": "Packaged, restaurant, takeout or fast-food meals, how often",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-sugary",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-sugary",
+       "display": "Sugary foods and drinks, how often"
+      }
+     ],
+     "text": "Sugary foods and drinks, how often",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-salty",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-salty",
+       "display": "Salty foods, how often"
+      }
+     ],
+     "text": "Salty foods, how often",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-fried",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-fried",
+       "display": "Fried foods, how often"
+      }
+     ],
+     "text": "Fried foods, how often",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-0",
+        "display": "Never"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-1",
+        "display": "Less than once a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-2",
+        "display": "1-3 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-3",
+        "display": "4-6 times a week"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-4",
+        "display": "1-2 times a day"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "often-6-5",
+        "display": "More than 3 times a day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "diet-protein",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "diet-protein",
+       "display": "Protein sources eaten a few times a week or more"
+      }
+     ],
+     "text": "Protein sources eaten a few times a week or more",
+     "type": "choice",
+     "repeats": true,
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-beef-pork-lamb",
+        "display": "Beef pork lamb"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-processed-meat",
+        "display": "Processed meat"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-poultry",
+        "display": "Poultry"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-wild-game",
+        "display": "Wild game"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-nuts-seeds",
+        "display": "Nuts seeds"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-fish-seafood",
+        "display": "Fish seafood"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-beans-legumes",
+        "display": "Beans legumes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-dairy",
+        "display": "Dairy"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "protein-eggs",
+        "display": "Eggs"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "linkId": "physical-activity",
+   "text": "Physical activity",
+   "type": "group",
+   "item": [
+    {
+     "linkId": "pavs-days",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "89555-7"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "pavs-days",
+       "display": "Days a week of moderate to vigorous activity (last 30 days)"
+      }
+     ],
+     "text": "Days a week of moderate to vigorous activity (last 30 days)",
+     "type": "integer"
+    },
+    {
+     "linkId": "pavs-minutes",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "68516-4"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "pavs-minutes",
+       "display": "Minutes of activity on those days"
+      }
+     ],
+     "text": "Minutes of activity on those days",
+     "type": "integer"
+    },
+    {
+     "linkId": "pavs-week",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "82290-8"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "pavs-week",
+       "display": "Minutes a week of moderate to vigorous activity"
+      }
+     ],
+     "text": "Minutes a week of moderate to vigorous activity",
+     "type": "integer",
+     "readOnly": true
+    },
+    {
+     "linkId": "strength-days",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "82291-6"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "strength-days",
+       "display": "Times a week of muscle-strengthening activity"
+      }
+     ],
+     "text": "Times a week of muscle-strengthening activity",
+     "type": "integer"
+    }
+   ]
+  },
+  {
+   "linkId": "sleep",
+   "text": "Sleep",
+   "type": "group",
+   "item": [
+    {
+     "linkId": "sleep-hours",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "93832-4"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "sleep-hours",
+       "display": "Average hours of sleep a day (last 2 weeks)"
+      }
+     ],
+     "text": "Average hours of sleep a day (last 2 weeks)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "sleep-hours-3.5",
+        "display": "Less than 4 hours"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "sleep-hours-4.5",
+        "display": "4-5 hours"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "sleep-hours-5.5",
+        "display": "5-6 hours"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "sleep-hours-6.5",
+        "display": "6-7 hours"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "sleep-hours-7.5",
+        "display": "7-8 hours"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "sleep-hours-8.5",
+        "display": "8-9 hours"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "sleep-hours-9.5",
+        "display": "9 hours or more"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "sleep-tired",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "sleep-tired",
+       "display": "Tired or hard to stay awake in the day (last 2 weeks)"
+      }
+     ],
+     "text": "Tired or hard to stay awake in the day (last 2 weeks)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6568-5",
+        "display": "Not at all"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6569-3",
+        "display": "Several days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6570-1",
+        "display": "More than half the days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6571-9",
+        "display": "Nearly every day"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "linkId": "stress",
+   "text": "Stress",
+   "type": "group",
+   "item": [
+    {
+     "linkId": "phq2-interest",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "44250-9"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "phq2-interest",
+       "display": "Little interest or pleasure in doing things (PHQ-2)"
+      }
+     ],
+     "text": "Little interest or pleasure in doing things (PHQ-2)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6568-5",
+        "display": "Not at all"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6569-3",
+        "display": "Several days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6570-1",
+        "display": "More than half the days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6571-9",
+        "display": "Nearly every day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "phq2-down",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "44255-8"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "phq2-down",
+       "display": "Feeling down, depressed or hopeless (PHQ-2)"
+      }
+     ],
+     "text": "Feeling down, depressed or hopeless (PHQ-2)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6568-5",
+        "display": "Not at all"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6569-3",
+        "display": "Several days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6570-1",
+        "display": "More than half the days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6571-9",
+        "display": "Nearly every day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "phq2-total",
+     "code": [
+      {
+       "system": "http://loinc.org",
+       "code": "55758-7"
+      },
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "phq2-total",
+       "display": "PHQ-2 total score"
+      }
+     ],
+     "text": "PHQ-2 total score",
+     "type": "integer",
+     "readOnly": true
+    }
+   ]
+  },
+  {
+   "linkId": "connectedness",
+   "text": "Connectedness",
+   "type": "group",
+   "item": [
+    {
+     "linkId": "purpose",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "purpose",
+       "display": "Felt life had purpose or meaning (last 2 weeks)"
+      }
+     ],
+     "text": "Felt life had purpose or meaning (last 2 weeks)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6568-5",
+        "display": "Not at all"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6569-3",
+        "display": "Several days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6570-1",
+        "display": "More than half the days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6571-9",
+        "display": "Nearly every day"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "connected",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "connected",
+       "display": "Felt connected to a support network (last 2 weeks)"
+      }
+     ],
+     "text": "Felt connected to a support network (last 2 weeks)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6568-5",
+        "display": "Not at all"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6569-3",
+        "display": "Several days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6570-1",
+        "display": "More than half the days"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA6571-9",
+        "display": "Nearly every day"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "linkId": "substances",
+   "text": "Substances",
+   "type": "group",
+   "item": [
+    {
+     "linkId": "nicotine",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "nicotine",
+       "display": "Used nicotine in the past year"
+      }
+     ],
+     "text": "Used nicotine in the past year",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA33-6",
+        "display": "Yes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "No"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "nicotine-per-week",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "nicotine-per-week",
+       "display": "Nicotine products a week"
+      }
+     ],
+     "text": "Nicotine products a week",
+     "type": "integer"
+    },
+    {
+     "linkId": "nicotine-replacement",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "nicotine-replacement",
+       "display": "Using nicotine replacement now"
+      }
+     ],
+     "text": "Using nicotine replacement now",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA33-6",
+        "display": "Yes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "No"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "nicotine-quit",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "nicotine-quit",
+       "display": "Interested in quitting"
+      }
+     ],
+     "text": "Interested in quitting",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA33-6",
+        "display": "Yes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "No"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "nicotine-concern",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "nicotine-concern",
+       "display": "How concerned about their nicotine use (0-10)"
+      }
+     ],
+     "text": "How concerned about their nicotine use (0-10)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-0",
+        "display": "0"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-1",
+        "display": "1"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-2",
+        "display": "2"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-3",
+        "display": "3"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-4",
+        "display": "4"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-5",
+        "display": "5"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-6",
+        "display": "6"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-7",
+        "display": "7"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-8",
+        "display": "8"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-9",
+        "display": "9"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-10",
+        "display": "10"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "alcohol",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "alcohol",
+       "display": "Drank alcohol in the past year"
+      }
+     ],
+     "text": "Drank alcohol in the past year",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA33-6",
+        "display": "Yes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "No"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "alcohol-per-week",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "alcohol-per-week",
+       "display": "Drinks a week"
+      }
+     ],
+     "text": "Drinks a week",
+     "type": "integer"
+    },
+    {
+     "linkId": "alcohol-concern",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "alcohol-concern",
+       "display": "How concerned about their alcohol use (0-10)"
+      }
+     ],
+     "text": "How concerned about their alcohol use (0-10)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-0",
+        "display": "0"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-1",
+        "display": "1"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-2",
+        "display": "2"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-3",
+        "display": "3"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-4",
+        "display": "4"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-5",
+        "display": "5"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-6",
+        "display": "6"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-7",
+        "display": "7"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-8",
+        "display": "8"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-9",
+        "display": "9"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-10",
+        "display": "10"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "cannabis",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "cannabis",
+       "display": "Used marijuana, THC or CBD in the past year"
+      }
+     ],
+     "text": "Used marijuana, THC or CBD in the past year",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA33-6",
+        "display": "Yes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "No"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "cannabis-prescribed",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "cannabis-prescribed",
+       "display": "Marijuana prescribed by a clinician"
+      }
+     ],
+     "text": "Marijuana prescribed by a clinician",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA33-6",
+        "display": "Yes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "No"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "cannabis-per-week",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "cannabis-per-week",
+       "display": "Marijuana use a week"
+      }
+     ],
+     "text": "Marijuana use a week",
+     "type": "integer"
+    },
+    {
+     "linkId": "cannabis-concern",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "cannabis-concern",
+       "display": "How concerned about their marijuana use (0-10)"
+      }
+     ],
+     "text": "How concerned about their marijuana use (0-10)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-0",
+        "display": "0"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-1",
+        "display": "1"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-2",
+        "display": "2"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-3",
+        "display": "3"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-4",
+        "display": "4"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-5",
+        "display": "5"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-6",
+        "display": "6"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-7",
+        "display": "7"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-8",
+        "display": "8"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-9",
+        "display": "9"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-10",
+        "display": "10"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "drugs",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "drugs",
+       "display": "Used other drugs (cocaine, heroin, meth, opioids) in the past year"
+      }
+     ],
+     "text": "Used other drugs (cocaine, heroin, meth, opioids) in the past year",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA33-6",
+        "display": "Yes"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "http://loinc.org",
+        "code": "LA32-8",
+        "display": "No"
+       }
+      }
+     ]
+    },
+    {
+     "linkId": "drugs-per-week",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "drugs-per-week",
+       "display": "Other drug use a week"
+      }
+     ],
+     "text": "Other drug use a week",
+     "type": "integer"
+    },
+    {
+     "linkId": "drugs-concern",
+     "code": [
+      {
+       "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+       "code": "drugs-concern",
+       "display": "How concerned about their drug use (0-10)"
+      }
+     ],
+     "text": "How concerned about their drug use (0-10)",
+     "type": "choice",
+     "answerOption": [
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-0",
+        "display": "0"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-1",
+        "display": "1"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-2",
+        "display": "2"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-3",
+        "display": "3"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-4",
+        "display": "4"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-5",
+        "display": "5"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-6",
+        "display": "6"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-7",
+        "display": "7"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-8",
+        "display": "8"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-9",
+        "display": "9"
+       }
+      },
+      {
+       "valueCoding": {
+        "system": "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items",
+        "code": "scale-0-10-10",
+        "display": "10"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+item,section,label,answer,loinc,unit,from,sex,rule,gives,basis
+readiness-importance,readiness,How important lifestyle change is to them (0-10),scale-0-10,,,,,>=7,stage:ready-to-change,Our cut-off; the form labels 10 'Very ready'
+readiness-confidence,readiness,How confident they are they can change (0-10),scale-0-10,,,,,>=7,stage:ready-to-change,Our cut-off; the form labels 10 'Very confident'
+motivation,readiness,Areas they most want to change (top 3),pillars,,,,,any,focus:*,Each pillar they pick becomes a topic
+diet-fruit,nutrition,"Fruit, how often (last 4 weeks)",often-6,,,,,<4,focus:nutrition,Less than daily; our cut-off pending ACLM's scoring rubric
+diet-vegetables,nutrition,"Vegetables, how often",often-6,,,,,<4,focus:nutrition,Less than daily; our cut-off
+diet-whole-grains,nutrition,"Whole grains, how often",often-6,,,,,<4,focus:nutrition,Less than daily; our cut-off
+diet-refined-grains,nutrition,"Refined grains, how often",often-6,,,,,>=4,focus:nutrition,Daily or more; our cut-off
+diet-prepared,nutrition,"Packaged, restaurant, takeout or fast-food meals, how often",often-6,,,,,>=4,focus:nutrition,Daily or more; our cut-off
+diet-sugary,nutrition,"Sugary foods and drinks, how often",often-6,,,,,>=4,focus:nutrition,Daily or more; our cut-off
+diet-salty,nutrition,"Salty foods, how often",often-6,,,,,>=4,focus:nutrition,Daily or more; our cut-off
+diet-fried,nutrition,"Fried foods, how often",often-6,,,,,>=4,focus:nutrition,Daily or more; our cut-off
+diet-protein,nutrition,Protein sources eaten a few times a week or more,protein,,,,,,,"Recorded, no rule"
+pavs-days,physical-activity,Days a week of moderate to vigorous activity (last 30 days),number,89555-7,d/wk,,,,,Physical Activity Vital Sign
+pavs-minutes,physical-activity,Minutes of activity on those days,number,68516-4,min/d,,,,,Physical Activity Vital Sign
+pavs-week,physical-activity,Minutes a week of moderate to vigorous activity,number,82290-8,min/wk,pavs-days*pavs-minutes,,<150,focus:physical-activity,"Under 150 min/week: Physical Activity Guidelines for Americans, 2nd ed. (2018)"
+strength-days,physical-activity,Times a week of muscle-strengthening activity,number,82291-6,/wk,,,<2,focus:physical-activity,Under 2 days/week: Physical Activity Guidelines for Americans (2018)
+sleep-hours,sleep,Average hours of sleep a day (last 2 weeks),sleep-hours,93832-4,h,,,<7,focus:sleep,Under 7 hours: AASM/SRS adult consensus (2015)
+sleep-tired,sleep,Tired or hard to stay awake in the day (last 2 weeks),freq-4,,,,,>=2,focus:sleep,More than half the days; our cut-off
+phq2-interest,stress,Little interest or pleasure in doing things (PHQ-2),freq-4,44250-9,,,,,,PHQ-2 item 1
+phq2-down,stress,"Feeling down, depressed or hopeless (PHQ-2)",freq-4,44255-8,,,,,,PHQ-2 item 2
+phq2-total,stress,PHQ-2 total score,number,55758-7,{score},phq2-interest+phq2-down,,>=3,focus:stress,"Score 3 or more: Kroenke, Spitzer & Williams, Med Care 2003"
+purpose,connectedness,Felt life had purpose or meaning (last 2 weeks),freq-4,,,,,<=1,focus:connectedness,Not at all or several days; our cut-off
+connected,connectedness,Felt connected to a support network (last 2 weeks),freq-4,,,,,<=1,about:socially-isolated,Not at all or several days; our cut-off
+nicotine,substances,Used nicotine in the past year,yes-no,,,,,=1,focus:tobacco|stage:doing-it-now,
+nicotine-per-week,substances,Nicotine products a week,number,,/wk,,,,,
+nicotine-replacement,substances,Using nicotine replacement now,yes-no,,,,,=1,focus:tobacco|stage:in-treatment,
+nicotine-quit,substances,Interested in quitting,yes-no,,,,,=1,focus:tobacco|stage:ready-to-change,
+nicotine-concern,substances,How concerned about their nicotine use (0-10),scale-0-10,,,,,>=7,focus:tobacco|stage:ready-to-change,Our cut-off
+alcohol,substances,Drank alcohol in the past year,yes-no,,,,,,,
+alcohol-per-week,substances,Drinks a week,number,,/wk,,male,>14,focus:alcohol|stage:doing-it-now,More than 14 a week for men: NIAAA heavy drinking
+alcohol-per-week,substances,Drinks a week,number,,/wk,,female,>7,focus:alcohol|stage:doing-it-now,More than 7 a week for women: NIAAA heavy drinking
+alcohol-per-week,substances,Drinks a week,number,,/wk,,,>7,focus:alcohol,"Sex not given: the lower NIAAA limit, as a topic only"
+alcohol-concern,substances,How concerned about their alcohol use (0-10),scale-0-10,,,,,>=7,focus:alcohol|stage:ready-to-change,Our cut-off
+cannabis,substances,"Used marijuana, THC or CBD in the past year",yes-no,,,,,=1,focus:cannabis,
+cannabis-prescribed,substances,Marijuana prescribed by a clinician,yes-no,,,,,,,
+cannabis-per-week,substances,Marijuana use a week,number,,/wk,,,,,
+cannabis-concern,substances,How concerned about their marijuana use (0-10),scale-0-10,,,,,>=7,focus:cannabis|stage:ready-to-change,Our cut-off
+drugs,substances,"Used other drugs (cocaine, heroin, meth, opioids) in the past year",yes-no,,,,,=1,about:people-who-use-drugs|focus:drugs|stage:doing-it-now,
+drugs-per-week,substances,Other drug use a week,number,,/wk,,,,,
+drugs-concern,substances,How concerned about their drug use (0-10),scale-0-10,,,,,>=7,focus:drugs|stage:ready-to-change,Our cut-off

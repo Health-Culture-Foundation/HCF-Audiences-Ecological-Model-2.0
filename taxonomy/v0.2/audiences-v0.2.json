@@ -1802,5 +1802,644 @@
    "axis": "stage",
    "definition": "Family, friends and people who have lost someone."
   }
- ]
+ ],
+ "answers": {
+  "scale-0-10": [
+   {
+    "value": 0,
+    "label": "0"
+   },
+   {
+    "value": 1,
+    "label": "1"
+   },
+   {
+    "value": 2,
+    "label": "2"
+   },
+   {
+    "value": 3,
+    "label": "3"
+   },
+   {
+    "value": 4,
+    "label": "4"
+   },
+   {
+    "value": 5,
+    "label": "5"
+   },
+   {
+    "value": 6,
+    "label": "6"
+   },
+   {
+    "value": 7,
+    "label": "7"
+   },
+   {
+    "value": 8,
+    "label": "8"
+   },
+   {
+    "value": 9,
+    "label": "9"
+   },
+   {
+    "value": 10,
+    "label": "10"
+   }
+  ],
+  "often-6": [
+   {
+    "value": 0,
+    "label": "Never"
+   },
+   {
+    "value": 1,
+    "label": "Less than once a week"
+   },
+   {
+    "value": 2,
+    "label": "1-3 times a week"
+   },
+   {
+    "value": 3,
+    "label": "4-6 times a week"
+   },
+   {
+    "value": 4,
+    "label": "1-2 times a day"
+   },
+   {
+    "value": 5,
+    "label": "More than 3 times a day"
+   }
+  ],
+  "freq-4": [
+   {
+    "value": 0,
+    "label": "Not at all",
+    "loinc": "LA6568-5"
+   },
+   {
+    "value": 1,
+    "label": "Several days",
+    "loinc": "LA6569-3"
+   },
+   {
+    "value": 2,
+    "label": "More than half the days",
+    "loinc": "LA6570-1"
+   },
+   {
+    "value": 3,
+    "label": "Nearly every day",
+    "loinc": "LA6571-9"
+   }
+  ],
+  "sleep-hours": [
+   {
+    "value": 3.5,
+    "label": "Less than 4 hours"
+   },
+   {
+    "value": 4.5,
+    "label": "4-5 hours"
+   },
+   {
+    "value": 5.5,
+    "label": "5-6 hours"
+   },
+   {
+    "value": 6.5,
+    "label": "6-7 hours"
+   },
+   {
+    "value": 7.5,
+    "label": "7-8 hours"
+   },
+   {
+    "value": 8.5,
+    "label": "8-9 hours"
+   },
+   {
+    "value": 9.5,
+    "label": "9 hours or more"
+   }
+  ],
+  "yes-no": [
+   {
+    "value": 1,
+    "label": "Yes",
+    "loinc": "LA33-6"
+   },
+   {
+    "value": 0,
+    "label": "No",
+    "loinc": "LA32-8"
+   }
+  ],
+  "pillars": [
+   {
+    "value": "nutrition",
+    "label": "Nutrition"
+   },
+   {
+    "value": "physical-activity",
+    "label": "Physical activity"
+   },
+   {
+    "value": "sleep",
+    "label": "Sleep"
+   },
+   {
+    "value": "stress",
+    "label": "Stress management"
+   },
+   {
+    "value": "connectedness",
+    "label": "Social connectedness"
+   },
+   {
+    "value": "risky-substances",
+    "label": "Avoiding risky substances"
+   }
+  ],
+  "protein": [
+   {
+    "value": "beef-pork-lamb",
+    "label": "Beef pork lamb"
+   },
+   {
+    "value": "processed-meat",
+    "label": "Processed meat"
+   },
+   {
+    "value": "poultry",
+    "label": "Poultry"
+   },
+   {
+    "value": "wild-game",
+    "label": "Wild game"
+   },
+   {
+    "value": "nuts-seeds",
+    "label": "Nuts seeds"
+   },
+   {
+    "value": "fish-seafood",
+    "label": "Fish seafood"
+   },
+   {
+    "value": "beans-legumes",
+    "label": "Beans legumes"
+   },
+   {
+    "value": "dairy",
+    "label": "Dairy"
+   },
+   {
+    "value": "eggs",
+    "label": "Eggs"
+   }
+  ],
+  "number": []
+ },
+ "instruments": {
+  "aclm-short-assessment": {
+   "title": "ACLM Lifestyle Medicine Short Assessment",
+   "publisher": "American College of Lifestyle Medicine",
+   "source": "https://connect.lifestylemedicine.org/viewdocument/lifestyle-medicine-short-assessment",
+   "about": "The patient-completed lifestyle assessment in ACLM's Epic Foundation build (Lifestyle Medicine Whole Person Health Index, Nova release note 923516, May 2026) and in eClinicalWorks 12.0.4 (Nov 2026). Items follow ACLM's Short Assessment Form (2024), which embeds the Physical Activity Vital Sign and the PHQ-2. Labels here are short paraphrases, not ACLM's wording.",
+   "copyright": "Instrument (c) 2024 American College of Lifestyle Medicine, adapted from the Loma Linda University/ACLM short form (2019). PHQ-2 (c) Pfizer, free to use. Item labels are paraphrased; use ACLM's form for the questions as asked. Cut-offs and mappings to HCF Audiences are Health Culture Foundation's (CC BY 4.0) and unreviewed.",
+   "items": [
+    {
+     "item": "readiness-importance",
+     "section": "readiness",
+     "label": "How important lifestyle change is to them (0-10)",
+     "answer": "scale-0-10",
+     "rule": ">=7",
+     "gives": [
+      "stage:ready-to-change"
+     ],
+     "basis": "Our cut-off; the form labels 10 'Very ready'"
+    },
+    {
+     "item": "readiness-confidence",
+     "section": "readiness",
+     "label": "How confident they are they can change (0-10)",
+     "answer": "scale-0-10",
+     "rule": ">=7",
+     "gives": [
+      "stage:ready-to-change"
+     ],
+     "basis": "Our cut-off; the form labels 10 'Very confident'"
+    },
+    {
+     "item": "motivation",
+     "section": "readiness",
+     "label": "Areas they most want to change (top 3)",
+     "answer": "pillars",
+     "rule": "any",
+     "gives": [
+      "focus:*"
+     ],
+     "basis": "Each pillar they pick becomes a topic"
+    },
+    {
+     "item": "diet-fruit",
+     "section": "nutrition",
+     "label": "Fruit, how often (last 4 weeks)",
+     "answer": "often-6",
+     "rule": "<4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Less than daily; our cut-off pending ACLM's scoring rubric"
+    },
+    {
+     "item": "diet-vegetables",
+     "section": "nutrition",
+     "label": "Vegetables, how often",
+     "answer": "often-6",
+     "rule": "<4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Less than daily; our cut-off"
+    },
+    {
+     "item": "diet-whole-grains",
+     "section": "nutrition",
+     "label": "Whole grains, how often",
+     "answer": "often-6",
+     "rule": "<4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Less than daily; our cut-off"
+    },
+    {
+     "item": "diet-refined-grains",
+     "section": "nutrition",
+     "label": "Refined grains, how often",
+     "answer": "often-6",
+     "rule": ">=4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Daily or more; our cut-off"
+    },
+    {
+     "item": "diet-prepared",
+     "section": "nutrition",
+     "label": "Packaged, restaurant, takeout or fast-food meals, how often",
+     "answer": "often-6",
+     "rule": ">=4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Daily or more; our cut-off"
+    },
+    {
+     "item": "diet-sugary",
+     "section": "nutrition",
+     "label": "Sugary foods and drinks, how often",
+     "answer": "often-6",
+     "rule": ">=4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Daily or more; our cut-off"
+    },
+    {
+     "item": "diet-salty",
+     "section": "nutrition",
+     "label": "Salty foods, how often",
+     "answer": "often-6",
+     "rule": ">=4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Daily or more; our cut-off"
+    },
+    {
+     "item": "diet-fried",
+     "section": "nutrition",
+     "label": "Fried foods, how often",
+     "answer": "often-6",
+     "rule": ">=4",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "Daily or more; our cut-off"
+    },
+    {
+     "item": "diet-protein",
+     "section": "nutrition",
+     "label": "Protein sources eaten a few times a week or more",
+     "answer": "protein",
+     "basis": "Recorded, no rule"
+    },
+    {
+     "item": "pavs-days",
+     "section": "physical-activity",
+     "label": "Days a week of moderate to vigorous activity (last 30 days)",
+     "answer": "number",
+     "loinc": "89555-7",
+     "unit": "d/wk",
+     "basis": "Physical Activity Vital Sign"
+    },
+    {
+     "item": "pavs-minutes",
+     "section": "physical-activity",
+     "label": "Minutes of activity on those days",
+     "answer": "number",
+     "loinc": "68516-4",
+     "unit": "min/d",
+     "basis": "Physical Activity Vital Sign"
+    },
+    {
+     "item": "pavs-week",
+     "section": "physical-activity",
+     "label": "Minutes a week of moderate to vigorous activity",
+     "answer": "number",
+     "loinc": "82290-8",
+     "unit": "min/wk",
+     "from": "pavs-days*pavs-minutes",
+     "rule": "<150",
+     "gives": [
+      "focus:physical-activity"
+     ],
+     "basis": "Under 150 min/week: Physical Activity Guidelines for Americans, 2nd ed. (2018)"
+    },
+    {
+     "item": "strength-days",
+     "section": "physical-activity",
+     "label": "Times a week of muscle-strengthening activity",
+     "answer": "number",
+     "loinc": "82291-6",
+     "unit": "/wk",
+     "rule": "<2",
+     "gives": [
+      "focus:physical-activity"
+     ],
+     "basis": "Under 2 days/week: Physical Activity Guidelines for Americans (2018)"
+    },
+    {
+     "item": "sleep-hours",
+     "section": "sleep",
+     "label": "Average hours of sleep a day (last 2 weeks)",
+     "answer": "sleep-hours",
+     "loinc": "93832-4",
+     "unit": "h",
+     "rule": "<7",
+     "gives": [
+      "focus:sleep"
+     ],
+     "basis": "Under 7 hours: AASM/SRS adult consensus (2015)"
+    },
+    {
+     "item": "sleep-tired",
+     "section": "sleep",
+     "label": "Tired or hard to stay awake in the day (last 2 weeks)",
+     "answer": "freq-4",
+     "rule": ">=2",
+     "gives": [
+      "focus:sleep"
+     ],
+     "basis": "More than half the days; our cut-off"
+    },
+    {
+     "item": "phq2-interest",
+     "section": "stress",
+     "label": "Little interest or pleasure in doing things (PHQ-2)",
+     "answer": "freq-4",
+     "loinc": "44250-9",
+     "basis": "PHQ-2 item 1"
+    },
+    {
+     "item": "phq2-down",
+     "section": "stress",
+     "label": "Feeling down, depressed or hopeless (PHQ-2)",
+     "answer": "freq-4",
+     "loinc": "44255-8",
+     "basis": "PHQ-2 item 2"
+    },
+    {
+     "item": "phq2-total",
+     "section": "stress",
+     "label": "PHQ-2 total score",
+     "answer": "number",
+     "loinc": "55758-7",
+     "unit": "{score}",
+     "from": "phq2-interest+phq2-down",
+     "rule": ">=3",
+     "gives": [
+      "focus:stress"
+     ],
+     "basis": "Score 3 or more: Kroenke, Spitzer & Williams, Med Care 2003"
+    },
+    {
+     "item": "purpose",
+     "section": "connectedness",
+     "label": "Felt life had purpose or meaning (last 2 weeks)",
+     "answer": "freq-4",
+     "rule": "<=1",
+     "gives": [
+      "focus:connectedness"
+     ],
+     "basis": "Not at all or several days; our cut-off"
+    },
+    {
+     "item": "connected",
+     "section": "connectedness",
+     "label": "Felt connected to a support network (last 2 weeks)",
+     "answer": "freq-4",
+     "rule": "<=1",
+     "gives": [
+      "about:socially-isolated"
+     ],
+     "basis": "Not at all or several days; our cut-off"
+    },
+    {
+     "item": "nicotine",
+     "section": "substances",
+     "label": "Used nicotine in the past year",
+     "answer": "yes-no",
+     "rule": "=1",
+     "gives": [
+      "focus:tobacco",
+      "stage:doing-it-now"
+     ]
+    },
+    {
+     "item": "nicotine-per-week",
+     "section": "substances",
+     "label": "Nicotine products a week",
+     "answer": "number",
+     "unit": "/wk"
+    },
+    {
+     "item": "nicotine-replacement",
+     "section": "substances",
+     "label": "Using nicotine replacement now",
+     "answer": "yes-no",
+     "rule": "=1",
+     "gives": [
+      "focus:tobacco",
+      "stage:in-treatment"
+     ]
+    },
+    {
+     "item": "nicotine-quit",
+     "section": "substances",
+     "label": "Interested in quitting",
+     "answer": "yes-no",
+     "rule": "=1",
+     "gives": [
+      "focus:tobacco",
+      "stage:ready-to-change"
+     ]
+    },
+    {
+     "item": "nicotine-concern",
+     "section": "substances",
+     "label": "How concerned about their nicotine use (0-10)",
+     "answer": "scale-0-10",
+     "rule": ">=7",
+     "gives": [
+      "focus:tobacco",
+      "stage:ready-to-change"
+     ],
+     "basis": "Our cut-off"
+    },
+    {
+     "item": "alcohol",
+     "section": "substances",
+     "label": "Drank alcohol in the past year",
+     "answer": "yes-no"
+    },
+    {
+     "item": "alcohol-per-week",
+     "section": "substances",
+     "label": "Drinks a week",
+     "answer": "number",
+     "unit": "/wk",
+     "sex": "male",
+     "rule": ">14",
+     "gives": [
+      "focus:alcohol",
+      "stage:doing-it-now"
+     ],
+     "basis": "More than 14 a week for men: NIAAA heavy drinking"
+    },
+    {
+     "item": "alcohol-per-week",
+     "section": "substances",
+     "label": "Drinks a week",
+     "answer": "number",
+     "unit": "/wk",
+     "sex": "female",
+     "rule": ">7",
+     "gives": [
+      "focus:alcohol",
+      "stage:doing-it-now"
+     ],
+     "basis": "More than 7 a week for women: NIAAA heavy drinking"
+    },
+    {
+     "item": "alcohol-per-week",
+     "section": "substances",
+     "label": "Drinks a week",
+     "answer": "number",
+     "unit": "/wk",
+     "rule": ">7",
+     "gives": [
+      "focus:alcohol"
+     ],
+     "basis": "Sex not given: the lower NIAAA limit, as a topic only"
+    },
+    {
+     "item": "alcohol-concern",
+     "section": "substances",
+     "label": "How concerned about their alcohol use (0-10)",
+     "answer": "scale-0-10",
+     "rule": ">=7",
+     "gives": [
+      "focus:alcohol",
+      "stage:ready-to-change"
+     ],
+     "basis": "Our cut-off"
+    },
+    {
+     "item": "cannabis",
+     "section": "substances",
+     "label": "Used marijuana, THC or CBD in the past year",
+     "answer": "yes-no",
+     "rule": "=1",
+     "gives": [
+      "focus:cannabis"
+     ]
+    },
+    {
+     "item": "cannabis-prescribed",
+     "section": "substances",
+     "label": "Marijuana prescribed by a clinician",
+     "answer": "yes-no"
+    },
+    {
+     "item": "cannabis-per-week",
+     "section": "substances",
+     "label": "Marijuana use a week",
+     "answer": "number",
+     "unit": "/wk"
+    },
+    {
+     "item": "cannabis-concern",
+     "section": "substances",
+     "label": "How concerned about their marijuana use (0-10)",
+     "answer": "scale-0-10",
+     "rule": ">=7",
+     "gives": [
+      "focus:cannabis",
+      "stage:ready-to-change"
+     ],
+     "basis": "Our cut-off"
+    },
+    {
+     "item": "drugs",
+     "section": "substances",
+     "label": "Used other drugs (cocaine, heroin, meth, opioids) in the past year",
+     "answer": "yes-no",
+     "rule": "=1",
+     "gives": [
+      "about:people-who-use-drugs",
+      "focus:drugs",
+      "stage:doing-it-now"
+     ]
+    },
+    {
+     "item": "drugs-per-week",
+     "section": "substances",
+     "label": "Other drug use a week",
+     "answer": "number",
+     "unit": "/wk"
+    },
+    {
+     "item": "drugs-concern",
+     "section": "substances",
+     "label": "How concerned about their drug use (0-10)",
+     "answer": "scale-0-10",
+     "rule": ">=7",
+     "gives": [
+      "focus:drugs",
+      "stage:ready-to-change"
+     ],
+     "basis": "Our cut-off"
+    }
+   ]
+  }
+ }
 }
