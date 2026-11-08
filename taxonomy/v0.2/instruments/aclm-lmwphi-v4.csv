@@ -1,0 +1,46 @@
+item,section,label,answer,loinc,unit,from,sex,rule,gives,basis
+ready,readiness,How ready to make or keep lifestyle changes (0-10),scale-0-10,,,,,,,
+confident,readiness,How confident they can make or keep lifestyle changes (0-10),scale-0-10,,,,,,,
+readiness-total,readiness,"Readiness and confidence, total (0-20)",number,,{score},ready+confident,,>=11,stage:ready-to-change,ACLM v4 guide: 11-20 is higher readiness to change
+priority-1,motivation,Number one priority to improve,pillars,,,,,any,focus:*,Picked by the patient
+priority-2,motivation,Number two priority to improve,pillars,,,,,any,focus:*,Picked by the patient
+priority-3,motivation,Number three priority to improve,pillars,,,,,any,focus:*,Picked by the patient
+diet-fruit,nutrition,"Fruit, how often (last 4 weeks)",often-6,,,,,,,
+diet-vegetables,nutrition,"Vegetables, how often",often-6,,,,,,,
+diet-whole-grains,nutrition,"Whole grains, how often",often-6,,,,,,,
+diet-white-grains,nutrition,"White bread, pasta, rice or white flour foods, how often",often-6,,,,,,,
+diet-prepared,nutrition,"Packaged, restaurant, takeout or fast-food meals, how often",often-6,,,,,,,
+diet-sugary,nutrition,"Sugary foods and drinks, how often",often-6,,,,,,,
+diet-salty,nutrition,"Salty foods, how often",often-6,,,,,,,
+diet-fried,nutrition,"Fried foods, how often",often-6,,,,,,,
+diet-protein,nutrition,Protein sources eaten 2-3 times a week or more,protein,,,,,,,
+score-nutrition,nutrition,Nutrition score: share of whole plant foods (0-10),number,,{score},aclm-lmwphi-v4,,<6,focus:nutrition,ACLM v4 guide scoring; under 6 of 10 is our cut-off
+sleep-hours,sleep,Average hours of sleep a day (last 2 weeks),sleep-hours,93832-4,h,,,,,
+sleep-tired,sleep,Tired or hard to stay awake in the day (last 2 weeks),freq-4,,,,,,,
+score-sleep,sleep,Sleep score (0-10),number,,{score},aclm-lmwphi-v4,,<6,focus:sleep,"ACLM v4 guide scoring (AASM/SRS hours, PSQI-informed); under 6 is our cut-off"
+pavs-days,physical-activity,Days a week of moderate to vigorous exercise (last 30 days),number,89555-7,d/wk,,,,,Exercise Vital Sign
+pavs-minutes,physical-activity,Minutes of exercise on those days,number,68516-4,min/d,,,,,Exercise Vital Sign
+pavs-week,physical-activity,Minutes a week of moderate to vigorous exercise,number,82290-8,min/wk,pavs-days*pavs-minutes,,<150,focus:physical-activity,Under 150: below aerobic guidelines (ACLM v4 guide; Physical Activity Guidelines 2018)
+strength-days,physical-activity,Times a week of muscle-strengthening activity,number,82291-6,/wk,,,,,
+score-activity,physical-activity,Exercise and activity score (0-10),number,,{score},aclm-lmwphi-v4,,<6,focus:physical-activity,ACLM v4 guide scoring; under 6 is our cut-off
+phq2-interest,stress,Little interest or pleasure in doing things (PHQ-2),freq-4,44250-9,,,,,,
+phq2-down,stress,"Feeling down, depressed or hopeless (PHQ-2)",freq-4,44255-8,,,,,,
+stress-on-top,stress,Feeling unable to stay on top of things,freq-4,,,,,,,
+stress-overwhelmed,stress,Feeling stressed or overwhelmed,freq-4,,,,,,,
+phq2-total,stress,PHQ-2 total score,number,55758-7,{score},phq2-interest+phq2-down,,>=2,focus:stress,ACLM v4 guide: a PHQ-2 of 2 or more calls for the PHQ-9
+score-stress,stress,Mood and stress score (0-10),number,,{score},aclm-lmwphi-v4,,<6,focus:stress,ACLM v4 guide scoring; under 6 is our cut-off
+purpose,connectedness,Felt life had purpose or meaning (last 2 weeks),freq-4,,,,,,,
+connected,connectedness,Felt connected to a support network (last 2 weeks),freq-4,,,,,<=1,about:socially-isolated,Not at all or several days; our cut-off
+score-connectedness,connectedness,Meaning and connectedness score (0-10),number,,{score},aclm-lmwphi-v4,,<6,focus:connectedness,ACLM v4 guide scoring; under 6 is our cut-off
+use-tobacco,substances,Tobacco or nicotine use (last 4 weeks),use-4,,,,,<=1,focus:tobacco|stage:doing-it-now,Weekly or more
+use-tobacco,substances,Tobacco or nicotine use (last 4 weeks),use-4,,,,,=2,focus:tobacco,Less than weekly
+use-binge,substances,Days with 5+ drinks (men) or 4+ (women) (last 4 weeks),use-4,,,,,<=1,focus:alcohol|stage:doing-it-now,Binge drinking weekly or more
+use-binge,substances,Days with 5+ drinks (men) or 4+ (women) (last 4 weeks),use-4,,,,,=2,focus:alcohol,Binge drinking less than weekly
+use-rx-misuse,substances,Prescription medicines used for the feeling or not as prescribed (last 4 weeks),use-4,,,,,<=1,focus:rx-misuse|stage:doing-it-now,Weekly or more
+use-rx-misuse,substances,Prescription medicines used for the feeling or not as prescribed (last 4 weeks),use-4,,,,,=2,focus:rx-misuse,Less than weekly
+use-cannabis,substances,Marijuana or cannabis use (last 4 weeks),use-4,,,,,<=1,focus:cannabis|stage:doing-it-now,Weekly or more
+use-cannabis,substances,Marijuana or cannabis use (last 4 weeks),use-4,,,,,=2,focus:cannabis,Less than weekly
+use-drugs,substances,"Cocaine, heroin, meth, hallucinogens, MDMA or similar (last 4 weeks)",use-4,,,,,<=1,about:people-who-use-drugs|focus:drugs|stage:doing-it-now,Weekly or more
+use-drugs,substances,"Cocaine, heroin, meth, hallucinogens, MDMA or similar (last 4 weeks)",use-4,,,,,=2,about:people-who-use-drugs|focus:drugs,Less than weekly
+score-substances,substances,Avoiding risky substances score (0-10),number,,{score},aclm-lmwphi-v4,,,,ACLM v4 guide scoring; the item rules above say which substance
+lifestyle-score,overall,Lifestyle Score (0-100),number,,{score},aclm-lmwphi-v4,,,,"ACLM v4 guide: 76-100 optimal, 51-75 moderate, 26-50 suboptimal, 0-25 high-risk health behaviors"

@@ -65,34 +65,39 @@ CLINICAL = {  # system key in clinical-codes.csv: (file stem, curie prefix, base
 # resource should be about. instruments/<id>.csv holds one row per item (an item can repeat with a different
 # rule, e.g. by sex); the answer types below give each item's options and the value each option stands for.
 INSTRUMENTS = {
-    "aclm-short-assessment": {
-        "title": "ACLM Lifestyle Medicine Short Assessment",
+    "aclm-lmwphi-v4": {
+        "title": "ACLM Lifestyle Medicine Whole Person Health Index, version 4",
         "publisher": "American College of Lifestyle Medicine",
         "source": "https://connect.lifestylemedicine.org/viewdocument/lifestyle-medicine-short-assessment",
-        "about": "The patient-completed lifestyle assessment in ACLM's Epic Foundation build (Lifestyle Medicine Whole Person Health Index, "
-                 "Nova release note 923516, May 2026) and in eClinicalWorks 12.0.4 (Nov 2026). Items follow ACLM's Short Assessment Form "
-                 "(2024), which embeds the Physical Activity Vital Sign and the PHQ-2. Labels here are short paraphrases, not ACLM's wording.",
-        "copyright": "Instrument (c) 2024 American College of Lifestyle Medicine, adapted from the Loma Linda University/ACLM short form (2019). "
-                     "PHQ-2 (c) Pfizer, free to use. Item labels are paraphrased; use ACLM's form for the questions as asked. "
-                     "Cut-offs and mappings to HCF Audiences are Health Culture Foundation's (CC BY 4.0) and unreviewed.",
+        "about": "The patient-completed lifestyle assessment in ACLM's Epic Foundation build (Nova release note 923516, May 2026) and in "
+                 "eClinicalWorks 12.0.4 (Nov 2026): readiness, three priorities, the ACLM Diet Screener 9 v2, sleep, the Exercise Vital Sign "
+                 "plus strength, the PHQ-2 plus two stress items, meaning and connectedness, and five substance-use items. Section scores "
+                 "(score-*) follow ACLM's LMWPHI v4 administrator guide. Labels here are short paraphrases, not ACLM's wording.",
+        "copyright": "Instrument and scoring (c) 2026 American College of Lifestyle Medicine. PHQ-2 items: no permission required to reproduce. "
+                     "Item labels are paraphrased; use ACLM's form for the questions as asked. Which answers point to which HCF Audiences "
+                     "values is Health Culture Foundation's (CC BY 4.0) and unreviewed.",
     },
 }
 ITEM_SYS = "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items"
-ANSWERS = {  # answer type: [(value, label, LOINC answer code)]
+ANSWERS = {  # answer type: [(value, label, LOINC answer code)]. Values are what ACLM's scoring works from.
     "scale-0-10": [(i, str(i), "") for i in range(11)],
     "often-6": [(0, "Never", ""), (1, "Less than once a week", ""), (2, "1-3 times a week", ""), (3, "4-6 times a week", ""),
-                (4, "1-2 times a day", ""), (5, "More than 3 times a day", "")],
+                (4, "1-2 times a day", ""), (5, "3 or more times a day", "")],
     "freq-4": [(0, "Not at all", "LA6568-5"), (1, "Several days", "LA6569-3"), (2, "More than half the days", "LA6570-1"), (3, "Nearly every day", "LA6571-9")],
-    "sleep-hours": [(3.5, "Less than 4 hours", ""), (4.5, "4-5 hours", ""), (5.5, "5-6 hours", ""), (6.5, "6-7 hours", ""), (7.5, "7-8 hours", ""),
-                    (8.5, "8-9 hours", ""), (9.5, "9 hours or more", "")],
-    "yes-no": [(1, "Yes", "LA33-6"), (0, "No", "LA32-8")],
-    "pillars": [("nutrition", "Nutrition", ""), ("physical-activity", "Physical activity", ""), ("sleep", "Sleep", ""), ("stress", "Stress management", ""),
-                ("connectedness", "Social connectedness", ""), ("risky-substances", "Avoiding risky substances", "")],
-    "protein": [(k, k.replace("-", " ").capitalize(), "") for k in ("beef-pork-lamb", "processed-meat", "poultry", "wild-game", "nuts-seeds", "fish-seafood",
-                                                                    "beans-legumes", "dairy", "eggs")],
+    "sleep-hours": [(0, "Less than 5 hours", ""), (1, "About 5-6 hours", ""), (2, "About 6-7 hours", ""), (3, "About 7-8 hours", ""), (4, "About 8-9 hours", ""),
+                    (5, "About 9-10 hours", ""), (6, "More than 10 hours", "")],
+    # ACLM's points: 0 for daily use, 3 for none.
+    "use-4": [(0, "Daily or almost daily", ""), (1, "Weekly", ""), (2, "Less than once a week", ""), (3, "Not at all", "")],
+    "pillars": [("risky-substances", "Avoiding risky substances", ""), ("connectedness", "Connectedness", ""), ("nutrition", "Nutrition", ""),
+                ("physical-activity", "Physical activity", ""), ("sleep", "Sleep", ""), ("stress", "Stress management", "")],
+    "protein": [(k, l, "") for k, l in (("beef-pork-lamb", "Beef, pork or lamb"), ("processed-meat", "Lunch meat, bacon, hot dogs or sausage"),
+                ("poultry", "Poultry"), ("wild-game", "Wild game"), ("fish-seafood", "Fish or seafood"), ("beans-legumes", "Beans, peas or lentils"),
+                ("nuts-seeds-avocado", "Nuts, seeds or avocado"), ("dairy", "Dairy"), ("eggs", "Eggs"))],
     "number": [],
 }
-FOCUS = {"nutrition", "physical-activity", "sleep", "stress", "connectedness", "risky-substances", "tobacco", "alcohol", "cannabis", "drugs"}
+# Hours each sleep answer covers, so a FHIR Observation of sleep duration in hours can be read as an answer.
+BANDS = {"sleep-hours": [[0, 5], [5, 6], [6, 7], [7, 8], [8, 9], [9, 10], [10, 24]]}
+FOCUS = {"nutrition", "physical-activity", "sleep", "stress", "connectedness", "risky-substances", "tobacco", "alcohol", "cannabis", "rx-misuse", "drugs"}
 HEAD = ["subject_id", "subject_label", "predicate_id", "object_id", "object_label", "mapping_justification", "author_label", "mapping_date", "comment"]
 
 
@@ -193,7 +198,8 @@ def main():
         "_about": "HCF Audiences v0.2. Generated by scripts/build_v02.py from audiences-v0.2.csv. CC BY 4.0, Health Culture Foundation.",
         "version": "0.2", "axes": {k: {"label": v[0], "definition": v[1]} for k, v in AXES.items()},
         "concepts": concepts,
-        "answers": {k: [{"value": v, "label": l, **({"loinc": c} if c else {})} for v, l, c in opts] for k, opts in ANSWERS.items()},
+        "answers": {k: [{"value": v, "label": l, **({"loinc": c} if c else {}), **({"min": BANDS[k][i][0], "max": BANDS[k][i][1]} if k in BANDS else {})}
+                        for i, (v, l, c) in enumerate(opts)] for k, opts in ANSWERS.items()},
         "instruments": {iid: {**{k: v for k, v in m.items() if k != "items"}, "items": [
             {k: v for k, v in {"item": x["item"], "section": x["section"], "label": x["label"], "answer": x["answer"], "loinc": x["loinc"], "unit": x["unit"],
              "from": x["from"], "sex": x["sex"], "rule": x["rule"], "gives": split(x["gives"]), "basis": x["basis"]}.items() if v} for x in m["items"]]}
@@ -365,10 +371,10 @@ def fhir(rows, by, codes_of, ctx_of, age_range, instruments):
             code.append({"system": ITEM_SYS, "code": x["item"], "display": x["label"]})
             it = {"linkId": x["item"], "code": code, "text": x["label"], "type": "integer" if x["answer"] == "number" else "choice"}
             if x["from"]:
-                it.update({"type": "integer", "readOnly": True})
+                it.update({"type": "decimal" if x["from"].startswith("aclm") else "integer", "readOnly": True})
             opts = ANSWERS[x["answer"]]
             if it["type"] == "choice":
-                if x["answer"] in ("pillars", "protein"):
+                if x["answer"] == "protein":
                     it["repeats"] = True
                 it["answerOption"] = [{"valueCoding": {"system": S["loinc"], "code": c, "display": l} if c else {"system": ITEM_SYS, "code": f"{x['answer']}-{v}", "display": l}} for v, l, c in opts]
             items.append(it)
