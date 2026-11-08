@@ -1,0 +1,10 @@
+# title: HCF Audiences v0.2 to LOINC screening answers (question=answer)
+# license: https://creativecommons.org/licenses/by/4.0/
+# curie_map:
+#   hcfaud: https://health-culture.org/vocab/audiences-v0.2/
+#   loinc: https://loinc.org/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	author_label	mapping_date	comment
+hcfaud:food-insecure	People who can't always afford food	skos:relatedMatch	loinc:88124-3=LA19952-3	Hunger Vital Sign: food insecurity risk = At risk	semapv:ManualMappingCuration	Claude (unreviewed)	2026-11-07	match: answer. Source: Gravity SDOHCC 3.0.0 example.
+hcfaud:unemployed	People out of work	skos:relatedMatch	loinc:67875-5=LA17956-6	Employment status - current = Unemployed	semapv:ManualMappingCuration	Claude (unreviewed)	2026-11-07	match: answer. Source: Gravity SDOHCC 3.0.0 example.

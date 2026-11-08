@@ -1,0 +1,1394 @@
+{
+ "resourceType": "CodeSystem",
+ "id": "hcf-audiences-v0.2",
+ "url": "https://health-culture.org/vocab/audiences-v0.2",
+ "version": "0.2",
+ "name": "HCFAudiences",
+ "title": "HCF Audiences v0.2",
+ "text": {
+  "status": "generated",
+  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HCF Audiences v0.2: 128 concepts on three axes (for, about, stage).</div>"
+ },
+ "status": "draft",
+ "experimental": true,
+ "publisher": "Health Culture Foundation",
+ "description": "Who a health resource is for, who it is about, and where they are with the behavior. Group-level descriptions only: no concept identifies a person.",
+ "copyright": "CC BY 4.0",
+ "caseSensitive": true,
+ "hierarchyMeaning": "is-a",
+ "content": "complete",
+ "count": 128,
+ "property": [
+  {
+   "code": "axis",
+   "type": "string",
+   "description": "for (who it's for; also messenger), about (who it's about) or stage"
+  }
+ ],
+ "concept": [
+  {
+   "code": "public",
+   "display": "The public, for themselves",
+   "definition": "People reading or acting about their own health. The default for a campaign aimed at everyone.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ]
+  },
+  {
+   "code": "family-and-friends",
+   "display": "Family and friends",
+   "definition": "People who act for someone close to them.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "parents-and-caregivers",
+     "display": "Parents and caregivers",
+     "definition": "Parents, guardians, grandparents and carers acting for a child or an adult they look after.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "partners-and-family",
+     "display": "Partners and family members",
+     "definition": "Spouses, partners, siblings and other relatives.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "friends-and-peers",
+     "display": "Friends and peers",
+     "definition": "Friends, roommates, classmates, teammates, bystanders.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "health-care-workers",
+   "display": "Health and care workers",
+   "definition": "People who treat or care for patients.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "doctors",
+     "display": "Doctors",
+     "definition": "Physicians of any specialty.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ],
+     "concept": [
+      {
+       "code": "primary-care-doctors",
+       "display": "Primary care doctors and pediatricians",
+       "definition": "Family doctors, GPs, internists, pediatricians.",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "for"
+        }
+       ]
+      },
+      {
+       "code": "emergency-doctors",
+       "display": "Emergency doctors",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "for"
+        }
+       ]
+      },
+      {
+       "code": "psychiatrists",
+       "display": "Psychiatrists",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "for"
+        }
+       ]
+      },
+      {
+       "code": "addiction-medicine",
+       "display": "Addiction medicine and addiction psychiatry",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "for"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "nurses",
+     "display": "Nurses and nurse practitioners",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ],
+     "concept": [
+      {
+       "code": "midwives",
+       "display": "Midwives",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "for"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "pharmacists",
+     "display": "Pharmacists",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "dentists",
+     "display": "Dentists",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "physician-assistants",
+     "display": "Physician assistants",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "care-workers",
+     "display": "Care home and home care staff",
+     "definition": "Nursing assistants, personal care and aged-care workers.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "allied-health",
+     "display": "Allied health professionals",
+     "definition": "Therapists, technologists and technicians: physical, occupational, respiratory and speech therapy, imaging, dietitians, medical assistants. Added for TRAIN (2026-10-29).",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "lab-workers",
+     "display": "Laboratory staff",
+     "definition": "Clinical and public health laboratory scientists and technicians. Added for TRAIN (2026-10-29).",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "behavioral-health-workers",
+     "display": "Counselors, social workers and psychologists",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ],
+     "concept": [
+      {
+       "code": "addiction-counselors",
+       "display": "Addiction counselors",
+       "definition": "SOC 2018 21-1018; O*NET splits it into 21-1011.00 (substance abuse and behavioral disorder) and 21-1014.00 (mental health).",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "for"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "peer-workers",
+     "display": "Peer recovery and harm-reduction workers",
+     "definition": "People with lived experience paid to support others, and harm-reduction outreach staff.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "ems",
+     "display": "EMTs and paramedics",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "health-care-leaders",
+     "display": "Hospital and clinic leaders",
+     "definition": "Managers who set policy for a health system, hospital or clinic.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "public-health-workers",
+   "display": "Public health workers",
+   "definition": "Staff of health departments and prevention programs.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "health-educators",
+     "display": "Health educators and prevention staff",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "community-health-workers",
+     "display": "Community health workers",
+     "definition": "Promotores, lay health workers, CHWs.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "epidemiologists",
+     "display": "Epidemiologists and data staff",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "environmental-health",
+     "display": "Environmental health staff",
+     "definition": "Sanitarians, food, water, housing and lead inspectors. Added for TRAIN (2026-10-29).",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "emergency-managers",
+     "display": "Emergency management and preparedness staff",
+     "definition": "Emergency managers and preparedness coordinators in health departments, hospitals and government. Added for TRAIN (2026-10-29).",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "health-departments",
+     "display": "Health departments and program managers",
+     "definition": "The health department as an organization, and the managers who run its programs.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "schools-and-youth-work",
+   "display": "Schools and youth work",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "teachers",
+     "display": "Teachers and professors",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "school-counselors-and-nurses",
+     "display": "School counselors and nurses",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "coaches",
+     "display": "Coaches and sports staff",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "school-and-campus-leaders",
+     "display": "School and campus leaders",
+     "definition": "Principals, superintendents, deans, residence life.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "youth-workers",
+     "display": "Youth workers and mentors",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "child-care-staff",
+     "display": "Child care providers and staff",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "employers-and-workplaces",
+   "display": "Employers and workplaces",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "managers-and-hr",
+     "display": "Managers and HR",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "occupational-health",
+     "display": "Workplace health and safety staff",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "police-courts-corrections",
+   "display": "Military, police, courts and corrections",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "military-leaders",
+     "display": "Military commanders and leaders",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "police",
+     "display": "Police",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "firefighters",
+     "display": "Firefighters",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "corrections-and-probation",
+     "display": "Corrections and probation",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "courts",
+     "display": "Judges and courts",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "media-and-communicators",
+   "display": "Media and communicators",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "journalists",
+     "display": "Journalists and editors",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "pr-and-campaign-staff",
+     "display": "Communications, PR and campaign staff",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "creators-and-influencers",
+     "display": "Creators and influencers",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "public-figures",
+     "display": "Celebrities, athletes and public figures",
+     "definition": "Mainly a messenger value: famous people who front a campaign.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "community-and-faith",
+   "display": "Community and faith",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "community-organizations",
+     "display": "Community organizations and coalitions",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "faith-leaders",
+     "display": "Faith leaders and congregations",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "barbers-and-stylists",
+     "display": "Barbers, stylists and salons",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "trusted-messengers",
+     "display": "Other trusted messengers",
+     "definition": "Elders, neighborhood leaders, people with lived experience speaking publicly.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "sellers-and-servers",
+   "display": "Sellers and servers",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "retailers",
+     "display": "Shops and retailers",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "bartenders-and-servers",
+     "display": "Bars, restaurants and servers",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "gun-sellers",
+     "display": "Gun shops and ranges",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "platforms-and-tech",
+     "display": "Platforms and app makers",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "policy-and-funding",
+   "display": "Policy and funding",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ],
+   "concept": [
+    {
+     "code": "lawmakers",
+     "display": "Lawmakers and elected officials",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "regulators-and-agencies",
+     "display": "Regulators and agency staff",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "settlement-boards",
+     "display": "Opioid settlement fund boards",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "funders",
+     "display": "Funders",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    },
+    {
+     "code": "urban-planners",
+     "display": "Urban planners and housing authorities",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "for"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "researchers",
+   "display": "Researchers and evaluators",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "for"
+    }
+   ]
+  },
+  {
+   "code": "age",
+   "display": "Age",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "about"
+    }
+   ],
+   "concept": [
+    {
+     "code": "babies",
+     "display": "Babies and toddlers (0-2)",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "young-children",
+     "display": "Young children (2-5)",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "children",
+     "display": "Children (6-12)",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "teens",
+     "display": "Teens (13-17)",
+     "definition": "MeSH Adolescent runs 13-18; campaigns for 18-year-olds go in Young adults.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "young-adults",
+     "display": "Young adults (18-24)",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "adults",
+     "display": "Adults (25-64)",
+     "definition": "Only when the campaign names an adult age range, not as a stand-in for everyone.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "older-adults",
+     "display": "Older adults (65+)",
+     "definition": "Campaigns saying 60+ or 55+ land here too.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "gender",
+   "display": "Sex and gender",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "about"
+    }
+   ],
+   "concept": [
+    {
+     "code": "women-and-girls",
+     "display": "Women and girls",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "men-and-boys",
+     "display": "Men and boys",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "trans-and-nonbinary",
+     "display": "Transgender and nonbinary people",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "orientation",
+   "display": "Sexual orientation",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "about"
+    }
+   ],
+   "concept": [
+    {
+     "code": "lgb",
+     "display": "Lesbian, gay and bisexual people",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "msm",
+     "display": "Men who have sex with men",
+     "definition": "A behavior, not an identity; used by HIV and STI campaigns.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "race-ethnicity",
+   "display": "Race, ethnicity and Indigenous peoples",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "about"
+    }
+   ],
+   "concept": [
+    {
+     "code": "asian",
+     "display": "Asian",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "black",
+     "display": "Black or African American",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "hispanic-latino",
+     "display": "Hispanic or Latino",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "mena",
+     "display": "Middle Eastern or North African",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "nhpi",
+     "display": "Native Hawaiian or Pacific Islander",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "white",
+     "display": "White",
+     "definition": "Rarely named; only when a campaign says so.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "indigenous-peoples",
+     "display": "Indigenous peoples",
+     "definition": "Works across countries.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ],
+     "concept": [
+      {
+       "code": "american-indian-alaska-native",
+       "display": "American Indian and Alaska Native",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      },
+      {
+       "code": "aboriginal-torres-strait",
+       "display": "Aboriginal and Torres Strait Islander peoples",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      },
+      {
+       "code": "first-nations-inuit-metis",
+       "display": "First Nations, Inuit and Métis",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      },
+      {
+       "code": "maori",
+       "display": "Māori",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "situation",
+   "display": "Life situation",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "about"
+    }
+   ],
+   "concept": [
+    {
+     "code": "pregnant-postpartum",
+     "display": "Pregnant and postpartum people",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "students",
+     "display": "Students",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "military-veterans",
+     "display": "Military and veterans",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "workers",
+     "display": "Workers",
+     "definition": "Use a child when the job is named.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ],
+     "concept": [
+      {
+       "code": "drivers",
+       "display": "Drivers",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      },
+      {
+       "code": "shift-workers",
+       "display": "Shift and night workers",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      },
+      {
+       "code": "trades-workers",
+       "display": "Trades and manual workers",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      },
+      {
+       "code": "public-sector-workers",
+       "display": "Public-sector workers",
+       "property": [
+        {
+         "code": "axis",
+         "valueString": "about"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "code": "rural",
+     "display": "Rural residents",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "low-income",
+     "display": "People on low incomes",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "unhoused",
+     "display": "People experiencing homelessness",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "justice-involved",
+     "display": "People in jail or prison or on probation",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "immigrants-refugees",
+     "display": "Immigrants and refugees",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "people-with-disabilities",
+     "display": "People with disabilities",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "people-who-use-drugs",
+     "display": "People who use or inject drugs",
+     "definition": "The population harm-reduction campaigns serve. Pair with a Stage value.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "long-term-conditions",
+     "display": "People with long-term health conditions",
+     "definition": "Patients, people on a long-term medication, the clinically vulnerable. The condition itself goes in Topic.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "language-minorities",
+     "display": "Speakers of other languages",
+     "definition": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries).",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "food-insecure",
+     "display": "People who can't always afford food",
+     "definition": "Not enough food, or not sure where the next meal comes from. Added 2026-11-07 for the Gravity Project SDOH domains.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "housing-unstable",
+     "display": "People at risk of losing their housing",
+     "definition": "Behind on rent, moving often, doubled up, or in unsafe housing. People with no home go in People experiencing homelessness. Added 2026-11-07 for the Gravity Project SDOH domains.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "transport-barriers",
+     "display": "People without reliable transportation",
+     "definition": "Can't get to care, work or food because of transport. Added 2026-11-07 for the Gravity Project SDOH domains.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "uninsured",
+     "display": "People without enough health insurance",
+     "definition": "Uninsured or underinsured, or struggling with medical bills. Added 2026-11-07 for the Gravity Project SDOH domains.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "unemployed",
+     "display": "People out of work",
+     "definition": "Looking for work or unable to work. Added 2026-11-07 for the Gravity Project SDOH domains.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "socially-isolated",
+     "display": "People who are lonely or isolated",
+     "definition": "Living alone, few social contacts, or feeling lonely. Added 2026-11-07 for the Gravity Project SDOH domains.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    },
+    {
+     "code": "violence-survivors",
+     "display": "Survivors of domestic and partner violence",
+     "definition": "People harmed by a partner, family member or caregiver, including older adults facing abuse. Added 2026-11-07 for the Gravity Project SDOH domains.",
+     "property": [
+      {
+       "code": "axis",
+       "valueString": "about"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "not-started",
+   "display": "Not started",
+   "definition": "Prevention for people who don't do it yet.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "stage"
+    }
+   ]
+  },
+  {
+   "code": "at-risk",
+   "display": "At risk",
+   "definition": "Experimenting, or in a group at high risk.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "stage"
+    }
+   ]
+  },
+  {
+   "code": "doing-it-now",
+   "display": "Doing it now",
+   "definition": "People who use, drink, smoke, vape, gamble, or don't yet do the healthy behavior.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "stage"
+    }
+   ]
+  },
+  {
+   "code": "ready-to-change",
+   "display": "Ready to change",
+   "definition": "Thinking about quitting, cutting down or starting.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "stage"
+    }
+   ]
+  },
+  {
+   "code": "in-treatment",
+   "display": "In treatment",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "stage"
+    }
+   ]
+  },
+  {
+   "code": "in-recovery",
+   "display": "In recovery",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "stage"
+    }
+   ]
+  },
+  {
+   "code": "affected-others",
+   "display": "Affected others",
+   "definition": "Family, friends and people who have lost someone.",
+   "property": [
+    {
+     "code": "axis",
+     "valueString": "stage"
+    }
+   ]
+  }
+ ]
+}

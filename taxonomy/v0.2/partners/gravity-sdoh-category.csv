@@ -1,0 +1,25 @@
+source_id,source_label,predicate,target_id,comment
+sdoh-category-unspecified,SDOH Category Unspecified,,,A placeholder category.
+food-insecurity,Food Insecurity,skos:exactMatch,food-insecure,
+housing-instability,Housing Instability,skos:exactMatch,housing-unstable,
+homelessness,Homelessness,skos:exactMatch,unhoused,
+inadequate-housing,Inadequate Housing,skos:relatedMatch,housing-unstable,"Gravity separates poor-quality housing (heat, utilities, safety) from the risk of losing it. One audience covers both: resources rarely split them."
+transportation-insecurity,Transportation Insecurity,skos:exactMatch,transport-barriers,
+financial-insecurity,Financial Insecurity,skos:closeMatch,low-income,
+material-hardship,Material Hardship,skos:broadMatch,low-income,"Can't afford basics such as clothing, child care or phone: one kind of low income."
+educational-attainment,Educational Attainment,,,"About the person's schooling. Resources name it as a reading level, not an audience; students are a separate situation."
+employment-status,Employment Status,skos:closeMatch,unemployed,Gravity records the status; the social risk is being out of work.
+veteran-status,Veteran Status,skos:closeMatch,military-veterans,Ours also covers people still serving.
+stress,Stress,,,A health topic (mental health) rather than a group a resource names.
+social-connection,Social Connection,skos:closeMatch,socially-isolated,Gravity's domain is the connection; the risk is isolation.
+intimate-partner-violence,Intimate Partner Violence,skos:closeMatch,violence-survivors,Ours also covers family and caregiver violence.
+elder-abuse,Elder Abuse,skos:relatedMatch,violence-survivors,Pair with Older adults (65+) on Who it's about.
+personal-health-literacy,Personal Health Literacy,,,"A property of the resource (plain language, reading level), not of who it is about. The site topic health-literacy covers resources about it."
+health-insurance-coverage-status,Health Insurance Coverage Status,skos:closeMatch,uninsured,
+medical-cost-burden,Medical Cost Burden,skos:relatedMatch,uninsured,People with insurance can still struggle with medical bills.
+digital-literacy,Digital Literacy,,,"A property of the resource's format (online only, needs an app), not an audience."
+digital-access,Digital Access,,,"A property of the resource's format (online only, needs an app), not an audience."
+utility-insecurity,Utility Insecurity,skos:broadMatch,low-income,
+incarceration-status,Incarceration Status,skos:closeMatch,justice-involved,
+language-access,Language Access,skos:closeMatch,language-minorities,
+protective-factor,Protective Factor,,,"A strength, such as having transport. Not a group to aim at."

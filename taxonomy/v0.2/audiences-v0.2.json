@@ -865,7 +865,11 @@
      "D007223"
     ],
     "filter": "allinfant[filter]"
-   }
+   },
+   "ages": [
+    0,
+    2
+   ]
   },
   {
    "id": "young-children",
@@ -881,7 +885,11 @@
      "D002675"
     ],
     "filter": "preschoolchild[filter]"
-   }
+   },
+   "ages": [
+    2,
+    5
+   ]
   },
   {
    "id": "children",
@@ -897,7 +905,11 @@
      "D002648"
     ],
     "filter": "child[filter]"
-   }
+   },
+   "ages": [
+    6,
+    12
+   ]
   },
   {
    "id": "teens",
@@ -914,7 +926,11 @@
      "D000293"
     ],
     "filter": "adolescent[filter]"
-   }
+   },
+   "ages": [
+    13,
+    17
+   ]
   },
   {
    "id": "young-adults",
@@ -930,7 +946,11 @@
      "D055815"
     ],
     "filter": "youngadult[filter]"
-   }
+   },
+   "ages": [
+    18,
+    24
+   ]
   },
   {
    "id": "adults",
@@ -948,7 +968,11 @@
      "D008875"
     ],
     "filter": "adult[filter] OR middleaged[filter]"
-   }
+   },
+   "ages": [
+    25,
+    64
+   ]
   },
   {
    "id": "older-adults",
@@ -965,7 +989,11 @@
      "D000368"
     ],
     "filter": "aged[filter]"
-   }
+   },
+   "ages": [
+    65,
+    null
+   ]
   },
   {
    "id": "gender",
@@ -981,7 +1009,8 @@
    "mesh": [
     "D005260"
    ],
-   "v01": "women"
+   "v01": "women",
+   "gender": "female"
   },
   {
    "id": "men-and-boys",
@@ -991,7 +1020,8 @@
    "mesh": [
     "D008297"
    ],
-   "v01": "men"
+   "v01": "men",
+   "gender": "male"
   },
   {
    "id": "trans-and-nonbinary",
@@ -1173,7 +1203,33 @@
    "mesh": [
     "D037841"
    ],
-   "v01": "pregnant-people"
+   "v01": "pregnant-people",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "O",
+     "match": "prefix",
+     "display": "Pregnancy, childbirth and the puerperium (chapter 15, O00-O9A)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z33.1",
+     "match": "exact",
+     "display": "Pregnant state, incidental"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z34",
+     "match": "prefix",
+     "display": "Encounter for supervision of normal pregnancy"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z39",
+     "match": "prefix",
+     "display": "Postpartum care and examination (Z39.0, Z39.1, Z39.2)"
+    }
+   ]
   },
   {
    "id": "students",
@@ -1194,7 +1250,30 @@
     "D014728",
     "D008889"
    ],
-   "v01": "military-and-veterans"
+   "v01": "military-and-veterans",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z91.82",
+     "match": "exact",
+     "display": "Personal history of military deployment"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z91.85",
+     "match": "exact",
+     "display": "Personal history of military service"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z56.82",
+     "match": "exact",
+     "display": "Military deployment status"
+    }
+   ],
+   "gravity": [
+    "veteran-status"
+   ]
   },
   {
    "id": "workers",
@@ -1258,6 +1337,43 @@
    "axis": "about",
    "mesh": [
     "D011203"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.5",
+     "match": "exact",
+     "display": "Extreme poverty"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.6",
+     "match": "exact",
+     "display": "Low income"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.86",
+     "match": "prefix",
+     "display": "Financial insecurity (Z59.861 utilities, Z59.868 other, Z59.869 unspecified)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.87",
+     "match": "exact",
+     "display": "Material hardship due to limited financial resources, not elsewhere classified"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.72",
+     "match": "exact",
+     "display": "Insufficient welfare support"
+    }
+   ],
+   "gravity": [
+    "financial-insecurity",
+    "material-hardship",
+    "utility-insecurity"
    ]
   },
   {
@@ -1267,6 +1383,23 @@
    "axis": "about",
    "mesh": [
     "D006703"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.0",
+     "match": "prefix",
+     "display": "Homelessness (Z59.00 unspecified; Z59.01 sheltered; Z59.02 unsheltered)"
+    },
+    {
+     "system": "snomed",
+     "code": "32911000",
+     "match": "exact",
+     "display": "Homeless"
+    }
+   ],
+   "gravity": [
+    "homelessness"
    ]
   },
   {
@@ -1276,6 +1409,23 @@
    "axis": "about",
    "mesh": [
     "D011329"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z65.1",
+     "match": "exact",
+     "display": "Imprisonment and other incarceration"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z65.2",
+     "match": "exact",
+     "display": "Problems related to release from prison"
+    }
+   ],
+   "gravity": [
+    "incarceration-status"
    ]
   },
   {
@@ -1295,6 +1445,14 @@
    "axis": "about",
    "mesh": [
     "D006233"
+   ],
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z73.6",
+     "match": "exact",
+     "display": "Limitation of activities due to disability"
+    }
    ]
   },
   {
@@ -1305,7 +1463,45 @@
    "mesh": [
     "D055030"
    ],
-   "definition": "The population harm-reduction campaigns serve. Pair with a Stage value."
+   "definition": "The population harm-reduction campaigns serve. Pair with a Stage value.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "F11",
+     "match": "prefix",
+     "display": "Opioid related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F13",
+     "match": "prefix",
+     "display": "Sedative, hypnotic or anxiolytic related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F14",
+     "match": "prefix",
+     "display": "Cocaine related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F15",
+     "match": "prefix",
+     "display": "Other stimulant related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F16",
+     "match": "prefix",
+     "display": "Hallucinogen related disorders"
+    },
+    {
+     "system": "icd10cm",
+     "code": "F19",
+     "match": "prefix",
+     "display": "Other psychoactive substance related disorders"
+    }
+   ]
   },
   {
    "id": "long-term-conditions",
@@ -1322,7 +1518,242 @@
    "label": "Speakers of other languages",
    "parent": "situation",
    "axis": "about",
-   "definition": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries)."
+   "definition": "Campaigns made in a minority language (Arabic, Bengali, Hmong, Spanish outside Spanish-speaking countries).",
+   "gravity": [
+    "language-access"
+   ]
+  },
+  {
+   "id": "food-insecure",
+   "label": "People who can't always afford food",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D000084884"
+   ],
+   "definition": "Not enough food, or not sure where the next meal comes from. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.4",
+     "match": "prefix",
+     "display": "Lack of adequate food (Z59.41 food insecurity, Z59.48 other)"
+    },
+    {
+     "system": "snomed",
+     "code": "733423003",
+     "match": "exact",
+     "display": "Food insecurity"
+    },
+    {
+     "system": "loinc",
+     "code": "88124-3=LA19952-3",
+     "match": "answer",
+     "display": "Hunger Vital Sign: food insecurity risk = At risk"
+    }
+   ],
+   "gravity": [
+    "food-insecurity"
+   ]
+  },
+  {
+   "id": "housing-unstable",
+   "label": "People at risk of losing their housing",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D000091003"
+   ],
+   "definition": "Behind on rent, moving often, doubled up, or in unsafe housing. People with no home go in People experiencing homelessness. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.81",
+     "match": "prefix",
+     "display": "Housing instability, housed (Z59.811, Z59.812, Z59.819)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z59.1",
+     "match": "prefix",
+     "display": "Inadequate housing (Z59.10, Z59.11, Z59.12, Z59.19)"
+    }
+   ],
+   "gravity": [
+    "housing-instability",
+    "inadequate-housing"
+   ]
+  },
+  {
+   "id": "transport-barriers",
+   "label": "People without reliable transportation",
+   "parent": "situation",
+   "axis": "about",
+   "definition": "Can't get to care, work or food because of transport. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.82",
+     "match": "exact",
+     "display": "Transportation insecurity"
+    },
+    {
+     "system": "snomed",
+     "code": "160695008",
+     "match": "exact",
+     "display": "Transport too expensive"
+    }
+   ],
+   "gravity": [
+    "transportation-insecurity"
+   ]
+  },
+  {
+   "id": "uninsured",
+   "label": "People without enough health insurance",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D017057"
+   ],
+   "definition": "Uninsured or underinsured, or struggling with medical bills. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z59.71",
+     "match": "exact",
+     "display": "Insufficient health insurance coverage"
+    }
+   ],
+   "gravity": [
+    "health-insurance-coverage-status",
+    "medical-cost-burden"
+   ]
+  },
+  {
+   "id": "unemployed",
+   "label": "People out of work",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D014478"
+   ],
+   "definition": "Looking for work or unable to work. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z56.0",
+     "match": "exact",
+     "display": "Unemployment, unspecified"
+    },
+    {
+     "system": "snomed",
+     "code": "73438004",
+     "match": "exact",
+     "display": "Unemployed"
+    },
+    {
+     "system": "loinc",
+     "code": "67875-5=LA17956-6",
+     "match": "answer",
+     "display": "Employment status - current = Unemployed"
+    }
+   ],
+   "gravity": [
+    "employment-status"
+   ]
+  },
+  {
+   "id": "socially-isolated",
+   "label": "People who are lonely or isolated",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D012934",
+    "D008132"
+   ],
+   "definition": "Living alone, few social contacts, or feeling lonely. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z60.2",
+     "match": "exact",
+     "display": "Problems related to living alone"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z60.4",
+     "match": "exact",
+     "display": "Social exclusion and rejection"
+    }
+   ],
+   "gravity": [
+    "social-connection"
+   ]
+  },
+  {
+   "id": "violence-survivors",
+   "label": "Survivors of domestic and partner violence",
+   "parent": "situation",
+   "axis": "about",
+   "mesh": [
+    "D000066511"
+   ],
+   "definition": "People harmed by a partner, family member or caregiver, including older adults facing abuse. Added 2026-11-07 for the Gravity Project SDOH domains.",
+   "clinical": [
+    {
+     "system": "icd10cm",
+     "code": "Z69.11",
+     "match": "exact",
+     "display": "Encounter for mental health services for victim of spousal or partner abuse"
+    },
+    {
+     "system": "icd10cm",
+     "code": "Z91.41",
+     "match": "prefix",
+     "display": "Personal history of adult abuse (Z91.410-Z91.419, incl. Z91.414 intimate partner abuse)"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T74.11",
+     "match": "prefix",
+     "display": "Adult physical abuse, confirmed"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T74.21",
+     "match": "prefix",
+     "display": "Adult sexual abuse, confirmed"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T74.31",
+     "match": "prefix",
+     "display": "Adult psychological abuse, confirmed"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T76.11",
+     "match": "prefix",
+     "display": "Adult physical abuse, suspected"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T76.21",
+     "match": "prefix",
+     "display": "Adult sexual abuse, suspected"
+    },
+    {
+     "system": "icd10cm",
+     "code": "T76.31",
+     "match": "prefix",
+     "display": "Adult psychological abuse, suspected"
+    }
+   ],
+   "gravity": [
+    "intimate-partner-violence",
+    "elder-abuse"
+   ]
   },
   {
    "id": "not-started",
@@ -1371,5 +1802,662 @@
    "axis": "stage",
    "definition": "Family, friends and people who have lost someone."
   }
- ]
+ ],
+ "answers": {
+  "scale-0-10": [
+   {
+    "value": 0,
+    "label": "0"
+   },
+   {
+    "value": 1,
+    "label": "1"
+   },
+   {
+    "value": 2,
+    "label": "2"
+   },
+   {
+    "value": 3,
+    "label": "3"
+   },
+   {
+    "value": 4,
+    "label": "4"
+   },
+   {
+    "value": 5,
+    "label": "5"
+   },
+   {
+    "value": 6,
+    "label": "6"
+   },
+   {
+    "value": 7,
+    "label": "7"
+   },
+   {
+    "value": 8,
+    "label": "8"
+   },
+   {
+    "value": 9,
+    "label": "9"
+   },
+   {
+    "value": 10,
+    "label": "10"
+   }
+  ],
+  "often-6": [
+   {
+    "value": 0,
+    "label": "Never"
+   },
+   {
+    "value": 1,
+    "label": "Less than once a week"
+   },
+   {
+    "value": 2,
+    "label": "1-3 times a week"
+   },
+   {
+    "value": 3,
+    "label": "4-6 times a week"
+   },
+   {
+    "value": 4,
+    "label": "1-2 times a day"
+   },
+   {
+    "value": 5,
+    "label": "3 or more times a day"
+   }
+  ],
+  "freq-4": [
+   {
+    "value": 0,
+    "label": "Not at all",
+    "loinc": "LA6568-5"
+   },
+   {
+    "value": 1,
+    "label": "Several days",
+    "loinc": "LA6569-3"
+   },
+   {
+    "value": 2,
+    "label": "More than half the days",
+    "loinc": "LA6570-1"
+   },
+   {
+    "value": 3,
+    "label": "Nearly every day",
+    "loinc": "LA6571-9"
+   }
+  ],
+  "sleep-hours": [
+   {
+    "value": 0,
+    "label": "Less than 5 hours",
+    "min": 0,
+    "max": 5
+   },
+   {
+    "value": 1,
+    "label": "About 5-6 hours",
+    "min": 5,
+    "max": 6
+   },
+   {
+    "value": 2,
+    "label": "About 6-7 hours",
+    "min": 6,
+    "max": 7
+   },
+   {
+    "value": 3,
+    "label": "About 7-8 hours",
+    "min": 7,
+    "max": 8
+   },
+   {
+    "value": 4,
+    "label": "About 8-9 hours",
+    "min": 8,
+    "max": 9
+   },
+   {
+    "value": 5,
+    "label": "About 9-10 hours",
+    "min": 9,
+    "max": 10
+   },
+   {
+    "value": 6,
+    "label": "More than 10 hours",
+    "min": 10,
+    "max": 24
+   }
+  ],
+  "use-4": [
+   {
+    "value": 0,
+    "label": "Daily or almost daily"
+   },
+   {
+    "value": 1,
+    "label": "Weekly"
+   },
+   {
+    "value": 2,
+    "label": "Less than once a week"
+   },
+   {
+    "value": 3,
+    "label": "Not at all"
+   }
+  ],
+  "pillars": [
+   {
+    "value": "risky-substances",
+    "label": "Avoiding risky substances"
+   },
+   {
+    "value": "connectedness",
+    "label": "Connectedness"
+   },
+   {
+    "value": "nutrition",
+    "label": "Nutrition"
+   },
+   {
+    "value": "physical-activity",
+    "label": "Physical activity"
+   },
+   {
+    "value": "sleep",
+    "label": "Sleep"
+   },
+   {
+    "value": "stress",
+    "label": "Stress management"
+   }
+  ],
+  "protein": [
+   {
+    "value": "beef-pork-lamb",
+    "label": "Beef, pork or lamb"
+   },
+   {
+    "value": "processed-meat",
+    "label": "Lunch meat, bacon, hot dogs or sausage"
+   },
+   {
+    "value": "poultry",
+    "label": "Poultry"
+   },
+   {
+    "value": "wild-game",
+    "label": "Wild game"
+   },
+   {
+    "value": "fish-seafood",
+    "label": "Fish or seafood"
+   },
+   {
+    "value": "beans-legumes",
+    "label": "Beans, peas or lentils"
+   },
+   {
+    "value": "nuts-seeds-avocado",
+    "label": "Nuts, seeds or avocado"
+   },
+   {
+    "value": "dairy",
+    "label": "Dairy"
+   },
+   {
+    "value": "eggs",
+    "label": "Eggs"
+   }
+  ],
+  "number": []
+ },
+ "instruments": {
+  "aclm-lmwphi-v4": {
+   "title": "ACLM Lifestyle Medicine Whole Person Health Index, version 4",
+   "publisher": "American College of Lifestyle Medicine",
+   "source": "https://connect.lifestylemedicine.org/viewdocument/lifestyle-medicine-short-assessment",
+   "about": "The patient-completed lifestyle assessment in ACLM's Epic Foundation build (Nova release note 923516, May 2026) and in eClinicalWorks 12.0.4 (Nov 2026): readiness, three priorities, the ACLM Diet Screener 9 v2, sleep, the Exercise Vital Sign plus strength, the PHQ-2 plus two stress items, meaning and connectedness, and five substance-use items. Section scores (score-*) follow ACLM's LMWPHI v4 administrator guide. Labels here are short paraphrases, not ACLM's wording.",
+   "copyright": "Instrument and scoring (c) 2026 American College of Lifestyle Medicine. PHQ-2 items: no permission required to reproduce. Item labels are paraphrased; use ACLM's form for the questions as asked. Which answers point to which HCF Audiences values is Health Culture Foundation's (CC BY 4.0) and unreviewed.",
+   "items": [
+    {
+     "item": "ready",
+     "section": "readiness",
+     "label": "How ready to make or keep lifestyle changes (0-10)",
+     "answer": "scale-0-10"
+    },
+    {
+     "item": "confident",
+     "section": "readiness",
+     "label": "How confident they can make or keep lifestyle changes (0-10)",
+     "answer": "scale-0-10"
+    },
+    {
+     "item": "readiness-total",
+     "section": "readiness",
+     "label": "Readiness and confidence, total (0-20)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "ready+confident",
+     "rule": ">=11",
+     "gives": [
+      "stage:ready-to-change"
+     ],
+     "basis": "ACLM v4 guide: 11-20 is higher readiness to change"
+    },
+    {
+     "item": "priority-1",
+     "section": "motivation",
+     "label": "Number one priority to improve",
+     "answer": "pillars",
+     "rule": "any",
+     "gives": [
+      "focus:*"
+     ],
+     "basis": "Picked by the patient"
+    },
+    {
+     "item": "priority-2",
+     "section": "motivation",
+     "label": "Number two priority to improve",
+     "answer": "pillars",
+     "rule": "any",
+     "gives": [
+      "focus:*"
+     ],
+     "basis": "Picked by the patient"
+    },
+    {
+     "item": "priority-3",
+     "section": "motivation",
+     "label": "Number three priority to improve",
+     "answer": "pillars",
+     "rule": "any",
+     "gives": [
+      "focus:*"
+     ],
+     "basis": "Picked by the patient"
+    },
+    {
+     "item": "diet-fruit",
+     "section": "nutrition",
+     "label": "Fruit, how often (last 4 weeks)",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-vegetables",
+     "section": "nutrition",
+     "label": "Vegetables, how often",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-whole-grains",
+     "section": "nutrition",
+     "label": "Whole grains, how often",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-white-grains",
+     "section": "nutrition",
+     "label": "White bread, pasta, rice or white flour foods, how often",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-prepared",
+     "section": "nutrition",
+     "label": "Packaged, restaurant, takeout or fast-food meals, how often",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-sugary",
+     "section": "nutrition",
+     "label": "Sugary foods and drinks, how often",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-salty",
+     "section": "nutrition",
+     "label": "Salty foods, how often",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-fried",
+     "section": "nutrition",
+     "label": "Fried foods, how often",
+     "answer": "often-6"
+    },
+    {
+     "item": "diet-protein",
+     "section": "nutrition",
+     "label": "Protein sources eaten 2-3 times a week or more",
+     "answer": "protein"
+    },
+    {
+     "item": "score-nutrition",
+     "section": "nutrition",
+     "label": "Nutrition score: share of whole plant foods (0-10)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "aclm-lmwphi-v4",
+     "rule": "<6",
+     "gives": [
+      "focus:nutrition"
+     ],
+     "basis": "ACLM v4 guide scoring; under 6 of 10 is our cut-off"
+    },
+    {
+     "item": "sleep-hours",
+     "section": "sleep",
+     "label": "Average hours of sleep a day (last 2 weeks)",
+     "answer": "sleep-hours",
+     "loinc": "93832-4",
+     "unit": "h"
+    },
+    {
+     "item": "sleep-tired",
+     "section": "sleep",
+     "label": "Tired or hard to stay awake in the day (last 2 weeks)",
+     "answer": "freq-4"
+    },
+    {
+     "item": "score-sleep",
+     "section": "sleep",
+     "label": "Sleep score (0-10)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "aclm-lmwphi-v4",
+     "rule": "<6",
+     "gives": [
+      "focus:sleep"
+     ],
+     "basis": "ACLM v4 guide scoring (AASM/SRS hours, PSQI-informed); under 6 is our cut-off"
+    },
+    {
+     "item": "pavs-days",
+     "section": "physical-activity",
+     "label": "Days a week of moderate to vigorous exercise (last 30 days)",
+     "answer": "number",
+     "loinc": "89555-7",
+     "unit": "d/wk",
+     "basis": "Exercise Vital Sign"
+    },
+    {
+     "item": "pavs-minutes",
+     "section": "physical-activity",
+     "label": "Minutes of exercise on those days",
+     "answer": "number",
+     "loinc": "68516-4",
+     "unit": "min/d",
+     "basis": "Exercise Vital Sign"
+    },
+    {
+     "item": "pavs-week",
+     "section": "physical-activity",
+     "label": "Minutes a week of moderate to vigorous exercise",
+     "answer": "number",
+     "loinc": "82290-8",
+     "unit": "min/wk",
+     "from": "pavs-days*pavs-minutes",
+     "rule": "<150",
+     "gives": [
+      "focus:physical-activity"
+     ],
+     "basis": "Under 150: below aerobic guidelines (ACLM v4 guide; Physical Activity Guidelines 2018)"
+    },
+    {
+     "item": "strength-days",
+     "section": "physical-activity",
+     "label": "Times a week of muscle-strengthening activity",
+     "answer": "number",
+     "loinc": "82291-6",
+     "unit": "/wk"
+    },
+    {
+     "item": "score-activity",
+     "section": "physical-activity",
+     "label": "Exercise and activity score (0-10)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "aclm-lmwphi-v4",
+     "rule": "<6",
+     "gives": [
+      "focus:physical-activity"
+     ],
+     "basis": "ACLM v4 guide scoring; under 6 is our cut-off"
+    },
+    {
+     "item": "phq2-interest",
+     "section": "stress",
+     "label": "Little interest or pleasure in doing things (PHQ-2)",
+     "answer": "freq-4",
+     "loinc": "44250-9"
+    },
+    {
+     "item": "phq2-down",
+     "section": "stress",
+     "label": "Feeling down, depressed or hopeless (PHQ-2)",
+     "answer": "freq-4",
+     "loinc": "44255-8"
+    },
+    {
+     "item": "stress-on-top",
+     "section": "stress",
+     "label": "Feeling unable to stay on top of things",
+     "answer": "freq-4"
+    },
+    {
+     "item": "stress-overwhelmed",
+     "section": "stress",
+     "label": "Feeling stressed or overwhelmed",
+     "answer": "freq-4"
+    },
+    {
+     "item": "phq2-total",
+     "section": "stress",
+     "label": "PHQ-2 total score",
+     "answer": "number",
+     "loinc": "55758-7",
+     "unit": "{score}",
+     "from": "phq2-interest+phq2-down",
+     "rule": ">=2",
+     "gives": [
+      "focus:stress"
+     ],
+     "basis": "ACLM v4 guide: a PHQ-2 of 2 or more calls for the PHQ-9"
+    },
+    {
+     "item": "score-stress",
+     "section": "stress",
+     "label": "Mood and stress score (0-10)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "aclm-lmwphi-v4",
+     "rule": "<6",
+     "gives": [
+      "focus:stress"
+     ],
+     "basis": "ACLM v4 guide scoring; under 6 is our cut-off"
+    },
+    {
+     "item": "purpose",
+     "section": "connectedness",
+     "label": "Felt life had purpose or meaning (last 2 weeks)",
+     "answer": "freq-4"
+    },
+    {
+     "item": "connected",
+     "section": "connectedness",
+     "label": "Felt connected to a support network (last 2 weeks)",
+     "answer": "freq-4",
+     "rule": "<=1",
+     "gives": [
+      "about:socially-isolated"
+     ],
+     "basis": "Not at all or several days; our cut-off"
+    },
+    {
+     "item": "score-connectedness",
+     "section": "connectedness",
+     "label": "Meaning and connectedness score (0-10)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "aclm-lmwphi-v4",
+     "rule": "<6",
+     "gives": [
+      "focus:connectedness"
+     ],
+     "basis": "ACLM v4 guide scoring; under 6 is our cut-off"
+    },
+    {
+     "item": "use-tobacco",
+     "section": "substances",
+     "label": "Tobacco or nicotine use (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "<=1",
+     "gives": [
+      "focus:tobacco",
+      "stage:doing-it-now"
+     ],
+     "basis": "Weekly or more"
+    },
+    {
+     "item": "use-tobacco",
+     "section": "substances",
+     "label": "Tobacco or nicotine use (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "=2",
+     "gives": [
+      "focus:tobacco"
+     ],
+     "basis": "Less than weekly"
+    },
+    {
+     "item": "use-binge",
+     "section": "substances",
+     "label": "Days with 5+ drinks (men) or 4+ (women) (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "<=1",
+     "gives": [
+      "focus:alcohol",
+      "stage:doing-it-now"
+     ],
+     "basis": "Binge drinking weekly or more"
+    },
+    {
+     "item": "use-binge",
+     "section": "substances",
+     "label": "Days with 5+ drinks (men) or 4+ (women) (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "=2",
+     "gives": [
+      "focus:alcohol"
+     ],
+     "basis": "Binge drinking less than weekly"
+    },
+    {
+     "item": "use-rx-misuse",
+     "section": "substances",
+     "label": "Prescription medicines used for the feeling or not as prescribed (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "<=1",
+     "gives": [
+      "focus:rx-misuse",
+      "stage:doing-it-now"
+     ],
+     "basis": "Weekly or more"
+    },
+    {
+     "item": "use-rx-misuse",
+     "section": "substances",
+     "label": "Prescription medicines used for the feeling or not as prescribed (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "=2",
+     "gives": [
+      "focus:rx-misuse"
+     ],
+     "basis": "Less than weekly"
+    },
+    {
+     "item": "use-cannabis",
+     "section": "substances",
+     "label": "Marijuana or cannabis use (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "<=1",
+     "gives": [
+      "focus:cannabis",
+      "stage:doing-it-now"
+     ],
+     "basis": "Weekly or more"
+    },
+    {
+     "item": "use-cannabis",
+     "section": "substances",
+     "label": "Marijuana or cannabis use (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "=2",
+     "gives": [
+      "focus:cannabis"
+     ],
+     "basis": "Less than weekly"
+    },
+    {
+     "item": "use-drugs",
+     "section": "substances",
+     "label": "Cocaine, heroin, meth, hallucinogens, MDMA or similar (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "<=1",
+     "gives": [
+      "about:people-who-use-drugs",
+      "focus:drugs",
+      "stage:doing-it-now"
+     ],
+     "basis": "Weekly or more"
+    },
+    {
+     "item": "use-drugs",
+     "section": "substances",
+     "label": "Cocaine, heroin, meth, hallucinogens, MDMA or similar (last 4 weeks)",
+     "answer": "use-4",
+     "rule": "=2",
+     "gives": [
+      "about:people-who-use-drugs",
+      "focus:drugs"
+     ],
+     "basis": "Less than weekly"
+    },
+    {
+     "item": "score-substances",
+     "section": "substances",
+     "label": "Avoiding risky substances score (0-10)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "aclm-lmwphi-v4",
+     "basis": "ACLM v4 guide scoring; the item rules above say which substance"
+    },
+    {
+     "item": "lifestyle-score",
+     "section": "overall",
+     "label": "Lifestyle Score (0-100)",
+     "answer": "number",
+     "unit": "{score}",
+     "from": "aclm-lmwphi-v4",
+     "basis": "ACLM v4 guide: 76-100 optimal, 51-75 moderate, 26-50 suboptimal, 0-25 high-risk health behaviors"
+    }
+   ]
+  }
+ }
 }

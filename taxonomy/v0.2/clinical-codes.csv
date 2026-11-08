@@ -1,0 +1,45 @@
+id,system,code,match,display,source
+unhoused,icd10cm,Z59.0,prefix,Homelessness (Z59.00 unspecified; Z59.01 sheltered; Z59.02 unsheltered),NLM Clinical Tables 2026-11-07
+unhoused,snomed,32911000,exact,Homeless,Gravity SDOHCC 3.0.0 example
+housing-unstable,icd10cm,Z59.81,prefix,"Housing instability, housed (Z59.811, Z59.812, Z59.819)",NLM Clinical Tables 2026-11-07
+housing-unstable,icd10cm,Z59.1,prefix,"Inadequate housing (Z59.10, Z59.11, Z59.12, Z59.19)",NLM Clinical Tables 2026-11-07
+food-insecure,icd10cm,Z59.4,prefix,"Lack of adequate food (Z59.41 food insecurity, Z59.48 other)",NLM Clinical Tables 2026-11-07
+food-insecure,snomed,733423003,exact,Food insecurity,Gravity SDOHCC 3.0.0 example
+food-insecure,loinc,88124-3=LA19952-3,answer,Hunger Vital Sign: food insecurity risk = At risk,Gravity SDOHCC 3.0.0 example
+transport-barriers,icd10cm,Z59.82,exact,Transportation insecurity,NLM Clinical Tables 2026-11-07
+transport-barriers,snomed,160695008,exact,Transport too expensive,Gravity SDOHCC 3.0.0 example
+low-income,icd10cm,Z59.5,exact,Extreme poverty,NLM Clinical Tables 2026-11-07
+low-income,icd10cm,Z59.6,exact,Low income,NLM Clinical Tables 2026-11-07
+low-income,icd10cm,Z59.86,prefix,"Financial insecurity (Z59.861 utilities, Z59.868 other, Z59.869 unspecified)",NLM Clinical Tables 2026-11-07
+low-income,icd10cm,Z59.87,exact,"Material hardship due to limited financial resources, not elsewhere classified",NLM Clinical Tables 2026-11-07
+low-income,icd10cm,Z59.72,exact,Insufficient welfare support,NLM Clinical Tables 2026-11-07
+uninsured,icd10cm,Z59.71,exact,Insufficient health insurance coverage,NLM Clinical Tables 2026-11-07
+unemployed,icd10cm,Z56.0,exact,"Unemployment, unspecified",NLM Clinical Tables 2026-11-07
+unemployed,snomed,73438004,exact,Unemployed,Gravity SDOHCC 3.0.0 example
+unemployed,loinc,67875-5=LA17956-6,answer,Employment status - current = Unemployed,Gravity SDOHCC 3.0.0 example
+socially-isolated,icd10cm,Z60.2,exact,Problems related to living alone,NLM Clinical Tables 2026-11-07
+socially-isolated,icd10cm,Z60.4,exact,Social exclusion and rejection,NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,Z69.11,exact,Encounter for mental health services for victim of spousal or partner abuse,NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,Z91.41,prefix,"Personal history of adult abuse (Z91.410-Z91.419, incl. Z91.414 intimate partner abuse)",NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,T74.11,prefix,"Adult physical abuse, confirmed",NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,T74.21,prefix,"Adult sexual abuse, confirmed",NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,T74.31,prefix,"Adult psychological abuse, confirmed",NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,T76.11,prefix,"Adult physical abuse, suspected",NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,T76.21,prefix,"Adult sexual abuse, suspected",NLM Clinical Tables 2026-11-07
+violence-survivors,icd10cm,T76.31,prefix,"Adult psychological abuse, suspected",NLM Clinical Tables 2026-11-07
+justice-involved,icd10cm,Z65.1,exact,Imprisonment and other incarceration,NLM Clinical Tables 2026-11-07
+justice-involved,icd10cm,Z65.2,exact,Problems related to release from prison,NLM Clinical Tables 2026-11-07
+military-veterans,icd10cm,Z91.82,exact,Personal history of military deployment,NLM Clinical Tables 2026-11-07
+military-veterans,icd10cm,Z91.85,exact,Personal history of military service,NLM Clinical Tables 2026-11-07
+military-veterans,icd10cm,Z56.82,exact,Military deployment status,NLM Clinical Tables 2026-11-07
+pregnant-postpartum,icd10cm,O,prefix,"Pregnancy, childbirth and the puerperium (chapter 15, O00-O9A)",ICD-10-CM chapter 15
+pregnant-postpartum,icd10cm,Z33.1,exact,"Pregnant state, incidental",NLM Clinical Tables 2026-11-07
+pregnant-postpartum,icd10cm,Z34,prefix,Encounter for supervision of normal pregnancy,NLM Clinical Tables 2026-11-07
+pregnant-postpartum,icd10cm,Z39,prefix,"Postpartum care and examination (Z39.0, Z39.1, Z39.2)",NLM Clinical Tables 2026-11-07
+people-with-disabilities,icd10cm,Z73.6,exact,Limitation of activities due to disability,NLM Clinical Tables 2026-11-07
+people-who-use-drugs,icd10cm,F11,prefix,Opioid related disorders,NLM Clinical Tables 2026-11-07
+people-who-use-drugs,icd10cm,F13,prefix,"Sedative, hypnotic or anxiolytic related disorders",NLM Clinical Tables 2026-11-07
+people-who-use-drugs,icd10cm,F14,prefix,Cocaine related disorders,NLM Clinical Tables 2026-11-07
+people-who-use-drugs,icd10cm,F15,prefix,Other stimulant related disorders,NLM Clinical Tables 2026-11-07
+people-who-use-drugs,icd10cm,F16,prefix,Hallucinogen related disorders,NLM Clinical Tables 2026-11-07
+people-who-use-drugs,icd10cm,F19,prefix,Other psychoactive substance related disorders,NLM Clinical Tables 2026-11-07

@@ -1,0 +1,10 @@
+id,context,value,comment
+babies,age,0-2,
+young-children,age,2-5,
+children,age,6-12,
+teens,age,13-17,
+young-adults,age,18-24,
+adults,age,25-64,
+older-adults,age,65-,No upper bound.
+women-and-girls,gender,female,FHIR administrative-gender. It records sex for administration only; gender identity has its own observation (Gravity SDOHCC ObservationGenderIdentity).
+men-and-boys,gender,male,FHIR administrative-gender.

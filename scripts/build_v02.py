@@ -7,10 +7,13 @@ Outputs (generated, don't edit):
   taxonomy/v0.2/AUDIENCES-v0.2.md       readable view
   crosswalks/v0.2/*.sssom.tsv           code crosswalks (SOC, ISCO, NUCC, MeSH, OMB, v0.1) and partner crosswalks
   crosswalks/v0.2/audiences-to-pubmed-age-filters.sssom.tsv   age bands to PubMed's age filters (taxonomy/v0.2/pubmed-age-filters.csv)
+  crosswalks/v0.2/audiences-to-{icd10cm,snomed,loinc-answers}.sssom.tsv   Who it's about to clinical codes (taxonomy/v0.2/clinical-codes.csv)
+  taxonomy/v0.2/fhir/                   HL7 FHIR: CodeSystem, a useContext per concept, and definitional Groups (R4 and R5)
 
 Python 3.10+, standard library only:  python3 -I scripts/build_v02.py
 """
 import csv
+import html
 import json
 from pathlib import Path
 
@@ -41,7 +44,60 @@ PARTNERS = {  # file stem: (curie prefix, base IRI, title)
     "train-course-audience": ("traincourse", "urn:hcf:train:course-audience:", "TRAIN Learning Network course audience filter (Massachusetts TRAIN, 2026-10-29)"),
     "train-profile-role": ("trainrole", "urn:hcf:train:profile-role:", "TRAIN Learning Network learner profile roles (2026-10-29)"),
     "train-credit-types": ("traincredit", "urn:hcf:train:credit-type:", "TRAIN Learning Network credit types; the profession each credit is for"),
+    "gravity-sdoh-category": ("sdohcc", "http://hl7.org/fhir/us/sdoh-clinicalcare/CodeSystem/SDOHCC-CodeSystemTemporaryCodes#", "Gravity Project SDOH domains (SDOH Clinical Care IG 3.0.0, ValueSet SDOHCC-ValueSetSDOHCategory)"),
 }
+# FHIR systems. clinical-codes.csv names them by the short key.
+FHIR_SYS = {
+    "hcfaud": "https://health-culture.org/vocab/audiences-v0.2",
+    "icd10cm": "http://hl7.org/fhir/sid/icd-10-cm",
+    "snomed": "http://snomed.info/sct",
+    "loinc": "http://loinc.org",
+    "nucc": "http://nucc.org/provider-taxonomy",
+    "gender": "http://hl7.org/fhir/administrative-gender",
+    "uct": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+}
+CLINICAL = {  # system key in clinical-codes.csv: (file stem, curie prefix, base IRI, title)
+    "icd10cm": ("audiences-to-icd10cm", "icd10cm", "http://hl7.org/fhir/sid/icd-10-cm#", "ICD-10-CM"),
+    "snomed": ("audiences-to-snomed", "sct", "http://snomed.info/id/", "SNOMED CT findings"),
+    "loinc": ("audiences-to-loinc-answers", "loinc", "https://loinc.org/", "LOINC screening answers (question=answer)"),
+}
+# Lifestyle medicine instruments (hcfhub.org#137): questions an EHR already asks, and which answers say who a
+# resource should be about. instruments/<id>.csv holds one row per item (an item can repeat with a different
+# rule, e.g. by sex); the answer types below give each item's options and the value each option stands for.
+INSTRUMENTS = {
+    "aclm-lmwphi-v4": {
+        "title": "ACLM Lifestyle Medicine Whole Person Health Index, version 4",
+        "publisher": "American College of Lifestyle Medicine",
+        "source": "https://connect.lifestylemedicine.org/viewdocument/lifestyle-medicine-short-assessment",
+        "about": "The patient-completed lifestyle assessment in ACLM's Epic Foundation build (Nova release note 923516, May 2026) and in "
+                 "eClinicalWorks 12.0.4 (Nov 2026): readiness, three priorities, the ACLM Diet Screener 9 v2, sleep, the Exercise Vital Sign "
+                 "plus strength, the PHQ-2 plus two stress items, meaning and connectedness, and five substance-use items. Section scores "
+                 "(score-*) follow ACLM's LMWPHI v4 administrator guide. Labels here are short paraphrases, not ACLM's wording.",
+        "copyright": "Instrument and scoring (c) 2026 American College of Lifestyle Medicine. PHQ-2 items: no permission required to reproduce. "
+                     "Item labels are paraphrased; use ACLM's form for the questions as asked. Which answers point to which HCF Audiences "
+                     "values is Health Culture Foundation's (CC BY 4.0) and unreviewed.",
+    },
+}
+ITEM_SYS = "https://health-culture.org/vocab/audiences-v0.2/lifestyle-items"
+ANSWERS = {  # answer type: [(value, label, LOINC answer code)]. Values are what ACLM's scoring works from.
+    "scale-0-10": [(i, str(i), "") for i in range(11)],
+    "often-6": [(0, "Never", ""), (1, "Less than once a week", ""), (2, "1-3 times a week", ""), (3, "4-6 times a week", ""),
+                (4, "1-2 times a day", ""), (5, "3 or more times a day", "")],
+    "freq-4": [(0, "Not at all", "LA6568-5"), (1, "Several days", "LA6569-3"), (2, "More than half the days", "LA6570-1"), (3, "Nearly every day", "LA6571-9")],
+    "sleep-hours": [(0, "Less than 5 hours", ""), (1, "About 5-6 hours", ""), (2, "About 6-7 hours", ""), (3, "About 7-8 hours", ""), (4, "About 8-9 hours", ""),
+                    (5, "About 9-10 hours", ""), (6, "More than 10 hours", "")],
+    # ACLM's points: 0 for daily use, 3 for none.
+    "use-4": [(0, "Daily or almost daily", ""), (1, "Weekly", ""), (2, "Less than once a week", ""), (3, "Not at all", "")],
+    "pillars": [("risky-substances", "Avoiding risky substances", ""), ("connectedness", "Connectedness", ""), ("nutrition", "Nutrition", ""),
+                ("physical-activity", "Physical activity", ""), ("sleep", "Sleep", ""), ("stress", "Stress management", "")],
+    "protein": [(k, l, "") for k, l in (("beef-pork-lamb", "Beef, pork or lamb"), ("processed-meat", "Lunch meat, bacon, hot dogs or sausage"),
+                ("poultry", "Poultry"), ("wild-game", "Wild game"), ("fish-seafood", "Fish or seafood"), ("beans-legumes", "Beans, peas or lentils"),
+                ("nuts-seeds-avocado", "Nuts, seeds or avocado"), ("dairy", "Dairy"), ("eggs", "Eggs"))],
+    "number": [],
+}
+# Hours each sleep answer covers, so a FHIR Observation of sleep duration in hours can be read as an answer.
+BANDS = {"sleep-hours": [[0, 5], [5, 6], [6, 7], [7, 8], [8, 9], [9, 10], [10, 24]]}
+FOCUS = {"nutrition", "physical-activity", "sleep", "stress", "connectedness", "risky-substances", "tobacco", "alcohol", "cannabis", "rx-misuse", "drugs"}
 HEAD = ["subject_id", "subject_label", "predicate_id", "object_id", "object_label", "mapping_justification", "author_label", "mapping_date", "comment"]
 
 
@@ -81,6 +137,40 @@ def main():
     for a in ages:
         pubmed.setdefault(a["id"], []).append(a)
 
+    # Clinical codes and FHIR context (hcfhub.org#137): Who it's about values as a clinician's record states them,
+    # so a site can match a patient's coded situation to resources. ICD-10-CM codes were checked at NLM Clinical
+    # Tables; SNOMED and LOINC codes come from the Gravity SDOHCC 3.0.0 package examples. match: exact | prefix |
+    # answer (LOINC question=answer).
+    clinical = list(csv.DictReader(open(SRC / "clinical-codes.csv", encoding="utf-8")))
+    context = list(csv.DictReader(open(SRC / "fhir-context.csv", encoding="utf-8")))
+    for x in clinical + context:
+        assert x["id"] in by and by[x["id"]]["axis"] == "about", f"{x['id']} is not an about id"
+    for x in clinical:
+        assert x["system"] in CLINICAL and x["match"] in ("exact", "prefix", "answer"), x
+    codes_of, ctx_of = {}, {}
+    for x in clinical:
+        codes_of.setdefault(x["id"], []).append(x)
+    for x in context:
+        ctx_of.setdefault(x["id"], {})[x["context"]] = x["value"]
+    gravity = {}
+    for g in csv.DictReader(open(SRC / "partners/gravity-sdoh-category.csv", encoding="utf-8")):
+        if g["target_id"]:
+            gravity.setdefault(g["target_id"], []).append(g["source_id"])
+
+    def age_range(v):
+        lo, hi = v.split("-")
+        return int(lo), (int(hi) if hi else None)
+
+    instruments = {}
+    for iid, meta in INSTRUMENTS.items():
+        items = list(csv.DictReader(open(SRC / "instruments" / f"{iid}.csv", encoding="utf-8")))
+        for x in items:
+            assert x["answer"] in ANSWERS, f"{iid}/{x['item']}: unknown answer type {x['answer']}"
+            for g in split(x["gives"]):
+                k, v = g.split(":")
+                assert (k == "focus" and (v in FOCUS or v == "*")) or (k in ("about", "stage") and v in by and by[v]["axis"] == ("about" if k == "about" else "stage")), f"{iid}/{x['item']}: bad gives {g}"
+        instruments[iid] = {**meta, "items": items}
+
     # Plain JSON tree for websites.
     concepts = []
     for r in rows:
@@ -95,11 +185,25 @@ def main():
         if r["id"] in pubmed:
             ps = pubmed[r["id"]]
             c["pubmed"] = {"mesh": [p["mesh"] for p in ps], "filter": " OR ".join(f"{p['pubmed_filter']}[filter]" for p in ps)}
+        if "age" in ctx_of.get(r["id"], {}):
+            c["ages"] = list(age_range(ctx_of[r["id"]]["age"]))
+        if "gender" in ctx_of.get(r["id"], {}):
+            c["gender"] = ctx_of[r["id"]]["gender"]
+        if r["id"] in codes_of:
+            c["clinical"] = [{"system": x["system"], "code": x["code"], "match": x["match"], "display": x["display"]} for x in codes_of[r["id"]]]
+        if r["id"] in gravity:
+            c["gravity"] = gravity[r["id"]]
         concepts.append(c)
     (SRC / "audiences-v0.2.json").write_text(json.dumps({
         "_about": "HCF Audiences v0.2. Generated by scripts/build_v02.py from audiences-v0.2.csv. CC BY 4.0, Health Culture Foundation.",
         "version": "0.2", "axes": {k: {"label": v[0], "definition": v[1]} for k, v in AXES.items()},
-        "concepts": concepts}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        "concepts": concepts,
+        "answers": {k: [{"value": v, "label": l, **({"loinc": c} if c else {}), **({"min": BANDS[k][i][0], "max": BANDS[k][i][1]} if k in BANDS else {})}
+                        for i, (v, l, c) in enumerate(opts)] for k, opts in ANSWERS.items()},
+        "instruments": {iid: {**{k: v for k, v in m.items() if k != "items"}, "items": [
+            {k: v for k, v in {"item": x["item"], "section": x["section"], "label": x["label"], "answer": x["answer"], "loinc": x["loinc"], "unit": x["unit"],
+             "from": x["from"], "sex": x["sex"], "rule": x["rule"], "gives": split(x["gives"]), "basis": x["basis"]}.items() if v} for x in m["items"]]}
+            for iid, m in instruments.items()}}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     # SKOS JSON-LD.
     graph = [{"id": BASE + ax, "type": "skos:ConceptScheme", "prefLabel": t, "definition": d} for ax, (t, d) in AXES.items()]
@@ -152,6 +256,14 @@ def main():
           [[f"hcfaud:{a['id']}", by[a["id"]]["label"], a["predicate"], f"mesh:{a['mesh']}", a["mesh_label"], "semapv:ManualMappingCuration", "Claude (unreviewed)", "2026-10-29",
             f"PubMed filter {a['pubmed_filter']}[filter] ({a['mesh_ages']}). {a['comment']}".strip()] for a in ages])
 
+    # Who it's about to clinical codes. A prefix row stands for every code under it.
+    for key, (stem, cp, iri, title) in CLINICAL.items():
+        sssom(OUT_X / f"{stem}.sssom.tsv", {**pfx, cp: iri}, f"HCF Audiences v0.2 to {title}",
+              [[f"hcfaud:{x['id']}", by[x["id"]]["label"], "skos:relatedMatch" if x["match"] != "exact" else "skos:closeMatch", f"{cp}:{x['code']}", x["display"],
+                "semapv:ManualMappingCuration", "Claude (unreviewed)", "2026-11-07", f"match: {x['match']}. Source: {x['source']}."] for x in clinical if x["system"] == key])
+
+    fhir(rows, by, codes_of, ctx_of, age_range, instruments)
+
     # Partner crosswalks: their term on the left, ours on the right.
     for stem, (cp, iri, title) in PARTNERS.items():
         lines = []
@@ -163,6 +275,119 @@ def main():
         sssom(OUT_X / f"{stem}-to-audiences-v0.2.sssom.tsv", {cp: iri, **pfx}, f"{title} to HCF Audiences v0.2", lines)
 
     print(f"{len(rows)} concepts:", {ax: sum(r['axis'] == ax for r in rows) for ax in AXES})
+
+
+def fhir(rows, by, codes_of, ctx_of, age_range, instruments):
+    """HL7 FHIR views of the vocabulary, in taxonomy/v0.2/fhir/.
+
+    - CodeSystem-hcf-audiences-v0.2.json: the whole vocabulary as one is-a hierarchy (R4; valid in R5).
+    - usage-context.json: for each concept, the UsageContext a resource tagged with it carries (usage-context-type:
+      For -> user, with NUCC codes where we have them; age bands -> age as a Range in years; sex -> gender;
+      everything else on About and Stage -> focus, with its clinical codes).
+    - Bundle-Group-R4.json / -R5.json: a definitional Group for each Who it's about concept, the people it is about
+      (R4 actual=false; R5 membership=definitional). Several codes in one characteristic mean any of them.
+    - Questionnaire-<instrument>.json: each lifestyle instrument as an R4 Questionnaire, items coded with LOINC where
+      LOINC has the question and with our lifestyle-items codes otherwise, so a QuestionnaireResponse from an EHR can be read.
+    Groups describe a kind of person. They never list members: the vocabulary carries no data about anyone.
+    """
+    out = SRC / "fhir"
+    out.mkdir(exist_ok=True)
+    S = FHIR_SYS
+    narrative = lambda t: {"status": "generated", "div": f'<div xmlns="http://www.w3.org/1999/xhtml">{html.escape(t)}</div>'}
+    ours = lambda r: {"system": S["hcfaud"], "code": r["id"], "display": r["label"]}
+    uct = lambda code: {"system": S["uct"], "code": code}
+
+    def nest(parent):
+        res = []
+        for r in rows:
+            if (r["parent"] or None) == parent:
+                n = {"code": r["id"], "display": r["label"]}
+                if r["definition"]:
+                    n["definition"] = r["definition"]
+                n["property"] = [{"code": "axis", "valueString": r["axis"]}]
+                kids = nest(r["id"])
+                if kids:
+                    n["concept"] = kids
+                res.append(n)
+        return res
+    write = lambda name, obj: (out / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    write("CodeSystem-hcf-audiences-v0.2.json", {
+        "resourceType": "CodeSystem", "id": "hcf-audiences-v0.2", "url": S["hcfaud"], "version": "0.2", "name": "HCFAudiences",
+        "title": "HCF Audiences v0.2", "text": narrative(f"HCF Audiences v0.2: {len(rows)} concepts on three axes (for, about, stage)."), "status": "draft", "experimental": True, "publisher": "Health Culture Foundation",
+        "description": "Who a health resource is for, who it is about, and where they are with the behavior. Group-level descriptions only: no concept identifies a person.",
+        "copyright": "CC BY 4.0", "caseSensitive": True, "hierarchyMeaning": "is-a", "content": "complete", "count": len(rows),
+        "property": [{"code": "axis", "type": "string", "description": "for (who it's for; also messenger), about (who it's about) or stage"}],
+        "concept": nest(None)})
+
+    def codings(r):
+        cs = [ours(r)]
+        for x in codes_of.get(r["id"], []):
+            if x["match"] != "answer":
+                cs.append({"system": S[x["system"]], "code": x["code"], "display": x["display"]})
+        return cs
+
+    def contexts(r):
+        ctx = ctx_of.get(r["id"], {})
+        if r["axis"] == "for":
+            return [{"code": uct("user"), "valueCodeableConcept": {"coding": [ours(r)] + [{"system": S["nucc"], "code": n} for n in split(r["nucc"])], "text": r["label"]}}]
+        if "age" in ctx:
+            lo, hi = age_range(ctx["age"])
+            rng = {"low": {"value": lo, "unit": "years", "system": "http://unitsofmeasure.org", "code": "a"}}
+            if hi is not None:
+                rng["high"] = {"value": hi, "unit": "years", "system": "http://unitsofmeasure.org", "code": "a"}
+            return [{"code": uct("age"), "valueRange": rng}]
+        if "gender" in ctx:
+            return [{"code": uct("gender"), "valueCodeableConcept": {"coding": [{"system": S["gender"], "code": ctx["gender"]}, ours(r)], "text": r["label"]}}]
+        return [{"code": uct("focus"), "valueCodeableConcept": {"coding": codings(r), "text": r["label"]}}]
+    write("usage-context.json", {
+        "_about": "For each HCF Audiences v0.2 concept, the FHIR UsageContext (R4/R5) a resource tagged with it carries. Generated by scripts/build_v02.py.",
+        "useContext": {r["id"]: contexts(r) for r in rows}})
+
+    def group(r, release):
+        ch = []
+        for u in contexts(r):
+            c = {"code": {"coding": [u["code"]]}, "exclude": False}  # Group.characteristic.code is a CodeableConcept; UsageContext.code a Coding
+            c.update({k: v for k, v in u.items() if k.startswith("value")})
+            ch.append(c)
+        g = {"resourceType": "Group", "id": f"hcfaud-{r['id']}", "text": narrative(f"{r['label']}: a definitional group, no members."), "type": "person", "name": r["label"], "code": {"coding": [ours(r)]}, "characteristic": ch}
+        if release == "R4":
+            g["actual"] = False
+        else:
+            g["membership"] = "definitional"
+            if r["definition"]:
+                g["description"] = r["definition"]
+        return g
+    for release in ("R4", "R5"):
+        write(f"Bundle-Group-{release}.json", {"resourceType": "Bundle", "id": f"hcf-audiences-v0.2-groups-{release.lower()}", "type": "collection",
+            "entry": [{"fullUrl": f"{S['hcfaud']}/Group/hcfaud-{r['id']}", "resource": group(r, release)} for r in rows if r["axis"] == "about" and r["parent"]]})
+
+    for iid, m in instruments.items():
+        seen, items = set(), []
+        for x in m["items"]:
+            if x["item"] in seen:
+                continue
+            seen.add(x["item"])
+            code = [{"system": S["loinc"], "code": x["loinc"]}] if x["loinc"] else []
+            code.append({"system": ITEM_SYS, "code": x["item"], "display": x["label"]})
+            it = {"linkId": x["item"], "code": code, "text": x["label"], "type": "integer" if x["answer"] == "number" else "choice"}
+            if x["from"]:
+                it.update({"type": "decimal" if x["from"].startswith("aclm") else "integer", "readOnly": True})
+            opts = ANSWERS[x["answer"]]
+            if it["type"] == "choice":
+                if x["answer"] == "protein":
+                    it["repeats"] = True
+                it["answerOption"] = [{"valueCoding": {"system": S["loinc"], "code": c, "display": l} if c else {"system": ITEM_SYS, "code": f"{x['answer']}-{v}", "display": l}} for v, l, c in opts]
+            items.append(it)
+        sections = []
+        for it in items:
+            sec = next(x["section"] for x in m["items"] if x["item"] == it["linkId"])
+            if not sections or sections[-1]["linkId"] != sec:
+                sections.append({"linkId": sec, "text": sec.replace("-", " ").capitalize(), "type": "group", "item": []})
+            sections[-1]["item"].append(it)
+        write(f"Questionnaire-{iid}.json", {"resourceType": "Questionnaire", "id": iid, "text": narrative(m["title"] + " (paraphrased items)"),
+            "url": f"{S['hcfaud']}/Questionnaire/{iid}", "name": "".join(w.capitalize() for w in iid.split("-")), "title": m["title"] + " (paraphrased)",
+            "status": "draft", "experimental": True, "publisher": "Health Culture Foundation", "description": m["about"], "copyright": m["copyright"],
+            "item": sections})
 
 
 if __name__ == "__main__":
